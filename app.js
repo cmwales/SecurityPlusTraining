@@ -3,18 +3,46 @@
 
   const DATA = window.QUIZ_DATA || {};
   const CARDS = window.FLASHCARD_DATA || {};
-  const FLASH_STORAGE_KEY = "secplus.flashSections";
+  const ACRONYMS = window.ACRONYM_DATA || {};
   const app = document.getElementById("app");
+
+  // Flashcards and Acronyms share the same picker, card, and results screens.
+  // Each "deck" has its own data and remembers its own section selection.
+  const DECKS = {
+    cards: {
+      data: CARDS,
+      storageKey: "secplus.flashSections",
+      title: "Flashcards",
+      unit: "cards",
+      noun: "card",
+      revealLabel: "See Answer",
+      subtitle: "Pick sections from the study notes. Tick a domain or an objective (1.1, 1.2, ...) to take all of it, or expand a domain to choose individual sections.",
+    },
+    acronyms: {
+      data: ACRONYMS,
+      storageKey: "secplus.acronymSections",
+      title: "Acronyms",
+      unit: "acronyms",
+      noun: "acronym",
+      revealLabel: "Show Me",
+      subtitle: "Every acronym the Messer notes spell out, filed under the section where it's explained. See the acronym, say what it stands for, then check yourself.",
+    },
+  };
+  for (const d of Object.values(DECKS)) d.selected = new Set(loadFlashSelection(d));
 
   const state = {
     screen: "home",
     selected: new Set(),
     includeBonus: true,
     quiz: null, // { items: [...], index, score: {correct, wrong} }
-    flashSelected: new Set(loadFlashSelection()),
+    deck: "cards", // which flashcard deck is active: "cards" or "acronyms"
     flashShuffle: true,
     flash: null, // { items: [...], index, revealed, got: [], missed: [] }
   };
+
+  function deck() {
+    return DECKS[state.deck];
+  }
 
   // ---------- helpers ----------
 
@@ -428,6 +456,7 @@
       0
     );
     const cardCount = Object.values(CARDS).reduce((sum, v) => sum + v.cards.length, 0);
+    const acronymCount = Object.values(ACRONYMS).reduce((sum, v) => sum + v.cards.length, 0);
 
     app.innerHTML = `
       <h1>Security+ Study</h1>
@@ -443,6 +472,11 @@
           <span class="mode-desc">Short questions from the study notes. Answer in your head, then flip to check.</span>
           <span class="mode-meta">${cardCount} cards</span>
         </button>
+        <button class="mode-card" id="btn-mode-acronyms">
+          <span class="mode-title">Acronyms</span>
+          <span class="mode-desc">See an acronym, say what it stands for, then reveal the answer, what it does, and where it's found.</span>
+          <span class="mode-meta">${acronymCount} acronyms</span>
+        </button>
       </div>
     `;
 
@@ -450,15 +484,22 @@
       state.screen = "setup";
       renderSetup();
     });
-    document.getElementById("btn-mode-flash").addEventListener("click", renderFlashSetup);
+    document.getElementById("btn-mode-flash").addEventListener("click", () => {
+      state.deck = "cards";
+      renderFlashSetup();
+    });
+    document.getElementById("btn-mode-acronyms").addEventListener("click", () => {
+      state.deck = "acronyms";
+      renderFlashSetup();
+    });
   }
 
   // ---------- flashcards: helpers ----------
 
-  function loadFlashSelection() {
+  function loadFlashSelection(d) {
     try {
-      const saved = JSON.parse(localStorage.getItem(FLASH_STORAGE_KEY) || "[]");
-      return Array.isArray(saved) ? saved.filter((n) => n in (window.FLASHCARD_DATA || {})) : [];
+      const saved = JSON.parse(localStorage.getItem(d.storageKey) || "[]");
+      return Array.isArray(saved) ? saved.filter((n) => n in d.data) : [];
     } catch (e) {
       return [];
     }
@@ -466,7 +507,7 @@
 
   function saveFlashSelection() {
     try {
-      localStorage.setItem(FLASH_STORAGE_KEY, JSON.stringify([...state.flashSelected]));
+      localStorage.setItem(deck().storageKey, JSON.stringify([...deck().selected]));
     } catch (e) {
       // storage unavailable - selection just won't be remembered
     }
@@ -474,7 +515,7 @@
 
   function flashSectionsGroupedByDomain() {
     const groups = new Map(); // domain -> [sectionName,...]
-    for (const [name, v] of Object.entries(CARDS)) {
+    for (const [name, v] of Object.entries(deck().data)) {
       if (!groups.has(v.domain)) groups.set(v.domain, []);
       groups.get(v.domain).push(name);
     }
@@ -483,10 +524,10 @@
 
   function buildFlashItems() {
     const items = [];
-    for (const name of Object.keys(CARDS)) {
-      if (!state.flashSelected.has(name)) continue;
-      for (const c of CARDS[name].cards) {
-        items.push({ section: name, domain: CARDS[name].domain, page: c.page || CARDS[name].page, q: c.q, a: c.a });
+    for (const name of Object.keys(deck().data)) {
+      if (!deck().selected.has(name)) continue;
+      for (const c of deck().data[name].cards) {
+        items.push({ section: name, domain: deck().data[name].domain, page: c.page || deck().data[name].page, q: c.q, a: c.a, detail: c.detail });
       }
     }
     return state.flashShuffle ? shuffle(items) : items;
@@ -504,21 +545,21 @@
   function renderFlashSetup() {
     state.screen = "flash-setup";
     const groups = flashSectionsGroupedByDomain();
-    const allNames = Object.keys(CARDS);
-    const allSelected = allNames.length > 0 && allNames.every((n) => state.flashSelected.has(n));
+    const allNames = Object.keys(deck().data);
+    const allSelected = allNames.length > 0 && allNames.every((n) => deck().selected.has(n));
 
     let groupsHtml = "";
     for (const [domain, names] of groups) {
-      const selCount = names.filter((n) => state.flashSelected.has(n)).length;
+      const selCount = names.filter((n) => deck().selected.has(n)).length;
       const domainChecked = selCount === names.length ? "checked" : "";
-      const cardTotal = names.reduce((s, n) => s + CARDS[n].cards.length, 0);
+      const cardTotal = names.reduce((s, n) => s + deck().data[n].cards.length, 0);
       const open = state.flashOpenDomains && state.flashOpenDomains.has(domain) ? "open" : "";
 
       const rows = objectiveGroupsHtml(
         names,
-        (n) => state.flashSelected.has(n),
-        (n) => CARDS[n].cards.length,
-        "cards",
+        (n) => deck().selected.has(n),
+        (n) => deck().data[n].cards.length,
+        deck().unit,
         "data-flash-section",
         "data-flash-objective"
       );
@@ -530,21 +571,21 @@
               ${selCount > 0 && selCount < names.length ? "data-partial" : ""}
               aria-label="Select all of ${escapeHtml(domain)}">
             <span class="domain-title">${escapeHtml(domain)}</span>
-            <span class="count">${selCount}/${names.length} sections &middot; ${cardTotal} cards</span>
+            <span class="count">${selCount}/${names.length} sections &middot; ${cardTotal} ${deck().unit}</span>
           </summary>
           <div class="domain-body">${rows}</div>
         </details>`;
     }
 
-    const totalSelected = [...state.flashSelected].reduce(
-      (sum, n) => sum + (CARDS[n] ? CARDS[n].cards.length : 0),
+    const totalSelected = [...deck().selected].reduce(
+      (sum, n) => sum + (deck().data[n] ? deck().data[n].cards.length : 0),
       0
     );
 
     app.innerHTML = `
       <button class="link" id="btn-home">&larr; Home</button>
-      <h1>Flashcards</h1>
-      <p class="subtitle">Pick sections from the study notes. Tick a domain or an objective (1.1, 1.2, ...) to take all of it, or expand a domain to choose individual sections.</p>
+      <h1>${deck().title}</h1>
+      <p class="subtitle">${deck().subtitle}</p>
 
       <div class="panel">
         <h2>Choose Sections</h2>
@@ -555,10 +596,10 @@
         <div class="controls-row">
           <label class="toggle-row">
             <input type="checkbox" id="chk-flash-shuffle" ${state.flashShuffle ? "checked" : ""}>
-            Shuffle cards
+            Shuffle
           </label>
           <button class="primary" id="btn-flash-start" ${totalSelected === 0 ? "disabled" : ""}>
-            Start (${totalSelected} card${totalSelected === 1 ? "" : "s"})
+            Start (${totalSelected} ${totalSelected === 1 ? deck().noun : deck().unit})
           </button>
         </div>
         ${totalSelected === 0 ? '<div class="error">Select at least one section to begin.</div>' : ""}
@@ -575,7 +616,7 @@
       });
     });
 
-    wireObjectiveBoxes("data-flash-objective", allNames, state.flashSelected, () => {
+    wireObjectiveBoxes("data-flash-objective", allNames, deck().selected, () => {
       saveFlashSelection();
       renderFlashSetup();
     });
@@ -587,7 +628,7 @@
       cb.addEventListener("change", (e) => {
         const names = groups.get(e.target.getAttribute("data-flash-domain"));
         names.forEach((n) =>
-          e.target.checked ? state.flashSelected.add(n) : state.flashSelected.delete(n)
+          e.target.checked ? deck().selected.add(n) : deck().selected.delete(n)
         );
         saveFlashSelection();
         renderFlashSetup();
@@ -597,8 +638,8 @@
     app.querySelectorAll("input[data-flash-section]").forEach((cb) => {
       cb.addEventListener("change", (e) => {
         const name = e.target.getAttribute("data-flash-section");
-        if (e.target.checked) state.flashSelected.add(name);
-        else state.flashSelected.delete(name);
+        if (e.target.checked) deck().selected.add(name);
+        else deck().selected.delete(name);
         saveFlashSelection();
         renderFlashSetup();
       });
@@ -607,8 +648,8 @@
     document.getElementById("btn-home").addEventListener("click", renderHome);
 
     document.getElementById("btn-flash-all").addEventListener("click", () => {
-      if (allSelected) state.flashSelected.clear();
-      else allNames.forEach((n) => state.flashSelected.add(n));
+      if (allSelected) deck().selected.clear();
+      else allNames.forEach((n) => deck().selected.add(n));
       saveFlashSelection();
       renderFlashSetup();
     });
@@ -650,26 +691,36 @@
     const total = flash.items.length;
     const pct = Math.round((flash.index / total) * 100);
 
+    const isAcronym = state.deck === "acronyms";
+    const location = `${escapeHtml(objectiveLabel(item.section))} &rsaquo; ${escapeHtml(sectionTitle(item.section))}`;
+
+    // Acronym cards hide the section until reveal so it doesn't give the answer away
+    const answerBody = isAcronym
+      ? `<div class="acronym-stands">${escapeHtml(item.a)}</div>
+         <div class="acronym-detail">${escapeHtml(item.detail || "")}</div>
+         <div class="page-ref">Found in: ${location} &middot; ${pageLabel(item.page)}</div>`
+      : `${escapeHtml(item.a)}<div class="page-ref">${pageLabel(item.page)}</div>`;
+
     const answerHtml = flash.revealed
-      ? `<div class="flash-answer">${escapeHtml(item.a)}<div class="page-ref">${pageLabel(item.page)}</div></div>
+      ? `<div class="flash-answer">${answerBody}</div>
          <div class="flash-actions">
            <button class="grade bad" id="btn-missed">Missed it</button>
            <button class="grade good" id="btn-got">Got it</button>
          </div>`
       : `<div class="flash-actions">
-           <button class="primary" id="btn-reveal">See Answer</button>
+           <button class="primary" id="btn-reveal">${deck().revealLabel}</button>
          </div>`;
 
     app.innerHTML = `
       <div class="quiz-header">
-        <span>Card ${flash.index + 1} of ${total}</span>
+        <span>${isAcronym ? "Acronym" : "Card"} ${flash.index + 1} of ${total}</span>
         <span>${flash.got.length} got it &middot; ${flash.missed.length} missed</span>
       </div>
       <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
 
       <div class="panel flash-card">
-        <div class="question-domain">${escapeHtml(objectiveLabel(item.section))} &rsaquo; ${escapeHtml(sectionTitle(item.section))}</div>
-        <div class="flash-question">${escapeHtml(item.q)}</div>
+        <div class="question-domain">${isAcronym ? `${escapeHtml(item.domain)} &middot; What does this stand for?` : location}</div>
+        <div class="flash-question${isAcronym ? " acronym-question" : ""}">${escapeHtml(item.q)}</div>
         ${answerHtml}
       </div>
       <button class="link" id="btn-flash-quit">End session &amp; see results</button>
@@ -697,12 +748,13 @@
     let reviewHtml = "";
     if (flash.missed.length > 0) {
       reviewHtml = `<details class="review-details" open>
-        <summary>Review ${flash.missed.length} missed card${flash.missed.length === 1 ? "" : "s"}</summary>`;
+        <summary>Review ${flash.missed.length} missed ${flash.missed.length === 1 ? deck().noun : deck().unit}</summary>`;
       for (const it of flash.missed) {
         reviewHtml += `
           <div class="review-item wrong">
             <div class="review-q">${escapeHtml(it.q)}</div>
             <div class="review-line correct-answer">${escapeHtml(it.a)}</div>
+            ${it.detail ? `<div class="review-line">${escapeHtml(it.detail)}</div>` : ""}
             <div class="review-line">${escapeHtml(it.section)} &middot; ${pageLabel(it.page)}</div>
           </div>`;
       }
@@ -710,18 +762,18 @@
     }
 
     app.innerHTML = `
-      <h1>Flashcard Results</h1>
+      <h1>${deck().title} Results</h1>
       <div class="panel">
         <div class="results-score ${pct >= 80 ? "pass" : "fail"}">${pct}%</div>
-        <div class="results-sub">${flash.got.length} of ${seen} cards known${unseen > 0 ? ` (${unseen} not reached)` : ""}</div>
+        <div class="results-sub">${flash.got.length} of ${seen} ${deck().unit} known${unseen > 0 ? ` (${unseen} not reached)` : ""}</div>
         <div class="results-grid">
           <div class="stat-box"><div class="num" style="color:var(--good)">${flash.got.length}</div><div class="label">Got it</div></div>
           <div class="stat-box"><div class="num" style="color:var(--bad)">${flash.missed.length}</div><div class="label">Missed</div></div>
         </div>
         ${reviewHtml}
         <div class="controls-row">
-          ${flash.missed.length > 0 ? `<button class="primary" id="btn-flash-missed">Study Missed Cards (${flash.missed.length})</button>` : ""}
-          <button id="btn-flash-restart">Restart All Cards</button>
+          ${flash.missed.length > 0 ? `<button class="primary" id="btn-flash-missed">Study Missed ${deck().title === "Acronyms" ? "Acronyms" : "Cards"} (${flash.missed.length})</button>` : ""}
+          <button id="btn-flash-restart">Restart All ${deck().title === "Acronyms" ? "Acronyms" : "Cards"}</button>
           <button id="btn-flash-sections">Choose Different Sections</button>
           <button id="btn-home">Home</button>
         </div>
@@ -756,8 +808,8 @@
 
   // ---------- boot ----------
 
-  if (!window.QUIZ_DATA || !window.FLASHCARD_DATA) {
-    app.innerHTML = `<div class="panel error">Could not find questions-data.js or flashcards-data.js. Run "python build_data.py" to generate them from Questions.json and Flashcards.json.</div>`;
+  if (!window.QUIZ_DATA || !window.FLASHCARD_DATA || !window.ACRONYM_DATA) {
+    app.innerHTML = `<div class="panel error">Could not find questions-data.js, flashcards-data.js, or acronyms-data.js. Run "python build_data.py" to generate them from Questions.json, Flashcards.json, and Acronyms.json.</div>`;
   } else {
     renderHome();
   }

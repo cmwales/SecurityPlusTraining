@@ -1,6 +1,6 @@
-"""Regenerates questions-data.js and flashcards-data.js from their JSON sources.
+"""Regenerates questions-data.js, flashcards-data.js, and acronyms-data.js from their JSON sources.
 
-Run this any time Questions.json or Flashcards.json is edited:
+Run this any time Questions.json, Flashcards.json, or Acronyms.json is edited:
     python build_data.py
 
 The quiz app loads the generated .js files directly (plain <script> tags) instead
@@ -29,3 +29,7 @@ print(f"Wrote questions-data.js: {len(quiz)} sections, {total} questions.")
 cards = write_js("Flashcards.json", "flashcards-data.js", "FLASHCARD_DATA")
 total = sum(len(v["cards"]) for v in cards.values())
 print(f"Wrote flashcards-data.js: {len(cards)} sections, {total} cards.")
+
+acr = write_js("Acronyms.json", "acronyms-data.js", "ACRONYM_DATA")
+total = sum(len(v["cards"]) for v in acr.values())
+print(f"Wrote acronyms-data.js: {len(acr)} sections, {total} acronyms.")

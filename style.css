@@ -507,3 +507,14 @@ kbd {
 .flash-answer .page-ref {
   margin: 10px 0 0;
 }
+
+.scenario-tag {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--accent);
+  font-size: 0.72rem;
+  letter-spacing: 0.02em;
+  text-transform: none;
+}

@@ -114,7 +114,52 @@
         "page": "2"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company can't patch a vulnerable application yet, so the firewall is configured to block that application's traffic until a patch is available. Which control type BEST describes this?",
+        "correctAnswer": "Compensating",
+        "incorrectAnswers": [
+          "Corrective",
+          "Deterrent",
+          "Directive"
+        ],
+        "explanation": "Compensating controls use other means when existing controls aren't sufficient and may be temporary - e.g., a firewall blocks an app instead of patching it.",
+        "page": "1"
+      },
+      {
+        "question": "After a ransomware infection, the IT team restores the affected file server from last night's backup. Which control type is being applied?",
+        "correctAnswer": "Corrective",
+        "incorrectAnswers": [
+          "Detective",
+          "Preventive",
+          "Compensating"
+        ],
+        "explanation": "Corrective controls are applied after an event is detected to reverse its impact - restoring from backups can mitigate ransomware.",
+        "page": "1"
+      },
+      {
+        "question": "A security manager wants to discourage intruders without actually blocking access. Which should they implement?",
+        "correctAnswer": "Posted warning signs",
+        "incorrectAnswers": [
+          "Door locks",
+          "Firewall rules",
+          "Motion detectors"
+        ],
+        "explanation": "Deterrent controls make an attacker think twice but don't directly prevent access.",
+        "page": "1"
+      },
+      {
+        "question": "A company requires that security policy training be given to all staff. Using the control table, which category and type BEST fit?",
+        "correctAnswer": "Operational / Directive",
+        "incorrectAnswers": [
+          "Technical / Preventive",
+          "Physical / Deterrent",
+          "Managerial / Detective"
+        ],
+        "explanation": "The control table lists 'Security policy training' as an operational directive control.",
+        "page": "2"
+      }
+    ]
   },
   "1.2 - The CIA Triad": {
     "domain": "1.0 - General Security Concepts",
@@ -181,7 +226,30 @@
         "explanation": "The CIA Triad is sometimes referenced as the AIC Triad."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company adds redundant servers so its website keeps running even when one server fails. Which part of the CIA triad is this MOST improving?",
+        "correctAnswer": "Availability",
+        "incorrectAnswers": [
+          "Confidentiality",
+          "Integrity",
+          "Non-repudiation"
+        ],
+        "explanation": "Redundancy and fault tolerance keep systems up and running for authorized users.",
+        "page": "2"
+      },
+      {
+        "question": "A hospital wants to make sure lab results can't be altered in storage without the change being detected. Which CIA principle is the PRIMARY concern?",
+        "correctAnswer": "Integrity",
+        "incorrectAnswers": [
+          "Availability",
+          "Confidentiality",
+          "Accounting"
+        ],
+        "explanation": "Integrity means messages can't be modified without detection - hashing and digital signatures help.",
+        "page": "2"
+      }
+    ]
   },
   "1.2 - Non-repudiation": {
     "domain": "1.0 - General Security Concepts",
@@ -258,7 +326,30 @@
         "explanation": "The notes state the message doesn't need to be encrypted to be signed."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Alice sends Bob a contract and Bob must be able to prove Alice really sent it and it wasn't changed. What should Alice use?",
+        "correctAnswer": "A digital signature created with her private key",
+        "incorrectAnswers": [
+          "A hash sent separately with no key",
+          "Encryption with Bob's private key",
+          "A shared symmetric key"
+        ],
+        "explanation": "A digital signature provides integrity, authentication, and non-repudiation. Sign with the private key, verify with the public key.",
+        "page": "3"
+      },
+      {
+        "question": "A security analyst needs to confirm a downloaded file wasn't changed, but doesn't need to know who created it. What is the BEST method?",
+        "correctAnswer": "Compare the file's hash",
+        "incorrectAnswers": [
+          "Verify a digital signature",
+          "Encrypt the file",
+          "Request a certificate"
+        ],
+        "explanation": "A hash proves integrity but doesn't associate data with an individual.",
+        "page": "3"
+      }
+    ]
   },
   "1.2 - Authentication, Authorization, and Accounting": {
     "domain": "1.0 - General Security Concepts",
@@ -325,7 +416,41 @@
         "explanation": "An authorization model adds abstraction, reduces complexity, and supports any number of users or resources."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An organization needs to authenticate hundreds of VPN devices it will never physically see, and the devices can't type passwords. What is the BEST approach?",
+        "correctAnswer": "Install a certificate signed by the organization's CA on each device",
+        "incorrectAnswers": [
+          "Store a password on each device",
+          "Use the device's username only",
+          "Allow any device with a valid IP address"
+        ],
+        "explanation": "Put a digitally signed certificate on the device; the CA's signature validates it.",
+        "page": "4"
+      },
+      {
+        "question": "An admin has 500 users needing access to shipping applications and individual permissions are becoming unmanageable. What should they do?",
+        "correctAnswer": "Use an authorization model such as roles",
+        "incorrectAnswers": [
+          "Assign rights to each user directly",
+          "Disable authorization",
+          "Give all users administrator access"
+        ],
+        "explanation": "Associating individual users to rights doesn't scale; an authorization model adds abstraction and streamlines administration.",
+        "page": "4"
+      },
+      {
+        "question": "An auditor needs to know when a user logged in, how much data they sent, and when they logged out. Which AAA component provides this?",
+        "correctAnswer": "Accounting",
+        "incorrectAnswers": [
+          "Authorization",
+          "Authentication",
+          "Identification"
+        ],
+        "explanation": "Accounting records resources used: login time, data sent and received, logout time.",
+        "page": "4"
+      }
+    ]
   },
   "1.2 - Gap Analysis": {
     "domain": "1.0 - General Security Concepts",
@@ -382,7 +507,30 @@
         "explanation": "It can be an extensive study with numerous participants."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A nonfederal contractor wants to compare its current security against requirements for protecting Controlled Unclassified Information. Which framework should be the baseline?",
+        "correctAnswer": "NIST SP 800-171",
+        "incorrectAnswers": [
+          "ISO/IEC 27001 only",
+          "RFC 3227",
+          "NIST SP 800-61"
+        ],
+        "explanation": "NIST SP 800-171 Rev 2 covers protecting CUI in nonfederal systems.",
+        "page": "5"
+      },
+      {
+        "question": "Leadership wants to know what it will take to move from the current security state to a formal standard. What should the security team perform?",
+        "correctAnswer": "A gap analysis",
+        "incorrectAnswers": [
+          "A penetration test",
+          "A tabletop exercise",
+          "A vulnerability scan"
+        ],
+        "explanation": "A gap analysis compares where you are with where you want to be and recommends a path.",
+        "page": "5"
+      }
+    ]
   },
   "1.2 - Zero Trust": {
     "domain": "1.0 - General Security Concepts",
@@ -488,7 +636,41 @@
         "page": "6"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Once users get past the firewall, they can reach nearly everything inside the network. Which approach BEST addresses this?",
+        "correctAnswer": "Implement zero trust",
+        "incorrectAnswers": [
+          "Add a second perimeter firewall only",
+          "Remove MFA",
+          "Trust all internal traffic"
+        ],
+        "explanation": "Many networks are open on the inside; zero trust verifies everything and trusts nothing inherently.",
+        "page": "5"
+      },
+      {
+        "question": "A user connects from an unusual country over an unknown connection, so the system requires stronger authentication. Which zero trust concept is this?",
+        "correctAnswer": "Adaptive identity",
+        "incorrectAnswers": [
+          "Threat scope reduction",
+          "Implicit trust zones",
+          "Data plane forwarding"
+        ],
+        "explanation": "Adaptive identity considers risk indicators like location and connection type and can strengthen authentication.",
+        "page": "5"
+      },
+      {
+        "question": "In a zero trust design, which component should decide whether to grant, deny, or revoke access?",
+        "correctAnswer": "Policy Engine",
+        "incorrectAnswers": [
+          "Policy Enforcement Point",
+          "Subject",
+          "Enterprise resource"
+        ],
+        "explanation": "The Policy Engine evaluates each access decision; the Policy Administrator tells the PEP.",
+        "page": "6"
+      }
+    ]
   },
   "1.2 - Physical Security": {
     "domain": "1.0 - General Security Concepts",
@@ -565,7 +747,52 @@
         "explanation": "Object detection can identify a license plate or face; motion recognition can alarm and alert."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A building must let pedestrians through the front plaza but stop vehicles from driving up to the entrance. What is the BEST control?",
+        "correctAnswer": "Bollards",
+        "incorrectAnswers": [
+          "Access control vestibule",
+          "Motion detectors",
+          "Badge readers"
+        ],
+        "explanation": "Bollards allow people through while preventing cars and trucks.",
+        "page": "7"
+      },
+      {
+        "question": "A data center wants to make sure only one person passes through a doorway at a time. What should be installed?",
+        "correctAnswer": "An access control vestibule",
+        "incorrectAnswers": [
+          "A fence",
+          "Bollards",
+          "Lighting"
+        ],
+        "explanation": "Vestibules control doors so one opening locks the other - one at a time, controlled groups.",
+        "page": "7"
+      },
+      {
+        "question": "A company wants no single employee to ever have access to the vault by themselves. Which control should it use?",
+        "correctAnswer": "Two-person integrity/control",
+        "incorrectAnswers": [
+          "Access badges",
+          "Video surveillance",
+          "Infrared sensors"
+        ],
+        "explanation": "Two-person control means no single person has access to a physical asset.",
+        "page": "7"
+      },
+      {
+        "question": "Security needs to detect movement across a large open warehouse. Which sensor is BEST?",
+        "correctAnswer": "Microwave",
+        "incorrectAnswers": [
+          "Pressure",
+          "Ultrasonic",
+          "Infrared only on doors"
+        ],
+        "explanation": "Microwave sensors detect movement across large areas.",
+        "page": "7"
+      }
+    ]
   },
   "1.2 - Deception and Disruption": {
     "domain": "1.0 - General Security Concepts",
@@ -622,7 +849,41 @@
         "explanation": "Other honeytoken examples include database records, browser cookies, and web page pixels."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A security team wants to be alerted if an attacker browses file shares and opens sensitive-looking files. What should they deploy?",
+        "correctAnswer": "Honeyfiles",
+        "incorrectAnswers": [
+          "Honeynets",
+          "Bollards",
+          "A WAF"
+        ],
+        "explanation": "Honeyfiles are bait (e.g., passwords.txt); an alert is sent when accessed.",
+        "page": "7"
+      },
+      {
+        "question": "The team wants to know where stolen data ends up after an attacker exfiltrates it. What is the BEST technique?",
+        "correctAnswer": "Honeytokens",
+        "incorrectAnswers": [
+          "Honeypots",
+          "Firewall rules",
+          "Data masking"
+        ],
+        "explanation": "Honeytokens are traceable data - if stolen, you'll know where it came from.",
+        "page": "7"
+      },
+      {
+        "question": "Researchers want an entire fake network with servers, routers, and workstations to study attackers. What should they build?",
+        "correctAnswer": "A honeynet",
+        "incorrectAnswers": [
+          "A honeyfile",
+          "A honeytoken",
+          "A jump server"
+        ],
+        "explanation": "A honeynet is a larger deception network with one or more honeypots.",
+        "page": "7"
+      }
+    ]
   },
   "1.3 - Change Management": {
     "domain": "1.0 - General Security Concepts",
@@ -709,7 +970,52 @@
         "explanation": "Workday downtime would affect a large part of production; overnights are often better."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An upgrade to the label printers is needed. Shipping and Receiving requests it and IT performs it. Who owns the change?",
+        "correctAnswer": "Shipping and Receiving",
+        "incorrectAnswers": [
+          "IT",
+          "The change control board",
+          "The printer vendor"
+        ],
+        "explanation": "The owner manages the process; IT handles the actual change.",
+        "page": "8"
+      },
+      {
+        "question": "Before applying a patch to production, a technician wants to confirm it works without risking live systems. What should they use?",
+        "correctAnswer": "A sandbox testing environment",
+        "incorrectAnswers": [
+          "The production server after hours",
+          "A backout plan only",
+          "End-user acceptance"
+        ],
+        "explanation": "Sandboxes have no connection to production and are used before making a change.",
+        "page": "8"
+      },
+      {
+        "question": "A retail company plans a major network change. When is it LEAST appropriate to schedule it?",
+        "correctAnswer": "During the holiday season",
+        "incorrectAnswers": [
+          "Overnight",
+          "During a scheduled maintenance window",
+          "On a slow weekend"
+        ],
+        "explanation": "Retail networks are frozen during the holiday season.",
+        "page": "8"
+      },
+      {
+        "question": "A change went wrong and the firewall is now blocking critical traffic. What should have been prepared to handle this?",
+        "correctAnswer": "A backout plan",
+        "incorrectAnswers": [
+          "An impact analysis",
+          "A stakeholder list",
+          "A maintenance window"
+        ],
+        "explanation": "Always have a way to revert your changes.",
+        "page": "8"
+      }
+    ]
   },
   "1.3 - Technical Change Management": {
     "domain": "1.0 - General Security Concepts",
@@ -786,7 +1092,52 @@
         "explanation": "You become the support team - document the system and become the expert."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A high-security workstation should run only specifically approved applications. Which method is BEST?",
+        "correctAnswer": "Allow list",
+        "incorrectAnswers": [
+          "Deny list",
+          "Anti-virus only",
+          "Version control"
+        ],
+        "explanation": "With an allow list, nothing runs unless it's approved.",
+        "page": "9"
+      },
+      {
+        "question": "During an approved change, the technician discovers they also need to modify a second server not in the approved scope. What should they do?",
+        "correctAnswer": "Follow the change management process before expanding the scope",
+        "incorrectAnswers": [
+          "Make the change since one change was approved",
+          "Skip the change entirely without notice",
+          "Make it and document it next month"
+        ],
+        "explanation": "A change approval isn't permission to make any change; the process determines the next steps.",
+        "page": "9"
+      },
+      {
+        "question": "A firewall must be upgraded, but its management software only works with the new firmware. What should be done FIRST?",
+        "correctAnswer": "Upgrade the firewall code, then the management software",
+        "incorrectAnswers": [
+          "Upgrade the management software first",
+          "Upgrade both at random",
+          "Skip the firmware update"
+        ],
+        "explanation": "Dependencies may occur across systems - upgrade the firewall code first.",
+        "page": "9"
+      },
+      {
+        "question": "An admin wants to easily revert a router to last week's configuration. What should be in place?",
+        "correctAnswer": "Version control",
+        "incorrectAnswers": [
+          "A deny list",
+          "A legacy application",
+          "A restart"
+        ],
+        "explanation": "Version control tracks changes over time so you can revert.",
+        "page": "9"
+      }
+    ]
   },
   "1.4 - Public Key Infrastructure": {
     "domain": "1.0 - General Security Concepts",
@@ -863,7 +1214,41 @@
         "explanation": "PKI is about digital certificates and trust - the certificate authority."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Two systems need very fast bulk encryption and can share a key securely. Which encryption type is BEST?",
+        "correctAnswer": "Symmetric encryption",
+        "incorrectAnswers": [
+          "Asymmetric encryption",
+          "Hashing",
+          "Key escrow"
+        ],
+        "explanation": "Symmetric encryption is very fast with less overhead.",
+        "page": "10"
+      },
+      {
+        "question": "Bob wants to send Alice a message only Alice can read. Which key should Bob use to encrypt it?",
+        "correctAnswer": "Alice's public key",
+        "incorrectAnswers": [
+          "Alice's private key",
+          "Bob's private key",
+          "Bob's public key"
+        ],
+        "explanation": "Only Alice's private key can decrypt data encrypted with her public key.",
+        "page": "10"
+      },
+      {
+        "question": "A business needs the ability to decrypt employee data if needed for legal proceedings. What arrangement supports this?",
+        "correctAnswer": "Key escrow",
+        "incorrectAnswers": [
+          "Key stretching",
+          "Wildcard certificates",
+          "Tokenization"
+        ],
+        "explanation": "Key escrow means a third party holds your decryption keys under carefully controlled conditions.",
+        "page": "10"
+      }
+    ]
   },
   "1.4 - Encrypting Data": {
     "domain": "1.0 - General Security Concepts",
@@ -940,7 +1325,52 @@
         "explanation": "Key stretching makes a weak key stronger so brute force takes much longer."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Laptops are frequently lost, and the company wants all data on the drive protected. What is the BEST solution?",
+        "correctAnswer": "Full-disk encryption such as BitLocker",
+        "incorrectAnswers": [
+          "File-level EFS on one folder",
+          "A site-to-site VPN",
+          "Record-level database encryption"
+        ],
+        "explanation": "Full-disk encryption protects everything on the drive (data at rest).",
+        "page": "11"
+      },
+      {
+        "question": "A database admin wants each sensitive column encrypted with its own key. Which method should they use?",
+        "correctAnswer": "Record-level encryption",
+        "incorrectAnswers": [
+          "Transparent encryption",
+          "Full-disk encryption",
+          "Key stretching"
+        ],
+        "explanation": "Record-level encryption encrypts individual columns with separate symmetric keys.",
+        "page": "11"
+      },
+      {
+        "question": "Users must protect all traffic from a remote laptop regardless of application. What should they use?",
+        "correctAnswer": "A client-based VPN",
+        "incorrectAnswers": [
+          "HTTPS for the browser only",
+          "EFS",
+          "Hashing"
+        ],
+        "explanation": "A VPN encrypts all data transmitted over the network, regardless of the application.",
+        "page": "11"
+      },
+      {
+        "question": "Users have short, weak passwords and the company wants brute-force attacks to take much longer. Which technique helps?",
+        "correctAnswer": "Key stretching",
+        "incorrectAnswers": [
+          "Key escrow",
+          "Out-of-band key exchange",
+          "Tokenization"
+        ],
+        "explanation": "Key stretching hashes repeatedly so brute force requires much more time.",
+        "page": "11"
+      }
+    ]
   },
   "1.4 - Key Exchange": {
     "domain": "1.0 - General Security Concepts",
@@ -1002,7 +1432,30 @@
         "page": "12"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Two offices don't trust their network and want to share a symmetric key. Which method avoids sending the key over the network?",
+        "correctAnswer": "Out-of-band key exchange by courier or in person",
+        "incorrectAnswers": [
+          "Email the key",
+          "Post the key on the intranet",
+          "Send it in plaintext over HTTP"
+        ],
+        "explanation": "Out-of-band means don't send the symmetric key over the 'net.",
+        "page": "11"
+      },
+      {
+        "question": "A web client and server need fast encryption for a session. What is the common approach?",
+        "correctAnswer": "Share a symmetric session key using asymmetric encryption",
+        "incorrectAnswers": [
+          "Use only asymmetric encryption for all data",
+          "Reuse the same key forever",
+          "Send data unencrypted"
+        ],
+        "explanation": "The client encrypts a random symmetric key with the server's public key; it becomes the session key.",
+        "page": "11"
+      }
+    ]
   },
   "1.4 - Encryption Technologies": {
     "domain": "1.0 - General Security Concepts",
@@ -1069,7 +1522,41 @@
         "explanation": "It has its own boot ROM, true RNG, real-time memory encryption, and root cryptographic keys."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A laptop needs hardware on the device to securely store its BitLocker keys. What should it use?",
+        "correctAnswer": "Trusted Platform Module (TPM)",
+        "incorrectAnswers": [
+          "Hardware Security Module (HSM)",
+          "Key management system in the cloud",
+          "A USB drive"
+        ],
+        "explanation": "The TPM is cryptographic hardware on the device; versatile memory stores BitLocker keys.",
+        "page": "12"
+      },
+      {
+        "question": "A bank needs to securely store thousands of keys across a clustered environment with redundant power. What is BEST?",
+        "correctAnswer": "Hardware Security Module (HSM)",
+        "incorrectAnswers": [
+          "Trusted Platform Module (TPM)",
+          "Secure cookie",
+          "Password manager"
+        ],
+        "explanation": "HSMs are used in large environments to store thousands of keys.",
+        "page": "12"
+      },
+      {
+        "question": "An organization uses many cloud and on-prem services and wants to create, rotate, and log keys from one console. What should it use?",
+        "correctAnswer": "A key management system",
+        "incorrectAnswers": [
+          "A TPM in each server",
+          "Key escrow",
+          "A CRL"
+        ],
+        "explanation": "A key management system centralizes all key management.",
+        "page": "12"
+      }
+    ]
   },
   "1.4 - Obfuscation": {
     "domain": "1.0 - General Security Concepts",
@@ -1136,7 +1623,41 @@
         "explanation": "Masking protects PII; the data may still be intact in storage."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A payment app wants an attacker who captures payment data to be unable to reuse the card number later. What should it use?",
+        "correctAnswer": "Tokenization",
+        "incorrectAnswers": [
+          "Steganography",
+          "Data masking only on screen",
+          "MD5 hashing"
+        ],
+        "explanation": "A temporary token is used during payment; captured tokens can't be used later.",
+        "page": "13"
+      },
+      {
+        "question": "Call center staff need to see only the last digits of a customer's account number on screen. What technique is BEST?",
+        "correctAnswer": "Data masking",
+        "incorrectAnswers": [
+          "Tokenization",
+          "Steganography",
+          "Key escrow"
+        ],
+        "explanation": "Masking hides some of the original data and can control the view based on permissions.",
+        "page": "13"
+      },
+      {
+        "question": "An investigator suspects a secret message is hidden inside an image file. What technique was likely used?",
+        "correctAnswer": "Steganography",
+        "incorrectAnswers": [
+          "Tokenization",
+          "Hashing",
+          "Data masking"
+        ],
+        "explanation": "Steganography hides information inside an image, audio, video, or network traffic.",
+        "page": "13"
+      }
+    ]
   },
   "1.4 - Hashing and Digital Signatures": {
     "domain": "1.0 - General Security Concepts",
@@ -1213,7 +1734,41 @@
         "explanation": "Compare hashes during authentication; nobody knows your actual password."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Two users chose the same password, but the company wants their stored hashes to be different. What should be added?",
+        "correctAnswer": "A salt",
+        "incorrectAnswers": [
+          "Key escrow",
+          "A digital signature",
+          "A longer username"
+        ],
+        "explanation": "Each user gets a random salt, so the same password creates a different hash.",
+        "page": "14"
+      },
+      {
+        "question": "A developer is choosing a hash for an important application. Which should they avoid because of known collisions?",
+        "correctAnswer": "MD5",
+        "incorrectAnswers": [
+          "A hash with a large output size",
+          "A salted hash",
+          "Any newer algorithm"
+        ],
+        "explanation": "MD5 has a collision problem found in 1996 - don't use it for anything important.",
+        "page": "14"
+      },
+      {
+        "question": "A user wants to verify that an ISO they downloaded matches the original on the vendor site. What should they do?",
+        "correctAnswer": "Compare the file hash with the posted hash",
+        "incorrectAnswers": [
+          "Decrypt the file",
+          "Check the CRL",
+          "Run a port scan"
+        ],
+        "explanation": "Hashes may be provided on the download site for verification.",
+        "page": "14"
+      }
+    ]
   },
   "1.4 - Blockchain Technology": {
     "domain": "1.0 - General Security Concepts",
@@ -1260,7 +1815,30 @@
         "explanation": "Others: payment processing, digital identification, digital voting."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Someone alters a block in a blockchain. Why will the change be rejected?",
+        "correctAnswer": "The altered chain's hashes no longer match the copies stored by the rest of the network",
+        "incorrectAnswers": [
+          "The CA revokes the block",
+          "A firewall blocks it",
+          "The block is encrypted with a private key"
+        ],
+        "explanation": "Hashes are recalculated and won't match the chains stored by the network.",
+        "page": "15"
+      },
+      {
+        "question": "A supply chain consortium wants a shared ledger that every member maintains and replicates. Which technology fits BEST?",
+        "correctAnswer": "Blockchain",
+        "incorrectAnswers": [
+          "Key escrow",
+          "Tokenization",
+          "A single central database"
+        ],
+        "explanation": "Blockchain is a distributed ledger used for supply chain monitoring and more.",
+        "page": "15"
+      }
+    ]
   },
   "1.4 - Certificates": {
     "domain": "1.0 - General Security Concepts",
@@ -1377,7 +1955,52 @@
         "page": "16"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company runs dozens of internal web servers and wants certificates its devices trust without buying public ones. What should it do?",
+        "correctAnswer": "Build a private CA and install its certificate on all devices",
+        "incorrectAnswers": [
+          "Disable HTTPS internally",
+          "Buy a certificate for every server from a public CA",
+          "Use a CRL instead of certificates"
+        ],
+        "explanation": "A private CA's certificates work like purchased ones once devices trust the internal CA.",
+        "page": "16"
+      },
+      {
+        "question": "A company wants one certificate to cover www, mail, and shop under professormesser.com. What should it request?",
+        "correctAnswer": "A wildcard certificate (*.professormesser.com)",
+        "incorrectAnswers": [
+          "A self-signed root certificate",
+          "Three CSRs with no SAN",
+          "An OCSP response"
+        ],
+        "explanation": "A wildcard domain applies to all server names in the domain.",
+        "page": "16"
+      },
+      {
+        "question": "A web server's private key may have been exposed. What should happen to its certificate?",
+        "correctAnswer": "Revoke it so it's added to the CRL",
+        "incorrectAnswers": [
+          "Keep using it",
+          "Extend its expiration",
+          "Convert it to a wildcard"
+        ],
+        "explanation": "After Heartbleed, certificates were replaced and older ones moved to the CRL.",
+        "page": "16"
+      },
+      {
+        "question": "A popular website wants clients to check revocation status without the CA handling every OCSP request. What should it use?",
+        "correctAnswer": "OCSP stapling",
+        "incorrectAnswers": [
+          "Downloading the full CRL on each visit",
+          "Self-signed certificates",
+          "Key escrow"
+        ],
+        "explanation": "OCSP stapling puts CA-signed status into the TLS handshake for scalability.",
+        "page": "17"
+      }
+    ]
   },
   "2.1 - Threat Actors": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1472,7 +2095,52 @@
         "page": "18"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attack on a power grid used custom malware, ran for months, and had massive funding. Which threat actor is MOST likely?",
+        "correctAnswer": "Nation state",
+        "incorrectAnswers": [
+          "Unskilled attacker",
+          "Shadow IT",
+          "Hacktivist with limited funding"
+        ],
+        "explanation": "Nation states have massive resources, the highest sophistication, and are commonly APTs.",
+        "page": "18"
+      },
+      {
+        "question": "A recently demoted employee deletes key files using knowledge of which systems are vulnerable. Which threat actor is this?",
+        "correctAnswer": "Insider threat",
+        "incorrectAnswers": [
+          "Organized crime",
+          "Nation state",
+          "Unskilled attacker"
+        ],
+        "explanation": "Insider threats are internal, motivated by revenge or financial gain, and know what to hit.",
+        "page": "18"
+      },
+      {
+        "question": "A department signs up for a cloud service without involving IT. What is this called?",
+        "correctAnswer": "Shadow IT",
+        "incorrectAnswers": [
+          "Hacktivism",
+          "Insider threat with revenge motive",
+          "Organized crime"
+        ],
+        "explanation": "Shadow IT works around the internal IT organization, often using the cloud.",
+        "page": "18"
+      },
+      {
+        "question": "A group defaces a company website to protest its environmental policies. Which threat actor is this?",
+        "correctAnswer": "Hacktivist",
+        "incorrectAnswers": [
+          "Organized crime",
+          "Nation state",
+          "Shadow IT"
+        ],
+        "explanation": "Hacktivists are motivated by philosophy and use DoS, defacing, and document release.",
+        "page": "18"
+      }
+    ]
   },
   "2.2 - Common Threat Vectors": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1567,7 +2235,52 @@
         "page": "20"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An industrial control network is air gapped, but malware still got in. What vector is MOST likely?",
+        "correctAnswer": "A USB flash drive",
+        "incorrectAnswers": [
+          "A phishing email to the Internet",
+          "An open firewall port",
+          "A watering hole website"
+        ],
+        "explanation": "Malicious software on USB drives can infect air-gapped networks.",
+        "page": "19"
+      },
+      {
+        "question": "A user opened a Microsoft Office document and malicious code ran. Which vector was used?",
+        "correctAnswer": "File-based vector (macros)",
+        "incorrectAnswers": [
+          "Voice call vector",
+          "Removable device vector",
+          "Unsecure network vector"
+        ],
+        "explanation": "Office documents with macros are file-based vectors.",
+        "page": "19"
+      },
+      {
+        "question": "A new router is installed with its out-of-the-box admin password still set. What risk does this create?",
+        "correctAnswer": "Default credentials give an attacker full control",
+        "incorrectAnswers": [
+          "The router will run slower",
+          "The router can't be patched",
+          "The router will reject VPN traffic"
+        ],
+        "explanation": "The right default credentials provide administrator access; change yours.",
+        "page": "20"
+      },
+      {
+        "question": "An attacker breached a company by first compromising its managed service provider. What type of vector is this?",
+        "correctAnswer": "Supply chain vector",
+        "incorrectAnswers": [
+          "Image-based vector",
+          "Voice call vector",
+          "Removable device vector"
+        ],
+        "explanation": "MSPs can access many customer networks from one location.",
+        "page": "20"
+      }
+    ]
   },
   "2.2 - Phishing": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1624,7 +2337,41 @@
         "explanation": "Business email compromise takes advantage of trust in email sources."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An employee receives a text message with a link asking them to verify their bank account. What attack is this?",
+        "correctAnswer": "Smishing",
+        "incorrectAnswers": [
+          "Vishing",
+          "Typosquatting",
+          "Watering hole"
+        ],
+        "explanation": "Smishing is SMS phishing.",
+        "page": "20"
+      },
+      {
+        "question": "Accounting receives an email from a vendor's address asking to update the bank account for future wire transfers. What attack is MOST likely?",
+        "correctAnswer": "Business email compromise",
+        "incorrectAnswers": [
+          "Brand impersonation",
+          "SQL injection",
+          "DNS poisoning"
+        ],
+        "explanation": "BEC uses trusted email sources to modify wire transfer details.",
+        "page": "20"
+      },
+      {
+        "question": "A caller claims to be from Visa about an automated payment and asks for account details. Which technique is the attacker using?",
+        "correctAnswer": "Pretexting",
+        "incorrectAnswers": [
+          "Typosquatting",
+          "Smishing",
+          "Tokenization"
+        ],
+        "explanation": "Pretexting is lying to get information as a character in a created situation.",
+        "page": "20"
+      }
+    ]
   },
   "2.2 - Impersonation": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1671,7 +2418,30 @@
         "explanation": "Attackers also throw technical details around or act like a buddy."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A caller says they're from the help desk and asks for your password. What is the BEST response?",
+        "correctAnswer": "Verify by calling back through a known number before revealing anything",
+        "incorrectAnswers": [
+          "Give the password since IT asked",
+          "Give only half the password",
+          "Email the password instead"
+        ],
+        "explanation": "Never volunteer information and always verify before revealing info.",
+        "page": "21"
+      },
+      {
+        "question": "During a friendly phone chat, a caller gradually gets an employee to reveal internal details without the employee realizing it. What is this?",
+        "correctAnswer": "Eliciting information",
+        "incorrectAnswers": [
+          "Identity fraud",
+          "Typosquatting",
+          "Pretexting a USB drive"
+        ],
+        "explanation": "Eliciting extracts information without the victim realizing it, often via vishing.",
+        "page": "21"
+      }
+    ]
   },
   "2.2 - Watering Hole Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1718,7 +2488,30 @@
         "explanation": "Layered defense: firewalls, IPS, and anti-malware signature updates."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Attackers can't get through a bank's defenses, so they infect an industry news site the bank's employees often visit. What attack is this?",
+        "correctAnswer": "Watering hole attack",
+        "incorrectAnswers": [
+          "Business email compromise",
+          "Smishing",
+          "Domain hijacking"
+        ],
+        "explanation": "The attackers go where the victims hang out - the watering hole.",
+        "page": "21"
+      },
+      {
+        "question": "What is the BEST defense against a watering hole attack?",
+        "correctAnswer": "Defense-in-depth with firewalls, IPS, and updated anti-malware",
+        "incorrectAnswers": [
+          "Blocking all email attachments only",
+          "Using a wildcard certificate",
+          "Disabling backups"
+        ],
+        "explanation": "Layered defense - it's never one thing.",
+        "page": "21"
+      }
+    ]
   },
   "2.2 - Other Social Engineering Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1755,7 +2548,30 @@
         "explanation": "Create fake users, create content, post, amplify, real users share, mass media picks it up."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Fake accounts post false stories on social media, which real users share until news outlets report them. What is this?",
+        "correctAnswer": "Misinformation/disinformation campaign",
+        "incorrectAnswers": [
+          "Brand impersonation",
+          "Watering hole attack",
+          "Business email compromise"
+        ],
+        "explanation": "Influence campaigns are amplified through social media and picked up by mass media.",
+        "page": "22"
+      },
+      {
+        "question": "Thousands of fake sites pretend to be a well-known soft drink company and offer prizes that download malware. What attack is this?",
+        "correctAnswer": "Brand impersonation",
+        "incorrectAnswers": [
+          "Influence campaign",
+          "Typosquatting only",
+          "Pretexting"
+        ],
+        "explanation": "Brand impersonation uses well-known brands; malware infection is almost guaranteed.",
+        "page": "22"
+      }
+    ]
   },
   "2.3 - Memory Injections": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1802,7 +2618,30 @@
         "explanation": "Malware runs in memory, so memory forensics can find it."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Forensics finds malware running inside a legitimate process, loaded from a malicious library path. What attack occurred?",
+        "correctAnswer": "DLL injection",
+        "incorrectAnswers": [
+          "Buffer overflow",
+          "SQL injection",
+          "Race condition"
+        ],
+        "explanation": "Attackers inject a path to a malicious DLL so it runs as part of the target process.",
+        "page": "22"
+      },
+      {
+        "question": "Anti-virus scans of files find nothing, but the analyst suspects malware hiding in running processes. What should they use?",
+        "correctAnswer": "Memory forensics",
+        "incorrectAnswers": [
+          "A CRL check",
+          "A gap analysis",
+          "A port scan"
+        ],
+        "explanation": "Malware runs in memory; memory forensics can find the malicious code.",
+        "page": "22"
+      }
+    ]
   },
   "2.3 - Buffer Overflows": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1839,7 +2678,30 @@
         "explanation": "A repeatable overflow means the system can be compromised."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attacker sends input longer than a field expects, overwriting an adjacent variable. What vulnerability is this?",
+        "correctAnswer": "Buffer overflow",
+        "incorrectAnswers": [
+          "Race condition",
+          "Cross-site scripting",
+          "Directory traversal"
+        ],
+        "explanation": "A buffer overflow spills over into other memory areas.",
+        "page": "23"
+      },
+      {
+        "question": "A developer wants to prevent buffer overflows in new code. What should they do?",
+        "correctAnswer": "Perform bounds checking",
+        "incorrectAnswers": [
+          "Use longer passwords",
+          "Add a CRL",
+          "Use key escrow"
+        ],
+        "explanation": "Developers need to perform bounds checking.",
+        "page": "23"
+      }
+    ]
   },
   "2.3 - Race Conditions": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1886,7 +2748,30 @@
         "explanation": "The attack used Bluetooth against the infotainment system."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A program checks a file's permissions, then a moment later uses the file - and an attacker swaps the file in between. What vulnerability is this?",
+        "correctAnswer": "Time-of-check to time-of-use (TOCTOU)",
+        "incorrectAnswers": [
+          "Buffer overflow",
+          "SQL injection",
+          "DLL injection"
+        ],
+        "explanation": "Something can happen between the check and the use.",
+        "page": "23"
+      },
+      {
+        "question": "Two users transfer money at the same moment and the account ends up with the wrong balance. What is the root cause?",
+        "correctAnswer": "A race condition without proper validation",
+        "incorrectAnswers": [
+          "A weak password",
+          "An expired certificate",
+          "Missing backups"
+        ],
+        "explanation": "Race conditions happen when things occur at the same time without planning.",
+        "page": "23"
+      }
+    ]
   },
   "2.3 - Malicious Updates": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1923,7 +2808,30 @@
         "explanation": "Attackers gained access to the SolarWinds development system."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A pop-up during browsing says your software is outdated and offers an update button. What should you do?",
+        "correctAnswer": "Visit the developer's site directly to get updates",
+        "incorrectAnswers": [
+          "Click the update button",
+          "Disable security controls and install",
+          "Forward it to coworkers"
+        ],
+        "explanation": "Don't trust a random update button; confirm the source.",
+        "page": "24"
+      },
+      {
+        "question": "An organization's trusted vendor pushed an automatic update that contained attacker code. Which attack does this resemble?",
+        "correctAnswer": "The SolarWinds Orion supply chain attack",
+        "incorrectAnswers": [
+          "Mirai botnet",
+          "POODLE",
+          "Heartbleed"
+        ],
+        "explanation": "Attackers added malicious code to SolarWinds updates.",
+        "page": "24"
+      }
+    ]
   },
   "2.3 - Operating System Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -1960,7 +2868,19 @@
         "explanation": "More code means more opportunities for a security issue."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A critical OS patch is released, but the admin worries it may break a key application. What is the BEST approach?",
+        "correctAnswer": "Test the patch before deployment and have a fallback plan",
+        "incorrectAnswers": [
+          "Never install the patch",
+          "Deploy to all systems immediately with no backup",
+          "Wait a year"
+        ],
+        "explanation": "Patches may require testing; have a fallback plan.",
+        "page": "24"
+      }
+    ]
   },
   "2.3 - SQL Injection": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2007,7 +2927,30 @@
         "explanation": "It could also add users or cause denial of service."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attacker enters ' OR '1' = '1 into a login form and sees every user record. What attack is this?",
+        "correctAnswer": "SQL injection",
+        "incorrectAnswers": [
+          "Cross-site scripting",
+          "Buffer overflow",
+          "CSRF"
+        ],
+        "explanation": "SQLi puts your own SQL requests into an existing application.",
+        "page": "25"
+      },
+      {
+        "question": "What is the underlying reason code injection attacks succeed?",
+        "correctAnswer": "The application doesn't properly handle input",
+        "incorrectAnswers": [
+          "The firewall is missing",
+          "The server has no UPS",
+          "The certificate is expired"
+        ],
+        "explanation": "Code injection is enabled by bad programming.",
+        "page": "25"
+      }
+    ]
   },
   "2.3 - Cross-site Scripting": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2080,7 +3023,41 @@
         "page": "25"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attacker emails a link that runs a script from a trusted site's search box and sends session cookies to the attacker. What attack is this?",
+        "correctAnswer": "Reflected (non-persistent) XSS",
+        "incorrectAnswers": [
+          "Stored (persistent) XSS",
+          "SQL injection",
+          "DNS poisoning"
+        ],
+        "explanation": "The script embedded in the URL executes in the victim's browser.",
+        "page": "25"
+      },
+      {
+        "question": "A malicious script posted in a social network comment runs for everyone who views the page. What attack is this?",
+        "correctAnswer": "Stored (persistent) XSS",
+        "incorrectAnswers": [
+          "Reflected XSS",
+          "CSRF",
+          "Replay attack"
+        ],
+        "explanation": "Persistent XSS stores the payload so all viewers receive it.",
+        "page": "25"
+      },
+      {
+        "question": "What should a web developer do to BEST prevent XSS?",
+        "correctAnswer": "Validate input so users can't add scripts",
+        "incorrectAnswers": [
+          "Enable OCSP stapling",
+          "Use a longer session ID",
+          "Add a honeypot"
+        ],
+        "explanation": "Validate input; don't allow users to add their own scripts.",
+        "page": "25"
+      }
+    ]
   },
   "2.3 - Hardware Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2117,7 +3094,30 @@
         "explanation": "The risk needs to be compared to the return."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A manufacturer announces a product is end of service life. What is the main security concern?",
+        "correctAnswer": "No more security patches or updates",
+        "incorrectAnswers": [
+          "The product can no longer be powered on",
+          "The product will be encrypted",
+          "The product's warranty doubles"
+        ],
+        "explanation": "EOSL means support is no longer available, including patches.",
+        "page": "26"
+      },
+      {
+        "question": "A legacy system can't be upgraded but must stay in service. What is the BEST mitigation?",
+        "correctAnswer": "Add firewall rules and IPS signatures to protect it",
+        "incorrectAnswers": [
+          "Connect it directly to the Internet",
+          "Remove all logging",
+          "Give users admin rights"
+        ],
+        "explanation": "Legacy platforms may require additional security protections.",
+        "page": "26"
+      }
+    ]
   },
   "2.3 - Virtualization Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2154,7 +3154,30 @@
         "explanation": "The hypervisor reuses resources like RAM between VMs."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attacker breaks out of a guest VM and takes control of the host and other VMs. What is this called?",
+        "correctAnswer": "VM escape",
+        "incorrectAnswers": [
+          "Resource reuse",
+          "Sideloading",
+          "Jailbreaking"
+        ],
+        "explanation": "VM escape gives control of the host and other guests.",
+        "page": "27"
+      },
+      {
+        "question": "Data from one VM is found in another VM's memory after the hypervisor reallocated RAM. What vulnerability is this?",
+        "correctAnswer": "Resource reuse",
+        "incorrectAnswers": [
+          "VM escape",
+          "Race condition",
+          "Directory traversal"
+        ],
+        "explanation": "Resources reused between VMs can inadvertently share data; patches can mitigate.",
+        "page": "27"
+      }
+    ]
   },
   "2.3 - Cloud-specific Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2201,7 +3224,30 @@
         "explanation": "The notes reference CVSS >= 7.0."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A cloud admin console is accessed with only a password. Per the notes, what simple best practice is commonly missing?",
+        "correctAnswer": "MFA for management console users",
+        "incorrectAnswers": [
+          "A CRL",
+          "Data masking",
+          "A cold site"
+        ],
+        "explanation": "76% of organizations aren't using MFA for management console users.",
+        "page": "27"
+      },
+      {
+        "question": "Attackers exploit an unpatched cloud web app to run their own code on the server. Which attack is this?",
+        "correctAnswer": "Remote code execution",
+        "incorrectAnswers": [
+          "Directory traversal",
+          "Denial of service",
+          "Authentication bypass"
+        ],
+        "explanation": "RCE takes advantage of unpatched systems.",
+        "page": "27"
+      }
+    ]
   },
   "2.3 - Supply Chain Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2258,7 +3304,41 @@
         "explanation": "Including Fortune 500 and the US Federal Government."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants more confidence that its new switches aren't counterfeit. What is the BEST practice?",
+        "correctAnswer": "Use a small, tightly controlled supplier base",
+        "incorrectAnswers": [
+          "Buy from the cheapest reseller",
+          "Skip testing new devices",
+          "Use many unknown suppliers"
+        ],
+        "explanation": "A small supplier base gives tighter control of vendors.",
+        "page": "28"
+      },
+      {
+        "question": "An HVAC contractor has network access to your stores. What should be included in their contract?",
+        "correctAnswer": "Ongoing security audits of the provider",
+        "incorrectAnswers": [
+          "Unlimited admin access",
+          "No monitoring",
+          "Shared passwords with all staff"
+        ],
+        "explanation": "Consider ongoing security audits of all providers, included with the contract.",
+        "page": "28"
+      },
+      {
+        "question": "What should be confirmed during the initial installation of new software?",
+        "correctAnswer": "The digital signature",
+        "incorrectAnswers": [
+          "The CPU temperature",
+          "The DNS TXT record",
+          "The CRL size"
+        ],
+        "explanation": "A digital signature should be confirmed during installation.",
+        "page": "28"
+      }
+    ]
   },
   "2.3 - Misconfiguration Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2309,7 +3389,41 @@
         "page": "29"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A researcher finds a company's cloud storage bucket publicly readable. What misconfiguration is this?",
+        "correctAnswer": "Open permissions",
+        "incorrectAnswers": [
+          "Insecure protocols",
+          "Default settings",
+          "Unsecured admin accounts"
+        ],
+        "explanation": "Open permissions are increasingly common with cloud storage.",
+        "page": "28"
+      },
+      {
+        "question": "An admin manages switches with Telnet. What should they use instead?",
+        "correctAnswer": "SSH",
+        "incorrectAnswers": [
+          "FTP",
+          "IMAP",
+          "HTTP"
+        ],
+        "explanation": "Telnet is unencrypted; use the encrypted versions like SSH.",
+        "page": "29"
+      },
+      {
+        "question": "Thousands of IoT cameras are taken over using their factory login settings. What does this resemble?",
+        "correctAnswer": "The Mirai botnet exploiting default settings",
+        "incorrectAnswers": [
+          "Heartbleed",
+          "SolarWinds",
+          "POODLE"
+        ],
+        "explanation": "Mirai takes advantage of default configurations.",
+        "page": "29"
+      }
+    ]
   },
   "2.3 - Mobile Device Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2356,7 +3470,30 @@
         "explanation": "Jailbreaking gives uncontrolled access and circumvents security features."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A user installs an app from a website instead of the app store. What is this, and what is the risk?",
+        "correctAnswer": "Sideloading; a malicious app could bypass app store controls",
+        "incorrectAnswers": [
+          "Rooting; the phone gets faster",
+          "Tethering; data is encrypted",
+          "Geofencing; the app is blocked"
+        ],
+        "explanation": "Sideloading installs apps manually without an app store.",
+        "page": "29"
+      },
+      {
+        "question": "An employee jailbreaks their company iPhone. What is the impact on mobile device management?",
+        "correctAnswer": "The MDM becomes relatively useless",
+        "incorrectAnswers": [
+          "The MDM gets more control",
+          "Nothing changes",
+          "The phone is automatically wiped"
+        ],
+        "explanation": "Jailbreaking circumvents security features.",
+        "page": "29"
+      }
+    ]
   },
   "2.3 - Zero-day Vulnerabilities": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2393,7 +3530,19 @@
         "explanation": "It was a Secure Boot zero-day vulnerability."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Attackers exploit a flaw the vendor doesn't know about and no patch exists. What is this?",
+        "correctAnswer": "A zero-day attack",
+        "incorrectAnswers": [
+          "A replay attack",
+          "A downgrade attack",
+          "A logic bomb"
+        ],
+        "explanation": "Zero-day attacks have no patch or method of mitigation.",
+        "page": "29"
+      }
+    ]
   },
   "2.4 - An Overview of Malware": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2430,7 +3579,30 @@
         "explanation": "Your computer must run a program - email link, pop-up, drive-by download, or worm."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Users can still log in, but every document and picture is encrypted and a message demands payment. What malware is this?",
+        "correctAnswer": "Ransomware",
+        "incorrectAnswers": [
+          "Spyware",
+          "Bloatware",
+          "Rootkit"
+        ],
+        "explanation": "Ransomware encrypts data files; the OS remains available - they want you running, but not working.",
+        "page": "30"
+      },
+      {
+        "question": "A company wants the BEST protection so it never has to pay a ransomware demand. What should it have?",
+        "correctAnswer": "An offline backup",
+        "incorrectAnswers": [
+          "A wildcard certificate",
+          "A larger hard drive",
+          "A faster Internet connection"
+        ],
+        "explanation": "Always have a backup - an offline backup, ideally.",
+        "page": "30"
+      }
+    ]
   },
   "2.4 - Viruses and Worms": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2492,7 +3664,41 @@
         "page": "30"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Malware spreads across the network to unpatched systems with no user clicking anything. What is it MOST likely?",
+        "correctAnswer": "A worm",
+        "incorrectAnswers": [
+          "A macro virus",
+          "Bloatware",
+          "A logic bomb"
+        ],
+        "explanation": "Worms self-replicate over the network without user action.",
+        "page": "30"
+      },
+      {
+        "question": "Anti-virus finds no malicious files, but malware is running in memory after a user clicked a link. What type is MOST likely?",
+        "correctAnswer": "Fileless virus",
+        "incorrectAnswers": [
+          "Boot sector virus",
+          "Macro virus",
+          "Program virus"
+        ],
+        "explanation": "Fileless viruses operate in memory and avoid anti-virus detection.",
+        "page": "30"
+      },
+      {
+        "question": "In a fileless attack, the analyst finds an auto-start entry was added. Where was it MOST likely added?",
+        "correctAnswer": "The Registry",
+        "incorrectAnswers": [
+          "The CRL",
+          "The boot sector",
+          "A DNS TXT record"
+        ],
+        "explanation": "The fileless process ends by adding an auto-start to the Registry.",
+        "page": "31"
+      }
+    ]
   },
   "2.4 - Spyware and Bloatware": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2529,7 +3735,30 @@
         "explanation": "Third-party uninstallers are probably not the first option."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A new laptop came with many unwanted manufacturer apps that slow it down. What should the technician try FIRST?",
+        "correctAnswer": "Remove them with the built-in uninstaller",
+        "incorrectAnswers": [
+          "Use a third-party cleaner first",
+          "Reinstall the BIOS",
+          "Ignore them"
+        ],
+        "explanation": "Bloatware: use the built-in uninstaller; third-party cleaners are probably not the first option.",
+        "page": "31"
+      },
+      {
+        "question": "A user installed 'free security software' and now their browsing habits are being sent to a third party. What is this?",
+        "correctAnswer": "Spyware",
+        "incorrectAnswers": [
+          "Bloatware",
+          "Ransomware",
+          "A worm"
+        ],
+        "explanation": "Spyware can trick you into installing via fake security software and monitors browsing.",
+        "page": "31"
+      }
+    ]
   },
   "2.4 - Other Malware Types": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2596,7 +3825,41 @@
         "explanation": "It began disabling power at a predetermined time."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A disgruntled admin plants code that deletes the payroll database if their account is ever disabled. What is this?",
+        "correctAnswer": "Logic bomb",
+        "incorrectAnswers": [
+          "Rootkit",
+          "Keylogger",
+          "Worm"
+        ],
+        "explanation": "A logic bomb waits for a predefined event and is often left by someone with a grudge.",
+        "page": "32"
+      },
+      {
+        "question": "Malware modified the kernel and doesn't appear in Task Manager or to anti-virus. What is it MOST likely?",
+        "correctAnswer": "Rootkit",
+        "incorrectAnswers": [
+          "Keylogger",
+          "Bloatware",
+          "Logic bomb"
+        ],
+        "explanation": "Rootkits modify core system files and can be invisible to the OS and anti-virus.",
+        "page": "32"
+      },
+      {
+        "question": "What is the BEST way to help prevent logic bombs?",
+        "correctAnswer": "Formal change control, file monitoring, and constant auditing",
+        "incorrectAnswers": [
+          "Signature-based anti-virus only",
+          "Longer passwords",
+          "Wildcard certificates"
+        ],
+        "explanation": "Logic bombs have no predefined signatures, so process, monitoring, and auditing help.",
+        "page": "32"
+      }
+    ]
   },
   "2.4 - Physical Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2643,7 +3906,30 @@
         "explanation": "Environmental attacks also target power and fire suppression."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Attackers copied employee access badges with a cheap reader. What control BEST reduces this risk?",
+        "correctAnswer": "Require another authentication factor along with the badge",
+        "incorrectAnswers": [
+          "Make badges larger",
+          "Remove the badge readers",
+          "Use only CCTV"
+        ],
+        "explanation": "RFID cloning takes seconds; this is why we have MFA.",
+        "page": "32"
+      },
+      {
+        "question": "An attacker targets a data center's cooling system so servers overheat. What type of attack is this?",
+        "correctAnswer": "Environmental attack",
+        "incorrectAnswers": [
+          "RFID cloning",
+          "Brute force",
+          "Watering hole"
+        ],
+        "explanation": "Environmental attacks target HVAC, power, and fire suppression.",
+        "page": "32"
+      }
+    ]
   },
   "2.4 - Denial of Service": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2700,7 +3986,41 @@
         "explanation": "DoS can create a smokescreen for some other exploit."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A website is overwhelmed by traffic from millions of infected home computers at once. What attack is this?",
+        "correctAnswer": "DDoS using a botnet",
+        "incorrectAnswers": [
+          "Replay attack",
+          "On-path attack",
+          "Logic bomb"
+        ],
+        "explanation": "DDoS launches an army of computers; attackers use botnets.",
+        "page": "33"
+      },
+      {
+        "question": "An attacker sends small spoofed queries to open DNS and NTP servers so large responses flood the victim. What is this?",
+        "correctAnswer": "DDoS reflection and amplification",
+        "incorrectAnswers": [
+          "DNS poisoning",
+          "Domain hijacking",
+          "ARP poisoning"
+        ],
+        "explanation": "Reflection and amplification turn a small attack into a big one using protocols with little authentication.",
+        "page": "33"
+      },
+      {
+        "question": "A network slows to a halt after someone connects two switch ports with no STP. What is this?",
+        "correctAnswer": "An unintentional (friendly) DoS",
+        "incorrectAnswers": [
+          "A DDoS amplification attack",
+          "A replay attack",
+          "A zero-day attack"
+        ],
+        "explanation": "A layer 2 loop without STP is an unintentional network DoS.",
+        "page": "33"
+      }
+    ]
   },
   "2.4 - DNS Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2757,7 +4077,41 @@
         "explanation": "Typosquatting/brandjacking takes advantage of poor spelling."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A user's PC goes to a fake bank site even though DNS is fine. The analyst finds an entry for the bank in a local file. What happened?",
+        "correctAnswer": "The client hosts file was modified (DNS poisoning)",
+        "incorrectAnswers": [
+          "Domain hijacking",
+          "Typosquatting",
+          "ARP poisoning"
+        ],
+        "explanation": "The host file takes precedence over DNS queries.",
+        "page": "33"
+      },
+      {
+        "question": "Attackers gain access to a company's domain registrar account and point its domains to their servers. What is this?",
+        "correctAnswer": "Domain hijacking",
+        "incorrectAnswers": [
+          "DNS filtering",
+          "Typosquatting",
+          "Pretexting"
+        ],
+        "explanation": "Control the domain registration and you control where traffic flows.",
+        "page": "33"
+      },
+      {
+        "question": "Someone registers professormeser.com hoping users mistype the real name. What is this?",
+        "correctAnswer": "Typosquatting (URL hijacking)",
+        "incorrectAnswers": [
+          "Domain hijacking",
+          "DNS poisoning",
+          "Brand impersonation only"
+        ],
+        "explanation": "A typing error is a type of URL hijacking.",
+        "page": "33"
+      }
+    ]
   },
   "2.4 - Wireless Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2824,7 +4178,30 @@
         "explanation": "The jammer needs to be somewhere close."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Wi-Fi users keep getting disconnected and the analyst sees spoofed management frames. Which standard would help?",
+        "correctAnswer": "802.11w",
+        "incorrectAnswers": [
+          "802.1X",
+          "802.3",
+          "802.11b"
+        ],
+        "explanation": "802.11w encrypts important management frames like deauthenticate.",
+        "page": "34"
+      },
+      {
+        "question": "Someone is intentionally transmitting interference to stop a company's wireless network. What should the team do to find the source?",
+        "correctAnswer": "Fox hunt with a directional antenna and attenuator",
+        "incorrectAnswers": [
+          "Reset all user passwords",
+          "Revoke certificates",
+          "Update DNS records"
+        ],
+        "explanation": "Jamming must be close; you need the right equipment to hunt it down.",
+        "page": "34"
+      }
+    ]
   },
   "2.4 - On-path Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2861,7 +4238,30 @@
         "explanation": "Malware/Trojan on the same computer does the proxy work."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "On the local subnet, an attacker sends fake ARP replies so traffic flows through their laptop. What attack is this?",
+        "correctAnswer": "ARP poisoning (on-path)",
+        "incorrectAnswers": [
+          "DNS amplification",
+          "Replay attack",
+          "Session riding"
+        ],
+        "explanation": "ARP poisoning is an on-path attack on the local IP subnet; ARP has no security.",
+        "page": "34"
+      },
+      {
+        "question": "Malware in the user's browser waits for them to log in to their bank, then steals funds while everything looks normal. What attack is this?",
+        "correctAnswer": "On-path browser attack",
+        "incorrectAnswers": [
+          "On-path network attack",
+          "Watering hole",
+          "SQL injection"
+        ],
+        "explanation": "The malware does the proxy work on the same computer as the victim.",
+        "page": "34"
+      }
+    ]
   },
   "2.4 - Replay Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2923,7 +4323,41 @@
         "page": "35"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attacker captures a user's password hash on the network and uses it to log in as that user. What attack is this?",
+        "correctAnswer": "Pass the hash",
+        "incorrectAnswers": [
+          "Password spraying",
+          "Birthday attack",
+          "Brute force"
+        ],
+        "explanation": "Pass the hash replays captured credentials.",
+        "page": "35"
+      },
+      {
+        "question": "On public Wi-Fi, an attacker grabs a victim's session ID and uses it to access their web account. What attack is this?",
+        "correctAnswer": "Session hijacking (sidejacking)",
+        "incorrectAnswers": [
+          "Domain hijacking",
+          "DNS poisoning",
+          "RFID cloning"
+        ],
+        "explanation": "The attacker intercepts the session ID and uses it to access the server.",
+        "page": "35"
+      },
+      {
+        "question": "A site wants to stop attackers from capturing session IDs. What is the BEST defense?",
+        "correctAnswer": "Encrypt end-to-end with HTTPS",
+        "incorrectAnswers": [
+          "Use longer usernames",
+          "Disable cookies on the server",
+          "Use HTTP only"
+        ],
+        "explanation": "They can't capture your session ID if they can't see it.",
+        "page": "36"
+      }
+    ]
   },
   "2.4 - Malicious Code": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -2960,7 +4394,30 @@
         "explanation": "It breached healthcare information for an entire country."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Ransomware spreads using a vulnerability in Windows SMBv1. Which real-world attack does this describe?",
+        "correctAnswer": "WannaCry",
+        "incorrectAnswers": [
+          "Mirai",
+          "SolarWinds",
+          "Heartbleed"
+        ],
+        "explanation": "WannaCry exploited a Windows SMBv1 vulnerability for arbitrary code execution.",
+        "page": "36"
+      },
+      {
+        "question": "Which protections are listed against malicious code?",
+        "correctAnswer": "Anti-malware, firewall, updates, and secure computing habits",
+        "incorrectAnswers": [
+          "Only a firewall",
+          "Only a UPS",
+          "Only key escrow"
+        ],
+        "explanation": "Protection comes from many different sources.",
+        "page": "36"
+      }
+    ]
   },
   "2.4 - Application Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3044,7 +4501,52 @@
         "page": "37"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A logged-in bank user clicks a link that silently submits a funds transfer to the attacker. What attack is this?",
+        "correctAnswer": "Cross-site request forgery (CSRF)",
+        "incorrectAnswers": [
+          "Cross-site scripting",
+          "SQL injection",
+          "Directory traversal"
+        ],
+        "explanation": "CSRF takes advantage of the trust a web application has for the user.",
+        "page": "37"
+      },
+      {
+        "question": "An attacker requests ../../Windows files from a web server and reads them. What attack is this?",
+        "correctAnswer": "Directory traversal",
+        "incorrectAnswers": [
+          "CSRF",
+          "Buffer overflow",
+          "Replay attack"
+        ],
+        "explanation": "Directory traversal reads files outside the website's file directory.",
+        "page": "37"
+      },
+      {
+        "question": "A regular user exploits a kernel bug to gain SYSTEM rights. What should be done FIRST to mitigate this class of attack?",
+        "correctAnswer": "Patch quickly",
+        "incorrectAnswers": [
+          "Disable the firewall",
+          "Add more user accounts",
+          "Use a wildcard certificate"
+        ],
+        "explanation": "Privilege escalation vulnerabilities are high-priority patches.",
+        "page": "37"
+      },
+      {
+        "question": "Which mitigation prevents a buffer overrun from targeting a known memory address?",
+        "correctAnswer": "Address space layout randomization (ASLR)",
+        "incorrectAnswers": [
+          "Data masking",
+          "Key escrow",
+          "Tokenization"
+        ],
+        "explanation": "ASLR prevents a buffer overrun at a known memory address.",
+        "page": "37"
+      }
+    ]
   },
   "2.4 - Cryptographic Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3111,7 +4613,41 @@
         "explanation": "The victim talks to the attacker over HTTP while the attacker uses HTTPS to the server."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An attacker on the path forces a browser and server to use an old protocol with known weaknesses. What attack is this?",
+        "correctAnswer": "Downgrade attack",
+        "incorrectAnswers": [
+          "Birthday attack",
+          "Replay attack",
+          "Spraying attack"
+        ],
+        "explanation": "POODLE forced fallback to SSL 3.0.",
+        "page": "38"
+      },
+      {
+        "question": "An attacker generates many versions of a document until one has the same hash as the original. What attack is this?",
+        "correctAnswer": "Birthday attack",
+        "incorrectAnswers": [
+          "Downgrade attack",
+          "Pass the hash",
+          "SSL stripping"
+        ],
+        "explanation": "A birthday attack finds a hash collision; protect with a large hash output size.",
+        "page": "38"
+      },
+      {
+        "question": "A user types a site's address, but an on-path attacker keeps them on HTTP while the attacker talks HTTPS to the server. What is this?",
+        "correctAnswer": "SSL stripping",
+        "incorrectAnswers": [
+          "Birthday attack",
+          "Domain hijacking",
+          "CSRF"
+        ],
+        "explanation": "The attacker rewrites URLs between HTTP and HTTPS.",
+        "page": "38"
+      }
+    ]
   },
   "2.4 - Password Attacks": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3168,7 +4704,30 @@
         "explanation": "Brute force tries every combination until the hash matches."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Logs show one login attempt per account, each using 'Password1', across hundreds of accounts, with no lockouts. What attack is this?",
+        "correctAnswer": "Spraying attack",
+        "incorrectAnswers": [
+          "Online brute force of one account",
+          "Birthday attack",
+          "Pass the hash"
+        ],
+        "explanation": "Spraying tries common passwords on many accounts to avoid lockouts.",
+        "page": "39"
+      },
+      {
+        "question": "An attacker steals the password hash file and cracks it on their own GPUs. What attack is this?",
+        "correctAnswer": "Offline brute force",
+        "incorrectAnswers": [
+          "Online brute force",
+          "Spraying",
+          "Phishing"
+        ],
+        "explanation": "Offline brute force calculates hashes and compares them to stored hashes.",
+        "page": "39"
+      }
+    ]
   },
   "2.4 - Indicators of Compromise": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3241,7 +4800,52 @@
         "page": "40"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A user logs in from Omaha and three minutes later from Melbourne. What should the analyst suspect?",
+        "correctAnswer": "Impossible travel - a compromised account",
+        "incorrectAnswers": [
+          "Normal VPN behavior",
+          "A failed backup",
+          "A wildcard certificate"
+        ],
+        "explanation": "Impossible travel should be easy to identify with log analysis.",
+        "page": "40"
+      },
+      {
+        "question": "Authentication and firewall logs for last weekend are missing from a server. What does this MOST likely indicate?",
+        "correctAnswer": "An attacker covering their tracks",
+        "incorrectAnswers": [
+          "A normal log rotation",
+          "A successful backup",
+          "Good log hygiene"
+        ],
+        "explanation": "Missing logs are certainly suspicious.",
+        "page": "40"
+      },
+      {
+        "question": "A compromised workstation can no longer reach the anti-malware vendor's site or update servers. What IOC is this?",
+        "correctAnswer": "Blocked content",
+        "incorrectAnswers": [
+          "Impossible travel",
+          "Concurrent session usage",
+          "Out-of-cycle logging"
+        ],
+        "explanation": "Attackers block patches and removal tools to stay as long as possible.",
+        "page": "39"
+      },
+      {
+        "question": "Company data appears on a public website before anyone noticed a breach. Which IOC is this?",
+        "correctAnswer": "Published/documented",
+        "incorrectAnswers": [
+          "Resource consumption",
+          "Account lockout",
+          "Blocked content"
+        ],
+        "explanation": "The entire attack may go unnoticed until attackers publish the data.",
+        "page": "40"
+      }
+    ]
   },
   "2.5 - Segmentation and Access Control": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3298,7 +4902,41 @@
         "explanation": "Be careful when configuring ACLs."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Users should never talk directly to database servers. What is the BEST control?",
+        "correctAnswer": "Segment the network",
+        "incorrectAnswers": [
+          "Remove the firewall",
+          "Use a wildcard certificate",
+          "Disable logging"
+        ],
+        "explanation": "Security segmentation: users shouldn't talk directly to database servers.",
+        "page": "40"
+      },
+      {
+        "question": "An admin wants only applications from a trusted software publisher to run. Which allow list method is BEST?",
+        "correctAnswer": "Certificate",
+        "incorrectAnswers": [
+          "Path",
+          "Network zone",
+          "Time of day"
+        ],
+        "explanation": "Allow digitally signed apps from certain publishers.",
+        "page": "40"
+      },
+      {
+        "question": "PCI compliance requires card data systems to be separated from other systems. What should be implemented?",
+        "correctAnswer": "Segmentation",
+        "incorrectAnswers": [
+          "Steganography",
+          "Key stretching",
+          "A honeyfile"
+        ],
+        "explanation": "Compliance can mandate segmentation (PCI).",
+        "page": "40"
+      }
+    ]
   },
   "2.5 - Mitigation Techniques": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3355,7 +4993,52 @@
         "explanation": "Sensors include IPS, firewall logs, and authentication logs."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A laptop connecting to the network has an outdated EDR version. What should happen?",
+        "correctAnswer": "Quarantine it on a private VLAN until corrected",
+        "incorrectAnswers": [
+          "Give it full access",
+          "Wipe the laptop immediately",
+          "Disable the firewall"
+        ],
+        "explanation": "Systems out of compliance are quarantined and rechecked after corrections.",
+        "page": "41"
+      },
+      {
+        "question": "Users currently run with administrator rights on their desktops. Which principle should be applied?",
+        "correctAnswer": "Least privilege",
+        "incorrectAnswers": [
+          "Implicit allow",
+          "Open permissions",
+          "Shared accounts"
+        ],
+        "explanation": "Don't allow users to run with administrative privileges.",
+        "page": "41"
+      },
+      {
+        "question": "A zero-day affecting servers is announced and a vendor releases an emergency fix. What should be applied?",
+        "correctAnswer": "An emergency out-of-band update",
+        "incorrectAnswers": [
+          "Wait for next month's patches",
+          "Disable patching",
+          "Remove monitoring"
+        ],
+        "explanation": "Emergency out-of-band updates address zero-day discoveries.",
+        "page": "41"
+      },
+      {
+        "question": "Old hard drives with company data are being retired. What should the company have?",
+        "correctAnswer": "A formal decommissioning policy",
+        "incorrectAnswers": [
+          "Throw them in the trash",
+          "Sell them as-is",
+          "Store them in an unlocked closet"
+        ],
+        "explanation": "Don't throw your data into the trash; recycle or destroy the device.",
+        "page": "41"
+      }
+    ]
   },
   "2.5 - Hardening Techniques": {
     "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
@@ -3428,7 +5111,41 @@
         "page": "42"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company needs endpoint protection that uses behavioral analysis and can automatically isolate an infected system. What should it deploy?",
+        "correctAnswer": "EDR",
+        "incorrectAnswers": [
+          "A signature-only anti-virus",
+          "A UPS",
+          "A CRL"
+        ],
+        "explanation": "EDR detects with behavioral analysis and can isolate, quarantine, and roll back.",
+        "page": "42"
+      },
+      {
+        "question": "A server has an application listening on ports 0 through 65,535. What is the BEST hardening step?",
+        "correctAnswer": "Close everything except required ports and verify with Nmap",
+        "incorrectAnswers": [
+          "Leave the ports open",
+          "Add more services",
+          "Change the server name"
+        ],
+        "explanation": "Every open port is a possible entry point.",
+        "page": "42"
+      },
+      {
+        "question": "A new switch's management interface still uses the factory password. What should be done?",
+        "correctAnswer": "Change the default password",
+        "incorrectAnswers": [
+          "Leave it so the vendor can help",
+          "Disable logging",
+          "Open it to the Internet"
+        ],
+        "explanation": "Change default settings; add additional security.",
+        "page": "42"
+      }
+    ]
   },
   "3.1 - Cloud Infrastructures": {
     "domain": "3.0 - Security Architecture",
@@ -3523,7 +5240,52 @@
         "page": "43"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company moves to IaaS. Who is responsible for patching the guest operating systems?",
+        "correctAnswer": "The customer",
+        "incorrectAnswers": [
+          "The cloud provider",
+          "No one",
+          "The network carrier"
+        ],
+        "explanation": "In IaaS, operating systems are customer managed per the responsibility matrix.",
+        "page": "43"
+      },
+      {
+        "question": "A team wants every new environment built exactly the same way every time from versioned definitions. What should it use?",
+        "correctAnswer": "Infrastructure as code",
+        "incorrectAnswers": [
+          "Manual server builds",
+          "A monolithic application",
+          "A cold site"
+        ],
+        "explanation": "IaC uses code to build a perfect version every time.",
+        "page": "43"
+      },
+      {
+        "question": "A developer wants to run individual event-triggered functions without managing any operating system. What should they use?",
+        "correctAnswer": "Serverless architecture (FaaS)",
+        "incorrectAnswers": [
+          "IaaS virtual machines",
+          "On-premises servers",
+          "A monolithic application"
+        ],
+        "explanation": "Serverless removes the OS from the equation; it's managed by a third party.",
+        "page": "43"
+      },
+      {
+        "question": "One huge application is hard to change and an outage takes everything down. What architecture would contain outages and scale parts independently?",
+        "correctAnswer": "Microservices with APIs",
+        "incorrectAnswers": [
+          "A larger monolithic app",
+          "A cold site",
+          "A single database server"
+        ],
+        "explanation": "Microservices are scalable, resilient, and outages are contained.",
+        "page": "43"
+      }
+    ]
   },
   "3.1 - Network Infrastructure Concepts": {
     "domain": "3.0 - Security Architecture",
@@ -3580,7 +5342,30 @@
         "explanation": "There's no opportunity for mixing data."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Two customers' traffic must never be able to mix, even by misconfiguration. What is the BEST approach?",
+        "correctAnswer": "Physical isolation on separate switches",
+        "incorrectAnswers": [
+          "Same switch, same VLAN",
+          "A shared open proxy",
+          "A single flat network"
+        ],
+        "explanation": "Customer A on one switch and customer B on another - no opportunity for mixing data.",
+        "page": "44"
+      },
+      {
+        "question": "Devices on VLAN 10 and VLAN 20 must communicate. What is required?",
+        "correctAnswer": "A Layer 3 device / router",
+        "incorrectAnswers": [
+          "A hub",
+          "Nothing extra",
+          "A UPS"
+        ],
+        "explanation": "VLANs can't communicate without a Layer 3 device.",
+        "page": "44"
+      }
+    ]
   },
   "3.1 - Other Infrastructure Concepts": {
     "domain": "3.0 - Security Architecture",
@@ -3664,7 +5449,41 @@
         "page": "45"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A team wants to run many isolated apps with low overhead on one host, without a full OS per app. What should they use?",
+        "correctAnswer": "Application containers",
+        "incorrectAnswers": [
+          "One VM per app",
+          "Physical servers per app",
+          "A cold site"
+        ],
+        "explanation": "Containers are lightweight, use the host kernel, and isolate apps.",
+        "page": "44"
+      },
+      {
+        "question": "A power plant's SCADA system must be protected. What is the MOST important control?",
+        "correctAnswer": "Extensive segmentation with no access from the outside",
+        "incorrectAnswers": [
+          "Direct Internet access for vendors",
+          "Default passwords",
+          "Shared admin accounts"
+        ],
+        "explanation": "SCADA/ICS requires extensive segmentation.",
+        "page": "45"
+      },
+      {
+        "question": "A company is deploying smart lighting and thermostats. What is a major security concern?",
+        "correctAnswer": "Weak defaults from IoT manufacturers",
+        "incorrectAnswers": [
+          "Too much encryption",
+          "Excessive patching",
+          "Mandatory MFA"
+        ],
+        "explanation": "IoT manufacturers are not security professionals.",
+        "page": "44"
+      }
+    ]
   },
   "3.1 - Infrastructure Considerations": {
     "domain": "3.0 - Security Architecture",
@@ -3737,7 +5556,41 @@
         "page": "46"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants to cover ransomware downtime losses and legal costs. Which approach transfers this risk?",
+        "correctAnswer": "Cybersecurity insurance",
+        "incorrectAnswers": [
+          "A cold site",
+          "Platform diversity",
+          "A deny list"
+        ],
+        "explanation": "Risk transference: cybersecurity insurance.",
+        "page": "46"
+      },
+      {
+        "question": "An HVAC controller can't be patched by end users. What should the security team do?",
+        "correctAnswer": "Add additional security controls like a firewall",
+        "incorrectAnswers": [
+          "Ignore it",
+          "Remove all controls",
+          "Give it Internet access"
+        ],
+        "explanation": "Inability to patch may require additional controls.",
+        "page": "46"
+      },
+      {
+        "question": "Malware infects a workstation. Which recovery option is fastest according to the notes?",
+        "correctAnswer": "Reload from a corporate image",
+        "incorrectAnswers": [
+          "Reload the OS from original media",
+          "Rebuild by hand",
+          "Order a new computer"
+        ],
+        "explanation": "Corporate image: about 10 minutes vs. original media: about 1 hour.",
+        "page": "46"
+      }
+    ]
   },
   "3.2 - Secure Infrastructures": {
     "domain": "3.0 - Security Architecture",
@@ -3784,7 +5637,30 @@
         "explanation": "Network-level encryption includes IPsec tunnels and VPN connections."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An admin wants simpler firewall policies like 'Untrusted to Screened' instead of long IP lists. What should they use?",
+        "correctAnswer": "Security zones",
+        "incorrectAnswers": [
+          "Static IP ranges only",
+          "Key escrow",
+          "Steganography"
+        ],
+        "explanation": "Zone-based security is more flexible and secure than IP address ranges.",
+        "page": "47"
+      },
+      {
+        "question": "A company wants to reduce its attack surface. Which action helps MOST?",
+        "correctAnswer": "Block unused ports on the firewall",
+        "incorrectAnswers": [
+          "Open more services",
+          "Disable monitoring",
+          "Use default passwords"
+        ],
+        "explanation": "Minimize the surface: audit code, block ports, monitor traffic.",
+        "page": "47"
+      }
+    ]
   },
   "3.2 - Intrusion Prevention": {
     "domain": "3.0 - Security Architecture",
@@ -3831,7 +5707,41 @@
         "explanation": "Intrusion detection is commonly passive."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants malicious traffic blocked in real time before it reaches the core switch. How should the IPS be connected?",
+        "correctAnswer": "Inline (active monitoring)",
+        "incorrectAnswers": [
+          "On a port mirror (passive)",
+          "On a separate VLAN with no traffic",
+          "Only to the SIEM"
+        ],
+        "explanation": "Active monitoring is inline and can block in real time.",
+        "page": "48"
+      },
+      {
+        "question": "A security appliance fails. The business requires that traffic still flow so customers aren't affected. Which failure mode is this?",
+        "correctAnswer": "Fail-open",
+        "incorrectAnswers": [
+          "Fail-closed",
+          "Fail-safe lock",
+          "Fail-over to cold site"
+        ],
+        "explanation": "Fail-open: when a system fails, data continues to flow.",
+        "page": "48"
+      },
+      {
+        "question": "A team wants to analyze copies of traffic without any risk of blocking it. What should they deploy?",
+        "correctAnswer": "Passive monitoring with a tap or port monitor",
+        "incorrectAnswers": [
+          "An inline IPS",
+          "A reverse proxy",
+          "A jump server"
+        ],
+        "explanation": "Passive monitoring examines a copy of traffic and can't block it.",
+        "page": "48"
+      }
+    ]
   },
   "3.2 - Network Appliances": {
     "domain": "3.0 - Security Architecture",
@@ -3926,7 +5836,52 @@
         "page": "50"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Admins need a single hardened, monitored entry point into a secure network zone. What should be used?",
+        "correctAnswer": "A jump server",
+        "incorrectAnswers": [
+          "An open proxy",
+          "A load balancer",
+          "A honeypot"
+        ],
+        "explanation": "A jump server provides access to a protected network.",
+        "page": "48"
+      },
+      {
+        "question": "A company wants to control and filter employees' Internet web access. What should it deploy?",
+        "correctAnswer": "A forward proxy",
+        "incorrectAnswers": [
+          "A reverse proxy",
+          "An open proxy",
+          "A jump server"
+        ],
+        "explanation": "A forward proxy protects and controls user access to the Internet.",
+        "page": "49"
+      },
+      {
+        "question": "A company wants inbound Internet requests to hit a proxy before reaching its internal web server. What should it use?",
+        "correctAnswer": "A reverse proxy",
+        "incorrectAnswers": [
+          "A forward proxy",
+          "An open proxy",
+          "A VPN concentrator"
+        ],
+        "explanation": "A reverse proxy handles inbound traffic to your internal service.",
+        "page": "49"
+      },
+      {
+        "question": "A web farm needs servers to share the load, with outages invisible to users. What should be deployed?",
+        "correctAnswer": "A load balancer",
+        "incorrectAnswers": [
+          "A jump server",
+          "An open proxy",
+          "A honeynet"
+        ],
+        "explanation": "Load balancing distributes load and provides fault tolerance.",
+        "page": "50"
+      }
+    ]
   },
   "3.2 - Port Security": {
     "domain": "3.0 - Security Architecture",
@@ -3983,7 +5938,30 @@
         "explanation": "Also LDAP, TACACS+, and Kerberos."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants devices plugging into wall jacks to get no network access until they authenticate. What should it implement?",
+        "correctAnswer": "IEEE 802.1X",
+        "incorrectAnswers": [
+          "WPA2-PSK",
+          "A deny list",
+          "SNMP traps"
+        ],
+        "explanation": "802.1X is port-based NAC.",
+        "page": "50"
+      },
+      {
+        "question": "In an 802.1X setup, which component checks the user's credentials?",
+        "correctAnswer": "The authentication server (e.g., RADIUS)",
+        "incorrectAnswers": [
+          "The supplicant",
+          "The authenticator",
+          "The user's laptop"
+        ],
+        "explanation": "The authentication server validates the client credentials.",
+        "page": "50"
+      }
+    ]
   },
   "3.2 - Firewall Types": {
     "domain": "3.0 - Security Architecture",
@@ -4056,7 +6034,41 @@
         "page": "50"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants to block YouTube but allow other HTTPS traffic on the same port. Which firewall is needed?",
+        "correctAnswer": "A next-generation firewall (NGFW)",
+        "incorrectAnswers": [
+          "A traditional port-based firewall",
+          "A UPS",
+          "A load balancer"
+        ],
+        "explanation": "NGFWs control traffic flows based on the application.",
+        "page": "51"
+      },
+      {
+        "question": "An online store wants to stop SQL injection against its web application. What should it deploy?",
+        "correctAnswer": "A web application firewall (WAF)",
+        "incorrectAnswers": [
+          "A forward proxy",
+          "A jump server",
+          "An SNMP trap"
+        ],
+        "explanation": "A WAF applies rules to HTTP/HTTPS conversations and blocks unexpected input.",
+        "page": "51"
+      },
+      {
+        "question": "A small office wants firewall, URL filter, spam filter, IDS/IPS, and VPN in one device. What should it buy?",
+        "correctAnswer": "A UTM appliance",
+        "incorrectAnswers": [
+          "A WAF only",
+          "A load balancer",
+          "A TPM"
+        ],
+        "explanation": "UTM is an all-in-one security appliance.",
+        "page": "51"
+      }
+    ]
   },
   "3.2 - Secure Communication": {
     "domain": "3.0 - Security Architecture",
@@ -4129,7 +6141,41 @@
         "page": "51"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Remote workers need on-demand access with a light client or browser and minimal firewall issues. What is BEST?",
+        "correctAnswer": "SSL/TLS VPN",
+        "incorrectAnswers": [
+          "Site-to-site IPsec",
+          "SD-WAN only",
+          "An open proxy"
+        ],
+        "explanation": "SSL/TLS VPN uses tcp/443 and can run from a browser or light client.",
+        "page": "51"
+      },
+      {
+        "question": "Two branch offices need an always-on encrypted connection between their firewalls. What is BEST?",
+        "correctAnswer": "Site-to-site IPsec VPN",
+        "incorrectAnswers": [
+          "SSL/TLS VPN per user",
+          "A jump server",
+          "A reverse proxy"
+        ],
+        "explanation": "Site-to-site IPsec is always-on; firewalls often act as VPN concentrators.",
+        "page": "51"
+      },
+      {
+        "question": "A company wants a complete cloud-based network and security solution for users in many locations. What should it choose?",
+        "correctAnswer": "SASE",
+        "incorrectAnswers": [
+          "SD-WAN alone",
+          "A cold site",
+          "A single VPN concentrator"
+        ],
+        "explanation": "SD-WAN doesn't adequately address security; SASE is a complete network and security solution.",
+        "page": "52"
+      }
+    ]
   },
   "3.3 - Data Types and Classifications": {
     "domain": "3.0 - Security Architecture",
@@ -4196,7 +6242,41 @@
         "explanation": "Confidential data must be approved to view."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company's secret recipe is unique to the business. How is it BEST classified?",
+        "correctAnswer": "Trade secret",
+        "incorrectAnswers": [
+          "Public data",
+          "Regulated data",
+          "PHI"
+        ],
+        "explanation": "Trade secrets are an organization's secret formulas.",
+        "page": "53"
+      },
+      {
+        "question": "A patient's health records and payments for health care are what type of data?",
+        "correctAnswer": "PHI",
+        "incorrectAnswers": [
+          "Public",
+          "Intellectual property",
+          "Non-human readable only"
+        ],
+        "explanation": "PHI is health information associated with an individual.",
+        "page": "53"
+      },
+      {
+        "question": "A document must be approved before anyone can view it because it's very sensitive. Which classification fits?",
+        "correctAnswer": "Confidential",
+        "incorrectAnswers": [
+          "Public",
+          "Critical",
+          "Unclassified"
+        ],
+        "explanation": "Confidential: very sensitive, must be approved to view.",
+        "page": "53"
+      }
+    ]
   },
   "3.3 - States of Data": {
     "domain": "3.0 - Security Architecture",
@@ -4258,7 +6338,41 @@
         "page": "54"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Attackers pull card numbers out of a point-of-sale system's memory while transactions are processed. Which data state is being attacked?",
+        "correctAnswer": "Data in use",
+        "incorrectAnswers": [
+          "Data at rest",
+          "Data in transit",
+          "Archived data"
+        ],
+        "explanation": "Data in use is almost always decrypted - as in the Target breach.",
+        "page": "53"
+      },
+      {
+        "question": "A company wants to protect data while it travels between offices over the Internet. What should it use?",
+        "correctAnswer": "Transport encryption such as TLS or IPsec",
+        "incorrectAnswers": [
+          "Full-disk encryption",
+          "File permissions only",
+          "Data masking"
+        ],
+        "explanation": "Data in transit is protected with transport encryption.",
+        "page": "53"
+      },
+      {
+        "question": "A company stores EU citizens' personal data. Where should it be stored?",
+        "correctAnswer": "In the EU, per GDPR",
+        "incorrectAnswers": [
+          "Anywhere with the lowest cost",
+          "Only in the US",
+          "On employee laptops"
+        ],
+        "explanation": "Data sovereignty - GDPR data on EU citizens must be stored in the EU.",
+        "page": "54"
+      }
+    ]
   },
   "3.3 - Protecting Data": {
     "domain": "3.0 - Security Architecture",
@@ -4320,7 +6434,41 @@
         "page": "55"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants an app to work only when the user is physically near the office. What should it use?",
+        "correctAnswer": "Geofencing",
+        "incorrectAnswers": [
+          "Tokenization",
+          "Steganography",
+          "Data masking"
+        ],
+        "explanation": "Geofencing allows or restricts access based on location.",
+        "page": "54"
+      },
+      {
+        "question": "A developer wants to make code hard to reverse engineer while it still runs the same way. What should they use?",
+        "correctAnswer": "Obfuscation",
+        "incorrectAnswers": [
+          "Hashing",
+          "Encryption at rest",
+          "Tokenization"
+        ],
+        "explanation": "Obfuscated code performs exactly the same way but is hard to understand.",
+        "page": "54"
+      },
+      {
+        "question": "All company data is in one big database, so one breach exposes everything. What should be done?",
+        "correctAnswer": "Segment the data into different locations",
+        "incorrectAnswers": [
+          "Add more data to the database",
+          "Remove all permissions",
+          "Disable encryption"
+        ],
+        "explanation": "Separate the data; the most sensitive data should be the most secure.",
+        "page": "55"
+      }
+    ]
   },
   "3.4 - Resiliency": {
     "domain": "3.0 - Security Architecture",
@@ -4404,7 +6552,52 @@
         "page": "56"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company must fail over to a fully equipped, constantly updated site immediately after a disaster. Which site is needed?",
+        "correctAnswer": "Hot site",
+        "incorrectAnswers": [
+          "Cold site",
+          "Warm site",
+          "No site"
+        ],
+        "explanation": "A hot site is an exact replica - flip a switch and everything moves.",
+        "page": "55"
+      },
+      {
+        "question": "Budget is very tight and the company can accept a long recovery time. Which recovery site fits?",
+        "correctAnswer": "Cold site",
+        "incorrectAnswers": [
+          "Hot site",
+          "Multi-cloud active/active",
+          "Warm site with all data replicated"
+        ],
+        "explanation": "A cold site is an empty building - bring the hardware, data, and people.",
+        "page": "55"
+      },
+      {
+        "question": "A company's primary and backup data centers are in the same hurricane zone. What principle is being violated?",
+        "correctAnswer": "Geographic dispersion",
+        "incorrectAnswers": [
+          "Platform diversity",
+          "Clustering",
+          "Load balancing"
+        ],
+        "explanation": "Recovery sites should be physically different from the primary location.",
+        "page": "56"
+      },
+      {
+        "question": "If computer systems go down, stores switch to paper receipts and phone approvals. What is this part of?",
+        "correctAnswer": "Continuity of operations planning (COOP)",
+        "incorrectAnswers": [
+          "Capacity planning",
+          "Change management",
+          "Journaling"
+        ],
+        "explanation": "COOP documents alternatives like manual transactions.",
+        "page": "56"
+      }
+    ]
   },
   "3.4 - Capacity Planning": {
     "domain": "3.0 - Security Architecture",
@@ -4441,7 +6634,30 @@
         "explanation": "Cloud devices are easier to deploy."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A web app slows down during unexpected traffic spikes. Which infrastructure option helps MOST with sudden capacity changes?",
+        "correctAnswer": "Cloud-based services",
+        "incorrectAnswers": [
+          "Ordering new physical servers",
+          "Fewer web servers",
+          "A cold site"
+        ],
+        "explanation": "Cloud-based devices are easier to deploy and useful for unexpected capacity changes.",
+        "page": "56"
+      },
+      {
+        "question": "The call center has far more staff than calls and is overspending. What capacity planning action fits?",
+        "correctAnswer": "Redeploy staff to other parts of the organization",
+        "incorrectAnswers": [
+          "Recruit more staff",
+          "Add more phone lines",
+          "Buy more servers"
+        ],
+        "explanation": "Too many employees: redeploy or downsize.",
+        "page": "56"
+      }
+    ]
   },
   "3.4 - Recovery Testing": {
     "domain": "3.0 - Security Architecture",
@@ -4488,7 +6704,30 @@
         "explanation": "It also improves performance."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Leadership wants to test the disaster plan without the cost of a full drill. What should they do?",
+        "correctAnswer": "A tabletop exercise",
+        "incorrectAnswers": [
+          "A full-scale disaster drill",
+          "A live production failover",
+          "Nothing"
+        ],
+        "explanation": "Tabletop exercises talk through a simulated disaster.",
+        "page": "57"
+      },
+      {
+        "question": "Security wants to know whether the email filter catches phishing and which users click. What should it run?",
+        "correctAnswer": "A simulated phishing campaign",
+        "incorrectAnswers": [
+          "A tabletop exercise",
+          "A cold site test",
+          "A capacity plan"
+        ],
+        "explanation": "Simulation tests both internal security and the users.",
+        "page": "57"
+      }
+    ]
   },
   "3.4 - Backups": {
     "domain": "3.0 - Security Architecture",
@@ -4561,7 +6800,52 @@
         "page": "58"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Backups are stored in the same building as the servers, and a fire destroys both. What should have been used?",
+        "correctAnswer": "Offsite backups",
+        "incorrectAnswers": [
+          "More onsite backups",
+          "Journaling",
+          "Snapshots on the same server"
+        ],
+        "explanation": "Offsite backups mean data is available after a disaster.",
+        "page": "57"
+      },
+      {
+        "question": "Backup tapes are shipped to a third-party vault. What should be done to protect the data on them?",
+        "correctAnswer": "Encrypt the backups",
+        "incorrectAnswers": [
+          "Label them clearly with contents",
+          "Make extra unencrypted copies",
+          "Store them in plaintext"
+        ],
+        "explanation": "Protect backup data using encryption; the recovery key is required to restore.",
+        "page": "57"
+      },
+      {
+        "question": "A company backs up nightly but has never tried a restore. What is the risk, and what should it do?",
+        "correctAnswer": "Backups may not work; perform recovery testing",
+        "incorrectAnswers": [
+          "No risk; backups always work",
+          "Delete old backups",
+          "Back up less often"
+        ],
+        "explanation": "It's not enough to perform the backup - you have to be able to restore.",
+        "page": "58"
+      },
+      {
+        "question": "A company wants data kept almost real-time synchronized at a remote site. What should it use?",
+        "correctAnswer": "Replication",
+        "incorrectAnswers": [
+          "Weekly tape backups",
+          "Journaling only",
+          "A cold site"
+        ],
+        "explanation": "Replication is an ongoing, almost real-time backup.",
+        "page": "58"
+      }
+    ]
   },
   "3.4 - Power Resiliency": {
     "domain": "3.0 - Security Architecture",
@@ -4598,7 +6882,30 @@
         "explanation": "It may take a few minutes to get a generator up to speed."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A data center needs power for several days during a long outage. What should it use?",
+        "correctAnswer": "A generator with fuel storage, plus a UPS while it starts",
+        "incorrectAnswers": [
+          "A UPS only",
+          "A surge protector only",
+          "Nothing - outages are short"
+        ],
+        "explanation": "Generators provide long-term power; a UPS covers the startup time.",
+        "page": "58"
+      },
+      {
+        "question": "Servers need protection from brief blackouts, brownouts, and surges. What is BEST?",
+        "correctAnswer": "A UPS",
+        "incorrectAnswers": [
+          "A cold site",
+          "A generator only",
+          "A load balancer"
+        ],
+        "explanation": "A UPS provides short-term backup power for blackouts, brownouts, and surges.",
+        "page": "58"
+      }
+    ]
   },
   "4.1 - Secure Baselines": {
     "domain": "4.0 - Security Operations",
@@ -4655,7 +6962,30 @@
         "explanation": "Enterprise environments are complex."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An organization needs to apply the same security settings to 2,000 Windows computers. What is the BEST way to deploy the baseline?",
+        "correctAnswer": "Automate it centrally with Active Directory group policy",
+        "incorrectAnswers": [
+          "Configure each PC by hand",
+          "Email users instructions",
+          "Wait for users to change settings"
+        ],
+        "explanation": "Deploy baselines through a central console; automation is the key.",
+        "page": "59"
+      },
+      {
+        "question": "A new vulnerability is announced affecting a setting in your baseline. What should happen?",
+        "correctAnswer": "Update and maintain the baseline",
+        "incorrectAnswers": [
+          "Ignore it since baselines never change",
+          "Delete the baseline",
+          "Disable integrity checks"
+        ],
+        "explanation": "Some baselines require ongoing updates when new vulnerabilities are discovered.",
+        "page": "59"
+      }
+    ]
   },
   "4.1 - Hardening Targets": {
     "domain": "4.0 - Security Operations",
@@ -4728,7 +7058,41 @@
         "page": "59"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Smart thermostats with weak default passwords are on the corporate network. What is the BEST hardening step?",
+        "correctAnswer": "Change the passwords and put IoT devices on their own VLAN",
+        "incorrectAnswers": [
+          "Leave defaults so they're easy to manage",
+          "Connect them to the server VLAN",
+          "Disable all updates"
+        ],
+        "explanation": "IoT: change passwords, deploy updates quickly, and segment.",
+        "page": "60"
+      },
+      {
+        "question": "Cloud admins manage everything from one workstation. What should be a top hardening priority?",
+        "correctAnswer": "Secure the cloud management workstation",
+        "incorrectAnswers": [
+          "Give it to more users",
+          "Disable EDR on it",
+          "Remove its backups"
+        ],
+        "explanation": "The cloud management workstation is the keys to the kingdom.",
+        "page": "59"
+      },
+      {
+        "question": "An RTOS controls industrial equipment. How should it be hardened?",
+        "correctAnswer": "Isolate it and run with the minimum services",
+        "incorrectAnswers": [
+          "Install every available service",
+          "Connect it to the guest Wi-Fi",
+          "Remove the host-based firewall"
+        ],
+        "explanation": "RTOS: isolate, minimum services, secure communication.",
+        "page": "60"
+      }
+    ]
   },
   "4.1 - Securing Wireless and Mobile": {
     "domain": "4.0 - Security Operations",
@@ -4801,7 +7165,41 @@
         "page": "61"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Before deploying new access points, a company wants to know existing signal strengths and interference. What should it perform?",
+        "correctAnswer": "A wireless site survey with a heat map",
+        "incorrectAnswers": [
+          "A penetration test",
+          "A tabletop exercise",
+          "A gap analysis"
+        ],
+        "explanation": "Site surveys identify existing APs and frequencies; heat maps show signal strength.",
+        "page": "60"
+      },
+      {
+        "question": "A company wants to buy phones employees can also use personally, while keeping full control and the ability to wipe them. Which model fits?",
+        "correctAnswer": "COPE",
+        "incorrectAnswers": [
+          "BYOD",
+          "Shadow IT",
+          "Sideloading"
+        ],
+        "explanation": "Corporate owned, personally enabled - the organization keeps full control.",
+        "page": "61"
+      },
+      {
+        "question": "Employees use their own phones for work email. What should the company use to set policies and force screen locks?",
+        "correctAnswer": "MDM",
+        "incorrectAnswers": [
+          "SNMP",
+          "A WAF",
+          "An HSM"
+        ],
+        "explanation": "MDM manages company- and user-owned devices and forces locks and PINs.",
+        "page": "60"
+      }
+    ]
   },
   "4.1 - Wireless Security Settings": {
     "domain": "4.0 - Security Operations",
@@ -4885,7 +7283,41 @@
         "page": "62"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company is worried attackers can capture the WPA2 handshake and brute force the shared key. What should it upgrade to?",
+        "correctAnswer": "WPA3 with SAE",
+        "incorrectAnswers": [
+          "WPA2 with a shorter key",
+          "An open network",
+          "WEP"
+        ],
+        "explanation": "SAE creates a shared session key without sending it - no hashes, no brute force attacks.",
+        "page": "61"
+      },
+      {
+        "question": "An enterprise wants each wireless user to log in with their own credentials checked by a central server. Which mode should it use?",
+        "correctAnswer": "WPA3-Enterprise / 802.1X with RADIUS",
+        "incorrectAnswers": [
+          "WPA3-Personal",
+          "Open System",
+          "Shared PSK for everyone"
+        ],
+        "explanation": "Enterprise mode authenticates users individually with an authentication server.",
+        "page": "62"
+      },
+      {
+        "question": "A guest network needs no password at all. Which wireless security mode is this?",
+        "correctAnswer": "Open System",
+        "incorrectAnswers": [
+          "WPA3-Personal",
+          "WPA3-Enterprise",
+          "802.1X"
+        ],
+        "explanation": "Open System - no authentication password is required.",
+        "page": "62"
+      }
+    ]
   },
   "4.1 - Application Security": {
     "domain": "4.0 - Security Operations",
@@ -4969,7 +7401,52 @@
         "page": "63"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A web form accepts any characters in a ZIP code field. What should developers add?",
+        "correctAnswer": "Input validation",
+        "incorrectAnswers": [
+          "Code signing",
+          "Key escrow",
+          "Sandboxing"
+        ],
+        "explanation": "Validate actual vs. expected input and normalize it.",
+        "page": "62"
+      },
+      {
+        "question": "A session cookie is being sent over plain HTTP. What should be set?",
+        "correctAnswer": "The Secure attribute on the cookie",
+        "incorrectAnswers": [
+          "A longer cookie name",
+          "A wildcard certificate",
+          "A honeytoken"
+        ],
+        "explanation": "Secure cookies are only sent over HTTPS.",
+        "page": "62"
+      },
+      {
+        "question": "Users need to confirm an internal application wasn't modified and came from the company's developers. What should be used?",
+        "correctAnswer": "Code signing with the company's own CA",
+        "incorrectAnswers": [
+          "Fuzzing",
+          "Data masking",
+          "Input validation"
+        ],
+        "explanation": "Developers sign code with their private key; for internal apps, use your own CA.",
+        "page": "63"
+      },
+      {
+        "question": "Developers want to find buffer overflows and injection flaws by analyzing source code before release. What should they use?",
+        "correctAnswer": "Static Application Security Testing (SAST)",
+        "incorrectAnswers": [
+          "A WAF",
+          "A honeypot",
+          "A load balancer"
+        ],
+        "explanation": "Static code analyzers find many flaws, though findings must still be verified.",
+        "page": "63"
+      }
+    ]
   },
   "4.2 - Asset Management": {
     "domain": "4.0 - Security Operations",
@@ -5042,7 +7519,41 @@
         "page": "63"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Old hard drives must be made completely unusable with no recoverable data. Which method does this?",
+        "correctAnswer": "Degaussing or shredding",
+        "incorrectAnswers": [
+          "Deleting the files",
+          "Quick format",
+          "Renaming the drive"
+        ],
+        "explanation": "Physical destruction like shredders and degaussing destroys data and the drive.",
+        "page": "64"
+      },
+      {
+        "question": "A third party destroyed the company's old drives. What should the company receive?",
+        "correctAnswer": "A certificate of destruction",
+        "incorrectAnswers": [
+          "A CSR",
+          "An SLA",
+          "A CRL"
+        ],
+        "explanation": "A certificate of destruction provides a paper trail.",
+        "page": "64"
+      },
+      {
+        "question": "A help desk ticket is hard to resolve because users give vague descriptions of their device. What helps MOST?",
+        "correctAnswer": "Asset tracking that ties tickets to device make and model",
+        "incorrectAnswers": [
+          "Deleting old tickets",
+          "Removing asset tags",
+          "Asking users to guess"
+        ],
+        "explanation": "Associate a support ticket with a device make and model.",
+        "page": "63"
+      }
+    ]
   },
   "4.3 - Vulnerability Scanning": {
     "domain": "4.0 - Security Operations",
@@ -5099,7 +7610,41 @@
         "explanation": "Supply chain integrity - verify contents before deployment."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A team wants to discover how an app handles unexpected input by sending it random data. What should they do?",
+        "correctAnswer": "Fuzzing",
+        "incorrectAnswers": [
+          "Static code analysis",
+          "Package monitoring",
+          "Rules of engagement"
+        ],
+        "explanation": "Fuzzing (dynamic analysis) sends random input looking for crashes or errors.",
+        "page": "64"
+      },
+      {
+        "question": "Before deploying an open-source package, a team wants to confirm it's from a trusted source with no added malware. What is this?",
+        "correctAnswer": "Package monitoring",
+        "incorrectAnswers": [
+          "Fuzzing",
+          "Penetration testing",
+          "Port scanning"
+        ],
+        "explanation": "Package monitoring confirms supply chain integrity.",
+        "page": "64"
+      },
+      {
+        "question": "A company only scans from the Internet. What is missing?",
+        "correctAnswer": "Scanning from the inside to account for insider threats",
+        "incorrectAnswers": [
+          "Nothing; external scans are enough",
+          "A CRL",
+          "A cold site"
+        ],
+        "explanation": "Test from the outside and inside.",
+        "page": "64"
+      }
+    ]
   },
   "4.3 - Threat Intelligence": {
     "domain": "4.0 - Security Operations",
@@ -5146,7 +7691,30 @@
         "explanation": "Monitor forums for company and executive names."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An analyst gathers threat information from social media, discussion groups, and public government reports. What type of intelligence is this?",
+        "correctAnswer": "OSINT",
+        "incorrectAnswers": [
+          "Proprietary intelligence",
+          "Dark web intelligence",
+          "Internal audit"
+        ],
+        "explanation": "Open-source intelligence uses publicly available sources.",
+        "page": "65"
+      },
+      {
+        "question": "Security wants early warning if company credentials or executive names show up for sale on hacker forums. What should it monitor?",
+        "correctAnswer": "Dark web intelligence",
+        "incorrectAnswers": [
+          "Government reports only",
+          "Firewall logs only",
+          "SNMP traps"
+        ],
+        "explanation": "Monitor dark web forums for company and executive names.",
+        "page": "65"
+      }
+    ]
   },
   "4.3 - Penetration Testing": {
     "domain": "4.0 - Security Operations",
@@ -5230,7 +7798,52 @@
         "page": "66"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Before a pentest begins, both sides must agree on IP ranges, test hours, and emergency contacts. What document covers this?",
+        "correctAnswer": "Rules of engagement",
+        "incorrectAnswers": [
+          "SLA",
+          "NDA",
+          "CRL"
+        ],
+        "explanation": "Rules of engagement define purpose, scope, and test parameters.",
+        "page": "65"
+      },
+      {
+        "question": "After compromising one workstation, a pentester uses it as a relay to reach a database server not reachable from outside. What is this?",
+        "correctAnswer": "Pivoting",
+        "incorrectAnswers": [
+          "Persistence",
+          "Initial exploitation",
+          "Passive reconnaissance"
+        ],
+        "explanation": "The pivot uses a vulnerable system as a proxy or relay.",
+        "page": "66"
+      },
+      {
+        "question": "A pentester creates a new user account so they can get back in later. Which phase is this?",
+        "correctAnswer": "Persistence",
+        "incorrectAnswers": [
+          "Lateral movement",
+          "Pivot",
+          "Reconnaissance"
+        ],
+        "explanation": "Persistence ensures a way back in - backdoors, user accounts.",
+        "page": "66"
+      },
+      {
+        "question": "A company wants outside researchers to report vulnerabilities in exchange for rewards. What should it create?",
+        "correctAnswer": "A bug bounty program",
+        "incorrectAnswers": [
+          "A honeynet",
+          "A legal hold",
+          "A cold site"
+        ],
+        "explanation": "Bug bounty programs reward vulnerability discovery as part of responsible disclosure.",
+        "page": "66"
+      }
+    ]
   },
   "4.3 - Analyzing Vulnerabilities": {
     "domain": "4.0 - Security Operations",
@@ -5314,7 +7927,41 @@
         "page": "67"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A scanner reports a vulnerability that, after checking, doesn't actually exist on the server. What is this?",
+        "correctAnswer": "A false positive",
+        "incorrectAnswers": [
+          "A false negative",
+          "A zero-day",
+          "A low-severity vulnerability"
+        ],
+        "explanation": "A false positive is reported but doesn't really exist.",
+        "page": "66"
+      },
+      {
+        "question": "A known vulnerability was exploited, but the last scan didn't detect it. What should be done FIRST?",
+        "correctAnswer": "Update the scanner to the latest signatures",
+        "incorrectAnswers": [
+          "Stop scanning",
+          "Lower the CVSS score",
+          "Ignore future scans"
+        ],
+        "explanation": "False negatives: if you don't know about it, you can't see it.",
+        "page": "66"
+      },
+      {
+        "question": "The same vulnerability exists on an isolated test lab device and a public cloud database server. Which should be prioritized?",
+        "correctAnswer": "The public cloud database server",
+        "incorrectAnswers": [
+          "The isolated test lab device",
+          "Neither",
+          "Both equally regardless of environment"
+        ],
+        "explanation": "Environmental variables affect prioritization - exposure and revenue impact matter.",
+        "page": "67"
+      }
+    ]
   },
   "4.3 - Vulnerability Remediation": {
     "domain": "4.0 - Security Operations",
@@ -5387,7 +8034,41 @@
         "page": "68"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A critical vulnerability exists but the patch can't be applied for two weeks. What should be done meanwhile?",
+        "correctAnswer": "Apply compensating controls such as disabling the service or limiting access",
+        "incorrectAnswers": [
+          "Do nothing until the patch",
+          "Remove all logging",
+          "Publish the vulnerability"
+        ],
+        "explanation": "Compensating controls provide coverage until a patch is deployed.",
+        "page": "67"
+      },
+      {
+        "question": "An old system can't be patched at all and must keep running. What is the BEST mitigation?",
+        "correctAnswer": "Segment it, using an air gap if needed",
+        "incorrectAnswers": [
+          "Connect it to the Internet",
+          "Share its admin password",
+          "Remove the firewall"
+        ],
+        "explanation": "Can't patch? Disconnect from the world; air gaps may be required.",
+        "page": "67"
+      },
+      {
+        "question": "Patches were deployed. How should the team confirm the vulnerability is really fixed everywhere?",
+        "correctAnswer": "Rescan and audit the remediated systems",
+        "incorrectAnswers": [
+          "Assume it worked",
+          "Delete the scan reports",
+          "Buy insurance"
+        ],
+        "explanation": "Validation of remediation: rescanning, audit, verification.",
+        "page": "68"
+      }
+    ]
   },
   "4.4 - Security Monitoring": {
     "domain": "4.0 - Security Operations",
@@ -5449,7 +8130,41 @@
         "page": "69"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Logs from firewalls, servers, VPN concentrators, and cloud services are scattered. What should be used to centralize and correlate them?",
+        "correctAnswer": "A SIEM",
+        "incorrectAnswers": [
+          "A UPS",
+          "A load balancer",
+          "An HSM"
+        ],
+        "explanation": "SIEM consolidates many logs to a central database for correlation.",
+        "page": "68"
+      },
+      {
+        "question": "Analysts are flooded with alerts that turn out to be harmless. What should be done?",
+        "correctAnswer": "Alert tuning",
+        "incorrectAnswers": [
+          "Disable all alerts",
+          "Delete the SIEM",
+          "Ignore the alerts"
+        ],
+        "explanation": "Alert tuning balances false positives and false negatives.",
+        "page": "69"
+      },
+      {
+        "question": "State law requires security logs to be kept for years. Which monitoring activity addresses this?",
+        "correctAnswer": "Archiving",
+        "incorrectAnswers": [
+          "Alert tuning",
+          "Quarantine",
+          "Scanning"
+        ],
+        "explanation": "Archive over an extended period; there may be a mandate.",
+        "page": "68"
+      }
+    ]
   },
   "4.4 - Security Tools": {
     "domain": "4.0 - Security Operations",
@@ -5544,7 +8259,52 @@
         "page": "69"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company uses scanners from several vendors and wants them all to evaluate compliance with the same criteria. What standard helps?",
+        "correctAnswer": "SCAP",
+        "incorrectAnswers": [
+          "SNMP",
+          "NetFlow",
+          "SAML"
+        ],
+        "explanation": "SCAP allows tools to identify and act on the same criteria.",
+        "page": "69"
+      },
+      {
+        "question": "A company wants minimum security settings for its mobile devices and cloud providers based on industry best practices. What should it use?",
+        "correctAnswer": "CIS benchmarks",
+        "incorrectAnswers": [
+          "A CRL",
+          "A risk register",
+          "A honeynet"
+        ],
+        "explanation": "Benchmarks apply best practices; CIS is a popular source.",
+        "page": "69"
+      },
+      {
+        "question": "A network team wants a switch to immediately notify the monitoring station when CRC errors increase. What should be configured?",
+        "correctAnswer": "An SNMP trap",
+        "incorrectAnswers": [
+          "SNMP polling every hour",
+          "NetFlow",
+          "A DLP policy"
+        ],
+        "explanation": "SNMP traps send alerts when a threshold is met, over udp/162.",
+        "page": "70"
+      },
+      {
+        "question": "Security needs to stop employees from sending Social Security numbers to cloud storage and email. What should it deploy?",
+        "correctAnswer": "DLP",
+        "incorrectAnswers": [
+          "SNMP",
+          "SCAP",
+          "A load balancer"
+        ],
+        "explanation": "Data Loss Prevention stops data leakage.",
+        "page": "70"
+      }
+    ]
   },
   "4.5 - Firewalls": {
     "domain": "4.0 - Security Operations",
@@ -5639,7 +8399,52 @@
         "page": "71"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An admin adds an 'allow all' rule at the top of the firewall rulebase. What happens to the more specific deny rules below it?",
+        "correctAnswer": "They never match because rules are evaluated top-to-bottom",
+        "incorrectAnswers": [
+          "They take priority anyway",
+          "They are evaluated first",
+          "The firewall merges them"
+        ],
+        "explanation": "Rules are usually top-to-bottom; specific rules go at the top.",
+        "page": "71"
+      },
+      {
+        "question": "Traffic doesn't match any rule in the firewall. What happens by default on most firewalls?",
+        "correctAnswer": "It is denied (implicit deny)",
+        "incorrectAnswers": [
+          "It is allowed",
+          "It is logged and allowed",
+          "It is sent to the SIEM only"
+        ],
+        "explanation": "Most firewalls include an implicit deny at the bottom.",
+        "page": "71"
+      },
+      {
+        "question": "A company's public web server should be reachable from the Internet while internal data stays inaccessible. Where should it go?",
+        "correctAnswer": "A screened subnet",
+        "incorrectAnswers": [
+          "The internal user VLAN",
+          "The database segment",
+          "The management network"
+        ],
+        "explanation": "A screened subnet gives public access to public resources.",
+        "page": "71"
+      },
+      {
+        "question": "An IPS needs to catch new attacks that don't match any known pattern. Which detection method helps?",
+        "correctAnswer": "Anomaly-based",
+        "incorrectAnswers": [
+          "Signature-based only",
+          "Port-based",
+          "Implicit deny"
+        ],
+        "explanation": "Anomaly-based builds a baseline of normal and flags unusual traffic.",
+        "page": "71"
+      }
+    ]
   },
   "4.5 - Web Filtering": {
     "domain": "4.0 - Security Operations",
@@ -5701,7 +8506,41 @@
         "page": "71"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Employees work from home and on the road but must still have web filtering. What is BEST?",
+        "correctAnswer": "Agent-based filtering on each device",
+        "incorrectAnswers": [
+          "Filtering only at the office firewall",
+          "No filtering off-site",
+          "A cold site"
+        ],
+        "explanation": "Agent-based filtering works wherever users are located.",
+        "page": "71"
+      },
+      {
+        "question": "A company wants to stop devices from connecting to known malicious domains for ANY application, not just browsers. What should it use?",
+        "correctAnswer": "DNS filtering",
+        "incorrectAnswers": [
+          "URL category filtering in the browser only",
+          "A WAF",
+          "SNMP traps"
+        ],
+        "explanation": "DNS filtering works for any DNS lookup; harmful sites aren't resolved.",
+        "page": "72"
+      },
+      {
+        "question": "Policy says gambling sites must be blocked and home-and-garden sites allowed with an alert. What should be configured?",
+        "correctAnswer": "Category-based block rules",
+        "incorrectAnswers": [
+          "SNMP traps",
+          "Implicit deny for all web traffic",
+          "Geofencing"
+        ],
+        "explanation": "Block rules can use site content categories with different dispositions.",
+        "page": "71"
+      }
+    ]
   },
   "4.5 - Operating System Security": {
     "domain": "4.0 - Security Operations",
@@ -5738,7 +8577,30 @@
         "explanation": "Linux traditionally uses DAC."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A Linux server should limit what a compromised application can access, using mandatory access control. What should be enabled?",
+        "correctAnswer": "SELinux",
+        "incorrectAnswers": [
+          "Group Policy",
+          "Discretionary Access Control only",
+          "Active Directory"
+        ],
+        "explanation": "SELinux adds MAC to Linux and limits application access.",
+        "page": "72"
+      },
+      {
+        "question": "An admin needs to push login scripts and security settings to all domain Windows computers. What tool is BEST?",
+        "correctAnswer": "Group Policy",
+        "incorrectAnswers": [
+          "SELinux",
+          "SNMP",
+          "NetFlow"
+        ],
+        "explanation": "Group Policy manages computers and users from a central console.",
+        "page": "72"
+      }
+    ]
   },
   "4.5 - Secure Protocols": {
     "domain": "4.0 - Security Operations",
@@ -5800,7 +8662,41 @@
         "page": "72"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A packet capture shows email client passwords in clear text. Which protocol change fixes this?",
+        "correctAnswer": "Switch from IMAP to IMAPS",
+        "incorrectAnswers": [
+          "Switch from IMAPS to IMAP",
+          "Switch to Telnet",
+          "Switch to FTP"
+        ],
+        "explanation": "IMAP is insecure; IMAPS is the secure version.",
+        "page": "72"
+      },
+      {
+        "question": "A service runs on port 443, so the admin assumes it's encrypted. What should they do?",
+        "correctAnswer": "Confirm security features are enabled, possibly with a packet capture",
+        "incorrectAnswers": [
+          "Assume it's secure",
+          "Change it to port 80",
+          "Disable the service"
+        ],
+        "explanation": "The port number does not guarantee security.",
+        "page": "72"
+      },
+      {
+        "question": "An app has no secure protocol option. How can its traffic still be protected?",
+        "correctAnswer": "Use a VPN to encrypt the transport",
+        "incorrectAnswers": [
+          "Use an open access point",
+          "Use Telnet",
+          "Use FTP"
+        ],
+        "explanation": "Don't rely on the application - encrypt over the network transport.",
+        "page": "73"
+      }
+    ]
   },
   "4.5 - Email Security": {
     "domain": "4.0 - Security Operations",
@@ -5857,7 +8753,41 @@
         "explanation": "Can be on-site or cloud-based."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants receiving mail servers to know which servers are allowed to send email for its domain. What should it publish?",
+        "correctAnswer": "An SPF record",
+        "incorrectAnswers": [
+          "A DKIM private key",
+          "A CRL",
+          "An MX record only"
+        ],
+        "explanation": "SPF lists authorized mail servers in a DNS TXT record.",
+        "page": "73"
+      },
+      {
+        "question": "A company wants receivers to reject email that fails SPF and DKIM checks and to send it reports. What should it configure?",
+        "correctAnswer": "DMARC",
+        "incorrectAnswers": [
+          "SPF only",
+          "DKIM only",
+          "IMAPS"
+        ],
+        "explanation": "DMARC sets the policy (accept, spam, reject) and sends compliance reports.",
+        "page": "73"
+      },
+      {
+        "question": "A company wants every outgoing email digitally signed so receivers can validate it. What should it use?",
+        "correctAnswer": "DKIM",
+        "incorrectAnswers": [
+          "SPF",
+          "DMARC policy only",
+          "A mail gateway only"
+        ],
+        "explanation": "DKIM signs outgoing mail; the public key is in DNS.",
+        "page": "73"
+      }
+    ]
   },
   "4.5 - Monitoring Data": {
     "domain": "4.0 - Security Operations",
@@ -5930,7 +8860,41 @@
         "page": "74"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A security team needs to know immediately if critical Windows system files are modified. What should it use?",
+        "correctAnswer": "File integrity monitoring such as SFC",
+        "incorrectAnswers": [
+          "DLP for email",
+          "SNMP polling",
+          "A WAF"
+        ],
+        "explanation": "FIM monitors files that should never change.",
+        "page": "73"
+      },
+      {
+        "question": "A worm is spreading via USB drives. What control BEST stops this on workstations?",
+        "correctAnswer": "USB blocking with a local DLP agent",
+        "incorrectAnswers": [
+          "A WAF",
+          "DNS filtering",
+          "SPF records"
+        ],
+        "explanation": "The DoD used local DLP agents to block USB storage after agent.btz.",
+        "page": "73"
+      },
+      {
+        "question": "An employee emails a spreadsheet with hidden columns of employee SSNs. What control would MOST likely have caught this?",
+        "correctAnswer": "DLP on email",
+        "incorrectAnswers": [
+          "A load balancer",
+          "A UPS",
+          "A jump server"
+        ],
+        "explanation": "DLP checks every outbound email; the Boeing incident is an example.",
+        "page": "74"
+      }
+    ]
   },
   "4.5 - Endpoint Security": {
     "domain": "4.0 - Security Operations",
@@ -6003,7 +8967,41 @@
         "page": "74"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Contractors' laptops must be checked for updated anti-virus before connecting, but nothing should stay installed on them. What should be used?",
+        "correctAnswer": "A dissolvable agent",
+        "incorrectAnswers": [
+          "A persistent agent",
+          "No posture assessment",
+          "SNMP"
+        ],
+        "explanation": "Dissolvable agents run during the assessment then terminate.",
+        "page": "74"
+      },
+      {
+        "question": "A device fails its posture assessment because its disk isn't encrypted. What should happen?",
+        "correctAnswer": "Place it on a quarantine network to fix the issue",
+        "incorrectAnswers": [
+          "Give it full access",
+          "Permanently ban the user",
+          "Ignore the result"
+        ],
+        "explanation": "Quarantine network with just enough access to fix the issue.",
+        "page": "74"
+      },
+      {
+        "question": "EDR alerts alone miss attacks that span endpoints, network, and cloud. What should the company adopt?",
+        "correctAnswer": "XDR",
+        "incorrectAnswers": [
+          "A cold site",
+          "A forward proxy only",
+          "SNMP traps"
+        ],
+        "explanation": "XDR correlates endpoint, network, and cloud data.",
+        "page": "75"
+      }
+    ]
   },
   "4.6 - Identity and Access Management": {
     "domain": "4.0 - Security Operations",
@@ -6098,7 +9096,52 @@
         "page": "76"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An employee transfers to a new department. Which IAM process should update their access?",
+        "correctAnswer": "Provisioning/de-provisioning",
+        "incorrectAnswers": [
+          "Federation",
+          "Key escrow",
+          "Fuzzing"
+        ],
+        "explanation": "Provisioning and de-provisioning occur for hiring, transfers, promotions, and separation.",
+        "page": "75"
+      },
+      {
+        "question": "Users want to log in once in the morning and access all assigned apps without logging in again. What should be implemented?",
+        "correctAnswer": "Single sign-on (SSO)",
+        "incorrectAnswers": [
+          "Password expiration",
+          "Time-of-day restrictions",
+          "Federation only between ISPs"
+        ],
+        "explanation": "SSO: provide credentials one time for all assigned resources.",
+        "page": "75"
+      },
+      {
+        "question": "A partner company's employees need to access your portal using their own company credentials. What should be established?",
+        "correctAnswer": "Federation",
+        "incorrectAnswers": [
+          "Local accounts for every partner user",
+          "An open proxy",
+          "Key escrow"
+        ],
+        "explanation": "Federation lets third parties authenticate and authorize with a trust relationship.",
+        "page": "76"
+      },
+      {
+        "question": "An app needs permission to access a user's resources in another service without getting the user's password. What should it use?",
+        "correctAnswer": "OAuth",
+        "incorrectAnswers": [
+          "LDAP",
+          "SNMP",
+          "RADIUS"
+        ],
+        "explanation": "OAuth provides authorization between applications.",
+        "page": "76"
+      }
+    ]
   },
   "4.6 - Access Controls": {
     "domain": "4.0 - Security Operations",
@@ -6165,7 +9208,52 @@
         "explanation": "Rights come from the role, not individual assignment."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A military system assigns clearance labels and users cannot change who has access. Which model is this?",
+        "correctAnswer": "Mandatory Access Control (MAC)",
+        "incorrectAnswers": [
+          "Discretionary Access Control (DAC)",
+          "Role-based access control",
+          "Attribute-based access control"
+        ],
+        "explanation": "MAC uses labels; the administrator decides; users can't change settings.",
+        "page": "77"
+      },
+      {
+        "question": "Everyone in Shipping should get access to the shipping software because of their job. Which model fits BEST?",
+        "correctAnswer": "Role-based access control (RBAC)",
+        "incorrectAnswers": [
+          "Mandatory Access Control",
+          "Discretionary Access Control",
+          "Time-of-day restrictions only"
+        ],
+        "explanation": "RBAC provides access based on the user's role, often via Groups.",
+        "page": "77"
+      },
+      {
+        "question": "Access should depend on the user's IP address, time of day, the resource, and the requested action together. Which model fits?",
+        "correctAnswer": "Attribute-based access control (ABAC)",
+        "incorrectAnswers": [
+          "Discretionary Access Control",
+          "Role-based access control",
+          "Mandatory Access Control"
+        ],
+        "explanation": "ABAC combines and evaluates multiple parameters.",
+        "page": "77"
+      },
+      {
+        "question": "A file owner can grant anyone access to their spreadsheet at any time. Which model is this, and what is its weakness?",
+        "correctAnswer": "DAC; very flexible but weak security",
+        "incorrectAnswers": [
+          "MAC; too rigid",
+          "RBAC; requires roles",
+          "ABAC; too many attributes"
+        ],
+        "explanation": "DAC is used in most operating systems and is very flexible but weak.",
+        "page": "77"
+      }
+    ]
   },
   "4.6 - Multifactor Authentication": {
     "domain": "4.0 - Security Operations",
@@ -6232,7 +9320,41 @@
         "explanation": "Works with IPv4, not so much with IPv6."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A login requires a password and a PIN. Why is this weak multifactor authentication?",
+        "correctAnswer": "Both are something you know",
+        "incorrectAnswers": [
+          "PINs can't be used for login",
+          "Passwords are something you have",
+          "It uses too many factors"
+        ],
+        "explanation": "Password and PIN are both 'something you know' factors.",
+        "page": "78"
+      },
+      {
+        "question": "A bank wants to add a factor to passwords so stolen passwords alone are useless. Which adds a different factor?",
+        "correctAnswer": "A hardware token generating codes",
+        "incorrectAnswers": [
+          "A security question",
+          "A second password",
+          "A longer PIN"
+        ],
+        "explanation": "Hardware or software tokens are something you have.",
+        "page": "78"
+      },
+      {
+        "question": "A transaction should only complete if the user is in the expected country. Which factor is being used?",
+        "correctAnswer": "Somewhere you are",
+        "incorrectAnswers": [
+          "Something you know",
+          "Something you have",
+          "Something you are"
+        ],
+        "explanation": "Somewhere you are uses IP address or mobile location services.",
+        "page": "78"
+      }
+    ]
   },
   "4.6 - Password Security": {
     "domain": "4.0 - Security Operations",
@@ -6294,7 +9416,41 @@
         "page": "78"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Users reuse the same password across many accounts because they can't remember them all. What is the BEST solution?",
+        "correctAnswer": "A password manager",
+        "incorrectAnswers": [
+          "Writing passwords on sticky notes",
+          "Shorter passwords",
+          "Never expiring passwords"
+        ],
+        "explanation": "Password managers store all passwords in an encrypted database.",
+        "page": "78"
+      },
+      {
+        "question": "Admins have permanent elevated rights, making their accounts big targets. What should be implemented?",
+        "correctAnswer": "Just-in-time permissions",
+        "incorrectAnswers": [
+          "More permanent admin accounts",
+          "Shared admin passwords",
+          "Password expiration only"
+        ],
+        "explanation": "Grant admin access for a limited time; breached accounts never have elevated rights.",
+        "page": "79"
+      },
+      {
+        "question": "An organization never wants admins to see the real root passwords, only temporary credentials. What should it use?",
+        "correctAnswer": "Password vaulting with ephemeral credentials",
+        "incorrectAnswers": [
+          "A spreadsheet of passwords",
+          "Default credentials",
+          "Password hints"
+        ],
+        "explanation": "Primary credentials stay in the vault; ephemeral credentials are used for one session.",
+        "page": "79"
+      }
+    ]
   },
   "4.7 - Scripting and Automation": {
     "domain": "4.0 - Security Operations",
@@ -6356,7 +9512,41 @@
         "page": "79"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "New hires must get the same group access every time, and IT wants no human error. What should be automated?",
+        "correctAnswer": "User and resource provisioning",
+        "incorrectAnswers": [
+          "Penetration testing",
+          "Physical destruction",
+          "Tabletop exercises"
+        ],
+        "explanation": "Automate on-boarding and off-boarding.",
+        "page": "79"
+      },
+      {
+        "question": "The whole incident workflow depends on one script maintained by one person. What scripting concern is this?",
+        "correctAnswer": "Single point of failure",
+        "incorrectAnswers": [
+          "Workforce multiplier",
+          "Employee retention",
+          "Guard rails"
+        ],
+        "explanation": "What happens if the script stops working? This could be a deal-breaker.",
+        "page": "80"
+      },
+      {
+        "question": "An automated system should try to fix an issue and only page the on-call tech if that fails. What is this called?",
+        "correctAnswer": "Escalation",
+        "incorrectAnswers": [
+          "Guard rails",
+          "Technical debt",
+          "Ticket creation only"
+        ],
+        "explanation": "Correct issues before involving a human.",
+        "page": "79"
+      }
+    ]
   },
   "4.8 - Incident Response": {
     "domain": "4.0 - Security Operations",
@@ -6440,7 +9630,52 @@
         "page": "81"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Before any incident, a team gathers contact lists, forensic laptops, clean OS images, and network diagrams. Which NIST phase is this?",
+        "correctAnswer": "Preparation",
+        "incorrectAnswers": [
+          "Detection and Analysis",
+          "Containment, Eradication, and Recovery",
+          "Post-incident Activity"
+        ],
+        "explanation": "Preparing for an incident includes communication, tools, resources, and policies.",
+        "page": "80"
+      },
+      {
+        "question": "An analyst wants to run a suspicious file to see what it does without risking the network. What should they use?",
+        "correctAnswer": "A sandbox",
+        "incorrectAnswers": [
+          "A production server",
+          "The CEO's laptop",
+          "A jump server"
+        ],
+        "explanation": "Sandboxes are isolated systems for running and analyzing malware.",
+        "page": "80"
+      },
+      {
+        "question": "Malware has been removed and breached accounts disabled. What should the team do next to restore operations?",
+        "correctAnswer": "Recover the system from backups or rebuild, and tighten the perimeter",
+        "incorrectAnswers": [
+          "Delete all logs",
+          "Skip lessons learned",
+          "Reconnect the infected system as-is"
+        ],
+        "explanation": "Recovery: restore from backups, rebuild, replace compromised files, tighten the perimeter.",
+        "page": "81"
+      },
+      {
+        "question": "After an incident, the team asks what happened, how the plan worked, and what to do differently. What is this?",
+        "correctAnswer": "Lessons learned",
+        "incorrectAnswers": [
+          "Legal hold",
+          "Eradication",
+          "Preparation"
+        ],
+        "explanation": "Post-incident meeting - don't wait too long.",
+        "page": "81"
+      }
+    ]
   },
   "4.8 - Incident Planning": {
     "domain": "4.0 - Security Operations",
@@ -6477,7 +9712,30 @@
         "explanation": "Create a set of conclusions backed up by facts."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Instead of waiting for alerts, analysts proactively search the network for attackers already inside. What is this?",
+        "correctAnswer": "Threat hunting",
+        "incorrectAnswers": [
+          "Tabletop exercise",
+          "Root cause analysis",
+          "Fuzzing"
+        ],
+        "explanation": "Threat hunting: find the attacker before they find you.",
+        "page": "81"
+      },
+      {
+        "question": "After an outage, the team keeps asking 'why' to find the underlying reason. What is this?",
+        "correctAnswer": "Root cause analysis",
+        "incorrectAnswers": [
+          "Threat hunting",
+          "Simulation",
+          "E-discovery"
+        ],
+        "explanation": "Root cause analysis finds the ultimate cause by asking why.",
+        "page": "81"
+      }
+    ]
   },
   "4.8 - Digital Forensics": {
     "domain": "4.0 - Security Operations",
@@ -6554,7 +9812,52 @@
         "explanation": "They work together - forensics may recover deleted data."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Legal counsel expects a lawsuit and instructs employees to preserve all related email. What is this?",
+        "correctAnswer": "Legal hold",
+        "incorrectAnswers": [
+          "Chain of custody",
+          "E-discovery",
+          "Lessons learned"
+        ],
+        "explanation": "A legal hold preserves relevant information for impending litigation.",
+        "page": "82"
+      },
+      {
+        "question": "Evidence must be admissible in court. What should be documented for everyone who handles it?",
+        "correctAnswer": "Chain of custody",
+        "incorrectAnswers": [
+          "A risk register",
+          "A CRL",
+          "An SLA"
+        ],
+        "explanation": "Chain of custody controls evidence and maintains integrity.",
+        "page": "82"
+      },
+      {
+        "question": "A suspect laptop's drive may be encrypted once powered down. What should the investigator consider?",
+        "correctAnswer": "Live collection before powering down",
+        "incorrectAnswers": [
+          "Power it off immediately",
+          "Reformat the drive",
+          "Wait a week"
+        ],
+        "explanation": "Live collection matters because data may be encrypted after powering down.",
+        "page": "82"
+      },
+      {
+        "question": "Investigators need data from a virtual server. What is the BEST way to acquire it?",
+        "correctAnswer": "Take a snapshot of the VM",
+        "incorrectAnswers": [
+          "Take a screenshot",
+          "Delete the VM",
+          "Copy only the logs"
+        ],
+        "explanation": "A snapshot contains all files and information about a VM.",
+        "page": "82"
+      }
+    ]
   },
   "4.9 - Log Data": {
     "domain": "4.0 - Security Operations",
@@ -6627,7 +9930,41 @@
         "page": "84"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An analyst needs to know which application and URL category a user accessed through the firewall. Which log is BEST?",
+        "correctAnswer": "NGFW logs",
+        "incorrectAnswers": [
+          "Traditional port-based firewall logs",
+          "UPS logs",
+          "Printer logs"
+        ],
+        "explanation": "NGFW logs include the application used and URL filtering categories.",
+        "page": "83"
+      },
+      {
+        "question": "A tricky application problem needs detailed, plain-language views of the traffic. What should the analyst use?",
+        "correctAnswer": "A packet capture",
+        "incorrectAnswers": [
+          "A dashboard",
+          "An automated weekly report",
+          "Metadata only"
+        ],
+        "explanation": "Packet captures show detailed traffic and plain-language application data.",
+        "page": "84"
+      },
+      {
+        "question": "The SOC manager wants real-time status of key security metrics on one screen. What should be used?",
+        "correctAnswer": "A dashboard",
+        "incorrectAnswers": [
+          "A packet capture",
+          "An archived log",
+          "A legal hold"
+        ],
+        "explanation": "Dashboards show real-time status summaries.",
+        "page": "84"
+      }
+    ]
   },
   "5.1 - Security Policies": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -6689,7 +10026,30 @@
         "page": "85"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An employee is dismissed for misusing company computers. Which document provides the well-documented reasons?",
+        "correctAnswer": "Acceptable use policy (AUP)",
+        "incorrectAnswers": [
+          "Disaster recovery plan",
+          "SLA",
+          "Risk register"
+        ],
+        "explanation": "AUPs limit legal liability by documenting acceptable use.",
+        "page": "84"
+      },
+      {
+        "question": "A hurricane destroys the primary data center. Which plan should IT follow to recover systems at an alternate location?",
+        "correctAnswer": "Disaster recovery plan",
+        "incorrectAnswers": [
+          "Acceptable use policy",
+          "Change management policy",
+          "SDLC"
+        ],
+        "explanation": "The DR plan covers recovery location, data recovery, and application restoration.",
+        "page": "84"
+      }
+    ]
   },
   "5.1 - Security Standards": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -6736,7 +10096,30 @@
         "explanation": "It also covers password storage."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants to formally require that only LDAP to Active Directory be used for authentication, with no local accounts. Where should this be written?",
+        "correctAnswer": "A password/authentication standard",
+        "incorrectAnswers": [
+          "An MOU",
+          "A physical security standard",
+          "A risk register"
+        ],
+        "explanation": "Password standards define acceptable authentication methods.",
+        "page": "85"
+      },
+      {
+        "question": "A company needs to define minimum encryption algorithms for data at rest, in transit, and in use. What should it create?",
+        "correctAnswer": "An encryption standard",
+        "incorrectAnswers": [
+          "An access control standard",
+          "A physical security standard",
+          "An AUP"
+        ],
+        "explanation": "Encryption standards define data encryption minimums for each state.",
+        "page": "85"
+      }
+    ]
   },
   "5.1 - Security Procedures": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -6803,7 +10186,30 @@
         "explanation": "Centralized governance is in one location with a group of decision makers."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An employee leaves the company. What should a pre-planned process cover?",
+        "correctAnswer": "Offboarding: hardware return, data handling, and account deactivation",
+        "incorrectAnswers": [
+          "Onboarding new accounts",
+          "Creating a CSR",
+          "A tabletop exercise"
+        ],
+        "explanation": "Offboarding should be pre-planned; accounts are usually deactivated.",
+        "page": "86"
+      },
+      {
+        "question": "The SOC wants a step-by-step checklist for recovering from ransomware that can also drive automation. What should it create?",
+        "correctAnswer": "A playbook integrated with SOAR",
+        "incorrectAnswers": [
+          "An MOU",
+          "A risk register",
+          "An SLA"
+        ],
+        "explanation": "Playbooks are step-by-step procedures often integrated with SOAR.",
+        "page": "86"
+      }
+    ]
   },
   "5.1 - Security Considerations": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -6850,7 +10256,30 @@
         "explanation": "Legal concerns will vary widely."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A healthcare provider must protect how patient health information is stored and transmitted. Which regulation applies?",
+        "correctAnswer": "HIPAA",
+        "incorrectAnswers": [
+          "SOX",
+          "GLBA",
+          "PCI DSS"
+        ],
+        "explanation": "HIPAA has extensive standards for health care information.",
+        "page": "87"
+      },
+      {
+        "question": "A publicly traded company must meet accounting and investor protection rules. Which regulation applies?",
+        "correctAnswer": "Sarbanes-Oxley Act (SOX)",
+        "incorrectAnswers": [
+          "HIPAA",
+          "GDPR",
+          "GLBA"
+        ],
+        "explanation": "SOX is the Public Company Accounting Reform and Investor Protection Act.",
+        "page": "87"
+      }
+    ]
   },
   "5.1 - Data Roles and Responsibilities": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -6897,7 +10326,41 @@
         "explanation": "Responsible for data accuracy, privacy, and security."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "The payroll department decides pay amounts and schedules, and an outside company runs payroll. What is the outside company's role?",
+        "correctAnswer": "Data processor",
+        "incorrectAnswers": [
+          "Data controller",
+          "Data owner",
+          "Data subject"
+        ],
+        "explanation": "The processor processes data on behalf of the data controller.",
+        "page": "87"
+      },
+      {
+        "question": "Someone must apply sensitivity labels, manage access rights, and implement security controls on a dataset. Which role is this?",
+        "correctAnswer": "Data custodian/steward",
+        "incorrectAnswers": [
+          "Data owner",
+          "Data processor",
+          "Data subject"
+        ],
+        "explanation": "The custodian/steward works directly with the data.",
+        "page": "87"
+      },
+      {
+        "question": "Who is ultimately accountable for the customer relationship data, such as the VP of Sales?",
+        "correctAnswer": "Data owner",
+        "incorrectAnswers": [
+          "Data custodian",
+          "Data processor",
+          "Help desk"
+        ],
+        "explanation": "The data owner is accountable, often a senior officer.",
+        "page": "87"
+      }
+    ]
   },
   "5.2 - Risk Management": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -6944,7 +10407,30 @@
         "explanation": "One-time assessments may be part of a one-time project."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Every change request must include a risk assessment. What type of assessment is this?",
+        "correctAnswer": "Continuous",
+        "incorrectAnswers": [
+          "Ad hoc",
+          "One-time",
+          "Recurring quarterly"
+        ],
+        "explanation": "Continuous assessments can be part of an existing process like change control.",
+        "page": "88"
+      },
+      {
+        "question": "An organization performs a risk assessment at the start of every quarter. What type is this?",
+        "correctAnswer": "Recurring",
+        "incorrectAnswers": [
+          "Ad hoc",
+          "One-time",
+          "Continuous"
+        ],
+        "explanation": "Recurring assessments occur on standard intervals.",
+        "page": "88"
+      }
+    ]
   },
   "5.2 - Risk Analysis": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7061,7 +10547,52 @@
         "page": "89"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A server worth $20,000 would lose half its value in a flood (EF 0.5). What is the SLE?",
+        "correctAnswer": "$10,000",
+        "incorrectAnswers": [
+          "$20,000",
+          "$40,000",
+          "$5,000"
+        ],
+        "explanation": "SLE = AV x EF = $20,000 x 0.5 = $10,000.",
+        "page": "88"
+      },
+      {
+        "question": "The SLE for a stolen laptop is $1,000 and four are stolen each year. What is the ALE?",
+        "correctAnswer": "$4,000",
+        "incorrectAnswers": [
+          "$1,000",
+          "$250",
+          "$400"
+        ],
+        "explanation": "ALE = ARO x SLE = 4 x $1,000.",
+        "page": "88"
+      },
+      {
+        "question": "Managers rate risks as high, medium, or low in a colored grid based on opinion. What type of assessment is this?",
+        "correctAnswer": "Qualitative",
+        "incorrectAnswers": [
+          "Quantitative",
+          "ALE calculation",
+          "Exposure factor"
+        ],
+        "explanation": "Qualitative risk assessments ask opinions and display visually.",
+        "page": "88"
+      },
+      {
+        "question": "A project manager wants to document each risk, its owner, and possible solutions. What should they create?",
+        "correctAnswer": "A risk register",
+        "incorrectAnswers": [
+          "An SLA",
+          "A CRL",
+          "A playbook"
+        ],
+        "explanation": "A risk register identifies and documents risks, owners, and solutions.",
+        "page": "89"
+      }
+    ]
   },
   "5.2 - Risk Management Strategies": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7128,7 +10659,41 @@
         "explanation": "To make decisions on resources, budgeting, and tasks."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company decides a new product line is too risky and cancels it. Which strategy is this?",
+        "correctAnswer": "Avoid",
+        "incorrectAnswers": [
+          "Transfer",
+          "Mitigate",
+          "Accept"
+        ],
+        "explanation": "Avoid: stop participating in a high-risk activity.",
+        "page": "89"
+      },
+      {
+        "question": "A company buys cybersecurity insurance against ransomware. Which strategy is this?",
+        "correctAnswer": "Transfer",
+        "incorrectAnswers": [
+          "Avoid",
+          "Accept",
+          "Mitigate"
+        ],
+        "explanation": "Transfer moves the risk to another party.",
+        "page": "89"
+      },
+      {
+        "question": "A company installs an IPS to reduce the chance of an attack succeeding. Which strategy is this?",
+        "correctAnswer": "Mitigate",
+        "incorrectAnswers": [
+          "Transfer",
+          "Avoid",
+          "Accept with exemption"
+        ],
+        "explanation": "Mitigate decreases the risk level by investing in security systems.",
+        "page": "89"
+      }
+    ]
   },
   "5.2 - Business Impact Analysis": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7175,7 +10740,41 @@
         "explanation": "Mean time between failures."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "The business says it can lose no more than 4 hours of data. Which metric is this?",
+        "correctAnswer": "RPO",
+        "incorrectAnswers": [
+          "RTO",
+          "MTTR",
+          "MTBF"
+        ],
+        "explanation": "Recovery point objective: how much data loss is acceptable.",
+        "page": "89"
+      },
+      {
+        "question": "The business says the order system must be running again within 2 hours of an outage. Which metric is this?",
+        "correctAnswer": "RTO",
+        "incorrectAnswers": [
+          "RPO",
+          "MTBF",
+          "ALE"
+        ],
+        "explanation": "Recovery time objective: get back to a particular service level.",
+        "page": "89"
+      },
+      {
+        "question": "A system ran 1,000 hours total and failed 4 times. What is the MTBF?",
+        "correctAnswer": "250 hours",
+        "incorrectAnswers": [
+          "4,000 hours",
+          "1,004 hours",
+          "4 hours"
+        ],
+        "explanation": "MTBF = total uptime / number of breakdowns = 1,000 / 4.",
+        "page": "89"
+      }
+    ]
   },
   "5.3 - Third-party Risk Assessment": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7248,7 +10847,41 @@
         "page": "90"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants the legal ability to audit its cloud provider's security at any time. What should be in the contract?",
+        "correctAnswer": "A right-to-audit clause",
+        "incorrectAnswers": [
+          "An MOU",
+          "A non-compete clause",
+          "A CRL"
+        ],
+        "explanation": "Right-to-audit lets you verify security before a breach occurs.",
+        "page": "90"
+      },
+      {
+        "question": "A potential vendor offers the purchasing manager gifts if the contract is signed. What issue is this?",
+        "correctAnswer": "Conflict of interest",
+        "incorrectAnswers": [
+          "Due care",
+          "Right-to-audit",
+          "Supply chain analysis"
+        ],
+        "explanation": "A third-party offering gifts is a conflict of interest example.",
+        "page": "90"
+      },
+      {
+        "question": "A company wants direct answers from a vendor about its disaster recovery plans and data storage. What should it send?",
+        "correctAnswer": "A vendor questionnaire",
+        "incorrectAnswers": [
+          "An SLA",
+          "A CSR",
+          "A legal hold"
+        ],
+        "explanation": "Questionnaires are part of due diligence and ongoing vendor monitoring.",
+        "page": "91"
+      }
+    ]
   },
   "5.3 - Agreement Types": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7325,7 +10958,52 @@
         "explanation": "Business Partners Agreement."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A customer needs a guarantee of no more than four hours of unscheduled ISP downtime. Which agreement covers this?",
+        "correctAnswer": "SLA",
+        "incorrectAnswers": [
+          "MOU",
+          "NDA",
+          "BPA"
+        ],
+        "explanation": "SLAs set minimum terms like uptime and response time.",
+        "page": "91"
+      },
+      {
+        "question": "A company signed a broad MSA with a contractor and now needs a specific project with deliverables and acceptance criteria. What should it create?",
+        "correctAnswer": "A statement of work (SOW)",
+        "incorrectAnswers": [
+          "An MOU",
+          "A new MSA",
+          "A BPA"
+        ],
+        "explanation": "SOWs are used with an MSA for specific work.",
+        "page": "91"
+      },
+      {
+        "question": "Two organizations want an informal statement of common goals, not a binding contract. What should they sign?",
+        "correctAnswer": "MOU",
+        "incorrectAnswers": [
+          "MSA",
+          "SLA",
+          "SOW"
+        ],
+        "explanation": "An MOU is an informal letter of intent.",
+        "page": "91"
+      },
+      {
+        "question": "A company will share trade secrets with a partner during negotiations. What should both sign?",
+        "correctAnswer": "NDA",
+        "incorrectAnswers": [
+          "SLA",
+          "MOU",
+          "BPA"
+        ],
+        "explanation": "NDAs protect confidential information like trade secrets.",
+        "page": "91"
+      }
+    ]
   },
   "5.4 - Compliance": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7392,7 +11070,41 @@
         "explanation": "Also contractual impacts, fines, and reputational damage."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A financial institution must protect customers' privacy information under U.S. law. Which act applies?",
+        "correctAnswer": "Gramm-Leach-Bliley Act (GLBA)",
+        "incorrectAnswers": [
+          "HIPAA",
+          "SOX",
+          "GDPR"
+        ],
+        "explanation": "GLBA covers disclosure of privacy information from financial institutions.",
+        "page": "92"
+      },
+      {
+        "question": "A company investigates and verifies a vendor's security before signing. Which term BEST describes this?",
+        "correctAnswer": "Due diligence",
+        "incorrectAnswers": [
+          "Due care",
+          "Attestation",
+          "Legal hold"
+        ],
+        "explanation": "Due diligence is often associated with third-party activities.",
+        "page": "92"
+      },
+      {
+        "question": "A large organization struggles to track compliance across thousands of systems. What is described as a must-have?",
+        "correctAnswer": "Automation",
+        "incorrectAnswers": [
+          "Manual spreadsheets only",
+          "Annual guesswork",
+          "Disabling reporting"
+        ],
+        "explanation": "Automation is a must-have for compliance monitoring in large organizations.",
+        "page": "92"
+      }
+    ]
   },
   "5.4 - Privacy": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7439,7 +11151,30 @@
         "explanation": "Includes owner, update frequency, and format."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An EU citizen asks a company to delete all of their personal data. Which GDPR concept applies?",
+        "correctAnswer": "The right to be forgotten",
+        "incorrectAnswers": [
+          "Legal hold",
+          "Key escrow",
+          "Data sovereignty only"
+        ],
+        "explanation": "GDPR gives data subjects control of their data, including the right to be forgotten.",
+        "page": "93"
+      },
+      {
+        "question": "A company needs to know what data it stores, who owns it, and its format. What should it create?",
+        "correctAnswer": "A data inventory",
+        "incorrectAnswers": [
+          "A risk register",
+          "A CRL",
+          "A playbook"
+        ],
+        "explanation": "A data inventory lists all managed data with owner, update frequency, and format.",
+        "page": "93"
+      }
+    ]
   },
   "5.5 - Audits and Assessments": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7490,7 +11225,30 @@
         "page": "94"
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "Investors want an independent opinion of the accuracy of a company's cybersecurity posture. What do they need?",
+        "correctAnswer": "Attestation from an auditor",
+        "incorrectAnswers": [
+          "A self-assessment only",
+          "A bug bounty",
+          "A tabletop exercise"
+        ],
+        "explanation": "Attestation is an auditor's opinion of truth or accuracy.",
+        "page": "93"
+      },
+      {
+        "question": "A regulation requires an independent party to examine records and assess current activities. What is needed?",
+        "correctAnswer": "An external audit",
+        "incorrectAnswers": [
+          "An internal self-assessment",
+          "A legal hold",
+          "An MOU"
+        ],
+        "explanation": "External audits may be required by regulation and performed by an independent third party.",
+        "page": "94"
+      }
+    ]
   },
   "5.5 - Penetration Tests": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7557,7 +11315,52 @@
         "explanation": "Also modifying the boot process or replacing OS files."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A pentester is given full network diagrams and system details before testing. What type of test is this?",
+        "correctAnswer": "Known environment",
+        "incorrectAnswers": [
+          "Unknown environment",
+          "Partially known environment",
+          "Passive reconnaissance only"
+        ],
+        "explanation": "A known environment is full disclosure.",
+        "page": "94"
+      },
+      {
+        "question": "A pentester gathers info from the company website and social media without touching company systems. What is this?",
+        "correctAnswer": "Passive reconnaissance",
+        "incorrectAnswers": [
+          "Active reconnaissance",
+          "Lateral movement",
+          "Pivoting"
+        ],
+        "explanation": "Passive recon uses open sources and is difficult to identify.",
+        "page": "94"
+      },
+      {
+        "question": "A tester runs port scans and OS fingerprinting against the target network. What is this?",
+        "correctAnswer": "Active reconnaissance",
+        "incorrectAnswers": [
+          "Passive reconnaissance",
+          "Persistence",
+          "Physical penetration testing"
+        ],
+        "explanation": "Active recon is visible in network traffic and logs.",
+        "page": "94"
+      },
+      {
+        "question": "A company wants an ongoing process where attackers find weaknesses and defenders fix them, then test again. What perspective is this?",
+        "correctAnswer": "Integrated",
+        "incorrectAnswers": [
+          "Offensive only",
+          "Defensive only",
+          "Unknown environment"
+        ],
+        "explanation": "Integrated pentesting creates an ongoing identify, patch, and retest process.",
+        "page": "94"
+      }
+    ]
   },
   "5.6 - Security Awareness": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7624,7 +11427,41 @@
         "explanation": "Then establish minimum awareness, integrate compliance, and define metrics."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "A company wants to measure how many employees click phishing links and give instant training to those who do. What should it run?",
+        "correctAnswer": "An internal phishing campaign",
+        "incorrectAnswers": [
+          "A tabletop exercise",
+          "A penetration test of the firewall",
+          "A legal hold"
+        ],
+        "explanation": "Phishing campaigns are automated with centralized reporting and immediate feedback.",
+        "page": "95"
+      },
+      {
+        "question": "Logs show a user replaced a core OS file. Which type of anomalous behavior is this?",
+        "correctAnswer": "Risky behavior",
+        "incorrectAnswers": [
+          "Unexpected behavior",
+          "Unintentional behavior",
+          "Normal behavior"
+        ],
+        "explanation": "Risky behavior includes modifying the hosts file and replacing core OS files.",
+        "page": "95"
+      },
+      {
+        "question": "One user keeps failing phishing tests month after month. Which monitoring approach identifies this?",
+        "correctAnswer": "Recurring monitoring",
+        "incorrectAnswers": [
+          "Initial monitoring only",
+          "No monitoring",
+          "Physical penetration testing"
+        ],
+        "explanation": "Recurring monitoring identifies high-frequency issues and helps users with multiple occurrences.",
+        "page": "95"
+      }
+    ]
   },
   "5.6 - User Training": {
     "domain": "5.0 - Security Program Management and Oversight",
@@ -7681,6 +11518,40 @@
         "explanation": "Extensive and ongoing training is needed."
       }
     ],
-    "bonusQuestions": []
+    "bonusQuestions": [
+      {
+        "question": "An employee finds a USB drive in a FedEx envelope addressed to them with no sender. What should training tell them?",
+        "correctAnswer": "Don't plug it in; unknown USB drives can contain malware",
+        "incorrectAnswers": [
+          "Plug it in to identify the owner",
+          "Give it to a coworker to test",
+          "Format it and keep it"
+        ],
+        "explanation": "Situational awareness and removable media training.",
+        "page": "96"
+      },
+      {
+        "question": "A company wants to make it very difficult for one insider to make an unauthorized critical change. What should it require?",
+        "correctAnswer": "Multiple approvals for critical processes",
+        "incorrectAnswers": [
+          "A single admin with all rights",
+          "No monitoring",
+          "Shared passwords"
+        ],
+        "explanation": "Insider threat guidance: multiple approvals and monitoring.",
+        "page": "96"
+      },
+      {
+        "question": "Many employees now work from home. What should security training address?",
+        "correctAnswer": "Hybrid/remote work risks like endpoint security and VPN policies",
+        "incorrectAnswers": [
+          "Only office door locks",
+          "Only data center cooling",
+          "Nothing new"
+        ],
+        "explanation": "Remote work brings unusual risks; add endpoint security and VPN policies.",
+        "page": "96"
+      }
+    ]
   }
 }

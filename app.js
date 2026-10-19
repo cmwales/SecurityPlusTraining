@@ -60,9 +60,14 @@
     let pool = [];
     for (const name of state.selected) {
       const v = DATA[name];
-      const qs = state.includeBonus ? v.questions.concat(v.bonusQuestions) : v.questions;
-      for (const q of qs) {
-        pool.push({ section: name, domain: v.domain, page: q.page || v.page, source: q });
+      for (const q of v.questions) {
+        pool.push({ section: name, domain: v.domain, page: q.page || v.page, scenario: false, source: q });
+      }
+      // bonusQuestions holds the scenario-style ("which is BEST") questions
+      if (state.includeBonus) {
+        for (const q of v.bonusQuestions) {
+          pool.push({ section: name, domain: v.domain, page: q.page || v.page, scenario: true, source: q });
+        }
       }
     }
     pool = shuffle(pool);
@@ -76,6 +81,7 @@
         section: item.section,
         domain: item.domain,
         page: item.page,
+        scenario: item.scenario,
         question: q.question,
         explanation: q.explanation,
         correctAnswer: q.correctAnswer,
@@ -130,7 +136,7 @@
         <div class="controls-row">
           ${hasBonus ? `<label class="toggle-row">
             <input type="checkbox" id="chk-bonus" ${state.includeBonus ? "checked" : ""}>
-            Include bonus questions
+            Include scenario questions
           </label>` : "<span></span>"}
           <div>
             <button class="primary" id="btn-start" ${totalSelected === 0 ? "disabled" : ""}>
@@ -216,7 +222,7 @@
       <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
 
       <div class="panel">
-        <div class="question-domain">${escapeHtml(item.domain)}</div>
+        <div class="question-domain">${escapeHtml(item.domain)}${item.scenario ? ' <span class="scenario-tag">Scenario</span>' : ""}</div>
         <div class="question-text">${escapeHtml(item.question)}</div>
         <div class="page-ref">${pageLabel(item.page)}</div>
         <div class="options">${optionsHtml}</div>

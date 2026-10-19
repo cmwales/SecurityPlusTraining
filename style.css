@@ -482,20 +482,9 @@ button.grade.bad {
   background: var(--bad-bg);
 }
 
-kbd {
-  font-family: inherit;
-  font-size: 0.75rem;
-  opacity: 0.7;
-  border: 1px solid currentColor;
-  border-radius: 4px;
-  padding: 0 5px;
-  margin-left: 6px;
-}
-
 @media (max-width: 520px) {
   .flash-actions { flex-direction: column-reverse; }
   .flash-actions button { width: 100%; }
-  kbd { display: none; }
 }
 
 .page-ref {

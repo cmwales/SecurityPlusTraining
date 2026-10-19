@@ -559,11 +559,11 @@
     const answerHtml = flash.revealed
       ? `<div class="flash-answer">${escapeHtml(item.a)}<div class="page-ref">${pageLabel(item.page)}</div></div>
          <div class="flash-actions">
-           <button class="grade bad" id="btn-missed">Missed it <kbd>2</kbd></button>
-           <button class="grade good" id="btn-got">Got it <kbd>1</kbd></button>
+           <button class="grade bad" id="btn-missed">Missed it</button>
+           <button class="grade good" id="btn-got">Got it</button>
          </div>`
       : `<div class="flash-actions">
-           <button class="primary" id="btn-reveal">See Answer <kbd>Space</kbd></button>
+           <button class="primary" id="btn-reveal">See Answer</button>
          </div>`;
 
     app.innerHTML = `

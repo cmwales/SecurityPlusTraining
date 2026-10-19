@@ -41,6 +41,105 @@
     return `Messer notes ${String(page).includes("-") ? "pp." : "p."} ${escapeHtml(page)}`;
   }
 
+  // Official CompTIA SY0-701 exam objective titles. Sections are keyed like
+  // "1.2 - Zero Trust", so the objective is the number before " - ".
+  const OBJECTIVES = {
+    "1.1": "Compare and contrast various types of security controls",
+    "1.2": "Summarize fundamental security concepts",
+    "1.3": "Explain the importance of change management processes and the impact to security",
+    "1.4": "Explain the importance of using appropriate cryptographic solutions",
+    "2.1": "Compare and contrast common threat actors and motivations",
+    "2.2": "Explain common threat vectors and attack surfaces",
+    "2.3": "Explain various types of vulnerabilities",
+    "2.4": "Given a scenario, analyze indicators of malicious activity",
+    "2.5": "Explain the purpose of mitigation techniques used to secure the enterprise",
+    "3.1": "Compare and contrast security implications of different architecture models",
+    "3.2": "Given a scenario, apply security principles to secure enterprise infrastructure",
+    "3.3": "Compare and contrast concepts and strategies to protect data",
+    "3.4": "Explain the importance of resilience and recovery in security architecture",
+    "4.1": "Given a scenario, apply common security techniques to computing resources",
+    "4.2": "Explain the security implications of proper hardware, software, and data asset management",
+    "4.3": "Explain various activities associated with vulnerability management",
+    "4.4": "Explain security alerting and monitoring concepts and tools",
+    "4.5": "Given a scenario, modify enterprise capabilities to enhance security",
+    "4.6": "Given a scenario, implement and maintain identity and access management",
+    "4.7": "Explain the importance of automation and orchestration related to secure operations",
+    "4.8": "Explain appropriate incident response activities",
+    "4.9": "Given a scenario, use data sources to support an investigation",
+    "5.1": "Summarize elements of effective security governance",
+    "5.2": "Explain elements of the risk management process",
+    "5.3": "Explain the processes associated with third-party risk assessment and management",
+    "5.4": "Summarize elements of effective security compliance",
+    "5.5": "Explain types and purposes of audits and assessments",
+    "5.6": "Given a scenario, implement security awareness practices",
+  };
+
+  function objectiveOf(section) {
+    return section.split(" - ")[0];
+  }
+
+  function objectiveLabel(section) {
+    const o = objectiveOf(section);
+    return OBJECTIVES[o] ? `${o} ${OBJECTIVES[o]}` : o;
+  }
+
+  function sectionTitle(section) {
+    const i = section.indexOf(" - ");
+    return i < 0 ? section : section.slice(i + 3);
+  }
+
+  // Section checkboxes grouped under objective headers (1.1, 1.2, ...).
+  // Each objective header has its own checkbox that selects all of its sections.
+  function objectiveGroupsHtml(names, isSelected, countFor, unit, sectionAttr, objectiveAttr) {
+    const byObjective = new Map();
+    for (const n of names) {
+      const o = objectiveOf(n);
+      if (!byObjective.has(o)) byObjective.set(o, []);
+      byObjective.get(o).push(n);
+    }
+    let html = "";
+    for (const [o, objNames] of byObjective) {
+      const sel = objNames.filter(isSelected).length;
+      const total = objNames.reduce((s, n) => s + countFor(n), 0);
+      html += `
+        <div class="objective-group">
+          <div class="objective-row">
+            <label>
+              <input type="checkbox" ${objectiveAttr}="${escapeHtml(o)}" ${sel === objNames.length ? "checked" : ""}
+                ${sel > 0 && sel < objNames.length ? "data-partial" : ""}>
+              <span class="objective-title">${escapeHtml(objectiveLabel(objNames[0]))}</span>
+            </label>
+            <span class="count">${total} ${unit}</span>
+          </div>`;
+      for (const n of objNames) {
+        html += `
+          <div class="section-row">
+            <label>
+              <input type="checkbox" ${sectionAttr}="${escapeHtml(n)}" ${isSelected(n) ? "checked" : ""}>
+              <span>${escapeHtml(n)}</span>
+            </label>
+            <span class="count">${countFor(n)} ${unit}</span>
+          </div>`;
+      }
+      html += `</div>`;
+    }
+    return html;
+  }
+
+  // Wire objective header checkboxes; partially selected objectives show as indeterminate
+  function wireObjectiveBoxes(objectiveAttr, allNames, selectedSet, onChange) {
+    app.querySelectorAll(`input[${objectiveAttr}]`).forEach((cb) => {
+      if (cb.hasAttribute("data-partial")) cb.indeterminate = true;
+      cb.addEventListener("change", (e) => {
+        const o = e.target.getAttribute(objectiveAttr);
+        allNames
+          .filter((n) => objectiveOf(n) === o)
+          .forEach((n) => (e.target.checked ? selectedSet.add(n) : selectedSet.delete(n)));
+        onChange();
+      });
+    });
+  }
+
   function sectionsGroupedByDomain() {
     const groups = new Map(); // domain -> [sectionName,...]
     for (const [name, v] of Object.entries(DATA)) {
@@ -102,19 +201,9 @@
     let groupsHtml = "";
     for (const [domain, names] of groups) {
       groupsHtml += `<div class="domain-group">
-        <div class="domain-title">${escapeHtml(domain)}</div>`;
-      for (const name of names) {
-        const checked = state.selected.has(name) ? "checked" : "";
-        groupsHtml += `
-          <div class="section-row">
-            <label>
-              <input type="checkbox" data-section="${escapeHtml(name)}" ${checked}>
-              <span>${escapeHtml(name)}</span>
-            </label>
-            <span class="count">${sectionQuestionCount(name)} q</span>
-          </div>`;
-      }
-      groupsHtml += `</div>`;
+        <div class="domain-title">${escapeHtml(domain)}</div>
+        ${objectiveGroupsHtml(names, (n) => state.selected.has(n), sectionQuestionCount, "q", "data-section", "data-objective")}
+      </div>`;
     }
 
     const totalSelected = [...state.selected].reduce(
@@ -156,6 +245,8 @@
         renderSetup();
       });
     });
+
+    wireObjectiveBoxes("data-objective", allNames, state.selected, renderSetup);
 
     document.getElementById("btn-home").addEventListener("click", renderHome);
 
@@ -222,7 +313,7 @@
       <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
 
       <div class="panel">
-        <div class="question-domain">${escapeHtml(item.domain)}${item.scenario ? ' <span class="scenario-tag">Scenario</span>' : ""}</div>
+        <div class="question-domain">${escapeHtml(item.domain)} &rsaquo; ${escapeHtml(objectiveLabel(item.section))}${item.scenario ? ' <span class="scenario-tag">Scenario</span>' : ""}</div>
         <div class="question-text">${escapeHtml(item.question)}</div>
         <div class="page-ref">${pageLabel(item.page)}</div>
         <div class="options">${optionsHtml}</div>
@@ -423,23 +514,20 @@
       const cardTotal = names.reduce((s, n) => s + CARDS[n].cards.length, 0);
       const open = state.flashOpenDomains && state.flashOpenDomains.has(domain) ? "open" : "";
 
-      let rows = "";
-      for (const name of names) {
-        const checked = state.flashSelected.has(name) ? "checked" : "";
-        rows += `
-          <div class="section-row">
-            <label>
-              <input type="checkbox" data-flash-section="${escapeHtml(name)}" ${checked}>
-              <span>${escapeHtml(name)}</span>
-            </label>
-            <span class="count">${CARDS[name].cards.length} cards</span>
-          </div>`;
-      }
+      const rows = objectiveGroupsHtml(
+        names,
+        (n) => state.flashSelected.has(n),
+        (n) => CARDS[n].cards.length,
+        "cards",
+        "data-flash-section",
+        "data-flash-objective"
+      );
 
       groupsHtml += `
         <details class="domain-details" data-domain="${escapeHtml(domain)}" ${open}>
           <summary>
             <input type="checkbox" data-flash-domain="${escapeHtml(domain)}" ${domainChecked}
+              ${selCount > 0 && selCount < names.length ? "data-partial" : ""}
               aria-label="Select all of ${escapeHtml(domain)}">
             <span class="domain-title">${escapeHtml(domain)}</span>
             <span class="count">${selCount}/${names.length} sections &middot; ${cardTotal} cards</span>
@@ -456,7 +544,7 @@
     app.innerHTML = `
       <button class="link" id="btn-home">&larr; Home</button>
       <h1>Flashcards</h1>
-      <p class="subtitle">Pick sections from the study notes. Expand a domain to choose individual sections, or tick the domain to take all of it.</p>
+      <p class="subtitle">Pick sections from the study notes. Tick a domain or an objective (1.1, 1.2, ...) to take all of it, or expand a domain to choose individual sections.</p>
 
       <div class="panel">
         <h2>Choose Sections</h2>
@@ -487,7 +575,13 @@
       });
     });
 
+    wireObjectiveBoxes("data-flash-objective", allNames, state.flashSelected, () => {
+      saveFlashSelection();
+      renderFlashSetup();
+    });
+
     app.querySelectorAll("input[data-flash-domain]").forEach((cb) => {
+      if (cb.hasAttribute("data-partial")) cb.indeterminate = true;
       // Clicking the checkbox inside <summary> shouldn't toggle the details open/closed
       cb.addEventListener("click", (e) => e.stopPropagation());
       cb.addEventListener("change", (e) => {
@@ -574,7 +668,7 @@
       <div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>
 
       <div class="panel flash-card">
-        <div class="question-domain">${escapeHtml(item.section)}</div>
+        <div class="question-domain">${escapeHtml(objectiveLabel(item.section))} &rsaquo; ${escapeHtml(sectionTitle(item.section))}</div>
         <div class="flash-question">${escapeHtml(item.q)}</div>
         ${answerHtml}
       </div>

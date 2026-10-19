@@ -5,51 +5,63 @@
     "cards": [
       {
         "q": "What are the four security control categories?",
-        "a": "Technical, Managerial, Operational, and Physical."
+        "a": "Technical, Managerial, Operational, and Physical.",
+        "page": "1"
       },
       {
         "q": "Is a firewall a technical or managerial control?",
-        "a": "Technical - it is implemented using systems."
+        "a": "Technical - it is implemented using systems.",
+        "page": "1"
       },
       {
         "q": "Is a security policy a technical or managerial control?",
-        "a": "Managerial (administrative) - it's tied to security design and implementation."
+        "a": "Managerial (administrative) - it's tied to security design and implementation.",
+        "page": "1"
       },
       {
         "q": "Are security guards and awareness programs operational or technical controls?",
-        "a": "Operational - implemented by people instead of systems."
+        "a": "Operational - implemented by people instead of systems.",
+        "page": "1"
       },
       {
         "q": "Name the six security control types.",
-        "a": "Preventive, Deterrent, Detective, Corrective, Compensating, and Directive."
+        "a": "Preventive, Deterrent, Detective, Corrective, Compensating, and Directive.",
+        "page": "1"
       },
       {
         "q": "Does a deterrent control directly prevent access?",
-        "a": "No. It discourages an intrusion attempt (e.g., warning signs, splash screens) but doesn't block access."
+        "a": "No. It discourages an intrusion attempt (e.g., warning signs, splash screens) but doesn't block access.",
+        "page": "1"
       },
       {
         "q": "Does a detective control always prevent access?",
-        "a": "No. It identifies and logs an intrusion attempt (e.g., system logs, motion detectors) but may not prevent it."
+        "a": "No. It identifies and logs an intrusion attempt (e.g., system logs, motion detectors) but may not prevent it.",
+        "page": "1"
       },
       {
         "q": "Restoring from backup after ransomware is what control type?",
-        "a": "Corrective - applied after an event to reverse its impact."
+        "a": "Corrective - applied after an event to reverse its impact.",
+        "page": "1"
       },
       {
         "q": "A firewall rule that blocks a vulnerable app because it can't be patched yet is what control type?",
-        "a": "Compensating - control using other means when existing controls aren't sufficient."
+        "a": "Compensating - control using other means when existing controls aren't sufficient.",
+        "page": "1"
       },
       {
         "q": "Is a directive control considered strong or weak?",
-        "a": "Relatively weak - it directs a subject toward compliance (e.g., an 'Authorized Personnel Only' sign)."
+        "a": "Relatively weak - it directs a subject toward compliance (e.g., an 'Authorized Personnel Only' sign).",
+        "page": "1"
       },
       {
         "q": "A generator used after a power outage is what control type?",
-        "a": "Compensating (physical category)."
+        "a": "Compensating (physical category).",
+        "page": "1"
       },
       {
         "q": "A door lock is what control type?",
-        "a": "Preventive (physical category)."
+        "a": "Preventive (physical category).",
+        "page": "1"
       }
     ]
   },
@@ -195,47 +207,58 @@
     "cards": [
       {
         "q": "What is the core idea of zero trust?",
-        "a": "Nothing is inherently trusted - everything must be verified."
+        "a": "Nothing is inherently trusted - everything must be verified.",
+        "page": "5"
       },
       {
         "q": "What are the two planes of operation in zero trust?",
-        "a": "Data plane and control plane."
+        "a": "Data plane and control plane.",
+        "page": "5"
       },
       {
         "q": "Which plane processes frames, packets, forwarding, and NAT?",
-        "a": "The data plane."
+        "a": "The data plane.",
+        "page": "5"
       },
       {
         "q": "Which plane manages routing tables, session tables, and policies?",
-        "a": "The control plane."
+        "a": "The control plane.",
+        "page": "5"
       },
       {
         "q": "What is the Policy Enforcement Point (PEP)?",
-        "a": "The gatekeeper - it allows, monitors, and terminates connections."
+        "a": "The gatekeeper - it allows, monitors, and terminates connections.",
+        "page": "5"
       },
       {
         "q": "Is the Policy Enforcement Point in the data plane or the control plane?",
-        "a": "The data plane."
+        "a": "The data plane.",
+        "page": "5"
       },
       {
         "q": "What two components make up the Policy Decision Point (PDP)?",
-        "a": "The Policy Engine and the Policy Administrator."
+        "a": "The Policy Engine and the Policy Administrator.",
+        "page": "6"
       },
       {
         "q": "Which PDP component evaluates access decisions and grants, denies, or revokes?",
-        "a": "The Policy Engine."
+        "a": "The Policy Engine.",
+        "page": "6"
       },
       {
         "q": "Which PDP component communicates with the PEP and generates access tokens?",
-        "a": "The Policy Administrator."
+        "a": "The Policy Administrator.",
+        "page": "6"
       },
       {
         "q": "What is adaptive identity?",
-        "a": "Evaluating risk indicators (location, connection type, IP, relationship to the org) to decide how strongly to authenticate."
+        "a": "Evaluating risk indicators (location, connection type, IP, relationship to the org) to decide how strongly to authenticate.",
+        "page": "5"
       },
       {
         "q": "What is threat scope reduction?",
-        "a": "Decreasing the number of possible entry points."
+        "a": "Decreasing the number of possible entry points.",
+        "page": "6"
       }
     ]
   },
@@ -309,7 +332,7 @@
     "cards": [
       {
         "q": "Who gives final approval for a change in a formal process?",
-        "a": "The change control board (CCB)."
+        "a": "The change control board."
       },
       {
         "q": "Does the owner of a change usually perform the change?",
@@ -382,14 +405,6 @@
       {
         "q": "What does PKI stand for?",
         "a": "Public Key Infrastructure."
-      },
-      {
-        "q": "Is AES symmetric or asymmetric?",
-        "a": "Symmetric - one shared key encrypts and decrypts."
-      },
-      {
-        "q": "Is RSA symmetric or asymmetric?",
-        "a": "Asymmetric - it uses a public/private key pair."
       },
       {
         "q": "How many keys does symmetric encryption use?",
@@ -469,23 +484,28 @@
     "cards": [
       {
         "q": "What is out-of-band key exchange?",
-        "a": "Sharing the key outside the network - telephone, courier, in person."
+        "a": "Sharing the key outside the network - telephone, courier, in person.",
+        "page": "11"
       },
       {
         "q": "What is in-band key exchange?",
-        "a": "Sharing the key over the network, protected with additional encryption (often asymmetric)."
+        "a": "Sharing the key over the network, protected with additional encryption (often asymmetric).",
+        "page": "11"
       },
       {
         "q": "What is a session key?",
-        "a": "A random symmetric key, shared using asymmetric encryption, used to encrypt a session's data."
+        "a": "A random symmetric key, shared using asymmetric encryption, used to encrypt a session's data.",
+        "page": "11"
       },
       {
         "q": "What is an ephemeral key?",
-        "a": "A temporary key that is changed often."
+        "a": "A temporary key that is changed often.",
+        "page": "11"
       },
       {
         "q": "How can two parties create the same symmetric key without sending it?",
-        "a": "Each combines their own private key with the other's public key (Diffie-Hellman style)."
+        "a": "Each combines their own private key with the other's public key.",
+        "page": "12"
       }
     ]
   },
@@ -596,10 +616,6 @@
       {
         "q": "Should you store passwords as plaintext or as a salted hash?",
         "a": "A salted hash."
-      },
-      {
-        "q": "Is SHA-256 a hashing algorithm or an encryption algorithm?",
-        "a": "A hashing algorithm."
       }
     ]
   },
@@ -631,55 +647,68 @@
     "cards": [
       {
         "q": "What is the standard format for digital certificates?",
-        "a": "X.509."
+        "a": "X.509.",
+        "page": "16"
       },
       {
         "q": "What does a digital certificate bind together?",
-        "a": "A public key with a digital signature and details about the key holder."
+        "a": "A public key with a digital signature and details about the key holder.",
+        "page": "16"
       },
       {
         "q": "What does CA stand for?",
-        "a": "Certificate Authority."
+        "a": "Certificate Authority.",
+        "page": "16"
       },
       {
         "q": "What is a CSR?",
-        "a": "Certificate Signing Request - you create a key pair and send the public key to the CA to be signed."
+        "a": "Certificate Signing Request - you create a key pair and send the public key to the CA to be signed.",
+        "page": "16"
       },
       {
         "q": "When creating a CSR, which key do you send to the CA?",
-        "a": "The public key. The private key never leaves the applicant."
+        "a": "The public key. The private key never leaves the applicant.",
+        "page": "16"
       },
       {
         "q": "What is a root of trust?",
-        "a": "An inherently trusted component (HSM, secure enclave, CA) that other trust is built on."
+        "a": "An inherently trusted component (HSM, secure enclave, CA) that other trust is built on.",
+        "page": "16"
       },
       {
         "q": "What is a wildcard certificate?",
-        "a": "A certificate covering all server names in a domain, e.g., *.professormesser.com."
+        "a": "A certificate covering all server names in a domain, e.g., *.professormesser.com.",
+        "page": "16"
       },
       {
         "q": "What X.509 extension lets one certificate support many domain names?",
-        "a": "Subject Alternative Name (SAN)."
+        "a": "Subject Alternative Name (SAN).",
+        "page": "16"
       },
       {
         "q": "What does CRL stand for?",
-        "a": "Certificate Revocation List - maintained by the CA."
+        "a": "Certificate Revocation List - maintained by the CA.",
+        "page": "16"
       },
       {
         "q": "What does OCSP stand for?",
-        "a": "Online Certificate Status Protocol."
+        "a": "Online Certificate Status Protocol.",
+        "page": "17"
       },
       {
         "q": "Is OCSP more or less efficient than downloading a CRL?",
-        "a": "More efficient."
+        "a": "More efficient.",
+        "page": "17"
       },
       {
         "q": "What is OCSP stapling?",
-        "a": "The certificate holder's server includes CA-signed status info in the TLS handshake, so the CA doesn't have to answer every client."
+        "a": "The certificate holder's server includes CA-signed status info in the TLS handshake, so the CA doesn't have to answer every client.",
+        "page": "17"
       },
       {
         "q": "Do self-signed / internal CA certificates need a public CA?",
-        "a": "No - install your CA's certificate on your devices and they'll trust certs it issues."
+        "a": "No - install your CA's certificate on your devices and they'll trust certs it issues.",
+        "page": "16"
       }
     ]
   },
@@ -689,47 +718,58 @@
     "cards": [
       {
         "q": "Which threat actor has the highest sophistication and massive resources?",
-        "a": "Nation state."
+        "a": "Nation state.",
+        "page": "18"
       },
       {
         "q": "What does APT stand for?",
-        "a": "Advanced Persistent Threat - commonly a nation state."
+        "a": "Advanced Persistent Threat - commonly a nation state.",
+        "page": "18"
       },
       {
         "q": "What was Stuxnet?",
-        "a": "A worm (US and Israel) that destroyed ~1,000 nuclear centrifuges - a nation-state attack."
+        "a": "A worm (US and Israel) that destroyed ~1,000 nuclear centrifuges - a nation-state attack.",
+        "page": "18"
       },
       {
         "q": "Which threat actor runs pre-made scripts without understanding them?",
-        "a": "Unskilled attacker."
+        "a": "Unskilled attacker.",
+        "page": "18"
       },
       {
         "q": "Which threat actor is a hacker with a purpose (philosophical/political)?",
-        "a": "Hacktivist."
+        "a": "Hacktivist.",
+        "page": "18"
       },
       {
         "q": "Is an insider threat internal or external?",
-        "a": "Internal."
+        "a": "Internal.",
+        "page": "18"
       },
       {
         "q": "What is the main motivation of organized crime?",
-        "a": "Money / financial gain."
+        "a": "Money / financial gain.",
+        "page": "18"
       },
       {
         "q": "What is shadow IT?",
-        "a": "Employees building their own infrastructure around the internal IT organization (e.g., unapproved cloud services)."
+        "a": "Employees building their own infrastructure around the internal IT organization (e.g., unapproved cloud services).",
+        "page": "18"
       },
       {
         "q": "Is shadow IT internal or external?",
-        "a": "Internal."
+        "a": "Internal.",
+        "page": "18"
       },
       {
         "q": "Name three threat actor attributes.",
-        "a": "Internal/external, resources/funding, and level of sophistication/capability."
+        "a": "Internal/external, resources/funding, and level of sophistication/capability.",
+        "page": "18"
       },
       {
         "q": "Is organized crime usually internal or external?",
-        "a": "Almost always external."
+        "a": "Almost always external.",
+        "page": "18"
       }
     ]
   },
@@ -739,43 +779,43 @@
     "cards": [
       {
         "q": "What is a threat vector?",
-        "a": "The method an attacker uses to gain access to or infect a target (also called attack vector)."
+        "a": "The method an attacker uses to gain access to or infect a target (also called attack vector).",
+        "page": "19"
       },
       {
         "q": "Why can SVG images be a threat?",
-        "a": "SVG is described in XML, so it can contain HTML injection or JavaScript attack code."
+        "a": "SVG is described in XML, so it can contain HTML injection or JavaScript attack code.",
+        "page": "19"
       },
       {
         "q": "What is vishing?",
-        "a": "Phishing over the phone (voice)."
-      },
-      {
-        "q": "What is war dialing?",
-        "a": "Dialing many phone numbers looking for modems/systems that answer."
+        "a": "Phishing over the phone (voice).",
+        "page": "19"
       },
       {
         "q": "Why are USB devices a threat vector?",
-        "a": "They bypass the firewall, can infect air-gapped networks, act as keyboards, and exfiltrate data."
+        "a": "They bypass the firewall, can infect air-gapped networks, act as keyboards, and exfiltrate data.",
+        "page": "19"
       },
       {
         "q": "Is agentless software client-based?",
-        "a": "No - nothing is installed; compromised server software affects all users."
+        "a": "No - nothing is installed; compromised server software affects all users.",
+        "page": "20"
       },
       {
         "q": "Why are unsupported systems a risk?",
-        "a": "They no longer receive security patches."
-      },
-      {
-        "q": "What does 802.1X provide on a wired network?",
-        "a": "Port-based network access control - no access until you authenticate."
+        "a": "They no longer receive security patches.",
+        "page": "20"
       },
       {
         "q": "Why do open service ports matter?",
-        "a": "Every open port is an opportunity for an attacker and expands the attack surface."
+        "a": "Every open port is an opportunity for an attacker and expands the attack surface.",
+        "page": "20"
       },
       {
         "q": "What supply chain vector was used in the 2013 Target breach?",
-        "a": "A third-party HVAC vendor's stolen VPN credentials."
+        "a": "Gaining access to the network using a vendor.",
+        "page": "20"
       }
     ]
   },
@@ -979,7 +1019,7 @@
       },
       {
         "q": "What does adding ' OR '1'='1 to a query do?",
-        "a": "Makes the WHERE clause always true, returning every row."
+        "a": "It's injected SQL that changes the query - it could let an attacker view all database information."
       },
       {
         "q": "What is the root cause of code injection?",
@@ -997,27 +1037,33 @@
     "cards": [
       {
         "q": "What does XSS stand for?",
-        "a": "Cross-site scripting."
+        "a": "Cross-site scripting.",
+        "page": "25"
       },
       {
         "q": "What language does XSS commonly use?",
-        "a": "JavaScript."
+        "a": "JavaScript.",
+        "page": "25"
       },
       {
         "q": "XSS takes advantage of whose trust?",
-        "a": "The trust a user has for a site."
+        "a": "The trust a user has for a site.",
+        "page": "25"
       },
       {
         "q": "What is a reflected (non-persistent) XSS attack?",
-        "a": "A malicious script in a link (e.g., in a search box parameter) runs in the victim's browser when clicked."
+        "a": "A malicious script in a link (e.g., in a search box parameter) runs in the victim's browser when clicked.",
+        "page": "25"
       },
       {
         "q": "What is a stored (persistent) XSS attack?",
-        "a": "The malicious payload is saved on the site (e.g., a social post) and runs for everyone who views it."
+        "a": "The malicious payload is saved on the site (e.g., a social post) and runs for everyone who views it.",
+        "page": "25"
       },
       {
         "q": "What's the developer's main defense against XSS?",
-        "a": "Input validation - don't allow users to add scripts to input fields."
+        "a": "Input validation - don't allow users to add scripts to input fields.",
+        "page": "25"
       }
     ]
   },
@@ -1067,7 +1113,7 @@
     "cards": [
       {
         "q": "What is directory traversal?",
-        "a": "Accessing files outside the intended directory due to faulty configuration or code."
+        "a": "An attack where faulty configurations put data at risk."
       },
       {
         "q": "What is an out-of-bounds write?",
@@ -1115,23 +1161,28 @@
     "cards": [
       {
         "q": "What caused the 2017 Verizon data exposure?",
-        "a": "A third party left an Amazon S3 bucket open (open permissions)."
+        "a": "A third party left an Amazon S3 bucket open (open permissions).",
+        "page": "28"
       },
       {
         "q": "Should users log in directly as root?",
-        "a": "No - disable direct root login and use su or sudo."
+        "a": "No - disable direct root login and use su or sudo.",
+        "page": "28"
       },
       {
         "q": "Is Telnet secure?",
-        "a": "No - it sends everything in the clear. Use SSH instead."
+        "a": "No - it sends everything in the clear. Use SSH instead.",
+        "page": "29"
       },
       {
         "q": "Is FTP encrypted?",
-        "a": "No - use SFTP."
+        "a": "No - use SFTP.",
+        "page": "29"
       },
       {
         "q": "What did the Mirai botnet exploit?",
-        "a": "Default credentials/configurations on IoT devices."
+        "a": "Default credentials/configurations on IoT devices.",
+        "page": "29"
       }
     ]
   },
@@ -1203,27 +1254,33 @@
     "cards": [
       {
         "q": "Does a virus need user action to spread?",
-        "a": "Yes - you have to execute a program."
+        "a": "Yes - you have to execute a program.",
+        "page": "30"
       },
       {
         "q": "Does a worm need user action to spread?",
-        "a": "No - it self-replicates over the network."
+        "a": "No - it self-replicates over the network.",
+        "page": "30"
       },
       {
         "q": "Name four virus types.",
-        "a": "Program, boot sector, script, and macro viruses."
+        "a": "Program, boot sector, script, and macro viruses.",
+        "page": "30"
       },
       {
         "q": "Where are macro viruses common?",
-        "a": "Microsoft Office documents."
+        "a": "Microsoft Office documents.",
+        "page": "30"
       },
       {
         "q": "What is a fileless virus?",
-        "a": "Malware that operates in memory and is never installed as a file, avoiding anti-virus detection."
+        "a": "Malware that operates in memory and is never installed as a file, avoiding anti-virus detection.",
+        "page": "30"
       },
       {
         "q": "What can mitigate worm infestations at the network level?",
-        "a": "Firewalls and IDS/IPS."
+        "a": "Firewalls and IDS/IPS.",
+        "page": "30"
       }
     ]
   },
@@ -1407,23 +1464,28 @@
     "cards": [
       {
         "q": "Is a replay attack an on-path attack?",
-        "a": "No - the replay doesn't require the original workstation."
+        "a": "No - the replay doesn't require the original workstation.",
+        "page": "35"
       },
       {
         "q": "What is pass the hash?",
-        "a": "Capturing a password hash and replaying it to authenticate as the user."
+        "a": "Capturing a password hash and replaying it to authenticate as the user.",
+        "page": "35"
       },
       {
         "q": "What is session hijacking (sidejacking)?",
-        "a": "Stealing a session ID (often from a cookie) to access a server as the victim."
+        "a": "Stealing a session ID (often from a cookie) to access a server as the victim.",
+        "page": "35"
       },
       {
         "q": "What's the best defense against session hijacking?",
-        "a": "Encrypt end-to-end (HTTPS) so the session ID can't be captured."
+        "a": "Encrypt end-to-end (HTTPS) so the session ID can't be captured.",
+        "page": "36"
       },
       {
         "q": "Are browser cookies executable?",
-        "a": "No - but they may contain session IDs and private data."
+        "a": "No - but they may contain session IDs and private data.",
+        "page": "35"
       }
     ]
   },
@@ -1451,39 +1513,43 @@
     "cards": [
       {
         "q": "What is privilege escalation?",
-        "a": "Gaining higher-level access to a system by exploiting a bug or design flaw."
+        "a": "Gaining higher-level access to a system by exploiting a bug or design flaw.",
+        "page": "37"
       },
       {
         "q": "What is horizontal privilege escalation?",
-        "a": "User A gaining access to User B's resources."
+        "a": "User A gaining access to User B's resources.",
+        "page": "37"
       },
       {
         "q": "What does DEP stand for and do?",
-        "a": "Data Execution Prevention - only data in executable areas can run."
+        "a": "Data Execution Prevention - only data in executable areas can run.",
+        "page": "37"
       },
       {
         "q": "What does ASLR stand for and do?",
-        "a": "Address Space Layout Randomization - prevents buffer overruns at known memory addresses."
+        "a": "Address Space Layout Randomization - prevents buffer overruns at known memory addresses.",
+        "page": "37"
       },
       {
         "q": "What does CSRF/XSRF stand for?",
-        "a": "Cross-site request forgery."
+        "a": "Cross-site request forgery.",
+        "page": "37"
       },
       {
         "q": "CSRF takes advantage of whose trust?",
-        "a": "The trust a web application has for the user's browser."
-      },
-      {
-        "q": "XSS vs CSRF: which exploits the user's trust in the site?",
-        "a": "XSS. CSRF exploits the site's trust in the user."
+        "a": "The trust a web application has for the user's browser.",
+        "page": "37"
       },
       {
         "q": "How do you prevent CSRF?",
-        "a": "Anti-forgery techniques, usually a cryptographic token."
+        "a": "Anti-forgery techniques, usually a cryptographic token.",
+        "page": "37"
       },
       {
         "q": "What is directory traversal?",
-        "a": "Reading files outside the website's directory (path traversal)."
+        "a": "Reading files outside the website's directory (path traversal).",
+        "page": "37"
       }
     ]
   },
@@ -1541,31 +1607,38 @@
     "cards": [
       {
         "q": "What does IOC stand for?",
-        "a": "Indicator of Compromise."
+        "a": "Indicator of Compromise.",
+        "page": "39"
       },
       {
         "q": "What is impossible travel?",
-        "a": "Logins from distant locations within an impossibly short time."
+        "a": "Logins from distant locations within an impossibly short time.",
+        "page": "40"
       },
       {
         "q": "Why would an attacker block security update sites?",
-        "a": "To stay on the system longer - blocked content is an IOC."
+        "a": "To stay on the system longer - blocked content is an IOC.",
+        "page": "39"
       },
       {
         "q": "Why are missing logs suspicious?",
-        "a": "Attackers delete logs to cover their tracks."
+        "a": "Attackers delete logs to cover their tracks.",
+        "page": "40"
       },
       {
         "q": "What is out-of-cycle logging?",
-        "a": "Log activity at an unexpected time, like patching outside the normal patch day."
+        "a": "Log activity at an unexpected time, like patching outside the normal patch day.",
+        "page": "40"
       },
       {
         "q": "Name some common IOCs.",
-        "a": "Unusual network activity, changed file hashes, irregular international traffic, DNS changes, uncommon login patterns."
+        "a": "Unusual network activity, changed file hashes, irregular international traffic, DNS changes, uncommon login patterns.",
+        "page": "39"
       },
       {
         "q": "Is concurrent session usage from multiple locations an IOC?",
-        "a": "Yes."
+        "a": "Yes.",
+        "page": "39"
       }
     ]
   },
@@ -1623,27 +1696,33 @@
     "cards": [
       {
         "q": "What does EDR stand for?",
-        "a": "Endpoint Detection and Response."
+        "a": "Endpoint Detection and Response.",
+        "page": "42"
       },
       {
         "q": "Does EDR rely only on signatures?",
-        "a": "No - it also uses behavioral analysis, machine learning, and process monitoring."
+        "a": "No - it also uses behavioral analysis, machine learning, and process monitoring.",
+        "page": "42"
       },
       {
         "q": "What does HIPS stand for?",
-        "a": "Host-based Intrusion Prevention System."
+        "a": "Host-based Intrusion Prevention System.",
+        "page": "42"
       },
       {
         "q": "What tool can verify open ports?",
-        "a": "Nmap (or a similar port scanner)."
+        "a": "Nmap (or a similar port scanner).",
+        "page": "42"
       },
       {
         "q": "Why remove unnecessary software?",
-        "a": "All software has bugs; removing unused software reduces risk."
+        "a": "All software has bugs; removing unused software reduces risk.",
+        "page": "42"
       },
       {
         "q": "What does a host-based firewall control?",
-        "a": "Incoming and outgoing traffic per application process on the endpoint."
+        "a": "Incoming and outgoing traffic per application process on the endpoint.",
+        "page": "42"
       }
     ]
   },
@@ -1653,39 +1732,48 @@
     "cards": [
       {
         "q": "What does a cloud responsibility matrix show?",
-        "a": "Who is responsible for which security tasks - provider vs. customer."
+        "a": "Who is responsible for which security tasks - provider vs. customer.",
+        "page": "42"
       },
       {
         "q": "In IaaS, who manages the operating system?",
-        "a": "The customer."
+        "a": "The customer.",
+        "page": "43"
       },
       {
         "q": "In SaaS, who manages the application?",
-        "a": "The provider."
+        "a": "The provider.",
+        "page": "43"
       },
       {
         "q": "Is information and data always the customer's responsibility?",
-        "a": "Yes - in SaaS, PaaS, IaaS, and on-prem."
+        "a": "Yes - in SaaS, PaaS, IaaS, and on-prem.",
+        "page": "43"
       },
       {
         "q": "What is a hybrid cloud?",
-        "a": "More than one public or private cloud."
+        "a": "More than one public or private cloud.",
+        "page": "42"
       },
       {
         "q": "What is Infrastructure as Code (IaC)?",
-        "a": "Defining servers, networks, and apps as code so you can build them identically every time."
+        "a": "Defining servers, networks, and apps as code so you can build them identically every time.",
+        "page": "43"
       },
       {
         "q": "What is serverless architecture?",
-        "a": "Function as a Service (FaaS) - apps split into functions; the OS is managed by a third party."
+        "a": "Function as a Service (FaaS) - apps split into functions; the OS is managed by a third party.",
+        "page": "43"
       },
       {
         "q": "What is a monolithic application?",
-        "a": "One big application that does everything."
+        "a": "One big application that does everything.",
+        "page": "43"
       },
       {
         "q": "What is the 'glue' between microservices?",
-        "a": "APIs (Application Programming Interfaces)."
+        "a": "APIs (Application Programming Interfaces).",
+        "page": "43"
       }
     ]
   },
@@ -1721,43 +1809,53 @@
     "cards": [
       {
         "q": "Does each VM have its own operating system?",
-        "a": "Yes - each VM runs a guest OS on a hypervisor."
+        "a": "Yes - each VM runs a guest OS on a hypervisor.",
+        "page": "44"
       },
       {
         "q": "Do containers have their own OS kernel?",
-        "a": "No - they share the host kernel, so they're lightweight."
+        "a": "No - they share the host kernel, so they're lightweight.",
+        "page": "44"
       },
       {
         "q": "Centralized vs decentralized security management: which has a single point of failure?",
-        "a": "Centralized."
+        "a": "Centralized.",
+        "page": "44"
       },
       {
         "q": "What does SCADA stand for?",
-        "a": "Supervisory Control and Data Acquisition."
+        "a": "Supervisory Control and Data Acquisition.",
+        "page": "45"
       },
       {
         "q": "What does ICS stand for?",
-        "a": "Industrial Control Systems."
+        "a": "Industrial Control Systems.",
+        "page": "45"
       },
       {
         "q": "How should SCADA/ICS be protected?",
-        "a": "Extensive segmentation - no access from the outside."
+        "a": "Extensive segmentation - no access from the outside.",
+        "page": "45"
       },
       {
         "q": "What does RTOS stand for?",
-        "a": "Real-Time Operating System - deterministic processing schedule."
+        "a": "Real-Time Operating System - deterministic processing schedule.",
+        "page": "45"
       },
       {
         "q": "What is an embedded system?",
-        "a": "Hardware and software designed for one specific function (traffic lights, watches)."
+        "a": "Hardware and software designed for one specific function (traffic lights, watches).",
+        "page": "45"
       },
       {
         "q": "What is a common IoT weakness?",
-        "a": "Weak defaults - IoT makers aren't security professionals."
+        "a": "Weak defaults - IoT makers aren't security professionals.",
+        "page": "44"
       },
       {
         "q": "Is redundancy the same as high availability?",
-        "a": "No - redundant gear may need manual power-on; HA is always on, always available."
+        "a": "No - redundant gear may need manual power-on; HA is always on, always available.",
+        "page": "45"
       }
     ]
   },
@@ -1767,27 +1865,33 @@
     "cards": [
       {
         "q": "What does MTTR stand for?",
-        "a": "Mean Time to Repair."
+        "a": "Mean Time to Repair.",
+        "page": "45"
       },
       {
         "q": "What is resilience?",
-        "a": "The ability to maintain availability and recover after an event."
+        "a": "The ability to maintain availability and recover after an event.",
+        "page": "45"
       },
       {
         "q": "Is cybersecurity insurance risk transference?",
-        "a": "Yes."
+        "a": "Yes.",
+        "page": "46"
       },
       {
         "q": "What is elasticity?",
-        "a": "Quickly increasing or decreasing capacity as needed (scalability)."
+        "a": "Quickly increasing or decreasing capacity as needed (scalability).",
+        "page": "46"
       },
       {
         "q": "How do you protect a device you can't patch, like a time clock?",
-        "a": "Add security controls around it, such as a firewall."
+        "a": "Add security controls around it, such as a firewall.",
+        "page": "46"
       },
       {
         "q": "What provides short-term vs long-term backup power?",
-        "a": "UPS for short-term; generators for long-term."
+        "a": "UPS for short-term; generators for long-term.",
+        "page": "46"
       }
     ]
   },
@@ -1849,35 +1953,43 @@
     "cards": [
       {
         "q": "What is a jump server?",
-        "a": "A hardened, monitored device used to access a secure network zone."
+        "a": "A hardened, monitored device used to access a secure network zone.",
+        "page": "48"
       },
       {
         "q": "What is a forward proxy?",
-        "a": "An internal proxy that controls user access to the Internet."
+        "a": "An internal proxy that controls user access to the Internet.",
+        "page": "49"
       },
       {
         "q": "What is a reverse proxy?",
-        "a": "A proxy for inbound traffic from the Internet to an internal service."
+        "a": "A proxy for inbound traffic from the Internet to an internal service.",
+        "page": "49"
       },
       {
         "q": "What is an open proxy?",
-        "a": "A third-party, uncontrolled proxy - often used to circumvent security."
+        "a": "A third-party, uncontrolled proxy - often used to circumvent security.",
+        "page": "49"
       },
       {
         "q": "Explicit vs transparent proxy?",
-        "a": "Explicit: the app must be configured to use it. Transparent: invisible to the user."
+        "a": "Explicit: the app must be configured to use it. Transparent: invisible to the user.",
+        "page": "48"
       },
       {
         "q": "Is NAT a type of proxy?",
-        "a": "Yes - a simple network-level proxy."
+        "a": "Yes - a simple network-level proxy.",
+        "page": "49"
       },
       {
         "q": "Active/active vs active/passive load balancing?",
-        "a": "Active/active: all servers serve traffic. Active/passive: standby servers take over on failure."
+        "a": "Active/active: all servers serve traffic. Active/passive: standby servers take over on failure.",
+        "page": "50"
       },
       {
         "q": "What is SSL offload on a load balancer?",
-        "a": "The load balancer handles encryption/decryption instead of the servers."
+        "a": "The load balancer handles encryption/decryption instead of the servers.",
+        "page": "50"
       }
     ]
   },
@@ -1917,27 +2029,33 @@
     "cards": [
       {
         "q": "Traditional firewalls filter at which OSI layer?",
-        "a": "Layer 4 (port numbers)."
+        "a": "Layer 4 (port numbers).",
+        "page": "50"
       },
       {
         "q": "NGFWs filter at which OSI layer?",
-        "a": "Layer 7 (application)."
+        "a": "Layer 7 (application).",
+        "page": "51"
       },
       {
         "q": "What does UTM stand for?",
-        "a": "Unified Threat Management - an all-in-one security appliance."
+        "a": "Unified Threat Management - an all-in-one security appliance.",
+        "page": "51"
       },
       {
         "q": "Name other names for an NGFW.",
-        "a": "Application layer gateway, stateful multilayer inspection, deep packet inspection."
+        "a": "Application layer gateway, stateful multilayer inspection, deep packet inspection.",
+        "page": "51"
       },
       {
         "q": "What does a WAF protect?",
-        "a": "Web applications - it applies rules to HTTP/HTTPS conversations."
+        "a": "Web applications - it applies rules to HTTP/HTTPS conversations.",
+        "page": "51"
       },
       {
         "q": "Which compliance standard focuses heavily on WAFs?",
-        "a": "PCI DSS."
+        "a": "PCI DSS.",
+        "page": "51"
       }
     ]
   },
@@ -1947,31 +2065,38 @@
     "cards": [
       {
         "q": "What does a VPN concentrator do?",
-        "a": "Encrypts/decrypts VPN traffic - often integrated into a firewall."
+        "a": "Encrypts/decrypts VPN traffic - often integrated into a firewall.",
+        "page": "51"
       },
       {
         "q": "Which port does an SSL/TLS VPN use?",
-        "a": "TCP 443."
+        "a": "TCP 443.",
+        "page": "51"
       },
       {
         "q": "Does an SSL/TLS VPN require digital certificates or shared passwords like IPsec?",
-        "a": "No."
+        "a": "No.",
+        "page": "51"
       },
       {
         "q": "Is a site-to-site IPsec VPN usually on-demand or always-on?",
-        "a": "Always-on."
+        "a": "Always-on.",
+        "page": "51"
       },
       {
         "q": "What does SD-WAN stand for?",
-        "a": "Software Defined Wide Area Network."
+        "a": "Software Defined Wide Area Network.",
+        "page": "51"
       },
       {
         "q": "Does SD-WAN adequately address security?",
-        "a": "No - it manages connectivity to the cloud."
+        "a": "No - it manages connectivity to the cloud.",
+        "page": "52"
       },
       {
         "q": "What does SASE stand for?",
-        "a": "Secure Access Service Edge - a 'next generation' VPN with cloud-based security."
+        "a": "Secure Access Service Edge - a 'next generation' VPN with cloud-based security.",
+        "page": "51"
       }
     ]
   },
@@ -2019,35 +2144,43 @@
     "cards": [
       {
         "q": "What are the three states of data?",
-        "a": "Data at rest, data in transit (in motion), and data in use."
+        "a": "Data at rest, data in transit (in motion), and data in use.",
+        "page": "53"
       },
       {
         "q": "Data on a hard drive is in which state?",
-        "a": "At rest."
+        "a": "At rest.",
+        "page": "53"
       },
       {
         "q": "Data in RAM or CPU cache is in which state?",
-        "a": "In use."
+        "a": "In use.",
+        "page": "53"
       },
       {
         "q": "Is data in use usually encrypted?",
-        "a": "No - it's almost always decrypted so it can be processed."
+        "a": "No - it's almost always decrypted so it can be processed.",
+        "page": "53"
       },
       {
         "q": "How do you protect data in transit?",
-        "a": "Transport encryption like TLS and IPsec."
+        "a": "Transport encryption like TLS and IPsec.",
+        "page": "53"
       },
       {
         "q": "In the 2013 Target breach, which data state was attacked?",
-        "a": "Data in use - card numbers were picked out of POS RAM."
+        "a": "Data in use - card numbers were picked out of POS RAM.",
+        "page": "53"
       },
       {
         "q": "What is data sovereignty?",
-        "a": "Data is subject to the laws of the country where it resides."
+        "a": "Data is subject to the laws of the country where it resides.",
+        "page": "54"
       },
       {
         "q": "Under GDPR, where must EU citizens' data be stored?",
-        "a": "In the EU."
+        "a": "In the EU.",
+        "page": "54"
       }
     ]
   },
@@ -2057,27 +2190,33 @@
     "cards": [
       {
         "q": "What is geofencing?",
-        "a": "Automatically allowing or restricting access based on the user's location."
+        "a": "Automatically allowing or restricting access based on the user's location.",
+        "page": "54"
       },
       {
         "q": "Which is most accurate for geolocation: GPS, 802.11, or IP address?",
-        "a": "GPS. IP address is least accurate."
+        "a": "GPS. IP address is least accurate.",
+        "page": "54"
       },
       {
         "q": "Is encryption one-way or two-way?",
-        "a": "Two-way - with the key you can convert back and forth."
+        "a": "Two-way - with the key you can convert back and forth.",
+        "page": "54"
       },
       {
         "q": "What is 'confusion' in encryption?",
-        "a": "The ciphertext is drastically different from the plaintext."
+        "a": "The ciphertext is drastically different from the plaintext.",
+        "page": "54"
       },
       {
         "q": "Does obfuscated code work differently from the original?",
-        "a": "No - both perform exactly the same way."
+        "a": "No - both perform exactly the same way.",
+        "page": "54"
       },
       {
         "q": "Why segment data?",
-        "a": "So one breach doesn't put all data at risk."
+        "a": "So one breach doesn't put all data at risk.",
+        "page": "55"
       }
     ]
   },
@@ -2087,39 +2226,43 @@
     "cards": [
       {
         "q": "Clustering vs load balancing: which usually requires the same OS on every server?",
-        "a": "Clustering."
+        "a": "Clustering.",
+        "page": "55"
       },
       {
         "q": "In load balancing, are servers aware of each other?",
-        "a": "Often not."
+        "a": "Often not.",
+        "page": "55"
       },
       {
         "q": "What is a hot site?",
-        "a": "An exact replica with hardware, software, and data constantly updated - flip a switch."
+        "a": "An exact replica with hardware, software, and data constantly updated - flip a switch.",
+        "page": "55"
       },
       {
         "q": "What is a cold site?",
-        "a": "An empty building - no hardware, data, or people."
+        "a": "An empty building - no hardware, data, or people.",
+        "page": "55"
       },
       {
         "q": "What is a warm site?",
-        "a": "In between - rack space and some hardware; you bring the software and data."
-      },
-      {
-        "q": "Which site is most expensive?",
-        "a": "Hot site."
+        "a": "In between - rack space and some hardware; you bring the software and data.",
+        "page": "56"
       },
       {
         "q": "What is geographic dispersion?",
-        "a": "Locating recovery sites far from the primary site to avoid the same disaster."
+        "a": "Locating recovery sites far from the primary site to avoid the same disaster.",
+        "page": "56"
       },
       {
         "q": "What is platform diversity?",
-        "a": "Using different OSes/apps to spread risk."
+        "a": "Using different OSes/apps to spread risk.",
+        "page": "56"
       },
       {
         "q": "What does COOP stand for?",
-        "a": "Continuity of Operations Planning."
+        "a": "Continuity of Operations Planning.",
+        "page": "56"
       }
     ]
   },
@@ -2173,27 +2316,33 @@
     "cards": [
       {
         "q": "Onsite or offsite backup: which is available after a site disaster?",
-        "a": "Offsite."
+        "a": "Offsite.",
+        "page": "57"
       },
       {
         "q": "Should backups be encrypted?",
-        "a": "Yes - especially offsite and cloud backups."
+        "a": "Yes - especially offsite and cloud backups.",
+        "page": "57"
       },
       {
         "q": "What is a snapshot?",
-        "a": "An instant backup of an entire system (common with VMs); later snapshots store changes."
+        "a": "An instant backup of an entire system (common with VMs); later snapshots store changes.",
+        "page": "58"
       },
       {
         "q": "Is performing a backup enough?",
-        "a": "No - you must test restoring it."
+        "a": "No - you must test restoring it.",
+        "page": "58"
       },
       {
         "q": "What is replication?",
-        "a": "An ongoing, near real-time copy of data to multiple locations."
+        "a": "An ongoing, near real-time copy of data to multiple locations.",
+        "page": "58"
       },
       {
         "q": "What is journaling?",
-        "a": "Writing a journal entry before writing data, so a power loss mid-write can be recovered."
+        "a": "Writing a journal entry before writing data, so a power loss mid-write can be recovered.",
+        "page": "58"
       }
     ]
   },
@@ -2247,23 +2396,28 @@
     "cards": [
       {
         "q": "Are systems secure with default configurations?",
-        "a": "No."
+        "a": "No.",
+        "page": "59"
       },
       {
         "q": "What tool manages and secures mobile devices?",
-        "a": "MDM - Mobile Device Manager."
+        "a": "MDM - Mobile Device Manager.",
+        "page": "59"
       },
       {
         "q": "How should IoT devices be segmented?",
-        "a": "On their own VLAN."
+        "a": "On their own VLAN.",
+        "page": "60"
       },
       {
         "q": "What does C2C backup mean for cloud infrastructure?",
-        "a": "Cloud to Cloud backups."
+        "a": "Cloud to Cloud backups.",
+        "page": "59"
       },
       {
         "q": "How should you harden an RTOS?",
-        "a": "Isolate it, run minimum services, and use secure communication / host-based firewall."
+        "a": "Isolate it, run minimum services, and use secure communication / host-based firewall.",
+        "page": "60"
       }
     ]
   },
@@ -2273,31 +2427,38 @@
     "cards": [
       {
         "q": "What is a wireless site survey?",
-        "a": "Sampling the existing wireless landscape to identify APs and frequencies."
+        "a": "Sampling the existing wireless landscape to identify APs and frequencies.",
+        "page": "60"
       },
       {
         "q": "What is a heat map?",
-        "a": "A map of wireless signal strengths."
+        "a": "A map of wireless signal strengths.",
+        "page": "60"
       },
       {
         "q": "What does BYOD stand for?",
-        "a": "Bring Your Own Device - the employee owns it."
+        "a": "Bring Your Own Device - the employee owns it.",
+        "page": "60"
       },
       {
         "q": "What does COPE stand for?",
-        "a": "Corporate Owned, Personally Enabled."
+        "a": "Corporate Owned, Personally Enabled.",
+        "page": "61"
       },
       {
         "q": "In COPE, who owns the device?",
-        "a": "The company."
+        "a": "The company.",
+        "page": "61"
       },
       {
         "q": "What does CYOD stand for?",
-        "a": "Choose Your Own Device - like COPE but the user picks the device."
+        "a": "Choose Your Own Device - like COPE but the user picks the device.",
+        "page": "61"
       },
       {
         "q": "What type of network is Bluetooth?",
-        "a": "A PAN - Personal Area Network."
+        "a": "A PAN - Personal Area Network.",
+        "page": "61"
       }
     ]
   },
@@ -2307,35 +2468,43 @@
     "cards": [
       {
         "q": "What is the WPA2 PSK problem?",
-        "a": "Attackers can capture the hash and brute force the PSK offline - and there's no forward secrecy."
+        "a": "Attackers can capture the hash and brute force the PSK offline - and there's no forward secrecy.",
+        "page": "61"
       },
       {
         "q": "What encryption mode does WPA3 use?",
-        "a": "GCMP - Galois/Counter Mode Protocol (AES)."
+        "a": "GCMP - Galois/Counter Mode Protocol (AES).",
+        "page": "61"
       },
       {
         "q": "What does SAE stand for?",
-        "a": "Simultaneous Authentication of Equals - the WPA3 'dragonfly handshake'."
+        "a": "Simultaneous Authentication of Equals - the WPA3 'dragonfly handshake'.",
+        "page": "61"
       },
       {
         "q": "Does WPA3 use the four-way handshake for PSK?",
-        "a": "No - it uses SAE, so no hashes to brute force."
+        "a": "No - it uses SAE, so no hashes to brute force.",
+        "page": "61"
       },
       {
         "q": "With WPA3 SAE, does everyone share the same session key?",
-        "a": "No - everyone gets a different session key, even with the same PSK."
+        "a": "No - everyone gets a different session key, even with the same PSK.",
+        "page": "61"
       },
       {
         "q": "WPA3-Personal vs WPA3-Enterprise?",
-        "a": "Personal uses a pre-shared key; Enterprise uses 802.1X with an authentication server like RADIUS."
+        "a": "Personal uses a pre-shared key; Enterprise uses 802.1X with an authentication server like RADIUS.",
+        "page": "62"
       },
       {
         "q": "What does RADIUS stand for?",
-        "a": "Remote Authentication Dial-in User Service."
+        "a": "Remote Authentication Dial-in User Service.",
+        "page": "62"
       },
       {
         "q": "What does MIC stand for in wireless?",
-        "a": "Message Integrity Check."
+        "a": "Message Integrity Check.",
+        "page": "61"
       }
     ]
   },
@@ -2345,31 +2514,38 @@
     "cards": [
       {
         "q": "What is input validation?",
-        "a": "Checking actual input against expected input and correcting it (normalization)."
+        "a": "Checking actual input against expected input and correcting it (normalization).",
+        "page": "62"
       },
       {
         "q": "What does the Secure attribute on a cookie do?",
-        "a": "The browser only sends it over HTTPS."
+        "a": "The browser only sends it over HTTPS.",
+        "page": "62"
       },
       {
         "q": "Should sensitive info be stored in a cookie?",
-        "a": "No."
+        "a": "No.",
+        "page": "62"
       },
       {
         "q": "What does SAST stand for?",
-        "a": "Static Application Security Testing (static code analysis)."
+        "a": "Static Application Security Testing (static code analysis).",
+        "page": "63"
       },
       {
         "q": "Can static analysis find every vulnerability?",
-        "a": "No - e.g., authentication security and insecure crypto; and false positives occur."
+        "a": "No - e.g., authentication security and insecure crypto; and false positives occur.",
+        "page": "63"
       },
       {
         "q": "Which key does a developer use to sign code?",
-        "a": "Their private key."
+        "a": "Their private key.",
+        "page": "63"
       },
       {
         "q": "What is sandboxing?",
-        "a": "Running applications so they can't access unrelated resources."
+        "a": "Running applications so they can't access unrelated resources.",
+        "page": "63"
       }
     ]
   },
@@ -2379,27 +2555,33 @@
     "cards": [
       {
         "q": "Is hardware a capital or operating expenditure?",
-        "a": "Capital expenditure."
+        "a": "Capital expenditure.",
+        "page": "63"
       },
       {
         "q": "Is software usually a capital or operating expenditure?",
-        "a": "Operating expenditure."
+        "a": "Operating expenditure.",
+        "page": "63"
       },
       {
         "q": "What is enumeration in asset tracking?",
-        "a": "Listing all parts of an asset (CPU, memory, storage, etc.)."
+        "a": "Listing all parts of an asset (CPU, memory, storage, etc.).",
+        "page": "63"
       },
       {
         "q": "What is degaussing?",
-        "a": "Removing the magnetic field - destroys the data and makes the drive unusable."
+        "a": "Removing the magnetic field - destroys the data and makes the drive unusable.",
+        "page": "64"
       },
       {
         "q": "What proves a third party destroyed your data?",
-        "a": "A certificate of destruction."
+        "a": "A certificate of destruction.",
+        "page": "64"
       },
       {
         "q": "What is media sanitization?",
-        "a": "Completely removing data so nothing is recoverable, even with forensics tools."
+        "a": "Completely removing data so nothing is recoverable, even with forensics tools.",
+        "page": "63"
       }
     ]
   },
@@ -2457,31 +2639,38 @@
     "cards": [
       {
         "q": "What's the key difference between a vuln scan and a pentest?",
-        "a": "A pentest actually tries to exploit the vulnerabilities."
+        "a": "A pentest actually tries to exploit the vulnerabilities.",
+        "page": "65"
       },
       {
         "q": "What are rules of engagement?",
-        "a": "A document defining a test's purpose, scope, schedule, IP ranges, and contacts."
+        "a": "A document defining a test's purpose, scope, schedule, IP ranges, and contacts.",
+        "page": "65"
       },
       {
         "q": "What is lateral movement?",
-        "a": "Moving from system to system inside the network."
+        "a": "Moving from system to system inside the network.",
+        "page": "66"
       },
       {
         "q": "What is persistence?",
-        "a": "Ensuring a way back in - backdoors, new accounts."
+        "a": "Ensuring a way back in - backdoors, new accounts.",
+        "page": "66"
       },
       {
         "q": "What is pivoting?",
-        "a": "Using a compromised system as a relay to reach otherwise inaccessible systems."
+        "a": "Using a compromised system as a relay to reach otherwise inaccessible systems.",
+        "page": "66"
       },
       {
         "q": "What is a bug bounty?",
-        "a": "A reward for discovering and reporting vulnerabilities."
+        "a": "A reward for discovering and reporting vulnerabilities.",
+        "page": "66"
       },
       {
         "q": "What is responsible disclosure?",
-        "a": "Researcher reports, vendor fixes, then the vulnerability is announced publicly."
+        "a": "Researcher reports, vendor fixes, then the vulnerability is announced publicly.",
+        "page": "66"
       }
     ]
   },
@@ -2491,35 +2680,38 @@
     "cards": [
       {
         "q": "What is a false positive?",
-        "a": "A vulnerability is reported that doesn't really exist."
+        "a": "A vulnerability is reported that doesn't really exist.",
+        "page": "66"
       },
       {
         "q": "What is a false negative?",
-        "a": "A vulnerability exists but wasn't detected."
-      },
-      {
-        "q": "Which is more dangerous: false positive or false negative?",
-        "a": "False negative - you don't know it's there."
+        "a": "A vulnerability exists but wasn't detected.",
+        "page": "66"
       },
       {
         "q": "What does CVSS stand for?",
-        "a": "Common Vulnerability Scoring System."
+        "a": "Common Vulnerability Scoring System.",
+        "page": "66"
       },
       {
         "q": "What is the CVSS score range?",
-        "a": "0 to 10."
+        "a": "0 to 10.",
+        "page": "66"
       },
       {
         "q": "What does NVD stand for?",
-        "a": "National Vulnerability Database (synchronized with CVE)."
+        "a": "National Vulnerability Database (synchronized with CVE).",
+        "page": "66"
       },
       {
         "q": "What is exposure factor?",
-        "a": "The percentage of value lost if a vulnerability is exploited."
+        "a": "The percentage of value lost if a vulnerability is exploited.",
+        "page": "66"
       },
       {
         "q": "What is risk tolerance in patching?",
-        "a": "Balancing patching immediately against time needed to test."
+        "a": "Balancing patching immediately against time needed to test.",
+        "page": "67"
       }
     ]
   },
@@ -2529,23 +2721,28 @@
     "cards": [
       {
         "q": "What is the most common mitigation technique?",
-        "a": "Patching."
+        "a": "Patching.",
+        "page": "67"
       },
       {
         "q": "Does cybersecurity insurance cover intentional acts?",
-        "a": "No."
+        "a": "No.",
+        "page": "67"
       },
       {
         "q": "What can you do if a system can't be patched?",
-        "a": "Segment it (or air gap it) or use compensating controls."
+        "a": "Segment it (or air gap it) or use compensating controls.",
+        "page": "67"
       },
       {
         "q": "What is an exception in vulnerability management?",
-        "a": "A formally approved decision not to remediate a vulnerability."
+        "a": "A formally approved decision not to remediate a vulnerability.",
+        "page": "68"
       },
       {
         "q": "Name three ways to validate remediation.",
-        "a": "Rescanning, auditing, and verification."
+        "a": "Rescanning, auditing, and verification.",
+        "page": "68"
       }
     ]
   },
@@ -2555,23 +2752,28 @@
     "cards": [
       {
         "q": "What does SIEM stand for?",
-        "a": "Security Information and Event Management."
+        "a": "Security Information and Event Management.",
+        "page": "68"
       },
       {
         "q": "What is log aggregation?",
-        "a": "Consolidating logs from many devices into a central database."
+        "a": "Consolidating logs from many devices into a central database.",
+        "page": "68"
       },
       {
         "q": "Roughly how long does it take a company to identify and contain a breach?",
-        "a": "About 9 months (IBM 2022)."
+        "a": "About 9 months (IBM 2022).",
+        "page": "68"
       },
       {
         "q": "What is alert tuning?",
-        "a": "Adjusting alerts to reduce false positives and false negatives."
+        "a": "Adjusting alerts to reduce false positives and false negatives.",
+        "page": "69"
       },
       {
         "q": "What is quarantine?",
-        "a": "Isolating a potential issue to prevent it spreading."
+        "a": "Isolating a potential issue to prevent it spreading.",
+        "page": "69"
       }
     ]
   },
@@ -2581,43 +2783,53 @@
     "cards": [
       {
         "q": "What does SCAP stand for?",
-        "a": "Security Content Automation Protocol."
+        "a": "Security Content Automation Protocol.",
+        "page": "69"
       },
       {
         "q": "Who manages SCAP?",
-        "a": "NIST."
+        "a": "NIST.",
+        "page": "69"
       },
       {
         "q": "Who publishes popular security benchmarks?",
-        "a": "CIS - Center for Internet Security."
+        "a": "CIS - Center for Internet Security.",
+        "page": "69"
       },
       {
         "q": "Agent vs agentless: which gives more detail and real-time alerts?",
-        "a": "Agent."
+        "a": "Agent.",
+        "page": "69"
       },
       {
         "q": "What does DLP stand for?",
-        "a": "Data Loss Prevention."
+        "a": "Data Loss Prevention.",
+        "page": "70"
       },
       {
         "q": "Which UDP port does SNMP polling use?",
-        "a": "UDP 161."
+        "a": "UDP 161.",
+        "page": "70"
       },
       {
         "q": "Which UDP port do SNMP traps use?",
-        "a": "UDP 162."
+        "a": "UDP 162.",
+        "page": "70"
       },
       {
         "q": "What does MIB stand for in SNMP?",
-        "a": "Management Information Base."
+        "a": "Management Information Base.",
+        "page": "70"
       },
       {
         "q": "What does OID stand for in SNMP?",
-        "a": "Object Identifier."
+        "a": "Object Identifier.",
+        "page": "70"
       },
       {
         "q": "What does NetFlow collect?",
-        "a": "Traffic statistics from network flows (probe sends summaries to a collector)."
+        "a": "Traffic statistics from network flows (probe sends summaries to a collector).",
+        "page": "70"
       }
     ]
   },
@@ -2627,43 +2839,53 @@
     "cards": [
       {
         "q": "What port does HTTPS use?",
-        "a": "TCP 443."
+        "a": "TCP 443.",
+        "page": "70"
       },
       {
         "q": "What port does HTTP use?",
-        "a": "TCP 80."
+        "a": "TCP 80.",
+        "page": "70"
       },
       {
         "q": "What port does SSH use?",
-        "a": "TCP 22."
+        "a": "TCP 22.",
+        "page": "70"
       },
       {
         "q": "What port does RDP use?",
-        "a": "TCP 3389."
+        "a": "TCP 3389.",
+        "page": "70"
       },
       {
         "q": "What port does a DNS query use?",
-        "a": "UDP 53."
+        "a": "UDP 53.",
+        "page": "70"
       },
       {
         "q": "What port does NTP use?",
-        "a": "UDP 123."
+        "a": "UDP 123.",
+        "page": "70"
       },
       {
         "q": "In what order are firewall rules usually evaluated?",
-        "a": "Top to bottom - specific rules at the top."
+        "a": "Top to bottom - specific rules at the top.",
+        "page": "71"
       },
       {
         "q": "What is implicit deny?",
-        "a": "A deny-all at the bottom of the rulebase, even if you didn't add it."
+        "a": "A deny-all at the bottom of the rulebase, even if you didn't add it.",
+        "page": "71"
       },
       {
         "q": "What is a screened subnet?",
-        "a": "An extra security layer for public resources while private data stays inaccessible (formerly DMZ)."
+        "a": "An additional layer of security between you and the Internet - public access to public resources, private data stays inaccessible.",
+        "page": "71"
       },
       {
         "q": "Signature-based vs anomaly-based IPS?",
-        "a": "Signature looks for exact matches; anomaly flags deviation from a 'normal' baseline."
+        "a": "Signature looks for exact matches; anomaly flags deviation from a 'normal' baseline.",
+        "page": "71"
       }
     ]
   },
@@ -2673,23 +2895,28 @@
     "cards": [
       {
         "q": "What is URL filtering based on?",
-        "a": "Specific URLs or site categories (allow/block lists)."
+        "a": "Specific URLs or site categories (allow/block lists).",
+        "page": "71"
       },
       {
         "q": "What is agent-based web filtering?",
-        "a": "Client software on the device makes filtering decisions anywhere."
+        "a": "Client software on the device makes filtering decisions anywhere.",
+        "page": "71"
       },
       {
         "q": "What is reputation-based filtering?",
-        "a": "Allowing or blocking URLs based on perceived risk."
+        "a": "Allowing or blocking URLs based on perceived risk.",
+        "page": "72"
       },
       {
         "q": "How does DNS filtering block sites?",
-        "a": "Harmful domains aren't resolved - no IP address, no connection."
+        "a": "Harmful domains aren't resolved - no IP address, no connection.",
+        "page": "72"
       },
       {
         "q": "Does DNS filtering only work for web browsing?",
-        "a": "No - it works for any DNS lookup."
+        "a": "No - it works for any DNS lookup.",
+        "page": "72"
       }
     ]
   },
@@ -2721,27 +2948,33 @@
     "cards": [
       {
         "q": "What is the secure replacement for Telnet?",
-        "a": "SSH."
+        "a": "SSH.",
+        "page": "72"
       },
       {
         "q": "What is the secure replacement for HTTP?",
-        "a": "HTTPS."
+        "a": "HTTPS.",
+        "page": "72"
       },
       {
         "q": "What is the secure replacement for IMAP?",
-        "a": "IMAPS."
+        "a": "IMAPS.",
+        "page": "72"
       },
       {
         "q": "What is the secure replacement for FTP?",
-        "a": "SFTP."
+        "a": "SFTP.",
+        "page": "72"
       },
       {
         "q": "Does using a secure port number guarantee security?",
-        "a": "No - confirm security features are enabled (packet capture)."
+        "a": "No - confirm security features are enabled (packet capture).",
+        "page": "72"
       },
       {
         "q": "Does an open wireless access point encrypt traffic?",
-        "a": "No - WPA3 does."
+        "a": "No - WPA3 does.",
+        "page": "73"
       }
     ]
   },
@@ -2789,27 +3022,33 @@
     "cards": [
       {
         "q": "What does FIM stand for?",
-        "a": "File Integrity Monitoring."
+        "a": "File Integrity Monitoring.",
+        "page": "73"
       },
       {
         "q": "Name a Windows and a Linux FIM tool.",
-        "a": "Windows: SFC (System File Checker). Linux: Tripwire."
+        "a": "Windows: SFC (System File Checker). Linux: Tripwire.",
+        "page": "73"
       },
       {
         "q": "Endpoint DLP protects data in which state?",
-        "a": "Data in use."
+        "a": "Data in use.",
+        "page": "73"
       },
       {
         "q": "Network DLP protects data in which state?",
-        "a": "Data in motion."
+        "a": "Data in motion.",
+        "page": "73"
       },
       {
         "q": "Server DLP protects data in which state?",
-        "a": "Data at rest."
+        "a": "Data at rest.",
+        "page": "73"
       },
       {
         "q": "What's the most critical DLP risk vector?",
-        "a": "Email."
+        "a": "Email.",
+        "page": "74"
       }
     ]
   },
@@ -2819,35 +3058,43 @@
     "cards": [
       {
         "q": "What is a posture assessment?",
-        "a": "A health check of a device before it connects to the network."
+        "a": "A health check of a device before it connects to the network.",
+        "page": "74"
       },
       {
         "q": "What is a persistent agent?",
-        "a": "A permanently installed posture assessment agent."
+        "a": "A permanently installed posture assessment agent.",
+        "page": "74"
       },
       {
         "q": "What is a dissolvable agent?",
-        "a": "Runs during the posture assessment and then terminates - no install."
+        "a": "Runs during the posture assessment and then terminates - no install.",
+        "page": "74"
       },
       {
         "q": "What is agentless NAC?",
-        "a": "Integrated with Active Directory; checks at login/logoff; can't be scheduled."
+        "a": "Integrated with Active Directory; checks at login/logoff; can't be scheduled.",
+        "page": "74"
       },
       {
         "q": "What happens when a posture assessment fails?",
-        "a": "The device goes to a quarantine network with just enough access to fix it."
+        "a": "The device goes to a quarantine network with just enough access to fix it.",
+        "page": "74"
       },
       {
         "q": "What does XDR stand for?",
-        "a": "Extended Detection and Response."
+        "a": "Extended Detection and Response.",
+        "page": "75"
       },
       {
         "q": "How is XDR different from EDR?",
-        "a": "XDR correlates endpoint, network, and cloud data, not just the endpoint."
+        "a": "XDR correlates endpoint, network, and cloud data, not just the endpoint.",
+        "page": "75"
       },
       {
-        "q": "What does UBA do?",
-        "a": "User behavior analytics - baselines normal activity and flags anomalies."
+        "q": "What does user behavior analytics do?",
+        "a": "User behavior analytics - baselines normal activity and flags anomalies.",
+        "page": "75"
       }
     ]
   },
@@ -2857,43 +3104,53 @@
     "cards": [
       {
         "q": "What does IAM stand for?",
-        "a": "Identity and Access Management."
+        "a": "Identity and Access Management.",
+        "page": "75"
       },
       {
         "q": "What is provisioning/de-provisioning?",
-        "a": "Creating and removing user accounts (hiring, transfers, separation)."
+        "a": "Creating and removing user accounts (hiring, transfers, separation).",
+        "page": "75"
       },
       {
         "q": "What is identity proofing?",
-        "a": "Confirming who someone is - resolution, validation, verification/attestation."
+        "a": "Confirming who someone is - resolution, validation, verification/attestation.",
+        "page": "75"
       },
       {
         "q": "What does SSO stand for?",
-        "a": "Single Sign-On - authenticate once to access all assigned resources."
+        "a": "Single Sign-On - authenticate once to access all assigned resources.",
+        "page": "75"
       },
       {
         "q": "What does LDAP stand for?",
-        "a": "Lightweight Directory Access Protocol."
+        "a": "Lightweight Directory Access Protocol.",
+        "page": "76"
       },
       {
         "q": "What directory standard does LDAP query?",
-        "a": "X.500."
+        "a": "X.500.",
+        "page": "76"
       },
       {
         "q": "What does SAML stand for?",
-        "a": "Security Assertion Markup Language."
+        "a": "Security Assertion Markup Language.",
+        "page": "76"
       },
       {
         "q": "What was SAML's biggest roadblock?",
-        "a": "It wasn't originally designed for mobile apps."
+        "a": "It wasn't originally designed for mobile apps.",
+        "page": "76"
       },
       {
         "q": "Is OAuth authentication or authorization?",
-        "a": "Authorization. OpenID Connect handles authentication."
+        "a": "Authorization. OpenID Connect handles authentication.",
+        "page": "76"
       },
       {
         "q": "What is federation?",
-        "a": "Trust between organizations to authenticate users across them (e.g., log in with Facebook)."
+        "a": "Trust between organizations to authenticate users across them (e.g., log in with Facebook).",
+        "page": "76"
       }
     ]
   },
@@ -2964,10 +3221,6 @@
         "a": "Yes - somewhere you are."
       },
       {
-        "q": "Is a password plus a PIN multifactor?",
-        "a": "No - both are something you know."
-      },
-      {
         "q": "Is your actual fingerprint usually stored?",
         "a": "No - a mathematical representation is stored."
       }
@@ -2979,27 +3232,33 @@
     "cards": [
       {
         "q": "What is password entropy?",
-        "a": "Unpredictability - increased with mixed case, numbers, symbols, and length."
+        "a": "Unpredictability - increased with mixed case, numbers, symbols, and length.",
+        "page": "78"
       },
       {
         "q": "What is password age?",
-        "a": "How long since the password was changed."
+        "a": "How long since the password was changed.",
+        "page": "78"
       },
       {
         "q": "What is just-in-time permissions?",
-        "a": "Granting admin access only for a limited time instead of permanently."
+        "a": "Granting admin access only for a limited time instead of permanently.",
+        "page": "79"
       },
       {
         "q": "What is password vaulting?",
-        "a": "Primary credentials stored in a vault that controls who gets access."
+        "a": "Primary credentials stored in a vault that controls who gets access.",
+        "page": "79"
       },
       {
         "q": "Are JIT credentials reused?",
-        "a": "No - ephemeral credentials used for one session then deleted."
+        "a": "No - ephemeral credentials used for one session then deleted.",
+        "page": "79"
       },
       {
         "q": "What is passwordless authentication?",
-        "a": "Authenticating without a password - facial recognition, security key, etc."
+        "a": "Authenticating without a password - facial recognition, security key, etc.",
+        "page": "78"
       }
     ]
   },
@@ -3009,19 +3268,23 @@
     "cards": [
       {
         "q": "What are guard rails in automation?",
-        "a": "Automated validations that limit behaviors and reduce errors."
+        "a": "Automated validations that limit behaviors and reduce errors.",
+        "page": "79"
       },
       {
         "q": "Name some benefits of automation.",
-        "a": "Saves time, enforces baselines, secure scaling, employee retention, faster reaction, workforce multiplier."
+        "a": "Saves time, enforces baselines, secure scaling, employee retention, faster reaction, workforce multiplier.",
+        "page": "79"
       },
       {
         "q": "What is technical debt?",
-        "a": "Short-term fixes that push problems down the road and cost more later."
+        "a": "Short-term fixes that push problems down the road and cost more later.",
+        "page": "80"
       },
       {
         "q": "Name some scripting considerations / risks.",
-        "a": "Complexity, cost, single point of failure, technical debt, ongoing supportability."
+        "a": "Complexity, cost, single point of failure, technical debt, ongoing supportability.",
+        "page": "80"
       }
     ]
   },
@@ -3031,31 +3294,38 @@
     "cards": [
       {
         "q": "Which NIST publication covers incident handling?",
-        "a": "NIST SP 800-61."
+        "a": "NIST SP 800-61.",
+        "page": "80"
       },
       {
         "q": "What are the four NIST incident response phases?",
-        "a": "Preparation; Detection and Analysis; Containment, Eradication, and Recovery; Post-incident Activity."
+        "a": "Preparation; Detection and Analysis; Containment, Eradication, and Recovery; Post-incident Activity.",
+        "page": "80"
       },
       {
         "q": "What is the first phase of incident response?",
-        "a": "Preparation."
+        "a": "Preparation.",
+        "page": "80"
       },
       {
         "q": "What is a precursor?",
-        "a": "A heads-up that an incident might occur in the future (e.g., scanner in web logs)."
+        "a": "A heads-up that an incident might occur in the future (e.g., scanner in web logs).",
+        "page": "80"
       },
       {
         "q": "Why can isolation be problematic?",
-        "a": "Malware may detect lost connectivity and delete/encrypt data."
+        "a": "Malware may detect lost connectivity and delete/encrypt data.",
+        "page": "80"
       },
       {
         "q": "What is eradication?",
-        "a": "Removing malware, disabling breached accounts, fixing vulnerabilities."
+        "a": "Removing malware, disabling breached accounts, fixing vulnerabilities.",
+        "page": "81"
       },
       {
         "q": "When should a lessons learned meeting happen?",
-        "a": "Soon after the incident - memories fade."
+        "a": "Soon after the incident - memories fade.",
+        "page": "81"
       }
     ]
   },
@@ -3125,27 +3395,33 @@
     "cards": [
       {
         "q": "Where are Linux log files stored?",
-        "a": "/var/log."
+        "a": "/var/log.",
+        "page": "83"
       },
       {
         "q": "Where are Windows application logs viewed?",
-        "a": "Event Viewer."
+        "a": "Event Viewer.",
+        "page": "83"
       },
       {
         "q": "What is metadata?",
-        "a": "Data that describes other data (email headers, file info, GPS)."
+        "a": "Data that describes other data (email headers, file info, GPS).",
+        "page": "83"
       },
       {
         "q": "Are dashboards designed for long-term analysis?",
-        "a": "No - they show real-time status."
+        "a": "No - they show real-time status.",
+        "page": "84"
       },
       {
         "q": "What does a packet capture show?",
-        "a": "Detailed traffic, including plain-language application data."
+        "a": "Detailed traffic, including plain-language application data.",
+        "page": "84"
       },
       {
         "q": "What info is commonly in IPS/IDS logs?",
-        "a": "Timestamp, attack type, source/destination IP and port."
+        "a": "Timestamp, attack type, source/destination IP and port.",
+        "page": "83"
       }
     ]
   },
@@ -3155,27 +3431,33 @@
     "cards": [
       {
         "q": "Security policies answer what questions?",
-        "a": "'What' and 'why'. Technical controls answer 'how'."
+        "a": "'What' and 'why'. Technical controls answer 'how'.",
+        "page": "84"
       },
       {
         "q": "What does AUP stand for?",
-        "a": "Acceptable Use Policy."
+        "a": "Acceptable Use Policy.",
+        "page": "84"
       },
       {
         "q": "Why do organizations use an AUP?",
-        "a": "To define acceptable use of company assets and limit legal liability."
+        "a": "To define acceptable use of company assets and limit legal liability.",
+        "page": "84"
       },
       {
         "q": "Is a disaster recovery plan part of business continuity?",
-        "a": "Yes."
+        "a": "Yes.",
+        "page": "84"
       },
       {
         "q": "What does SDLC stand for?",
-        "a": "Software (or systems) development life cycle."
+        "a": "Software (or systems) development life cycle.",
+        "page": "85"
       },
       {
         "q": "Is there a single best SDLC?",
-        "a": "No - but a framework helps."
+        "a": "No - but a framework helps.",
+        "page": "85"
       }
     ]
   },
@@ -3307,55 +3589,68 @@
     "cards": [
       {
         "q": "What does SLE stand for?",
-        "a": "Single Loss Expectancy."
+        "a": "Single Loss Expectancy.",
+        "page": "88"
       },
       {
         "q": "What is the SLE formula?",
-        "a": "SLE = Asset Value (AV) x Exposure Factor (EF)."
+        "a": "SLE = Asset Value (AV) x Exposure Factor (EF).",
+        "page": "88"
       },
       {
         "q": "What does ALE stand for?",
-        "a": "Annualized Loss Expectancy."
+        "a": "Annualized Loss Expectancy.",
+        "page": "88"
       },
       {
         "q": "What is the ALE formula?",
-        "a": "ALE = ARO x SLE."
+        "a": "ALE = ARO x SLE.",
+        "page": "88"
       },
       {
         "q": "What does ARO stand for?",
-        "a": "Annualized Rate of Occurrence."
+        "a": "Annualized Rate of Occurrence.",
+        "page": "88"
       },
       {
         "q": "A $1,000 laptop is fully lost (EF 1.0) 7 times a year. What is the ALE?",
-        "a": "$7,000. (SLE $1,000 x ARO 7)"
+        "a": "$7,000. (SLE $1,000 x ARO 7)",
+        "page": "88"
       },
       {
         "q": "If you lose a quarter of an asset's value, what is the EF?",
-        "a": "0.25."
+        "a": "0.25.",
+        "page": "88"
       },
       {
         "q": "Qualitative or quantitative: a traffic light grid?",
-        "a": "Qualitative."
+        "a": "Qualitative.",
+        "page": "88"
       },
       {
         "q": "Risk likelihood vs probability?",
-        "a": "Likelihood is qualitative (rare, possible); probability is quantitative/statistical."
+        "a": "Likelihood is qualitative (rare, possible); probability is quantitative/statistical.",
+        "page": "88"
       },
       {
         "q": "What is the most important impact consideration?",
-        "a": "Life."
+        "a": "Life.",
+        "page": "88"
       },
       {
         "q": "Risk appetite vs risk tolerance?",
-        "a": "Appetite: acceptable risk before acting (the speed limit). Tolerance: acceptable variance beyond it (when you get ticketed)."
+        "a": "Appetite: acceptable risk before acting (the speed limit). Tolerance: acceptable variance beyond it (when you get ticketed).",
+        "page": "89"
       },
       {
         "q": "What is a risk register?",
-        "a": "A document identifying risks, owners, indicators, and solutions."
+        "a": "A document identifying risks, owners, indicators, and solutions.",
+        "page": "89"
       },
       {
         "q": "What are the three risk appetite postures?",
-        "a": "Conservative, neutral, and expansionary."
+        "a": "Conservative, neutral, and expansionary.",
+        "page": "89"
       }
     ]
   },
@@ -3429,23 +3724,28 @@
     "cards": [
       {
         "q": "What is a right-to-audit clause?",
-        "a": "A contract term allowing you to perform a security audit of a vendor at any time."
+        "a": "A contract term allowing you to perform a security audit of a vendor at any time.",
+        "page": "90"
       },
       {
         "q": "What is due diligence in vendor selection?",
-        "a": "Checking out a company before doing business - finances, legal issues, background checks."
+        "a": "Checking out a company before doing business - finances, legal issues, background checks.",
+        "page": "90"
       },
       {
         "q": "Give an example of a conflict of interest.",
-        "a": "A vendor employs the CFO's brother, or offers gifts if a contract is signed."
+        "a": "A vendor employs the CFO's brother, or offers gifts if a contract is signed.",
+        "page": "90"
       },
       {
         "q": "Does vendor monitoring end when the contract is signed?",
-        "a": "No - it's ongoing."
+        "a": "No - it's ongoing.",
+        "page": "90"
       },
       {
         "q": "Why use vendor questionnaires?",
-        "a": "To get security answers directly from the vendor and update risk analysis."
+        "a": "To get security answers directly from the vendor and update risk analysis.",
+        "page": "91"
       }
     ]
   },
@@ -3545,15 +3845,18 @@
     "cards": [
       {
         "q": "Who oversees risk management activities and audits internally?",
-        "a": "The audit committee."
+        "a": "The audit committee.",
+        "page": "93"
       },
       {
         "q": "What is a self-assessment?",
-        "a": "The organization performs its own checks."
+        "a": "The organization performs its own checks.",
+        "page": "93"
       },
       {
         "q": "Who often must perform audits for regulatory requirements?",
-        "a": "An independent third party (external audit)."
+        "a": "An independent third party (external audit).",
+        "page": "94"
       }
     ]
   },
@@ -3634,7 +3937,7 @@
         "a": "Multiple approvals for critical processes and monitoring files/systems."
       },
       {
-        "q": "What is operational security (OPSEC)?",
+        "q": "What is operational security?",
         "a": "Viewing security from the attacker's perspective and keeping sensitive data private."
       },
       {

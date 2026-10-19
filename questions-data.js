@@ -12,7 +12,8 @@ window.QUIZ_DATA = {
           "Operational",
           "Physical"
         ],
-        "explanation": "Technical controls are implemented using systems - operating system controls, firewalls, anti-virus."
+        "explanation": "Technical controls are implemented using systems - operating system controls, firewalls, anti-virus.",
+        "page": "1"
       },
       {
         "question": "Security policies and standard operating procedures belong to which control category?",
@@ -22,7 +23,8 @@ window.QUIZ_DATA = {
           "Operational",
           "Physical"
         ],
-        "explanation": "Managerial controls are administrative controls associated with security design and implementation."
+        "explanation": "Managerial controls are administrative controls associated with security design and implementation.",
+        "page": "1"
       },
       {
         "question": "Security guards and awareness programs are examples of which control category?",
@@ -32,7 +34,8 @@ window.QUIZ_DATA = {
           "Technical",
           "Physical"
         ],
-        "explanation": "Operational controls are implemented by people instead of systems."
+        "explanation": "Operational controls are implemented by people instead of systems.",
+        "page": "1"
       },
       {
         "question": "Fences, locks, and badge readers belong to which control category?",
@@ -42,7 +45,8 @@ window.QUIZ_DATA = {
           "Operational",
           "Managerial"
         ],
-        "explanation": "Physical controls limit physical access - guard shacks, fences, locks, badge readers."
+        "explanation": "Physical controls limit physical access - guard shacks, fences, locks, badge readers.",
+        "page": "1"
       },
       {
         "question": "Which control type discourages an intrusion attempt but does not directly prevent access?",
@@ -52,7 +56,8 @@ window.QUIZ_DATA = {
           "Detective",
           "Corrective"
         ],
-        "explanation": "Deterrent controls make an attacker think twice - splash screens, threat of demotion, warning signs."
+        "explanation": "Deterrent controls make an attacker think twice - splash screens, threat of demotion, warning signs.",
+        "page": "1"
       },
       {
         "question": "Which control type identifies and logs an intrusion attempt but may not prevent access?",
@@ -62,7 +67,8 @@ window.QUIZ_DATA = {
           "Preventive",
           "Directive"
         ],
-        "explanation": "Detective controls find the issue - reviewing system logs, login reports, patrols, motion detectors."
+        "explanation": "Detective controls find the issue - reviewing system logs, login reports, patrols, motion detectors.",
+        "page": "1"
       },
       {
         "question": "Restoring from backups to mitigate a ransomware infection is which control type?",
@@ -72,7 +78,8 @@ window.QUIZ_DATA = {
           "Detective",
           "Preventive"
         ],
-        "explanation": "Corrective controls are applied after an event has been detected to reverse its impact."
+        "explanation": "Corrective controls are applied after an event has been detected to reverse its impact.",
+        "page": "1"
       },
       {
         "question": "A firewall blocks a specific application instead of patching the app. Which control type is this?",
@@ -82,7 +89,8 @@ window.QUIZ_DATA = {
           "Directive",
           "Deterrent"
         ],
-        "explanation": "Compensating controls use other means when existing controls aren't sufficient, and may be temporary."
+        "explanation": "Compensating controls use other means when existing controls aren't sufficient, and may be temporary.",
+        "page": "1"
       },
       {
         "question": "Which control type is described as relatively weak and directs a subject towards security compliance?",
@@ -92,7 +100,8 @@ window.QUIZ_DATA = {
           "Compensating",
           "Preventive"
         ],
-        "explanation": "Directive controls say 'do this, please' - e.g., store sensitive files in a protected folder or post an 'Authorized Personnel Only' sign."
+        "explanation": "Directive controls say 'do this, please' - e.g., store sensitive files in a protected folder or post an 'Authorized Personnel Only' sign.",
+        "page": "1"
       },
       {
         "question": "According to the control type table, a power generator is which control type in the physical category?",
@@ -102,7 +111,8 @@ window.QUIZ_DATA = {
           "Preventive",
           "Detective"
         ],
-        "explanation": "A generator used after a power outage compensates for the loss of primary power."
+        "explanation": "A generator used after a power outage compensates for the loss of primary power.",
+        "page": "2"
       }
     ],
     "bonusQuestions": []
@@ -387,7 +397,8 @@ window.QUIZ_DATA = {
           "Only external traffic is inspected",
           "Users are trusted after their first login"
         ],
-        "explanation": "Zero trust is a holistic approach covering every device, process, and person."
+        "explanation": "Zero trust is a holistic approach covering every device, process, and person.",
+        "page": "5"
       },
       {
         "question": "Which plane processes frames and packets - forwarding, trunking, encrypting, and NAT?",
@@ -397,7 +408,8 @@ window.QUIZ_DATA = {
           "Management plane",
           "Policy plane"
         ],
-        "explanation": "The data plane processes the frames, packets, and network data."
+        "explanation": "The data plane processes the frames, packets, and network data.",
+        "page": "5"
       },
       {
         "question": "Which plane manages the actions of the data plane using routing tables, session tables, and NAT tables?",
@@ -407,7 +419,8 @@ window.QUIZ_DATA = {
           "Infrastructure plane",
           "Application plane"
         ],
-        "explanation": "The control plane defines policies and determines how packets are forwarded."
+        "explanation": "The control plane defines policies and determines how packets are forwarded.",
+        "page": "5"
       },
       {
         "question": "What is described as 'the gatekeeper' that allows, monitors, and terminates connections?",
@@ -417,7 +430,8 @@ window.QUIZ_DATA = {
           "Policy Administrator",
           "Certificate Authority"
         ],
-        "explanation": "The PEP is the gatekeeper and can consist of multiple components."
+        "explanation": "The PEP is the gatekeeper and can consist of multiple components.",
+        "page": "5"
       },
       {
         "question": "Which component evaluates each access decision and can grant, deny, or revoke?",
@@ -427,7 +441,8 @@ window.QUIZ_DATA = {
           "Policy Enforcement Point",
           "Security zone"
         ],
-        "explanation": "The Policy Engine evaluates access decisions based on policy and other information sources."
+        "explanation": "The Policy Engine evaluates access decisions based on policy and other information sources.",
+        "page": "6"
       },
       {
         "question": "Which component communicates with the PEP and generates access tokens or credentials?",
@@ -437,7 +452,8 @@ window.QUIZ_DATA = {
           "Subject",
           "Enterprise resource"
         ],
-        "explanation": "The Policy Administrator tells the PEP to allow or disallow access."
+        "explanation": "The Policy Administrator tells the PEP to allow or disallow access.",
+        "page": "6"
       },
       {
         "question": "The Policy Engine and Policy Administrator together make up what?",
@@ -447,7 +463,8 @@ window.QUIZ_DATA = {
           "Data plane",
           "Security zone"
         ],
-        "explanation": "The PDP contains the Policy Engine and Policy Administrator."
+        "explanation": "The PDP contains the Policy Engine and Policy Administrator.",
+        "page": "6"
       },
       {
         "question": "Considering location, connection type, IP, and relationship to the organization when authenticating is called what?",
@@ -457,7 +474,8 @@ window.QUIZ_DATA = {
           "Implicit trust",
           "Policy-driven access control"
         ],
-        "explanation": "Adaptive identity uses multiple risk indicators and can make authentication stronger if needed."
+        "explanation": "Adaptive identity uses multiple risk indicators and can make authentication stronger if needed.",
+        "page": "5"
       },
       {
         "question": "Decreasing the number of possible entry points is called what?",
@@ -467,7 +485,8 @@ window.QUIZ_DATA = {
           "Policy enforcement",
           "Security zoning"
         ],
-        "explanation": "Threat scope reduction decreases possible entry points."
+        "explanation": "Threat scope reduction decreases possible entry points.",
+        "page": "6"
       }
     ],
     "bonusQuestions": []
@@ -902,7 +921,7 @@ window.QUIZ_DATA = {
         "explanation": "The algorithm is usually a known entity; keep your key private."
       },
       {
-        "question": "What asymmetric key length does the notes describe as common?",
+        "question": "What asymmetric key length is common, according to the notes?",
         "correctAnswer": "3,072 bits or larger",
         "incorrectAnswers": [
           "56 bits",
@@ -936,7 +955,8 @@ window.QUIZ_DATA = {
           "Ephemeral",
           "Escrowed"
         ],
-        "explanation": "Out-of-band means not sending the symmetric key over the network."
+        "explanation": "Out-of-band means not sending the symmetric key over the network.",
+        "page": "11"
       },
       {
         "question": "In-band key exchange commonly uses what to deliver a symmetric key?",
@@ -946,7 +966,8 @@ window.QUIZ_DATA = {
           "Steganography",
           "Tokenization"
         ],
-        "explanation": "Protect the key with additional encryption - use asymmetric encryption to deliver a symmetric key."
+        "explanation": "Protect the key with additional encryption - use asymmetric encryption to deliver a symmetric key.",
+        "page": "11"
       },
       {
         "question": "A client encrypts a random symmetric key with the server's public key. What is this key called once shared?",
@@ -956,7 +977,8 @@ window.QUIZ_DATA = {
           "A private key",
           "An escrow key"
         ],
-        "explanation": "The server decrypts the shared key and uses it to encrypt data."
+        "explanation": "The server decrypts the shared key and uses it to encrypt data.",
+        "page": "11"
       },
       {
         "question": "Session keys that need to be changed often are called what?",
@@ -966,7 +988,8 @@ window.QUIZ_DATA = {
           "Wildcard keys",
           "Escrowed keys"
         ],
-        "explanation": "Session keys must be changed often and be unpredictable."
+        "explanation": "Session keys must be changed often and be unpredictable.",
+        "page": "11"
       },
       {
         "question": "To create the same symmetric key without sending it, Bob combines his private key with what?",
@@ -976,7 +999,8 @@ window.QUIZ_DATA = {
           "His own public key",
           "The CA's private key"
         ],
-        "explanation": "Alice combines her private key with Bob's public key to create the same symmetric key."
+        "explanation": "Alice combines her private key with Bob's public key to create the same symmetric key.",
+        "page": "12"
       }
     ],
     "bonusQuestions": []
@@ -1251,7 +1275,8 @@ window.QUIZ_DATA = {
           "802.1X",
           "RFC 3227"
         ],
-        "explanation": "X.509 includes serial number, version, signature algorithm, issuer, public key, and extensions."
+        "explanation": "X.509 includes serial number, version, signature algorithm, issuer, public key, and extensions.",
+        "page": "16"
       },
       {
         "question": "What does a certificate signing request (CSR) send to the CA?",
@@ -1261,7 +1286,8 @@ window.QUIZ_DATA = {
           "Both keys",
           "A symmetric session key"
         ],
-        "explanation": "Create a key pair, then send the public key to the CA to be signed."
+        "explanation": "Create a key pair, then send the public key to the CA to be signed.",
+        "page": "16"
       },
       {
         "question": "What is a root of trust?",
@@ -1271,7 +1297,8 @@ window.QUIZ_DATA = {
           "A self-signed user password",
           "An open proxy"
         ],
-        "explanation": "Examples include an HSM, secure enclave, or Certificate Authority."
+        "explanation": "Examples include an HSM, secure enclave, or Certificate Authority.",
+        "page": "16"
       },
       {
         "question": "Which extension allows a certificate to support many different domains?",
@@ -1281,7 +1308,8 @@ window.QUIZ_DATA = {
           "Certificate Revocation List",
           "Key escrow"
         ],
-        "explanation": "SAN lists additional identification information."
+        "explanation": "SAN lists additional identification information.",
+        "page": "16"
       },
       {
         "question": "*.professormesser.com is an example of what?",
@@ -1291,7 +1319,8 @@ window.QUIZ_DATA = {
           "A CSR",
           "A CRL entry"
         ],
-        "explanation": "A wildcard domain applies to all server names in a domain."
+        "explanation": "A wildcard domain applies to all server names in a domain.",
+        "page": "16"
       },
       {
         "question": "Who maintains the Certificate Revocation List (CRL)?",
@@ -1301,7 +1330,8 @@ window.QUIZ_DATA = {
           "The end user",
           "The web server"
         ],
-        "explanation": "The CRL can contain many revocations in a large file."
+        "explanation": "The CRL can contain many revocations in a large file.",
+        "page": "16"
       },
       {
         "question": "Which vulnerability in 2014 caused every affected web server certificate to be replaced?",
@@ -1311,7 +1341,8 @@ window.QUIZ_DATA = {
           "WannaCry",
           "Mirai"
         ],
-        "explanation": "Heartbleed (CVE-2014-0160) put OpenSSL private keys at risk."
+        "explanation": "Heartbleed (CVE-2014-0160) put OpenSSL private keys at risk.",
+        "page": "16"
       },
       {
         "question": "What is OCSP stapling?",
@@ -1321,7 +1352,8 @@ window.QUIZ_DATA = {
           "The CA answers every client request directly",
           "The certificate is signed by itself"
         ],
-        "explanation": "OCSP stapling provides scalability for OCSP checks."
+        "explanation": "OCSP stapling provides scalability for OCSP checks.",
+        "page": "17"
       },
       {
         "question": "Compared to downloading a CRL, OCSP is:",
@@ -1331,7 +1363,8 @@ window.QUIZ_DATA = {
           "Unsupported over HTTP",
           "Only used by the CA"
         ],
-        "explanation": "OCSP messages are usually sent to an OCSP responder via HTTP."
+        "explanation": "OCSP messages are usually sent to an OCSP responder via HTTP.",
+        "page": "17"
       },
       {
         "question": "How do internal devices trust certificates issued by your own private CA?",
@@ -1341,7 +1374,8 @@ window.QUIZ_DATA = {
           "Disable certificate checks",
           "Use a wildcard on every device"
         ],
-        "explanation": "Devices then trust any certificate signed by the internal CA."
+        "explanation": "Devices then trust any certificate signed by the internal CA.",
+        "page": "16"
       }
     ],
     "bonusQuestions": []
@@ -1358,7 +1392,8 @@ window.QUIZ_DATA = {
           "Hacktivist",
           "Shadow IT"
         ],
-        "explanation": "Nation states have the highest sophistication."
+        "explanation": "Nation states have the highest sophistication.",
+        "page": "18"
       },
       {
         "question": "Which threat actor runs pre-made scripts without knowing what's really happening?",
@@ -1368,7 +1403,8 @@ window.QUIZ_DATA = {
           "Nation state",
           "Insider threat"
         ],
-        "explanation": "Unskilled attackers have limited resources and look for low-hanging fruit."
+        "explanation": "Unskilled attackers have limited resources and look for low-hanging fruit.",
+        "page": "18"
       },
       {
         "question": "Which threat actor is described as 'a hacker with a purpose'?",
@@ -1378,7 +1414,8 @@ window.QUIZ_DATA = {
           "Organized crime",
           "Unskilled attacker"
         ],
-        "explanation": "Hacktivists are motivated by philosophy, revenge, disruption - DoS, defacing, document release."
+        "explanation": "Hacktivists are motivated by philosophy, revenge, disruption - DoS, defacing, document release.",
+        "page": "18"
       },
       {
         "question": "Which threat actor is internal, has extensive resources, and institutional knowledge?",
@@ -1388,7 +1425,8 @@ window.QUIZ_DATA = {
           "Nation state",
           "Unskilled attacker"
         ],
-        "explanation": "Insider threats are motivated by revenge and financial gain."
+        "explanation": "Insider threats are motivated by revenge and financial gain.",
+        "page": "18"
       },
       {
         "question": "What is the primary motivation of organized crime?",
@@ -1398,7 +1436,8 @@ window.QUIZ_DATA = {
           "War",
           "Revenge"
         ],
-        "explanation": "Organized crime is almost always external and very sophisticated."
+        "explanation": "Organized crime is almost always external and very sophisticated.",
+        "page": "18"
       },
       {
         "question": "Employees building their own infrastructure around the IT organization is known as what?",
@@ -1408,7 +1447,8 @@ window.QUIZ_DATA = {
           "Hacktivism",
           "Organized crime"
         ],
-        "explanation": "Shadow IT is internal, with limited resources and medium sophistication."
+        "explanation": "Shadow IT is internal, with limited resources and medium sophistication.",
+        "page": "18"
       },
       {
         "question": "Which worm destroyed about 1,000 nuclear centrifuges?",
@@ -1418,7 +1458,8 @@ window.QUIZ_DATA = {
           "WannaCry",
           "agent.btz"
         ],
-        "explanation": "The notes cite Stuxnet as a nation-state example."
+        "explanation": "The notes cite Stuxnet as a nation-state example.",
+        "page": "18"
       },
       {
         "question": "Which is NOT one of the listed threat actor attributes?",
@@ -1428,7 +1469,8 @@ window.QUIZ_DATA = {
           "Resources/funding",
           "Level of sophistication/capability"
         ],
-        "explanation": "The attributes are internal/external, resources/funding, and sophistication."
+        "explanation": "The attributes are internal/external, resources/funding, and sophistication.",
+        "page": "18"
       }
     ],
     "bonusQuestions": []
@@ -1445,7 +1487,8 @@ window.QUIZ_DATA = {
           "They disable the firewall",
           "They contain macros"
         ],
-        "explanation": "Browsers must provide input validation to avoid running malicious code."
+        "explanation": "Browsers must provide input validation to avoid running malicious code.",
+        "page": "19"
       },
       {
         "question": "Which is an example of a file-based threat vector?",
@@ -1455,7 +1498,8 @@ window.QUIZ_DATA = {
           "Vishing",
           "Rogue access points"
         ],
-        "explanation": "File-based vectors include PDFs, ZIP/RAR files, and Office documents."
+        "explanation": "File-based vectors include PDFs, ZIP/RAR files, and Office documents.",
+        "page": "19"
       },
       {
         "question": "Which is listed as a voice call vector?",
@@ -1465,7 +1509,8 @@ window.QUIZ_DATA = {
           "Sideloading",
           "Typosquatting"
         ],
-        "explanation": "Voice vectors include vishing, spam over IP, war dialing, and call tampering."
+        "explanation": "Voice vectors include vishing, spam over IP, war dialing, and call tampering.",
+        "page": "19"
       },
       {
         "question": "Why are USB devices a significant threat vector?",
@@ -1475,7 +1520,8 @@ window.QUIZ_DATA = {
           "They can only be used for keyboards",
           "They encrypt network traffic"
         ],
-        "explanation": "USB devices can act as keyboards and allow data exfiltration with zero bandwidth."
+        "explanation": "USB devices can act as keyboards and allow data exfiltration with zero bandwidth.",
+        "page": "19"
       },
       {
         "question": "What is a characteristic of agentless software?",
@@ -1485,7 +1531,8 @@ window.QUIZ_DATA = {
           "It runs only on air-gapped networks",
           "It is always unsupported"
         ],
-        "explanation": "The client runs a new instance each time."
+        "explanation": "The client runs a new instance each time.",
+        "page": "20"
       },
       {
         "question": "Which wired weakness is listed as an unsecure network vector?",
@@ -1495,17 +1542,19 @@ window.QUIZ_DATA = {
           "Using SSH",
           "Using HTTPS"
         ],
-        "explanation": "Unsecure wired interfaces lack 802.1X."
+        "explanation": "Unsecure wired interfaces lack 802.1X.",
+        "page": "20"
       },
       {
         "question": "How did attackers get into Target's network in 2013?",
-        "correctAnswer": "Through a third-party HVAC vendor",
+        "correctAnswer": "Through a vendor (supply chain vector)",
         "incorrectAnswers": [
           "Through a zero-day in the POS",
           "Through an open S3 bucket",
           "Through a watering hole site"
         ],
-        "explanation": "This is a supply chain vector - gaining access using a vendor."
+        "explanation": "The notes list the 2013 Target credit card breach as gaining access to a network using a vendor.",
+        "page": "20"
       },
       {
         "question": "Why are unsupported systems a threat vector?",
@@ -1515,7 +1564,8 @@ window.QUIZ_DATA = {
           "They use too much bandwidth",
           "They can't connect to the Internet"
         ],
-        "explanation": "Even the manufacturer won't help with outdated operating systems."
+        "explanation": "Even the manufacturer won't help with outdated operating systems.",
+        "page": "20"
       }
     ],
     "bonusQuestions": []
@@ -1972,7 +2022,8 @@ window.QUIZ_DATA = {
           "The trust between two CAs",
           "The trust between VLANs"
         ],
-        "explanation": "XSS is one of the most common web app vulnerabilities."
+        "explanation": "XSS is one of the most common web app vulnerabilities.",
+        "page": "25"
       },
       {
         "question": "Which scripting language does XSS commonly use?",
@@ -1982,7 +2033,8 @@ window.QUIZ_DATA = {
           "PowerShell",
           "Python"
         ],
-        "explanation": "XSS commonly uses JavaScript."
+        "explanation": "XSS commonly uses JavaScript.",
+        "page": "25"
       },
       {
         "question": "A malicious script embedded in an emailed link that executes in the victim's browser is which XSS type?",
@@ -1992,7 +2044,8 @@ window.QUIZ_DATA = {
           "DOM-based only",
           "Server-side"
         ],
-        "explanation": "The search box is a common source."
+        "explanation": "The search box is a common source.",
+        "page": "25"
       },
       {
         "question": "An attacker posts a malicious payload to a social network that everyone viewing receives. Which XSS type?",
@@ -2002,7 +2055,8 @@ window.QUIZ_DATA = {
           "CSRF",
           "SQL injection"
         ],
-        "explanation": "It has no specific target and can spread quickly."
+        "explanation": "It has no specific target and can spread quickly.",
+        "page": "25"
       },
       {
         "question": "What flaw did researcher Aaron Guzman find in Subaru's system in 2017?",
@@ -2012,7 +2066,8 @@ window.QUIZ_DATA = {
           "Default router passwords",
           "Weak WPA2 PSK"
         ],
-        "explanation": "A valid token allowed any service request, including adding an email to someone else's account."
+        "explanation": "A valid token allowed any service request, including adding an email to someone else's account.",
+        "page": "25"
       },
       {
         "question": "Which is listed as a developer protection against XSS?",
@@ -2022,7 +2077,8 @@ window.QUIZ_DATA = {
           "Use key escrow",
           "Use a wildcard certificate"
         ],
-        "explanation": "Don't allow users to add their own scripts to an input field."
+        "explanation": "Don't allow users to add their own scripts to an input field.",
+        "page": "25"
       }
     ],
     "bonusQuestions": []
@@ -2217,7 +2273,8 @@ window.QUIZ_DATA = {
           "Default router passwords",
           "A rogue access point"
         ],
-        "explanation": "This is an open permissions misconfiguration."
+        "explanation": "This is an open permissions misconfiguration.",
+        "page": "28"
       },
       {
         "question": "What is recommended instead of direct login to the root account?",
@@ -2227,7 +2284,8 @@ window.QUIZ_DATA = {
           "Share the root password",
           "Use a guest account"
         ],
-        "explanation": "Disable direct login to root."
+        "explanation": "Disable direct login to root.",
+        "page": "28"
       },
       {
         "question": "Which protocol sends all traffic in the clear?",
@@ -2237,7 +2295,8 @@ window.QUIZ_DATA = {
           "SFTP",
           "IMAPS"
         ],
-        "explanation": "Telnet, FTP, SMTP, and IMAP aren't encrypted."
+        "explanation": "Telnet, FTP, SMTP, and IMAP aren't encrypted.",
+        "page": "29"
       },
       {
         "question": "What did the Mirai botnet take advantage of?",
@@ -2247,7 +2306,8 @@ window.QUIZ_DATA = {
           "Weak hash algorithms",
           "Expired certificates"
         ],
-        "explanation": "Mirai used 60+ default configurations and was released as open-source software."
+        "explanation": "Mirai used 60+ default configurations and was released as open-source software.",
+        "page": "29"
       }
     ],
     "bonusQuestions": []
@@ -2385,7 +2445,8 @@ window.QUIZ_DATA = {
           "Viruses only affect Linux",
           "Worms only spread via USB"
         ],
-        "explanation": "Worms use the network as a transmission medium."
+        "explanation": "Worms use the network as a transmission medium.",
+        "page": "30"
       },
       {
         "question": "Which virus type is common in Microsoft Office?",
@@ -2395,7 +2456,8 @@ window.QUIZ_DATA = {
           "Program virus",
           "Fileless virus"
         ],
-        "explanation": "Other types: program, boot sector, and script viruses."
+        "explanation": "Other types: program, boot sector, and script viruses.",
+        "page": "30"
       },
       {
         "question": "What is a fileless virus?",
@@ -2405,7 +2467,8 @@ window.QUIZ_DATA = {
           "A virus stored in the boot sector",
           "A virus inside a ZIP file"
         ],
-        "explanation": "It does a good job of avoiding anti-virus detection."
+        "explanation": "It does a good job of avoiding anti-virus detection.",
+        "page": "30"
       },
       {
         "question": "In the fileless virus process, what is launched to download the payload into RAM?",
@@ -2415,7 +2478,8 @@ window.QUIZ_DATA = {
           "Task Manager",
           "Event Viewer"
         ],
-        "explanation": "It then runs scripts in memory and adds an auto-start to the Registry."
+        "explanation": "It then runs scripts in memory and adds an auto-start to the Registry.",
+        "page": "31"
       },
       {
         "question": "What can mitigate many worm infestations?",
@@ -2425,7 +2489,8 @@ window.QUIZ_DATA = {
           "Data masking",
           "Wildcard certificates"
         ],
-        "explanation": "They don't help much once the worm gets inside."
+        "explanation": "They don't help much once the worm gets inside.",
+        "page": "30"
       }
     ],
     "bonusQuestions": []
@@ -2811,7 +2876,8 @@ window.QUIZ_DATA = {
           "Yes, it requires ARP poisoning",
           "Only on wireless networks"
         ],
-        "explanation": "The attacker gathers info and replays it to appear as someone else."
+        "explanation": "The attacker gathers info and replays it to appear as someone else.",
+        "page": "35"
       },
       {
         "question": "Capturing a username and password hash and sending it in your own authentication request is called what?",
@@ -2821,7 +2887,8 @@ window.QUIZ_DATA = {
           "Birthday attack",
           "Key stretching"
         ],
-        "explanation": "Pass the hash is a type of replay attack."
+        "explanation": "Pass the hash is a type of replay attack.",
+        "page": "35"
       },
       {
         "question": "An attacker intercepts a session ID and uses it to access a server as the victim. What is this?",
@@ -2831,7 +2898,8 @@ window.QUIZ_DATA = {
           "Typosquatting",
           "Jailbreaking"
         ],
-        "explanation": "Session IDs are often stored in cookies."
+        "explanation": "Session IDs are often stored in cookies.",
+        "page": "35"
       },
       {
         "question": "What is the best way to prevent session hijacking?",
@@ -2841,7 +2909,8 @@ window.QUIZ_DATA = {
           "Use shorter passwords",
           "Use HTTP only"
         ],
-        "explanation": "They can't capture your session ID if they can't see it."
+        "explanation": "They can't capture your session ID if they can't see it.",
+        "page": "36"
       },
       {
         "question": "Are browser cookies executable?",
@@ -2851,7 +2920,8 @@ window.QUIZ_DATA = {
           "Only on mobile devices",
           "Only when Secure is set"
         ],
-        "explanation": "They're not generally a security risk unless someone gets access to them."
+        "explanation": "They're not generally a security risk unless someone gets access to them.",
+        "page": "35"
       }
     ],
     "bonusQuestions": []
@@ -2905,7 +2975,8 @@ window.QUIZ_DATA = {
           "Directory traversal",
           "Cross-site request forgery"
         ],
-        "explanation": "Privilege escalation commonly aims for the highest-level access."
+        "explanation": "Privilege escalation commonly aims for the highest-level access.",
+        "page": "37"
       },
       {
         "question": "What does Data Execution Prevention do?",
@@ -2915,7 +2986,8 @@ window.QUIZ_DATA = {
           "Encrypts all data",
           "Blocks USB drives"
         ],
-        "explanation": "DEP is a privilege escalation mitigation."
+        "explanation": "DEP is a privilege escalation mitigation.",
+        "page": "37"
       },
       {
         "question": "What does Address Space Layout Randomization prevent?",
@@ -2925,7 +2997,8 @@ window.QUIZ_DATA = {
           "Session hijacking",
           "Typosquatting"
         ],
-        "explanation": "ASLR is a privilege escalation mitigation."
+        "explanation": "ASLR is a privilege escalation mitigation.",
+        "page": "37"
       },
       {
         "question": "CSRF takes advantage of what trust?",
@@ -2935,7 +3008,8 @@ window.QUIZ_DATA = {
           "The trust between CAs",
           "The trust in DNS"
         ],
-        "explanation": "Requests are made without the user's consent or knowledge."
+        "explanation": "Requests are made without the user's consent or knowledge.",
+        "page": "37"
       },
       {
         "question": "What is usually used to prevent cross-site request forgery?",
@@ -2945,7 +3019,8 @@ window.QUIZ_DATA = {
           "A longer session cookie",
           "A salted hash"
         ],
-        "explanation": "The application should have anti-forgery techniques added."
+        "explanation": "The application should have anti-forgery techniques added.",
+        "page": "37"
       },
       {
         "question": "Reading files from a web server outside the website's file directory is called what?",
@@ -2955,7 +3030,8 @@ window.QUIZ_DATA = {
           "Session riding",
           "Sideloading"
         ],
-        "explanation": "Also called path traversal."
+        "explanation": "Also called path traversal.",
+        "page": "37"
       },
       {
         "question": "What access level did CVE-2023-29336 (Win32k) give an attacker?",
@@ -2965,7 +3041,8 @@ window.QUIZ_DATA = {
           "Read-only user access",
           "Network access only"
         ],
-        "explanation": "SYSTEM is the highest level access."
+        "explanation": "SYSTEM is the highest level access.",
+        "page": "37"
       }
     ],
     "bonusQuestions": []
@@ -3106,7 +3183,8 @@ window.QUIZ_DATA = {
           "Out-of-cycle logging",
           "Account lockout"
         ],
-        "explanation": "This should be easy to identify with log analysis and automation."
+        "explanation": "This should be easy to identify with log analysis and automation.",
+        "page": "40"
       },
       {
         "question": "Why might an attacker block auto-update connections and links to security patches?",
@@ -3116,7 +3194,8 @@ window.QUIZ_DATA = {
           "To install legitimate updates",
           "To trigger an account lockout"
         ],
-        "explanation": "Blocked content is an indicator of compromise."
+        "explanation": "Blocked content is an indicator of compromise.",
+        "page": "39"
       },
       {
         "question": "OS patch logs occurring outside the normal patch day are an example of what?",
@@ -3126,7 +3205,8 @@ window.QUIZ_DATA = {
           "Resource consumption",
           "Missing logs"
         ],
-        "explanation": "An attacker may patch to keep other attackers out."
+        "explanation": "An attacker may patch to keep other attackers out.",
+        "page": "40"
       },
       {
         "question": "Why are missing logs an indicator of compromise?",
@@ -3136,7 +3216,8 @@ window.QUIZ_DATA = {
           "Missing logs mean no activity",
           "Logs only exist on firewalls"
         ],
-        "explanation": "Logs should be secured and monitored."
+        "explanation": "Logs should be secured and monitored.",
+        "page": "40"
       },
       {
         "question": "An attacker locks an account then calls support to reset the password. This IOC is called what?",
@@ -3146,7 +3227,8 @@ window.QUIZ_DATA = {
           "Blocked content",
           "Published/documented"
         ],
-        "explanation": "Account lockout may be part of a larger plan."
+        "explanation": "Account lockout may be part of a larger plan.",
+        "page": "39"
       },
       {
         "question": "An unusual file transfer spike at 3 AM is which IOC?",
@@ -3156,7 +3238,8 @@ window.QUIZ_DATA = {
           "Missing logs",
           "Account lockout"
         ],
-        "explanation": "Firewall logs show the outgoing transfer."
+        "explanation": "Firewall logs show the outgoing transfer.",
+        "page": "40"
       }
     ],
     "bonusQuestions": []
@@ -3287,7 +3370,8 @@ window.QUIZ_DATA = {
           "Only firewall rules",
           "Only user reports"
         ],
-        "explanation": "EDR uses a lightweight agent on the endpoint."
+        "explanation": "EDR uses a lightweight agent on the endpoint.",
+        "page": "42"
       },
       {
         "question": "How does EDR respond to a threat?",
@@ -3297,7 +3381,8 @@ window.QUIZ_DATA = {
           "Shut down the entire network",
           "Revoke all certificates"
         ],
-        "explanation": "Responses are API driven with no technician intervention required."
+        "explanation": "Responses are API driven with no technician intervention required.",
+        "page": "42"
       },
       {
         "question": "What does a host-based firewall control?",
@@ -3307,7 +3392,8 @@ window.QUIZ_DATA = {
           "Only wireless management frames",
           "Only email"
         ],
-        "explanation": "It can identify and block unknown processes."
+        "explanation": "It can identify and block unknown processes.",
+        "page": "42"
       },
       {
         "question": "What does HIPS stand for?",
@@ -3317,7 +3403,8 @@ window.QUIZ_DATA = {
           "Hashed Identity Password Store",
           "Hardware Isolation Process Sandbox"
         ],
-        "explanation": "It recognizes and blocks known attacks."
+        "explanation": "It recognizes and blocks known attacks.",
+        "page": "42"
       },
       {
         "question": "Which tool is recommended to verify open ports?",
@@ -3327,7 +3414,8 @@ window.QUIZ_DATA = {
           "BitLocker",
           "Event Viewer"
         ],
-        "explanation": "Close everything except required ports."
+        "explanation": "Close everything except required ports.",
+        "page": "42"
       },
       {
         "question": "Why remove unnecessary software?",
@@ -3337,7 +3425,8 @@ window.QUIZ_DATA = {
           "To free license keys",
           "To disable updates"
         ],
-        "explanation": "Every app has a different patching process."
+        "explanation": "Every app has a different patching process.",
+        "page": "42"
       }
     ],
     "bonusQuestions": []
@@ -3354,7 +3443,8 @@ window.QUIZ_DATA = {
           "Which users are in each VLAN",
           "The order of firewall rules"
         ],
-        "explanation": "Responsibilities vary by provider and contractual agreements."
+        "explanation": "Responsibilities vary by provider and contractual agreements.",
+        "page": "42"
       },
       {
         "question": "According to the responsibility matrix, in IaaS who manages the operating system?",
@@ -3364,7 +3454,8 @@ window.QUIZ_DATA = {
           "Shared equally",
           "A third-party auditor"
         ],
-        "explanation": "In IaaS the provider manages physical hosts, network, and datacenter."
+        "explanation": "In IaaS the provider manages physical hosts, network, and datacenter.",
+        "page": "43"
       },
       {
         "question": "According to the responsibility matrix, which is customer-managed in SaaS, PaaS, IaaS, and on-prem?",
@@ -3374,7 +3465,8 @@ window.QUIZ_DATA = {
           "Physical network",
           "Operating systems"
         ],
-        "explanation": "Information/data, devices, and accounts/identities are always customer managed."
+        "explanation": "Information/data, devices, and accounts/identities are always customer managed.",
+        "page": "43"
       },
       {
         "question": "What is a hybrid cloud?",
@@ -3384,7 +3476,8 @@ window.QUIZ_DATA = {
           "A single on-premises server",
           "A cloud used only for backups"
         ],
-        "explanation": "It adds complexity: network protection mismatches, different monitoring, data leakage."
+        "explanation": "It adds complexity: network protection mismatches, different monitoring, data leakage.",
+        "page": "42"
       },
       {
         "question": "Defining servers, network, and applications as code is called what?",
@@ -3394,7 +3487,8 @@ window.QUIZ_DATA = {
           "Microservices",
           "Function as a Service"
         ],
-        "explanation": "Build it the same way every time based on the code."
+        "explanation": "Build it the same way every time based on the code.",
+        "page": "43"
       },
       {
         "question": "What is serverless architecture also called?",
@@ -3404,7 +3498,8 @@ window.QUIZ_DATA = {
           "Software Defined Networking",
           "Platform as a Service"
         ],
-        "explanation": "Apps are separated into autonomous functions; OS security concerns are at the third party."
+        "explanation": "Apps are separated into autonomous functions; OS security concerns are at the third party.",
+        "page": "43"
       },
       {
         "question": "What acts as the 'glue' for microservices?",
@@ -3414,7 +3509,8 @@ window.QUIZ_DATA = {
           "Certificates",
           "Hypervisors"
         ],
-        "explanation": "Microservices are scalable, resilient, and have containment built in."
+        "explanation": "Microservices are scalable, resilient, and have containment built in.",
+        "page": "43"
       },
       {
         "question": "One big application that does everything is called what?",
@@ -3424,7 +3520,8 @@ window.QUIZ_DATA = {
           "A container",
           "A serverless function"
         ],
-        "explanation": "Monolithic apps have large codebases and change control challenges."
+        "explanation": "Monolithic apps have large codebases and change control challenges.",
+        "page": "43"
       }
     ],
     "bonusQuestions": []
@@ -3498,7 +3595,8 @@ window.QUIZ_DATA = {
           "No consolidated logs",
           "No patching"
         ],
-        "explanation": "It also has potential performance issues."
+        "explanation": "It also has potential performance issues.",
+        "page": "44"
       },
       {
         "question": "How do containers differ from virtual machines?",
@@ -3508,7 +3606,8 @@ window.QUIZ_DATA = {
           "Containers can't run applications",
           "Containers are less portable"
         ],
-        "explanation": "Container images are lightweight and portable."
+        "explanation": "Container images are lightweight and portable.",
+        "page": "44"
       },
       {
         "question": "Large-scale, multi-site industrial control systems are called what?",
@@ -3518,7 +3617,8 @@ window.QUIZ_DATA = {
           "IoT",
           "SD-WAN"
         ],
-        "explanation": "SCADA requires extensive segmentation with no outside access."
+        "explanation": "SCADA requires extensive segmentation with no outside access.",
+        "page": "45"
       },
       {
         "question": "An operating system with a deterministic processing schedule is called what?",
@@ -3528,7 +3628,8 @@ window.QUIZ_DATA = {
           "SELinux",
           "Embedded hypervisor"
         ],
-        "explanation": "Used in industrial equipment, automobiles, and military environments."
+        "explanation": "Used in industrial equipment, automobiles, and military environments.",
+        "page": "45"
       },
       {
         "question": "Traffic light controllers and digital watches are examples of what?",
@@ -3538,7 +3639,8 @@ window.QUIZ_DATA = {
           "Microservices",
           "Jump servers"
         ],
-        "explanation": "Embedded systems are designed for a specific function."
+        "explanation": "Embedded systems are designed for a specific function.",
+        "page": "45"
       },
       {
         "question": "What is a common IoT security concern?",
@@ -3548,7 +3650,8 @@ window.QUIZ_DATA = {
           "Too many security patches",
           "Mandatory MFA"
         ],
-        "explanation": "IoT manufacturers are not security professionals."
+        "explanation": "IoT manufacturers are not security professionals.",
+        "page": "44"
       },
       {
         "question": "How does high availability differ from redundancy?",
@@ -3558,7 +3661,8 @@ window.QUIZ_DATA = {
           "They are the same",
           "HA never costs more"
         ],
-        "explanation": "Higher availability almost always means higher costs."
+        "explanation": "Higher availability almost always means higher costs.",
+        "page": "45"
       }
     ],
     "bonusQuestions": []
@@ -3575,7 +3679,8 @@ window.QUIZ_DATA = {
           "ALE",
           "CVSS"
         ],
-        "explanation": "Resilience asks whether you can recover, and how quickly."
+        "explanation": "Resilience asks whether you can recover, and how quickly.",
+        "page": "45"
       },
       {
         "question": "Cybersecurity insurance is an example of what?",
@@ -3585,7 +3690,8 @@ window.QUIZ_DATA = {
           "Risk acceptance",
           "Compensating control"
         ],
-        "explanation": "It's popular with the rise in ransomware."
+        "explanation": "It's popular with the rise in ransomware.",
+        "page": "46"
       },
       {
         "question": "How quickly and easily capacity can increase or decrease is called what?",
@@ -3595,7 +3701,8 @@ window.QUIZ_DATA = {
           "Resilience",
           "Ease of recovery"
         ],
-        "explanation": "Security monitoring must also scale."
+        "explanation": "Security monitoring must also scale.",
+        "page": "46"
       },
       {
         "question": "What should you do with embedded systems like time clocks that can't be patched?",
@@ -3605,7 +3712,8 @@ window.QUIZ_DATA = {
           "Give them admin accounts",
           "Move them to the Internet"
         ],
-        "explanation": "Inability to patch requires additional security controls."
+        "explanation": "Inability to patch requires additional security controls.",
+        "page": "46"
       },
       {
         "question": "Per the notes, reloading from a corporate image after malware takes about how long?",
@@ -3615,7 +3723,8 @@ window.QUIZ_DATA = {
           "1 day",
           "1 week"
         ],
-        "explanation": "Reloading from original media takes about 1 hour."
+        "explanation": "Reloading from original media takes about 1 hour.",
+        "page": "46"
       },
       {
         "question": "Which backup power source is listed for short-term outages?",
@@ -3625,7 +3734,8 @@ window.QUIZ_DATA = {
           "Hot site",
           "SD-WAN"
         ],
-        "explanation": "Generators provide long-term backup."
+        "explanation": "Generators provide long-term backup.",
+        "page": "46"
       }
     ],
     "bonusQuestions": []
@@ -3736,7 +3846,8 @@ window.QUIZ_DATA = {
           "An open proxy",
           "A honeypot"
         ],
-        "explanation": "Compromise of the jump server is a significant breach."
+        "explanation": "Compromise of the jump server is a significant breach.",
+        "page": "48"
       },
       {
         "question": "Which proxy is used to protect and control user access to the Internet?",
@@ -3746,7 +3857,8 @@ window.QUIZ_DATA = {
           "Open proxy",
           "Transparent load balancer"
         ],
-        "explanation": "A forward proxy is an 'internal proxy'."
+        "explanation": "A forward proxy is an 'internal proxy'.",
+        "page": "49"
       },
       {
         "question": "Which proxy handles inbound traffic from the Internet to your internal service?",
@@ -3756,7 +3868,8 @@ window.QUIZ_DATA = {
           "Open proxy",
           "Jump server"
         ],
-        "explanation": "The reverse proxy sits in front of the web server."
+        "explanation": "The reverse proxy sits in front of the web server.",
+        "page": "49"
       },
       {
         "question": "Which proxy is a third-party, uncontrolled proxy often used to circumvent security controls?",
@@ -3766,7 +3879,8 @@ window.QUIZ_DATA = {
           "Reverse proxy",
           "Explicit proxy"
         ],
-        "explanation": "Open proxies can be a significant security concern."
+        "explanation": "Open proxies can be a significant security concern.",
+        "page": "49"
       },
       {
         "question": "A proxy that applications must be configured to use is called what?",
@@ -3776,7 +3890,8 @@ window.QUIZ_DATA = {
           "Reverse",
           "Open"
         ],
-        "explanation": "Transparent proxies are invisible."
+        "explanation": "Transparent proxies are invisible.",
+        "page": "48"
       },
       {
         "question": "Which is one of the simplest 'proxies'?",
@@ -3786,7 +3901,8 @@ window.QUIZ_DATA = {
           "EAP",
           "OCSP"
         ],
-        "explanation": "NAT is a network-level proxy."
+        "explanation": "NAT is a network-level proxy.",
+        "page": "49"
       },
       {
         "question": "In active/passive load balancing, what happens when an active server fails?",
@@ -3796,7 +3912,8 @@ window.QUIZ_DATA = {
           "The load balancer reboots",
           "Users must reconnect manually"
         ],
-        "explanation": "Some servers are active while others are on standby."
+        "explanation": "Some servers are active while others are on standby.",
+        "page": "50"
       },
       {
         "question": "Which is an active/active load balancing feature for encryption/decryption?",
@@ -3806,7 +3923,8 @@ window.QUIZ_DATA = {
           "Caching",
           "Prioritization"
         ],
-        "explanation": "Other features: TCP offload, caching, QoS, content switching."
+        "explanation": "Other features: TCP offload, caching, QoS, content switching.",
+        "page": "50"
       }
     ],
     "bonusQuestions": []
@@ -3880,7 +3998,8 @@ window.QUIZ_DATA = {
           "Layer 2",
           "Layer 1"
         ],
-        "explanation": "NGFWs filter at OSI layer 7."
+        "explanation": "NGFWs filter at OSI layer 7.",
+        "page": "50"
       },
       {
         "question": "What does UTM stand for?",
@@ -3890,7 +4009,8 @@ window.QUIZ_DATA = {
           "Unified Token Manager",
           "User Threat Mitigation"
         ],
-        "explanation": "An all-in-one security appliance."
+        "explanation": "An all-in-one security appliance.",
+        "page": "51"
       },
       {
         "question": "Which is another name for a next-generation firewall?",
@@ -3900,7 +4020,8 @@ window.QUIZ_DATA = {
           "Reverse proxy",
           "Port mirror"
         ],
-        "explanation": "Also stateful multilayer inspection or deep packet inspection."
+        "explanation": "Also stateful multilayer inspection or deep packet inspection.",
+        "page": "51"
       },
       {
         "question": "What does a web application firewall (WAF) apply rules to?",
@@ -3910,7 +4031,8 @@ window.QUIZ_DATA = {
           "DNS zone transfers",
           "Email headers only"
         ],
-        "explanation": "It allows or denies based on expected input."
+        "explanation": "It allows or denies based on expected input.",
+        "page": "51"
       },
       {
         "question": "WAFs are a major focus of which standard?",
@@ -3920,7 +4042,8 @@ window.QUIZ_DATA = {
           "GDPR",
           "SOX"
         ],
-        "explanation": "Payment Card Industry Data Security Standard."
+        "explanation": "Payment Card Industry Data Security Standard.",
+        "page": "51"
       },
       {
         "question": "Which is a capability of most network-based firewalls?",
@@ -3930,7 +4053,8 @@ window.QUIZ_DATA = {
           "Hashing passwords",
           "Cloning RFID badges"
         ],
-        "explanation": "They often sit on the ingress/egress and can provide VPNs."
+        "explanation": "They often sit on the ingress/egress and can provide VPNs.",
+        "page": "50"
       }
     ],
     "bonusQuestions": []
@@ -3947,7 +4071,8 @@ window.QUIZ_DATA = {
           "A wireless controller",
           "A certificate authority"
         ],
-        "explanation": "Often integrated into a firewall."
+        "explanation": "Often integrated into a firewall.",
+        "page": "51"
       },
       {
         "question": "Which port does an SSL/TLS VPN commonly use?",
@@ -3957,7 +4082,8 @@ window.QUIZ_DATA = {
           "tcp/22",
           "tcp/3389"
         ],
-        "explanation": "(Almost) no firewall issues."
+        "explanation": "(Almost) no firewall issues.",
+        "page": "51"
       },
       {
         "question": "Which VPN type does NOT require digital certificates or shared passwords like IPsec?",
@@ -3967,7 +4093,8 @@ window.QUIZ_DATA = {
           "SD-WAN",
           "Always-on IPsec"
         ],
-        "explanation": "It authenticates users and can run from a browser."
+        "explanation": "It authenticates users and can run from a browser.",
+        "page": "51"
       },
       {
         "question": "Which is commonly used for always-on site-to-site connections?",
@@ -3977,7 +4104,8 @@ window.QUIZ_DATA = {
           "Open proxy",
           "Jump server"
         ],
-        "explanation": "Firewalls often act as VPN concentrators."
+        "explanation": "Firewalls often act as VPN concentrators.",
+        "page": "51"
       },
       {
         "question": "What is a limitation of SD-WAN?",
@@ -3987,7 +4115,8 @@ window.QUIZ_DATA = {
           "It requires a hot site",
           "It only works on-premises"
         ],
-        "explanation": "SASE is a complete network and security solution."
+        "explanation": "SASE is a complete network and security solution.",
+        "page": "52"
       },
       {
         "question": "What is SASE described as?",
@@ -3997,7 +4126,8 @@ window.QUIZ_DATA = {
           "An authentication protocol",
           "A wireless standard"
         ],
-        "explanation": "Secure Access Service Edge, with SASE clients on all devices."
+        "explanation": "Secure Access Service Edge, with SASE clients on all devices.",
+        "page": "51"
       }
     ],
     "bonusQuestions": []
@@ -4081,7 +4211,8 @@ window.QUIZ_DATA = {
           "Data in use",
           "Data in motion"
         ],
-        "explanation": "Protect with encryption and permissions."
+        "explanation": "Protect with encryption and permissions.",
+        "page": "53"
       },
       {
         "question": "Which protects data in transit?",
@@ -4091,7 +4222,8 @@ window.QUIZ_DATA = {
           "File permissions",
           "Data masking"
         ],
-        "explanation": "Data in transit is also called data in motion."
+        "explanation": "Data in transit is also called data in motion.",
+        "page": "53"
       },
       {
         "question": "Data in system RAM and CPU registers is in which state?",
@@ -4101,7 +4233,8 @@ window.QUIZ_DATA = {
           "Data in transit",
           "Archived data"
         ],
-        "explanation": "Data in use is almost always decrypted."
+        "explanation": "Data in use is almost always decrypted.",
+        "page": "53"
       },
       {
         "question": "In the Target breach, where did attackers pick out the credit card numbers?",
@@ -4111,7 +4244,8 @@ window.QUIZ_DATA = {
           "Network traffic",
           "Backup tapes"
         ],
-        "explanation": "Data in transit and at rest were encrypted."
+        "explanation": "Data in transit and at rest were encrypted.",
+        "page": "53"
       },
       {
         "question": "What is data sovereignty?",
@@ -4121,7 +4255,8 @@ window.QUIZ_DATA = {
           "Data must be encrypted in transit",
           "Data can't be backed up"
         ],
-        "explanation": "GDPR requires EU citizens' data be stored in the EU."
+        "explanation": "GDPR requires EU citizens' data be stored in the EU.",
+        "page": "54"
       }
     ],
     "bonusQuestions": []
@@ -4138,7 +4273,8 @@ window.QUIZ_DATA = {
           "Tokenization",
           "Segmentation"
         ],
-        "explanation": "Example: don't allow an app to run unless you're near the office."
+        "explanation": "Example: don't allow an app to run unless you're near the office.",
+        "page": "54"
       },
       {
         "question": "Which method of determining location is the least accurate?",
@@ -4148,7 +4284,8 @@ window.QUIZ_DATA = {
           "802.11 wireless",
           "Mobile provider"
         ],
-        "explanation": "GPS is very accurate, 802.11 less accurate."
+        "explanation": "GPS is very accurate, 802.11 less accurate.",
+        "page": "54"
       },
       {
         "question": "When encrypted data is drastically different than the plaintext, this is called what?",
@@ -4158,7 +4295,8 @@ window.QUIZ_DATA = {
           "Diffusion",
           "Obfuscation"
         ],
-        "explanation": "Encryption is a two-way street with the proper key."
+        "explanation": "Encryption is a two-way street with the proper key.",
+        "page": "54"
       },
       {
         "question": "Turning readable code into nonsense that performs the same way is called what?",
@@ -4168,7 +4306,8 @@ window.QUIZ_DATA = {
           "Tokenization",
           "Encryption"
         ],
-        "explanation": "It helps prevent the search for security holes but isn't impossible to understand."
+        "explanation": "It helps prevent the search for security holes but isn't impossible to understand.",
+        "page": "54"
       },
       {
         "question": "Why segment data?",
@@ -4178,7 +4317,8 @@ window.QUIZ_DATA = {
           "It speeds up encryption",
           "It eliminates backups"
         ],
-        "explanation": "The most sensitive data should be the most secure."
+        "explanation": "The most sensitive data should be the most secure.",
+        "page": "55"
       }
     ],
     "bonusQuestions": []
@@ -4195,7 +4335,8 @@ window.QUIZ_DATA = {
           "Replication",
           "Journaling"
         ],
-        "explanation": "Cluster devices commonly use the same OS."
+        "explanation": "Cluster devices commonly use the same OS.",
+        "page": "55"
       },
       {
         "question": "In load balancing, are servers aware of each other?",
@@ -4205,7 +4346,8 @@ window.QUIZ_DATA = {
           "Only in a cluster",
           "Only on the same OS"
         ],
-        "explanation": "Load balanced servers can be different operating systems."
+        "explanation": "Load balanced servers can be different operating systems.",
+        "page": "55"
       },
       {
         "question": "Which recovery site is an exact replica, stocked with hardware and constantly updated?",
@@ -4215,7 +4357,8 @@ window.QUIZ_DATA = {
           "Cold site",
           "Jump site"
         ],
-        "explanation": "You buy two of everything."
+        "explanation": "You buy two of everything.",
+        "page": "55"
       },
       {
         "question": "Which recovery site has no hardware, no data, and no people?",
@@ -4225,7 +4368,8 @@ window.QUIZ_DATA = {
           "Warm site",
           "Multi-cloud site"
         ],
-        "explanation": "It's an empty building."
+        "explanation": "It's an empty building.",
+        "page": "55"
       },
       {
         "question": "Which recovery site provides rack space and hardware, but you bring the software and data?",
@@ -4235,7 +4379,8 @@ window.QUIZ_DATA = {
           "Hot site",
           "Screened subnet"
         ],
-        "explanation": "Somewhere between cold and hot."
+        "explanation": "Somewhere between cold and hot.",
+        "page": "56"
       },
       {
         "question": "Using different OSes and applications to spread risk is called what?",
@@ -4245,7 +4390,8 @@ window.QUIZ_DATA = {
           "Multi-cloud",
           "Clustering"
         ],
-        "explanation": "Vulnerabilities are often specific to a single OS."
+        "explanation": "Vulnerabilities are often specific to a single OS.",
+        "page": "56"
       },
       {
         "question": "Manual transactions, paper receipts, and phone approvals are part of what?",
@@ -4255,7 +4401,8 @@ window.QUIZ_DATA = {
           "Change management",
           "Recovery testing"
         ],
-        "explanation": "They must be documented and tested before a problem occurs."
+        "explanation": "They must be documented and tested before a problem occurs.",
+        "page": "56"
       }
     ],
     "bonusQuestions": []
@@ -4356,7 +4503,8 @@ window.QUIZ_DATA = {
           "Generally less expensive",
           "Data is immediately available"
         ],
-        "explanation": "Onsite backups are immediately available and usually cheaper."
+        "explanation": "Onsite backups are immediately available and usually cheaper.",
+        "page": "57"
       },
       {
         "question": "Why encrypt backups?",
@@ -4366,7 +4514,8 @@ window.QUIZ_DATA = {
           "To remove the need for testing",
           "To compress them"
         ],
-        "explanation": "Especially useful for cloud backups."
+        "explanation": "Especially useful for cloud backups.",
+        "page": "57"
       },
       {
         "question": "In the snapshot example, what does the Tuesday snapshot contain?",
@@ -4376,7 +4525,8 @@ window.QUIZ_DATA = {
           "Only new data",
           "Nothing until Friday"
         ],
-        "explanation": "You can revert to any snapshot with very fast recovery."
+        "explanation": "You can revert to any snapshot with very fast recovery.",
+        "page": "58"
       },
       {
         "question": "Is performing a backup enough?",
@@ -4386,7 +4536,8 @@ window.QUIZ_DATA = {
           "Only for offsite backups",
           "Only if encrypted"
         ],
-        "explanation": "Perform disaster recovery testing and periodic audits."
+        "explanation": "Perform disaster recovery testing and periodic audits.",
+        "page": "58"
       },
       {
         "question": "An ongoing, almost real-time backup keeping data synchronized in multiple locations is called what?",
@@ -4396,7 +4547,8 @@ window.QUIZ_DATA = {
           "Snapshot",
           "Archiving"
         ],
-        "explanation": "Data can be stored locally to all users."
+        "explanation": "Data can be stored locally to all users.",
+        "page": "58"
       },
       {
         "question": "Writing a journal entry before writing data to storage is called what?",
@@ -4406,7 +4558,8 @@ window.QUIZ_DATA = {
           "Snapshots",
           "Clustering"
         ],
-        "explanation": "It protects against corruption if power goes out while writing."
+        "explanation": "It protects against corruption if power goes out while writing.",
+        "page": "58"
       }
     ],
     "bonusQuestions": []
@@ -4517,7 +4670,8 @@ window.QUIZ_DATA = {
           "From the default configuration",
           "From a honeypot"
         ],
-        "explanation": "Hardening guides are specific to the software or platform."
+        "explanation": "Hardening guides are specific to the software or platform.",
+        "page": "59"
       },
       {
         "question": "How should IoT devices be segmented?",
@@ -4527,7 +4681,8 @@ window.QUIZ_DATA = {
           "On the guest Wi-Fi with admin rights",
           "Directly on the Internet"
         ],
-        "explanation": "Also change default passwords and deploy updates quickly."
+        "explanation": "Also change default passwords and deploy updates quickly.",
+        "page": "60"
       },
       {
         "question": "What is described as 'the keys to the kingdom' for cloud infrastructure?",
@@ -4537,7 +4692,8 @@ window.QUIZ_DATA = {
           "The printer",
           "The UPS"
         ],
-        "explanation": "Secure the cloud management workstation."
+        "explanation": "Secure the cloud management workstation.",
+        "page": "59"
       },
       {
         "question": "Which hardening step is listed for an RTOS?",
@@ -4547,7 +4703,8 @@ window.QUIZ_DATA = {
           "Connect it to the Internet",
           "Disable the firewall"
         ],
-        "explanation": "Also isolate it and use secure communication."
+        "explanation": "Also isolate it and use secure communication.",
+        "page": "60"
       },
       {
         "question": "What tool controls mobile device hardening?",
@@ -4557,7 +4714,8 @@ window.QUIZ_DATA = {
           "WAF",
           "HSM"
         ],
-        "explanation": "Segmentation can also separate company and user data."
+        "explanation": "Segmentation can also separate company and user data.",
+        "page": "59"
       },
       {
         "question": "What type of backup is listed for cloud infrastructure?",
@@ -4567,7 +4725,8 @@ window.QUIZ_DATA = {
           "No backups needed",
           "USB drive"
         ],
-        "explanation": "Always have backups."
+        "explanation": "Always have backups.",
+        "page": "59"
       }
     ],
     "bonusQuestions": []
@@ -4584,7 +4743,8 @@ window.QUIZ_DATA = {
           "A risk register",
           "A packet capture"
         ],
-        "explanation": "Site surveys determine the existing wireless landscape."
+        "explanation": "Site surveys determine the existing wireless landscape.",
+        "page": "60"
       },
       {
         "question": "In BYOD, who owns the device?",
@@ -4594,7 +4754,8 @@ window.QUIZ_DATA = {
           "The carrier",
           "The MDM vendor"
         ],
-        "explanation": "BYOD is difficult to secure - it's both a home and work device."
+        "explanation": "BYOD is difficult to secure - it's both a home and work device.",
+        "page": "60"
       },
       {
         "question": "What does COPE stand for?",
@@ -4604,7 +4765,8 @@ window.QUIZ_DATA = {
           "Company operated public endpoint",
           "Corporate offsite policy enforcement"
         ],
-        "explanation": "The company buys the device and keeps full control."
+        "explanation": "The company buys the device and keeps full control.",
+        "page": "61"
       },
       {
         "question": "What is CYOD?",
@@ -4614,7 +4776,8 @@ window.QUIZ_DATA = {
           "A device with no MDM",
           "A shared kiosk device"
         ],
-        "explanation": "Choose Your Own Device."
+        "explanation": "Choose Your Own Device.",
+        "page": "61"
       },
       {
         "question": "Bluetooth is what kind of network?",
@@ -4624,7 +4787,8 @@ window.QUIZ_DATA = {
           "SAN",
           "VLAN"
         ],
-        "explanation": "High-speed communication over short distances."
+        "explanation": "High-speed communication over short distances.",
+        "page": "61"
       },
       {
         "question": "Which is listed as a cellular network security concern?",
@@ -4634,7 +4798,8 @@ window.QUIZ_DATA = {
           "SQL injection",
           "Rainbow tables"
         ],
-        "explanation": "Also traffic monitoring and worldwide access."
+        "explanation": "Also traffic monitoring and worldwide access.",
+        "page": "61"
       }
     ],
     "bonusQuestions": []
@@ -4651,7 +4816,8 @@ window.QUIZ_DATA = {
           "WPA2 requires RADIUS",
           "WPA2 can't use AES"
         ],
-        "explanation": "Once you have the PSK you have everyone's key - no forward secrecy."
+        "explanation": "Once you have the PSK you have everyone's key - no forward secrecy.",
+        "page": "61"
       },
       {
         "question": "Which block cipher mode does WPA3 use?",
@@ -4661,7 +4827,8 @@ window.QUIZ_DATA = {
           "MD5",
           "SAE"
         ],
-        "explanation": "Galois/Counter Mode Protocol - stronger than WPA2."
+        "explanation": "Galois/Counter Mode Protocol - stronger than WPA2.",
+        "page": "61"
       },
       {
         "question": "GCMP provides data confidentiality with which algorithm?",
@@ -4671,7 +4838,8 @@ window.QUIZ_DATA = {
           "SHA-256",
           "RSA"
         ],
-        "explanation": "Integrity is provided by GMAC."
+        "explanation": "Integrity is provided by GMAC.",
+        "page": "61"
       },
       {
         "question": "What replaces the four-way handshake for PSK authentication in WPA3?",
@@ -4681,7 +4849,8 @@ window.QUIZ_DATA = {
           "OCSP",
           "RADIUS"
         ],
-        "explanation": "Also called the dragonfly handshake; no hashes, no brute force attacks."
+        "explanation": "Also called the dragonfly handshake; no hashes, no brute force attacks.",
+        "page": "61"
       },
       {
         "question": "With WPA3 SAE, does everyone use the same session key?",
@@ -4691,7 +4860,8 @@ window.QUIZ_DATA = {
           "Yes, but it changes daily",
           "Only enterprise users get different keys"
         ],
-        "explanation": "SAE is a Diffie-Hellman derived key exchange."
+        "explanation": "SAE is a Diffie-Hellman derived key exchange.",
+        "page": "61"
       },
       {
         "question": "Which wireless security mode authenticates users individually with RADIUS?",
@@ -4701,7 +4871,8 @@ window.QUIZ_DATA = {
           "Open System",
           "WEP"
         ],
-        "explanation": "Personal mode uses the same key for everyone."
+        "explanation": "Personal mode uses the same key for everyone.",
+        "page": "62"
       },
       {
         "question": "What does RADIUS centralize?",
@@ -4711,7 +4882,8 @@ window.QUIZ_DATA = {
           "Log storage",
           "Certificate revocation"
         ],
-        "explanation": "For routers, switches, firewalls, VPN, and 802.1X."
+        "explanation": "For routers, switches, firewalls, VPN, and 802.1X.",
+        "page": "62"
       }
     ],
     "bonusQuestions": []
@@ -4728,7 +4900,8 @@ window.QUIZ_DATA = {
           "Hashing every request",
           "Encrypting cookies"
         ],
-        "explanation": "Check and correct all input (normalization)."
+        "explanation": "Check and correct all input (normalization).",
+        "page": "62"
       },
       {
         "question": "What will find what you missed in input validation?",
@@ -4738,7 +4911,8 @@ window.QUIZ_DATA = {
           "Load balancers",
           "Proxies"
         ],
-        "explanation": "Don't give them an opening."
+        "explanation": "Don't give them an opening.",
+        "page": "62"
       },
       {
         "question": "What does the Secure attribute on a cookie do?",
@@ -4748,7 +4922,8 @@ window.QUIZ_DATA = {
           "Makes the cookie executable",
           "Deletes it after one use"
         ],
-        "explanation": "Sensitive information should not be saved in a cookie."
+        "explanation": "Sensitive information should not be saved in a cookie.",
+        "page": "62"
       },
       {
         "question": "What does SAST stand for?",
@@ -4758,7 +4933,8 @@ window.QUIZ_DATA = {
           "System Audit Security Test",
           "Software Access Security Token"
         ],
-        "explanation": "Static code analyzers help identify flaws but have false positives."
+        "explanation": "Static code analyzers help identify flaws but have false positives.",
+        "page": "63"
       },
       {
         "question": "Which flaw is NOT easily identified by static code analysis?",
@@ -4768,7 +4944,8 @@ window.QUIZ_DATA = {
           "Database injections",
           "Any input field bug"
         ],
-        "explanation": "Authentication security and insecure cryptography are hard to find through analysis."
+        "explanation": "Authentication security and insecure cryptography are hard to find through analysis.",
+        "page": "63"
       },
       {
         "question": "In code signing, how does the developer sign the code?",
@@ -4778,7 +4955,8 @@ window.QUIZ_DATA = {
           "With the CA's private key",
           "With a symmetric key"
         ],
-        "explanation": "A trusted CA signs the developer's public key."
+        "explanation": "A trusted CA signs the developer's public key.",
+        "page": "63"
       },
       {
         "question": "Which is listed as an example of sandboxing?",
@@ -4788,7 +4966,8 @@ window.QUIZ_DATA = {
           "Key escrow",
           "DNS filtering"
         ],
-        "explanation": "Also VMs, mobile devices, and browser iframes."
+        "explanation": "Also VMs, mobile devices, and browser iframes.",
+        "page": "63"
       }
     ],
     "bonusQuestions": []
@@ -4805,7 +4984,8 @@ window.QUIZ_DATA = {
           "Liability",
           "Revenue"
         ],
-        "explanation": "Software is classified as an operating expenditure."
+        "explanation": "Software is classified as an operating expenditure.",
+        "page": "63"
       },
       {
         "question": "Listing all parts of an asset (CPU, memory, storage) is called what?",
@@ -4815,7 +4995,8 @@ window.QUIZ_DATA = {
           "Procurement",
           "Attestation"
         ],
-        "explanation": "Add an asset tag too: barcode, RFID, tracking number."
+        "explanation": "Add an asset tag too: barcode, RFID, tracking number.",
+        "page": "63"
       },
       {
         "question": "Which destruction method removes the magnetic field and renders the drive unusable?",
@@ -4825,7 +5006,8 @@ window.QUIZ_DATA = {
           "Incineration",
           "Drilling"
         ],
-        "explanation": "Degaussing is electromagnetic destruction."
+        "explanation": "Degaussing is electromagnetic destruction.",
+        "page": "64"
       },
       {
         "question": "What should a third-party destruction service provide?",
@@ -4835,7 +5017,8 @@ window.QUIZ_DATA = {
           "An SLA",
           "An NDA"
         ],
-        "explanation": "A paper trail of exactly what happened."
+        "explanation": "A paper trail of exactly what happened.",
+        "page": "64"
       },
       {
         "question": "Why might data retention be required?",
@@ -4845,7 +5028,8 @@ window.QUIZ_DATA = {
           "To avoid encryption",
           "To reduce storage"
         ],
-        "explanation": "Also operational needs like accidental deletion and disaster recovery."
+        "explanation": "Also operational needs like accidental deletion and disaster recovery.",
+        "page": "64"
       },
       {
         "question": "What is the goal of media sanitization?",
@@ -4855,7 +5039,8 @@ window.QUIZ_DATA = {
           "Encrypt the data",
           "Back up the data"
         ],
-        "explanation": "It's a one-way trip."
+        "explanation": "It's a one-way trip.",
+        "page": "63"
       }
     ],
     "bonusQuestions": []
@@ -4976,7 +5161,8 @@ window.QUIZ_DATA = {
           "It never touches systems",
           "It only reviews documentation"
         ],
-        "explanation": "A pentest simulates an attack."
+        "explanation": "A pentest simulates an attack.",
+        "page": "65"
       },
       {
         "question": "What document defines the purpose, scope, IP ranges, and emergency contacts of a pentest?",
@@ -4986,7 +5172,8 @@ window.QUIZ_DATA = {
           "MOU",
           "CRL"
         ],
-        "explanation": "It also defines in-scope and out-of-scope devices."
+        "explanation": "It also defines in-scope and out-of-scope devices.",
+        "page": "65"
       },
       {
         "question": "Moving from system to system inside the network is called what?",
@@ -4996,7 +5183,8 @@ window.QUIZ_DATA = {
           "Pivoting",
           "Initial exploitation"
         ],
-        "explanation": "The inside of the network is relatively unprotected."
+        "explanation": "The inside of the network is relatively unprotected.",
+        "page": "66"
       },
       {
         "question": "Setting up a backdoor to make sure there's a way back in is called what?",
@@ -5006,7 +5194,8 @@ window.QUIZ_DATA = {
           "Pivot",
           "Reconnaissance"
         ],
-        "explanation": "Also building user accounts or changing default passwords."
+        "explanation": "Also building user accounts or changing default passwords.",
+        "page": "66"
       },
       {
         "question": "Using a vulnerable system as a proxy to reach otherwise inaccessible systems is called what?",
@@ -5016,7 +5205,8 @@ window.QUIZ_DATA = {
           "Fuzzing",
           "Spraying"
         ],
-        "explanation": "The pivot gains access to normally inaccessible systems."
+        "explanation": "The pivot gains access to normally inaccessible systems.",
+        "page": "66"
       },
       {
         "question": "What is a bug bounty program?",
@@ -5026,7 +5216,8 @@ window.QUIZ_DATA = {
           "A type of malware",
           "A firewall rule"
         ],
-        "explanation": "Part of a responsible disclosure program."
+        "explanation": "Part of a responsible disclosure program.",
+        "page": "66"
       },
       {
         "question": "In responsible disclosure, what happens after the manufacturer creates a fix?",
@@ -5036,7 +5227,8 @@ window.QUIZ_DATA = {
           "The vulnerability is kept secret forever",
           "The researcher is fined"
         ],
-        "explanation": "It's a controlled information release."
+        "explanation": "It's a controlled information release.",
+        "page": "66"
       }
     ],
     "bonusQuestions": []
@@ -5053,7 +5245,8 @@ window.QUIZ_DATA = {
           "True positive",
           "Low-severity vulnerability"
         ],
-        "explanation": "A low-severity vulnerability is real but may not be a priority."
+        "explanation": "A low-severity vulnerability is real but may not be a priority.",
+        "page": "66"
       },
       {
         "question": "A vulnerability exists but wasn't detected. What is this?",
@@ -5063,7 +5256,8 @@ window.QUIZ_DATA = {
           "True negative",
           "Exception"
         ],
-        "explanation": "Update to the latest signatures."
+        "explanation": "Update to the latest signatures.",
+        "page": "66"
       },
       {
         "question": "What is the CVSS scoring range?",
@@ -5073,7 +5267,8 @@ window.QUIZ_DATA = {
           "0 to 100",
           "A to F"
         ],
-        "explanation": "Scoring standards change over time (CVSS 2.0 vs 3.x)."
+        "explanation": "Scoring standards change over time (CVSS 2.0 vs 3.x).",
+        "page": "66"
       },
       {
         "question": "Which database is synchronized with the CVE list?",
@@ -5083,7 +5278,8 @@ window.QUIZ_DATA = {
           "CIS Benchmarks",
           "SCAP"
         ],
-        "explanation": "nvd.nist.gov offers enhanced search functionality."
+        "explanation": "nvd.nist.gov offers enhanced search functionality.",
+        "page": "66"
       },
       {
         "question": "A buffer overflow that completely disables a service has what exposure factor?",
@@ -5093,7 +5289,8 @@ window.QUIZ_DATA = {
           "25%",
           "0%"
         ],
-        "explanation": "A small DDoS limiting access might be 50%."
+        "explanation": "A small DDoS limiting access might be 50%.",
+        "page": "66"
       },
       {
         "question": "Which vulnerability scan type looks for misconfigured firewalls and open ports?",
@@ -5103,7 +5300,8 @@ window.QUIZ_DATA = {
           "Web application scans",
           "Code signing"
         ],
-        "explanation": "Application scans cover desktop and mobile apps."
+        "explanation": "Application scans cover desktop and mobile apps.",
+        "page": "66"
       },
       {
         "question": "What is the downside of patching immediately with no risk tolerance?",
@@ -5113,7 +5311,8 @@ window.QUIZ_DATA = {
           "It increases exposure factor",
           "It violates CVSS"
         ],
-        "explanation": "While you're testing, you're also vulnerable - there's a middle ground."
+        "explanation": "While you're testing, you're also vulnerable - there's a middle ground.",
+        "page": "67"
       }
     ],
     "bonusQuestions": []
@@ -5130,7 +5329,8 @@ window.QUIZ_DATA = {
           "Segmentation",
           "Exceptions"
         ],
-        "explanation": "An easy way to prevent most exploits."
+        "explanation": "An easy way to prevent most exploits.",
+        "page": "67"
       },
       {
         "question": "Which is NOT covered by cybersecurity insurance?",
@@ -5140,7 +5340,8 @@ window.QUIZ_DATA = {
           "Data recovery costs",
           "Privacy lawsuit costs"
         ],
-        "explanation": "Funds transfers are also not covered."
+        "explanation": "Funds transfers are also not covered.",
+        "page": "67"
       },
       {
         "question": "If you can't patch a system, what may be required?",
@@ -5150,7 +5351,8 @@ window.QUIZ_DATA = {
           "Disabling the firewall",
           "Sharing admin passwords"
         ],
-        "explanation": "Limit the scope of an exploit."
+        "explanation": "Limit the scope of an exploit.",
+        "page": "67"
       },
       {
         "question": "Disabling a problematic service until a patch is deployed is an example of what?",
@@ -5160,7 +5362,8 @@ window.QUIZ_DATA = {
           "Insurance",
           "Rescanning"
         ],
-        "explanation": "Compensate in other ways until the optimal response is available."
+        "explanation": "Compensate in other ways until the optimal response is available.",
+        "page": "67"
       },
       {
         "question": "Which is a way to validate remediation?",
@@ -5170,7 +5373,8 @@ window.QUIZ_DATA = {
           "Buying insurance",
           "Writing an MOU"
         ],
-        "explanation": "Also audit and verification."
+        "explanation": "Also audit and verification.",
+        "page": "68"
       },
       {
         "question": "When a vulnerability can't be removed, what may be approved through a formal process?",
@@ -5180,7 +5384,8 @@ window.QUIZ_DATA = {
           "A bug bounty",
           "A SOW"
         ],
-        "explanation": "Exceptions and exemptions balance service and protection."
+        "explanation": "Exceptions and exemptions balance service and protection.",
+        "page": "68"
       }
     ],
     "bonusQuestions": []
@@ -5197,7 +5402,8 @@ window.QUIZ_DATA = {
           "Encrypts each log on its device",
           "Replaces firewalls"
         ],
-        "explanation": "It allows correlation between diverse systems."
+        "explanation": "It allows correlation between diverse systems.",
+        "page": "68"
       },
       {
         "question": "According to IBM's 2022 report, how long does it take to identify and contain a breach on average?",
@@ -5207,7 +5413,8 @@ window.QUIZ_DATA = {
           "About 9 hours",
           "About 9 years"
         ],
-        "explanation": "That's why archiving over an extended period matters."
+        "explanation": "That's why archiving over an extended period matters.",
+        "page": "68"
       },
       {
         "question": "What is quarantine in alert response?",
@@ -5217,7 +5424,8 @@ window.QUIZ_DATA = {
           "Disabling alerts",
           "Publishing the incident"
         ],
-        "explanation": "It's a foundational security response."
+        "explanation": "It's a foundational security response.",
+        "page": "69"
       },
       {
         "question": "What is the goal of alert tuning?",
@@ -5227,7 +5435,8 @@ window.QUIZ_DATA = {
           "Disable all alerts",
           "Alert only by email"
         ],
-        "explanation": "Tuning gets better as time goes on."
+        "explanation": "Tuning gets better as time goes on.",
+        "page": "69"
       },
       {
         "question": "Which is listed as an alert notification method?",
@@ -5237,7 +5446,8 @@ window.QUIZ_DATA = {
           "Postal mail",
           "Billboard"
         ],
-        "explanation": "Also email and security console/SOC."
+        "explanation": "Also email and security console/SOC.",
+        "page": "69"
       }
     ],
     "bonusQuestions": []
@@ -5254,7 +5464,8 @@ window.QUIZ_DATA = {
           "Signing certificates",
           "Blocking USB drives"
         ],
-        "explanation": "Security Content Automation Protocol is managed by NIST."
+        "explanation": "Security Content Automation Protocol is managed by NIST.",
+        "page": "69"
       },
       {
         "question": "Who publishes popular security benchmarks?",
@@ -5264,7 +5475,8 @@ window.QUIZ_DATA = {
           "IEEE",
           "ITU"
         ],
-        "explanation": "Benchmarks are the bare minimum security settings."
+        "explanation": "Benchmarks are the bare minimum security settings.",
+        "page": "69"
       },
       {
         "question": "Which is a drawback of agentless compliance checks?",
@@ -5274,7 +5486,8 @@ window.QUIZ_DATA = {
           "Requires a formal install",
           "Uses too much disk space"
         ],
-        "explanation": "Agents provide more detail and real-time notifications."
+        "explanation": "Agents provide more detail and real-time notifications.",
+        "page": "69"
       },
       {
         "question": "SNMP polling uses which port?",
@@ -5284,7 +5497,8 @@ window.QUIZ_DATA = {
           "tcp/443",
           "udp/53"
         ],
-        "explanation": "SNMP traps use udp/162."
+        "explanation": "SNMP traps use udp/162.",
+        "page": "70"
       },
       {
         "question": "SNMP traps communicate over which port?",
@@ -5294,7 +5508,8 @@ window.QUIZ_DATA = {
           "tcp/22",
           "udp/123"
         ],
-        "explanation": "Traps let the monitoring station react immediately."
+        "explanation": "Traps let the monitoring station react immediately.",
+        "page": "70"
       },
       {
         "question": "In SNMP, what does the MIB contain?",
@@ -5304,7 +5519,8 @@ window.QUIZ_DATA = {
           "Password hashes",
           "Firewall rules"
         ],
-        "explanation": "MIB is the Management Information Base."
+        "explanation": "MIB is the Management Information Base.",
+        "page": "70"
       },
       {
         "question": "In NetFlow, what sends summary records to the collector?",
@@ -5314,7 +5530,8 @@ window.QUIZ_DATA = {
           "The MIB",
           "The supplicant"
         ],
-        "explanation": "The probe watches network communication."
+        "explanation": "The probe watches network communication.",
+        "page": "70"
       },
       {
         "question": "What is a key SIEM capability?",
@@ -5324,7 +5541,8 @@ window.QUIZ_DATA = {
           "Certificate signing",
           "Packet forwarding"
         ],
-        "explanation": "Also log collection, long-term storage, and forensic analysis."
+        "explanation": "Also log collection, long-term storage, and forensic analysis.",
+        "page": "69"
       }
     ],
     "bonusQuestions": []
@@ -5341,7 +5559,8 @@ window.QUIZ_DATA = {
           "udp/53",
           "tcp/80"
         ],
-        "explanation": "Port-based firewalls use protocol and port number."
+        "explanation": "Port-based firewalls use protocol and port number.",
+        "page": "70"
       },
       {
         "question": "Which port does Microsoft RDP use?",
@@ -5351,7 +5570,8 @@ window.QUIZ_DATA = {
           "tcp/443",
           "udp/123"
         ],
-        "explanation": "Remote Desktop Protocol."
+        "explanation": "Remote Desktop Protocol.",
+        "page": "70"
       },
       {
         "question": "Which port does a DNS query use?",
@@ -5361,7 +5581,8 @@ window.QUIZ_DATA = {
           "tcp/80",
           "udp/161"
         ],
-        "explanation": "NTP uses udp/123."
+        "explanation": "NTP uses udp/123.",
+        "page": "70"
       },
       {
         "question": "Which port does NTP use?",
@@ -5371,7 +5592,8 @@ window.QUIZ_DATA = {
           "tcp/22",
           "tcp/3389"
         ],
-        "explanation": "Web servers use tcp/80 and tcp/443."
+        "explanation": "Web servers use tcp/80 and tcp/443.",
+        "page": "70"
       },
       {
         "question": "How are firewall rules usually evaluated?",
@@ -5381,7 +5603,8 @@ window.QUIZ_DATA = {
           "Randomly",
           "Alphabetically"
         ],
-        "explanation": "Rules can be very general or very specific."
+        "explanation": "Rules can be very general or very specific.",
+        "page": "71"
       },
       {
         "question": "What is implicit deny?",
@@ -5391,7 +5614,8 @@ window.QUIZ_DATA = {
           "A rule added by the user at the top",
           "A temporary rule"
         ],
-        "explanation": "Most firewalls include it."
+        "explanation": "Most firewalls include it.",
+        "page": "71"
       },
       {
         "question": "An IPS that builds a baseline of what's normal and flags unusual patterns is which type?",
@@ -5401,7 +5625,8 @@ window.QUIZ_DATA = {
           "Rule-based",
           "Port-based"
         ],
-        "explanation": "Signature-based looks for a perfect match."
+        "explanation": "Signature-based looks for a perfect match.",
+        "page": "71"
       },
       {
         "question": "What is a screened subnet?",
@@ -5411,7 +5636,8 @@ window.QUIZ_DATA = {
           "A honeynet",
           "A VPN concentrator"
         ],
-        "explanation": "Private data remains inaccessible."
+        "explanation": "Private data remains inaccessible.",
+        "page": "71"
       }
     ],
     "bonusQuestions": []
@@ -5428,7 +5654,8 @@ window.QUIZ_DATA = {
           "An HSM",
           "A TPM"
         ],
-        "explanation": "It filters traffic based on category or specific URL."
+        "explanation": "It filters traffic based on category or specific URL.",
+        "page": "71"
       },
       {
         "question": "In agent-based web filtering, who makes the filtering decisions?",
@@ -5438,7 +5665,8 @@ window.QUIZ_DATA = {
           "The DNS server",
           "The CA"
         ],
-        "explanation": "Users can be located anywhere; updates come from the cloud."
+        "explanation": "Users can be located anywhere; updates come from the cloud.",
+        "page": "71"
       },
       {
         "question": "Filtering URLs based on perceived risk is called what?",
@@ -5448,7 +5676,8 @@ window.QUIZ_DATA = {
           "Tokenization",
           "Rule-based access"
         ],
-        "explanation": "Reputation can be automated or manually assigned."
+        "explanation": "Reputation can be automated or manually assigned.",
+        "page": "72"
       },
       {
         "question": "How does DNS filtering block harmful sites?",
@@ -5458,7 +5687,8 @@ window.QUIZ_DATA = {
           "It revokes the site's certificate",
           "It blocks port 443"
         ],
-        "explanation": "No IP address, no connection - works for any DNS lookup."
+        "explanation": "No IP address, no connection - works for any DNS lookup.",
+        "page": "72"
       },
       {
         "question": "In the block rules example, what disposition is given to Gambling?",
@@ -5468,7 +5698,8 @@ window.QUIZ_DATA = {
           "Allow and Alert",
           "Quarantine"
         ],
-        "explanation": "Educational: Allow; Home and Garden: Allow and Alert."
+        "explanation": "Educational: Allow; Home and Garden: Allow and Alert.",
+        "page": "71"
       }
     ],
     "bonusQuestions": []
@@ -5522,7 +5753,8 @@ window.QUIZ_DATA = {
           "FTP",
           "IMAP"
         ],
-        "explanation": "Telnet is the insecure version."
+        "explanation": "Telnet is the insecure version.",
+        "page": "72"
       },
       {
         "question": "What is the secure protocol for email client access?",
@@ -5532,7 +5764,8 @@ window.QUIZ_DATA = {
           "SMTP",
           "Telnet"
         ],
-        "explanation": "IMAP is unencrypted."
+        "explanation": "IMAP is unencrypted.",
+        "page": "72"
       },
       {
         "question": "What is the secure protocol for file transfer?",
@@ -5542,7 +5775,8 @@ window.QUIZ_DATA = {
           "HTTP",
           "Telnet"
         ],
-        "explanation": "FTP sends all traffic in the clear."
+        "explanation": "FTP sends all traffic in the clear.",
+        "page": "72"
       },
       {
         "question": "Does using a secure port number guarantee security?",
@@ -5552,7 +5786,8 @@ window.QUIZ_DATA = {
           "Only for port 443",
           "Only on wireless"
         ],
-        "explanation": "Packet captures may be necessary."
+        "explanation": "Packet captures may be necessary.",
+        "page": "72"
       },
       {
         "question": "How can you verify that a protocol is sending data in the clear?",
@@ -5562,7 +5797,8 @@ window.QUIZ_DATA = {
           "Hash comparison",
           "Certificate check"
         ],
-        "explanation": "View everything sent over the network."
+        "explanation": "View everything sent over the network.",
+        "page": "72"
       }
     ],
     "bonusQuestions": []
@@ -5636,7 +5872,8 @@ window.QUIZ_DATA = {
           "Backs up files nightly",
           "Compresses files"
         ],
-        "explanation": "Some files should NEVER change."
+        "explanation": "Some files should NEVER change.",
+        "page": "73"
       },
       {
         "question": "Which is a Linux FIM tool?",
@@ -5646,7 +5883,8 @@ window.QUIZ_DATA = {
           "BitLocker",
           "Event Viewer"
         ],
-        "explanation": "Windows uses SFC (System File Checker)."
+        "explanation": "Windows uses SFC (System File Checker).",
+        "page": "73"
       },
       {
         "question": "DLP on a server protects data in which state?",
@@ -5656,7 +5894,8 @@ window.QUIZ_DATA = {
           "Data in motion",
           "Data in transit"
         ],
-        "explanation": "Endpoint DLP: in use; network DLP: in motion."
+        "explanation": "Endpoint DLP: in use; network DLP: in motion.",
+        "page": "73"
       },
       {
         "question": "What did the US DoD ban in November 2008 because of the agent.btz worm?",
@@ -5666,7 +5905,8 @@ window.QUIZ_DATA = {
           "Wireless networks",
           "Cloud storage"
         ],
-        "explanation": "The ban was lifted in February 2010 with strict guidelines."
+        "explanation": "The ban was lifted in February 2010 with strict guidelines.",
+        "page": "73"
       },
       {
         "question": "In the 2016 Boeing incident, where was the personal information hidden in the spreadsheet?",
@@ -5676,7 +5916,8 @@ window.QUIZ_DATA = {
           "Image steganography",
           "File metadata only"
         ],
-        "explanation": "36,000 employees' SSNs and birth dates were exposed."
+        "explanation": "36,000 employees' SSNs and birth dates were exposed.",
+        "page": "74"
       },
       {
         "question": "What is described as the most critical DLP risk vector?",
@@ -5686,7 +5927,8 @@ window.QUIZ_DATA = {
           "Bluetooth",
           "USB keyboards"
         ],
-        "explanation": "Check every email inbound and outbound."
+        "explanation": "Check every email inbound and outbound.",
+        "page": "74"
       }
     ],
     "bonusQuestions": []
@@ -5703,7 +5945,8 @@ window.QUIZ_DATA = {
           "Agentless NAC",
           "SNMP agent"
         ],
-        "explanation": "No installation is required."
+        "explanation": "No installation is required.",
+        "page": "74"
       },
       {
         "question": "Which posture assessment option integrates with Active Directory and can't be scheduled?",
@@ -5713,7 +5956,8 @@ window.QUIZ_DATA = {
           "Dissolvable agent",
           "EDR"
         ],
-        "explanation": "Checks are made during login and logoff."
+        "explanation": "Checks are made during login and logoff.",
+        "page": "74"
       },
       {
         "question": "What happens when a posture assessment fails?",
@@ -5723,7 +5967,8 @@ window.QUIZ_DATA = {
           "Full access is granted with a warning",
           "The user is fired"
         ],
-        "explanation": "Once resolved, try again."
+        "explanation": "Once resolved, try again.",
+        "page": "74"
       },
       {
         "question": "How does XDR improve on EDR?",
@@ -5733,7 +5978,8 @@ window.QUIZ_DATA = {
           "It only uses signatures",
           "It replaces firewalls"
         ],
-        "explanation": "XDR adds network-based detection."
+        "explanation": "XDR adds network-based detection.",
+        "page": "75"
       },
       {
         "question": "What does XDR commonly include to extend anomaly detection?",
@@ -5743,7 +5989,8 @@ window.QUIZ_DATA = {
           "OCSP stapling",
           "Steganography"
         ],
-        "explanation": "It creates a baseline of normal activity over an extended period."
+        "explanation": "It creates a baseline of normal activity over an extended period.",
+        "page": "75"
       },
       {
         "question": "Edge control is managed primarily through what?",
@@ -5753,7 +6000,8 @@ window.QUIZ_DATA = {
           "Posture assessments",
           "Certificates"
         ],
-        "explanation": "Access control can be based on user, group, location, and application."
+        "explanation": "Access control can be based on user, group, location, and application.",
+        "page": "74"
       }
     ],
     "bonusQuestions": []
@@ -5770,7 +6018,8 @@ window.QUIZ_DATA = {
           "Identity proofing",
           "Attestation"
         ],
-        "explanation": "Nobody gets Administrator access at provisioning."
+        "explanation": "Nobody gets Administrator access at provisioning.",
+        "page": "75"
       },
       {
         "question": "In identity proofing, a passport or in-person meeting is which step?",
@@ -5780,7 +6029,8 @@ window.QUIZ_DATA = {
           "Validation",
           "Provisioning"
         ],
-        "explanation": "Resolution is who the system thinks you are; validation gathers info."
+        "explanation": "Resolution is who the system thinks you are; validation gathers info.",
+        "page": "75"
       },
       {
         "question": "What is single sign-on?",
@@ -5790,7 +6040,8 @@ window.QUIZ_DATA = {
           "Signing code once",
           "Logging in from one location only"
         ],
-        "explanation": "Usually limited by time; infrastructure must support it."
+        "explanation": "Usually limited by time; infrastructure must support it.",
+        "page": "75"
       },
       {
         "question": "LDAP is used to query and update what kind of directory?",
@@ -5800,7 +6051,8 @@ window.QUIZ_DATA = {
           "802.1X",
           "SNMP MIB"
         ],
-        "explanation": "Used in Windows Active Directory and others."
+        "explanation": "Used in Windows Active Directory and others.",
+        "page": "76"
       },
       {
         "question": "In the X.500 Directory Information Tree, users and computers are what kind of objects?",
@@ -5810,7 +6062,8 @@ window.QUIZ_DATA = {
           "Root objects",
           "Branch objects"
         ],
-        "explanation": "Container objects are country, organization, organizational units."
+        "explanation": "Container objects are country, organization, organizational units.",
+        "page": "76"
       },
       {
         "question": "What has been SAML's largest roadblock?",
@@ -5820,7 +6073,8 @@ window.QUIZ_DATA = {
           "It only works on Linux",
           "It isn't an open standard"
         ],
-        "explanation": "SAML is an open standard for authentication and authorization."
+        "explanation": "SAML is an open standard for authentication and authorization.",
+        "page": "76"
       },
       {
         "question": "Is OAuth an authentication protocol?",
@@ -5830,7 +6084,8 @@ window.QUIZ_DATA = {
           "Yes, it's used for 802.1X",
           "Only with LDAP"
         ],
-        "explanation": "OpenID Connect handles the single sign-on authentication."
+        "explanation": "OpenID Connect handles the single sign-on authentication.",
+        "page": "76"
       },
       {
         "question": "Logging in with your Facebook credentials is an example of what?",
@@ -5840,7 +6095,8 @@ window.QUIZ_DATA = {
           "Provisioning",
           "Rule-based access"
         ],
-        "explanation": "Third parties establish a trust relationship."
+        "explanation": "Third parties establish a trust relationship.",
+        "page": "76"
       }
     ],
     "bonusQuestions": []
@@ -5991,7 +6247,8 @@ window.QUIZ_DATA = {
           "Use your birthday",
           "Reuse old passwords"
         ],
-        "explanation": "No single words, no obvious passwords."
+        "explanation": "No single words, no obvious passwords.",
+        "page": "78"
       },
       {
         "question": "What is password age?",
@@ -6001,7 +6258,8 @@ window.QUIZ_DATA = {
           "How long the password is",
           "When the account was created"
         ],
-        "explanation": "Password expiration makes a password stop working after a set time."
+        "explanation": "Password expiration makes a password stop working after a set time.",
+        "page": "78"
       },
       {
         "question": "What is just-in-time permissions?",
@@ -6011,7 +6269,8 @@ window.QUIZ_DATA = {
           "Removing all admin accounts",
           "Granting rights based on location"
         ],
-        "explanation": "A breached user account never has elevated rights."
+        "explanation": "A breached user account never has elevated rights.",
+        "page": "79"
       },
       {
         "question": "In password vaulting, what happens to the primary passwords?",
@@ -6021,7 +6280,8 @@ window.QUIZ_DATA = {
           "They are posted on the intranet",
           "They expire after 90 days only"
         ],
-        "explanation": "Credentials are used for one session then deleted."
+        "explanation": "Credentials are used for one session then deleted.",
+        "page": "79"
       },
       {
         "question": "What is an example of passwordless authentication?",
@@ -6031,7 +6291,8 @@ window.QUIZ_DATA = {
           "A PIN",
           "Security questions"
         ],
-        "explanation": "It may still be used with additional factors."
+        "explanation": "It may still be used with additional factors.",
+        "page": "78"
       }
     ],
     "bonusQuestions": []
@@ -6048,7 +6309,8 @@ window.QUIZ_DATA = {
           "Firewall rules for VLANs",
           "Manual approval forms"
         ],
-        "explanation": "They constantly check to ensure proper implementation."
+        "explanation": "They constantly check to ensure proper implementation.",
+        "page": "79"
       },
       {
         "question": "Which is listed as a benefit of automation?",
@@ -6058,7 +6320,8 @@ window.QUIZ_DATA = {
           "Technical debt",
           "Increased complexity"
         ],
-        "explanation": "Scripting works 24/7."
+        "explanation": "Scripting works 24/7.",
+        "page": "79"
       },
       {
         "question": "Which is a scripting consideration (drawback)?",
@@ -6068,7 +6331,8 @@ window.QUIZ_DATA = {
           "Employee retention",
           "Enforcing baselines"
         ],
-        "explanation": "Also complexity, cost, technical debt, and ongoing supportability."
+        "explanation": "Also complexity, cost, technical debt, and ongoing supportability.",
+        "page": "80"
       },
       {
         "question": "Patching problems that push the issue down the road creates what?",
@@ -6078,7 +6342,8 @@ window.QUIZ_DATA = {
           "Escalation",
           "Secure scaling"
         ],
-        "explanation": "It's going to be more expensive to fix later."
+        "explanation": "It's going to be more expensive to fix later.",
+        "page": "80"
       },
       {
         "question": "In automation, what is escalation?",
@@ -6088,7 +6353,8 @@ window.QUIZ_DATA = {
           "Creating more user accounts",
           "Deleting tickets"
         ],
-        "explanation": "Correct issues before involving a human."
+        "explanation": "Correct issues before involving a human.",
+        "page": "79"
       }
     ],
     "bonusQuestions": []
@@ -6105,7 +6371,8 @@ window.QUIZ_DATA = {
           "SP 800-115",
           "RFC 3227"
         ],
-        "explanation": "It defines the incident response lifecycle."
+        "explanation": "It defines the incident response lifecycle.",
+        "page": "80"
       },
       {
         "question": "What is the first phase of the NIST incident response lifecycle?",
@@ -6115,7 +6382,8 @@ window.QUIZ_DATA = {
           "Containment, Eradication, and Recovery",
           "Post-incident Activity"
         ],
-        "explanation": "Communication methods, tools, and policies are prepared ahead of time."
+        "explanation": "Communication methods, tools, and policies are prepared ahead of time.",
+        "page": "80"
       },
       {
         "question": "Which phase comes after Detection and Analysis?",
@@ -6125,7 +6393,8 @@ window.QUIZ_DATA = {
           "Post-incident Activity",
           "Lessons learned only"
         ],
-        "explanation": "Then Post-incident Activity."
+        "explanation": "Then Post-incident Activity.",
+        "page": "80"
       },
       {
         "question": "A web server log showing a vulnerability scanner in use is an example of what?",
@@ -6135,7 +6404,8 @@ window.QUIZ_DATA = {
           "Eradication",
           "Recovery"
         ],
-        "explanation": "Exploit announcements and direct threats are also precursors."
+        "explanation": "Exploit announcements and direct threats are also precursors.",
+        "page": "80"
       },
       {
         "question": "Why can isolation sometimes be problematic?",
@@ -6145,7 +6415,8 @@ window.QUIZ_DATA = {
           "Isolation deletes logs",
           "Isolation is illegal"
         ],
-        "explanation": "Everything could be deleted/encrypted/damaged."
+        "explanation": "Everything could be deleted/encrypted/damaged.",
+        "page": "80"
       },
       {
         "question": "Disabling breached user accounts is part of what?",
@@ -6155,7 +6426,8 @@ window.QUIZ_DATA = {
           "Detection",
           "Lessons learned"
         ],
-        "explanation": "Remove malware, disable breached accounts, fix vulnerabilities."
+        "explanation": "Remove malware, disable breached accounts, fix vulnerabilities.",
+        "page": "81"
       },
       {
         "question": "When should the lessons learned meeting be held?",
@@ -6165,7 +6437,8 @@ window.QUIZ_DATA = {
           "Only before an incident",
           "Never"
         ],
-        "explanation": "Memories fade over time."
+        "explanation": "Memories fade over time.",
+        "page": "81"
       }
     ],
     "bonusQuestions": []
@@ -6296,7 +6569,8 @@ window.QUIZ_DATA = {
           "Network logs",
           "Metadata"
         ],
-        "explanation": "Traditional firewall logs show source/destination IP, ports, disposition."
+        "explanation": "Traditional firewall logs show source/destination IP, ports, disposition.",
+        "page": "83"
       },
       {
         "question": "Where are Linux and macOS logs commonly found?",
@@ -6306,7 +6580,8 @@ window.QUIZ_DATA = {
           "C:\\Windows\\Logs",
           "/etc/passwd"
         ],
-        "explanation": "Windows uses Event Viewer."
+        "explanation": "Windows uses Event Viewer.",
+        "page": "83"
       },
       {
         "question": "Email header details and sending servers are examples of what?",
@@ -6316,7 +6591,8 @@ window.QUIZ_DATA = {
           "IPS logs",
           "Packet captures"
         ],
-        "explanation": "Metadata is data that describes other data sources."
+        "explanation": "Metadata is data that describes other data sources.",
+        "page": "83"
       },
       {
         "question": "Which data point is common in IPS/IDS logs?",
@@ -6326,7 +6602,8 @@ window.QUIZ_DATA = {
           "Encryption key",
           "Certificate serial number"
         ],
-        "explanation": "Also timestamp, source/destination IP and port."
+        "explanation": "Also timestamp, source/destination IP and port.",
+        "page": "83"
       },
       {
         "question": "What are dashboards NOT designed for?",
@@ -6336,7 +6613,8 @@ window.QUIZ_DATA = {
           "Summaries on a single screen",
           "Showing important data"
         ],
-        "explanation": "Dashboards show real-time status."
+        "explanation": "Dashboards show real-time status.",
+        "page": "84"
       },
       {
         "question": "What do automated SIEM reports still require?",
@@ -6346,7 +6624,8 @@ window.QUIZ_DATA = {
           "Physical access",
           "A legal hold"
         ],
-        "explanation": "Someone has to read the reports."
+        "explanation": "Someone has to read the reports.",
+        "page": "84"
       }
     ],
     "bonusQuestions": []
@@ -6363,7 +6642,8 @@ window.QUIZ_DATA = {
           "'When' and 'where'",
           "'Who' only"
         ],
-        "explanation": "Technical security controls answer the 'how'."
+        "explanation": "Technical security controls answer the 'how'.",
+        "page": "84"
       },
       {
         "question": "What document defines acceptable use of company assets?",
@@ -6373,7 +6653,8 @@ window.QUIZ_DATA = {
           "Service level agreement",
           "Risk register"
         ],
-        "explanation": "Used to limit legal liability."
+        "explanation": "Used to limit legal liability.",
+        "page": "84"
       },
       {
         "question": "A disaster recovery plan is part of what?",
@@ -6383,7 +6664,8 @@ window.QUIZ_DATA = {
           "Asset management",
           "Penetration testing"
         ],
-        "explanation": "It covers recovery location, data recovery, app restoration, and staff."
+        "explanation": "It covers recovery location, data recovery, app restoration, and staff.",
+        "page": "84"
       },
       {
         "question": "Which is NOT a listed incident response role?",
@@ -6393,7 +6675,8 @@ window.QUIZ_DATA = {
           "Compliance officers",
           "User community"
         ],
-        "explanation": "Also IT security management and technical staff."
+        "explanation": "Also IT security management and technical staff.",
+        "page": "85"
       },
       {
         "question": "Is there a single 'best way' SDLC?",
@@ -6403,7 +6686,8 @@ window.QUIZ_DATA = {
           "Yes, defined by NIST",
           "Yes, defined by ISO"
         ],
-        "explanation": "There are many options."
+        "explanation": "There are many options.",
+        "page": "85"
       }
     ],
     "bonusQuestions": []
@@ -6675,7 +6959,8 @@ window.QUIZ_DATA = {
           "ALE / ARO x EF",
           "AV + EF"
         ],
-        "explanation": "Laptop stolen = $1,000 x 1.0 = $1,000."
+        "explanation": "Laptop stolen = $1,000 x 1.0 = $1,000.",
+        "page": "88"
       },
       {
         "question": "What is the formula for Annualized Loss Expectancy (ALE)?",
@@ -6685,7 +6970,8 @@ window.QUIZ_DATA = {
           "SLE / ARO",
           "MTTR x MTBF"
         ],
-        "explanation": "Seven laptops stolen a year x $1,000 = $7,000."
+        "explanation": "Seven laptops stolen a year x $1,000 = $7,000.",
+        "page": "88"
       },
       {
         "question": "If 7 laptops worth $1,000 each are stolen per year, what is the ALE?",
@@ -6695,7 +6981,8 @@ window.QUIZ_DATA = {
           "$700",
           "$14,000"
         ],
-        "explanation": "ALE = 7 (ARO) x $1,000 (SLE)."
+        "explanation": "ALE = 7 (ARO) x $1,000 (SLE).",
+        "page": "88"
       },
       {
         "question": "Losing a quarter of an asset's value is what exposure factor?",
@@ -6705,7 +6992,8 @@ window.QUIZ_DATA = {
           "0.75",
           "4.0"
         ],
-        "explanation": "Losing the entire asset is 1.0."
+        "explanation": "Losing the entire asset is 1.0.",
+        "page": "88"
       },
       {
         "question": "Displaying risk visually with a traffic light grid is which type of assessment?",
@@ -6715,7 +7003,8 @@ window.QUIZ_DATA = {
           "Continuous",
           "Recurring"
         ],
-        "explanation": "Qualitative assessments ask opinions about significance."
+        "explanation": "Qualitative assessments ask opinions about significance.",
+        "page": "88"
       },
       {
         "question": "What is the most important impact consideration?",
@@ -6725,7 +7014,8 @@ window.QUIZ_DATA = {
           "Finance",
           "Reputation"
         ],
-        "explanation": "Other impacts: property, safety, finance, reputation."
+        "explanation": "Other impacts: property, safety, finance, reputation.",
+        "page": "88"
       },
       {
         "question": "Risk likelihood is a ___ measurement and risk probability is a ___ measurement.",
@@ -6735,7 +7025,8 @@ window.QUIZ_DATA = {
           "Quantitative; quantitative",
           "Qualitative; qualitative"
         ],
-        "explanation": "Probability can be based on historical performance."
+        "explanation": "Probability can be based on historical performance.",
+        "page": "88"
       },
       {
         "question": "In the highway analogy, what is the speed limit?",
@@ -6745,7 +7036,8 @@ window.QUIZ_DATA = {
           "Risk threshold",
           "Risk register"
         ],
-        "explanation": "Tolerance is when ticketing actually occurs, well above the limit."
+        "explanation": "Tolerance is when ticketing actually occurs, well above the limit.",
+        "page": "89"
       },
       {
         "question": "Which is NOT a listed risk appetite posture?",
@@ -6755,7 +7047,8 @@ window.QUIZ_DATA = {
           "Neutral",
           "Expansionary"
         ],
-        "explanation": "The three postures are conservative, neutral, and expansionary."
+        "explanation": "The three postures are conservative, neutral, and expansionary.",
+        "page": "89"
       },
       {
         "question": "In a risk register, each key risk indicator is assigned to whom?",
@@ -6765,7 +7058,8 @@ window.QUIZ_DATA = {
           "The CA",
           "An external auditor"
         ],
-        "explanation": "Risk owners manage the risk."
+        "explanation": "Risk owners manage the risk.",
+        "page": "89"
       }
     ],
     "bonusQuestions": []
@@ -6896,7 +7190,8 @@ window.QUIZ_DATA = {
           "Service level clause",
           "Conflict of interest clause"
         ],
-        "explanation": "Verify security before a breach occurs."
+        "explanation": "Verify security before a breach occurs.",
+        "page": "90"
       },
       {
         "question": "Checking a company's financial status and legal issues before doing business is called what?",
@@ -6906,7 +7201,8 @@ window.QUIZ_DATA = {
           "Vendor monitoring",
           "Attestation"
         ],
-        "explanation": "Also background checks and personnel interviews."
+        "explanation": "Also background checks and personnel interviews.",
+        "page": "90"
       },
       {
         "question": "A third party employing the CFO's brother is an example of what?",
@@ -6916,7 +7212,8 @@ window.QUIZ_DATA = {
           "Supply chain analysis",
           "Right-to-audit"
         ],
-        "explanation": "A personal interest could compromise judgment."
+        "explanation": "A personal interest could compromise judgment.",
+        "page": "90"
       },
       {
         "question": "Does vendor monitoring end once the contract is signed?",
@@ -6926,7 +7223,8 @@ window.QUIZ_DATA = {
           "Only for cloud vendors",
           "Only after the first audit"
         ],
-        "explanation": "Assign a person to manage the vendor relationship."
+        "explanation": "Assign a person to manage the vendor relationship.",
+        "page": "90"
       },
       {
         "question": "What are vendor questionnaire results used for?",
@@ -6936,7 +7234,8 @@ window.QUIZ_DATA = {
           "Setting firewall rules",
           "Creating a CSR"
         ],
-        "explanation": "Questionnaires get answers directly from the vendor."
+        "explanation": "Questionnaires get answers directly from the vendor.",
+        "page": "91"
       },
       {
         "question": "In the SolarWinds supply chain example, how was malware deployed?",
@@ -6946,7 +7245,8 @@ window.QUIZ_DATA = {
           "Via USB drive",
           "Through an open proxy"
         ],
-        "explanation": "At least 18,000 of 300,000 customers were potentially impacted."
+        "explanation": "At least 18,000 of 300,000 customers were potentially impacted.",
+        "page": "90"
       }
     ],
     "bonusQuestions": []
@@ -7154,7 +7454,8 @@ window.QUIZ_DATA = {
           "A certificate signing request",
           "A vendor questionnaire"
         ],
-        "explanation": "An auditor will attest to a company's cybersecurity posture."
+        "explanation": "An auditor will attest to a company's cybersecurity posture.",
+        "page": "93"
       },
       {
         "question": "Which group oversees risk management activities, where all audits start and stop?",
@@ -7164,7 +7465,8 @@ window.QUIZ_DATA = {
           "Red team",
           "Help desk"
         ],
-        "explanation": "Part of internal audits."
+        "explanation": "Part of internal audits.",
+        "page": "93"
       },
       {
         "question": "Having the organization perform its own checks is called what?",
@@ -7174,7 +7476,8 @@ window.QUIZ_DATA = {
           "Attestation",
           "Penetration test"
         ],
-        "explanation": "Consolidate self-assessments into ongoing reports."
+        "explanation": "Consolidate self-assessments into ongoing reports.",
+        "page": "93"
       },
       {
         "question": "Who may be required to perform an audit due to regulatory requirements?",
@@ -7184,7 +7487,8 @@ window.QUIZ_DATA = {
           "Any employee",
           "The attacker"
         ],
-        "explanation": "External audit type and frequency are often based on the regulation."
+        "explanation": "External audit type and frequency are often based on the regulation.",
+        "page": "94"
       }
     ],
     "bonusQuestions": []

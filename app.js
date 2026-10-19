@@ -62,7 +62,7 @@
       const v = DATA[name];
       const qs = state.includeBonus ? v.questions.concat(v.bonusQuestions) : v.questions;
       for (const q of qs) {
-        pool.push({ section: name, domain: v.domain, page: v.page, source: q });
+        pool.push({ section: name, domain: v.domain, page: q.page || v.page, source: q });
       }
     }
     pool = shuffle(pool);
@@ -389,7 +389,7 @@
     for (const name of Object.keys(CARDS)) {
       if (!state.flashSelected.has(name)) continue;
       for (const c of CARDS[name].cards) {
-        items.push({ section: name, domain: CARDS[name].domain, page: CARDS[name].page, q: c.q, a: c.a });
+        items.push({ section: name, domain: CARDS[name].domain, page: c.page || CARDS[name].page, q: c.q, a: c.a });
       }
     }
     return state.flashShuffle ? shuffle(items) : items;

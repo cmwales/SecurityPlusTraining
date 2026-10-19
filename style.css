@@ -360,3 +360,150 @@ details.review-details summary {
   color: var(--accent);
   margin-bottom: 10px;
 }
+
+/* Home screen */
+.mode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.mode-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+  padding: 22px;
+  border-radius: 12px;
+  background: var(--panel);
+}
+
+.mode-card:hover {
+  border-color: var(--accent);
+  background: var(--panel);
+}
+
+.mode-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.mode-desc {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.mode-meta {
+  color: var(--accent);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
+
+/* Flashcard setup: collapsible domains */
+details.domain-details {
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+details.domain-details summary {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  list-style: none;
+}
+
+details.domain-details summary::-webkit-details-marker { display: none; }
+
+details.domain-details summary::after {
+  content: "\25B8";
+  color: var(--muted);
+  margin-left: 4px;
+  transition: transform 0.15s;
+}
+
+details.domain-details[open] summary::after {
+  transform: rotate(90deg);
+}
+
+details.domain-details summary .domain-title {
+  margin: 0;
+  flex: 1;
+}
+
+details.domain-details .count {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.domain-body {
+  padding: 0 8px 8px 30px;
+}
+
+/* Flashcard screen */
+.flash-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+}
+
+.flash-question {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 8px 0 24px;
+}
+
+.flash-answer {
+  background: var(--panel-2);
+  border-left: 3px solid var(--accent);
+  padding: 16px 18px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.flash-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: auto;
+}
+
+button.grade.good {
+  border-color: var(--good);
+  background: var(--good-bg);
+}
+
+button.grade.bad {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+
+kbd {
+  font-family: inherit;
+  font-size: 0.75rem;
+  opacity: 0.7;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  padding: 0 5px;
+  margin-left: 6px;
+}
+
+@media (max-width: 520px) {
+  .flash-actions { flex-direction: column-reverse; }
+  .flash-actions button { width: 100%; }
+  kbd { display: none; }
+}
+
+.page-ref {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin: -12px 0 18px;
+}
+
+.flash-answer .page-ref {
+  margin: 10px 0 0;
+}

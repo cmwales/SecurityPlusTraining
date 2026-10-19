@@ -1,4626 +1,7383 @@
 // AUTO-GENERATED from Questions.json by build_data.py - do not edit directly
 window.QUIZ_DATA = {
-  "Fundamentals of Security": {
-    "domain": "1.0 General Security Concepts",
+  "1.1 - Security Controls": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "1-2",
     "questions": [
       {
-        "id": 557,
-        "question": "What is the primary operational distinction between Information Security and Information Systems Security?",
-        "correctAnswer": "Information Security protects data and information, while Information Systems Security protects the underlying hardware and systems processing that data.",
+        "question": "Which control category includes firewalls, anti-virus, and operating system controls?",
+        "correctAnswer": "Technical",
         "incorrectAnswers": [
-          "Information Security applies strictly to paper documents, while Information Systems Security applies exclusively to digital files.",
-          "Information Security focuses on firewalls, while Information Systems Security handles database encryption.",
-          "Information Security is managed by operational staff, while Information Systems Security is managed solely by executive leadership.",
-          "Information Security governs legal compliance, while Information Systems Security governs hardware disposal."
+          "Managerial",
+          "Operational",
+          "Physical"
         ],
-        "explanation": "Information Security focuses on protecting data, while Information Systems Security protects the systems that store and process that data."
+        "explanation": "Technical controls are implemented using systems - operating system controls, firewalls, anti-virus."
       },
       {
-        "id": 558,
-        "question": "Which extension added to the traditional CIA Triad forms the CIANA Pentagon by guaranteeing that an action or event cannot be denied by involved parties?",
-        "correctAnswer": "Non-repudiation and Authentication",
+        "question": "Security policies and standard operating procedures belong to which control category?",
+        "correctAnswer": "Managerial",
         "incorrectAnswers": [
-          "Authorization and Accounting",
-          "Auditing and Accountability",
-          "Attestation and Governance",
-          "Compensating Controls and Federation",
-          "Identification and Authorization"
+          "Technical",
+          "Operational",
+          "Physical"
         ],
-        "explanation": "The CIANA Pentagon extends the CIA triad by adding non-repudiation and authentication."
+        "explanation": "Managerial controls are administrative controls associated with security design and implementation."
       },
       {
-        "id": 559,
-        "question": "In the Triple A's (AAA) framework of security, which component is specifically responsible for tracking user activities and resource usage for auditing or billing purposes?",
-        "correctAnswer": "Accounting",
+        "question": "Security guards and awareness programs are examples of which control category?",
+        "correctAnswer": "Operational",
         "incorrectAnswers": [
-          "Authentication",
-          "Authorization",
-          "Attestation",
-          "Assessment"
+          "Managerial",
+          "Technical",
+          "Physical"
         ],
-        "explanation": "Accounting tracks user activities for auditing and billing."
+        "explanation": "Operational controls are implemented by people instead of systems."
       },
       {
-        "id": 560,
-        "question": "Which security principle ensures that users are granted only the minimum level of access required to perform their job functions?",
-        "correctAnswer": "Least Privilege",
+        "question": "Fences, locks, and badge readers belong to which control category?",
+        "correctAnswer": "Physical",
         "incorrectAnswers": [
-          "Separation of Duties",
-          "Mandatory Access Control",
-          "Defense in Depth",
-          "Zero Trust"
+          "Technical",
+          "Operational",
+          "Managerial"
         ],
-        "explanation": "Least privilege restricts access to only what is necessary for job tasks."
+        "explanation": "Physical controls limit physical access - guard shacks, fences, locks, badge readers."
       },
       {
-        "id": 561,
-        "question": "Which security concept involves using multiple layers of security controls to protect systems and data?",
-        "correctAnswer": "Defense in Depth",
+        "question": "Which control type discourages an intrusion attempt but does not directly prevent access?",
+        "correctAnswer": "Deterrent",
         "incorrectAnswers": [
-          "Least Privilege",
-          "Zero Trust",
-          "Mandatory Access Control",
-          "Fail-Safe Defaults"
+          "Preventive",
+          "Detective",
+          "Corrective"
         ],
-        "explanation": "Defense in depth uses layered controls to reduce risk."
+        "explanation": "Deterrent controls make an attacker think twice - splash screens, threat of demotion, warning signs."
       },
       {
-        "id": 562,
-        "question": "Which security concept ensures that a system continues operating even when one component fails?",
-        "correctAnswer": "Fault Tolerance",
+        "question": "Which control type identifies and logs an intrusion attempt but may not prevent access?",
+        "correctAnswer": "Detective",
         "incorrectAnswers": [
-          "Redundancy",
-          "High Availability",
-          "Fail-Safe Defaults",
-          "Load Balancing"
+          "Deterrent",
+          "Preventive",
+          "Directive"
         ],
-        "explanation": "Fault tolerance allows systems to continue functioning despite failures."
+        "explanation": "Detective controls find the issue - reviewing system logs, login reports, patrols, motion detectors."
       },
       {
-        "id": 563,
-        "question": "Which term describes the process of identifying, analyzing, and prioritizing potential security risks?",
-        "correctAnswer": "Risk Assessment",
+        "question": "Restoring from backups to mitigate a ransomware infection is which control type?",
+        "correctAnswer": "Corrective",
         "incorrectAnswers": [
-          "Risk Avoidance",
-          "Risk Transfer",
-          "Risk Mitigation",
-          "Risk Acceptance"
+          "Compensating",
+          "Detective",
+          "Preventive"
         ],
-        "explanation": "Risk assessment evaluates and prioritizes risks."
+        "explanation": "Corrective controls are applied after an event has been detected to reverse its impact."
       },
       {
-        "id": 564,
-        "question": "Which security control type includes policies, procedures, and training?",
-        "correctAnswer": "Administrative Controls",
+        "question": "A firewall blocks a specific application instead of patching the app. Which control type is this?",
+        "correctAnswer": "Compensating",
         "incorrectAnswers": [
-          "Technical Controls",
-          "Physical Controls",
-          "Compensating Controls",
-          "Preventive Controls"
+          "Corrective",
+          "Directive",
+          "Deterrent"
         ],
-        "explanation": "Administrative controls include policies, procedures, and training."
+        "explanation": "Compensating controls use other means when existing controls aren't sufficient, and may be temporary."
       },
       {
-        "id": 565,
-        "question": "Which security control type includes firewalls, encryption, and authentication mechanisms?",
-        "correctAnswer": "Technical Controls",
+        "question": "Which control type is described as relatively weak and directs a subject towards security compliance?",
+        "correctAnswer": "Directive",
         "incorrectAnswers": [
-          "Administrative Controls",
-          "Physical Controls",
-          "Corrective Controls",
-          "Deterrent Controls"
+          "Deterrent",
+          "Compensating",
+          "Preventive"
         ],
-        "explanation": "Technical controls use technology to enforce security."
+        "explanation": "Directive controls say 'do this, please' - e.g., store sensitive files in a protected folder or post an 'Authorized Personnel Only' sign."
       },
       {
-        "id": 566,
-        "question": "Which security control type includes locks, fences, and security guards?",
-        "correctAnswer": "Physical Controls",
+        "question": "According to the control type table, a power generator is which control type in the physical category?",
+        "correctAnswer": "Compensating",
         "incorrectAnswers": [
-          "Technical Controls",
-          "Administrative Controls",
-          "Compensating Controls",
-          "Corrective Controls"
+          "Corrective",
+          "Preventive",
+          "Detective"
         ],
-        "explanation": "Physical controls protect physical access to systems and facilities."
+        "explanation": "A generator used after a power outage compensates for the loss of primary power."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 567,
-        "question": "Which security concept ensures that actions taken by users can be traced uniquely back to them?",
-        "correctAnswer": "Accountability",
-        "incorrectAnswers": [
-          "Authentication",
-          "Authorization",
-          "Non-repudiation",
-          "Integrity"
-        ],
-        "explanation": "Accountability ensures user actions can be traced back to the responsible individual."
-      },
-      {
-        "id": 568,
-        "question": "Which security model focuses on preventing conflicts of interest by restricting access based on organizational roles?",
-        "correctAnswer": "Chinese Wall Model",
-        "incorrectAnswers": [
-          "Bell-LaPadula Model",
-          "Biba Model",
-          "Clark-Wilson Model",
-          "Brewer-Nash Model"
-        ],
-        "explanation": "The Chinese Wall Model prevents conflicts of interest by restricting access based on prior interactions."
-      },
-      {
-        "id": 569,
-        "question": "Which security principle requires dividing critical tasks among multiple individuals to reduce fraud risk?",
-        "correctAnswer": "Separation of Duties",
-        "incorrectAnswers": [
-          "Least Privilege",
-          "Defense in Depth",
-          "Fail-Safe Defaults",
-          "Zero Trust"
-        ],
-        "explanation": "Separation of duties prevents one person from having too much control over critical processes."
-      },
-      {
-        "id": 570,
-        "question": "Which security concept ensures that systems default to the most secure state when a failure occurs?",
-        "correctAnswer": "Fail-Safe Defaults",
-        "incorrectAnswers": [
-          "Least Privilege",
-          "Defense in Depth",
-          "Implicit Deny",
-          "Zero Trust"
-        ],
-        "explanation": "Fail-safe defaults ensure systems revert to secure states when failures occur."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Zero Trust Model & Architecture": {
-    "domain": "1.0 General Security Concepts",
+  "1.2 - The CIA Triad": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "2",
     "questions": [
       {
-        "id": 571,
-        "question": "Within a Zero Trust Architecture, which components are strictly part of the Control Plane?",
-        "correctAnswer": "Adaptive identity, threat scope reduction, policy-driven access control, policy engine, and policy administrator",
-        "incorrectAnswers": [
-          "Subject/System, Policy Enforcement Point, and implicit trust zones",
-          "Physical security guards, CCTV cameras, and bollards",
-          "Honeypots, honeyfiles, and honeytokens",
-          "Syslog servers, network taps, and packet capture devices"
-        ],
-        "explanation": "The Control Plane manages identity, access policies, and decision-making components."
-      },
-      {
-        "id": 572,
-        "question": "In a Zero Trust Architecture implementation, which Data Plane component actually executes the decision to grant, restrict, or block network traffic?",
-        "correctAnswer": "Policy Enforcement Point",
-        "incorrectAnswers": [
-          "Policy Engine",
-          "Policy Administrator",
-          "Adaptive Identity Module",
-          "Implicit Trust Zone"
-        ],
-        "explanation": "The Policy Enforcement Point enforces access decisions made by the Control Plane."
-      },
-      {
-        "id": 573,
-        "question": "What is the primary objective of Threat Scope Reduction within a Zero Trust framework?",
-        "correctAnswer": "Limiting user access strictly to what is needed for work tasks to minimize the attack surface and blast radius.",
-        "incorrectAnswers": [
-          "Ensuring that all perimeter fences are monitored by physical security guards 24/7.",
-          "Encrypting all hard drives with asymmetric public key pairs.",
-          "Allowing unrestricted access across internal subnets once authenticated.",
-          "Redirecting all external web traffic into screened subnets."
-        ],
-        "explanation": "Threat Scope Reduction limits access to reduce the impact of potential breaches."
-      },
-      {
-        "id": 574,
-        "question": "Which Zero Trust principle eliminates the assumption that anything inside the network perimeter is trustworthy?",
-        "correctAnswer": "Never Trust, Always Verify",
-        "incorrectAnswers": [
-          "Implicit Allow",
-          "Defense in Depth",
-          "Least Privilege",
-          "Fail-Safe Defaults"
-        ],
-        "explanation": "Zero Trust removes implicit trust and requires continuous verification."
-      },
-      {
-        "id": 575,
-        "question": "Which Zero Trust component evaluates contextual factors such as device health, user identity, and behavior before granting access?",
-        "correctAnswer": "Policy Engine",
-        "incorrectAnswers": [
-          "Policy Enforcement Point",
-          "Policy Administrator",
-          "Threat Intelligence Gateway",
-          "Identity Provider"
-        ],
-        "explanation": "The Policy Engine analyzes context and determines access decisions."
-      },
-      {
-        "id": 576,
-        "question": "Which Zero Trust concept ensures that access decisions are continuously reevaluated rather than granted indefinitely?",
-        "correctAnswer": "Continuous Authentication",
-        "incorrectAnswers": [
-          "Single Sign-On",
-          "Implicit Trust",
-          "Static Authorization",
-          "Credential Caching"
-        ],
-        "explanation": "Continuous authentication verifies identity throughout a session."
-      },
-      {
-        "id": 577,
-        "question": "Which Zero Trust component is responsible for distributing and enforcing access policies across network resources?",
-        "correctAnswer": "Policy Administrator",
-        "incorrectAnswers": [
-          "Policy Engine",
-          "Policy Enforcement Point",
-          "Identity Provider",
-          "Threat Detection Module"
-        ],
-        "explanation": "The Policy Administrator pushes decisions from the Policy Engine to enforcement points."
-      },
-      {
-        "id": 578,
-        "question": "Which Zero Trust design strategy focuses on breaking the network into smaller, isolated zones to limit lateral movement?",
-        "correctAnswer": "Microsegmentation",
-        "incorrectAnswers": [
-          "Load Balancing",
-          "Network Address Translation",
-          "Subnet Masking",
-          "Traffic Shaping"
-        ],
-        "explanation": "Microsegmentation isolates resources to reduce lateral movement."
-      },
-      {
-        "id": 579,
-        "question": "Which Zero Trust concept ensures that access is granted only after verifying both the user and the device being used?",
-        "correctAnswer": "Strong Identity and Device Verification",
-        "incorrectAnswers": [
-          "Implicit Device Trust",
-          "Single-Factor Authentication",
-          "Credential Reuse",
-          "Static Device Profiles"
-        ],
-        "explanation": "Zero Trust requires verifying both user identity and device posture."
-      },
-      {
-        "id": 580,
-        "question": "Which Zero Trust architecture component ensures that only authorized and healthy devices can connect to network resources?",
-        "correctAnswer": "Device Posture Assessment",
-        "incorrectAnswers": [
-          "Network Address Translation",
-          "Firewall ACLs",
-          "DNS Filtering",
-          "Load Balancing"
-        ],
-        "explanation": "Device posture assessment checks compliance before granting access."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 581,
-        "question": "Which Zero Trust concept requires validating every access request as though it originates from an untrusted network?",
-        "correctAnswer": "Assume Breach",
-        "incorrectAnswers": [
-          "Implicit Trust",
-          "Open Access",
-          "Perimeter-Based Trust",
-          "Credential Persistence"
-        ],
-        "explanation": "Assume Breach treats all requests as potentially malicious."
-      },
-      {
-        "id": 582,
-        "question": "Which Zero Trust strategy uses behavioral analytics to detect anomalies in user activity?",
-        "correctAnswer": "User and Entity Behavior Analytics (UEBA)",
-        "incorrectAnswers": [
-          "Static Access Control Lists",
-          "Credential Rotation",
-          "Network Address Translation",
-          "Role-Based Access Control"
-        ],
-        "explanation": "UEBA identifies unusual behavior that may indicate compromise."
-      },
-      {
-        "id": 583,
-        "question": "Which Zero Trust component ensures that access decisions are logged and monitored for auditing and compliance?",
-        "correctAnswer": "Visibility and Analytics Layer",
-        "incorrectAnswers": [
-          "Policy Engine",
-          "Policy Administrator",
-          "Policy Enforcement Point",
-          "Identity Provider"
-        ],
-        "explanation": "Visibility and analytics provide monitoring and auditing capabilities."
-      },
-      {
-        "id": 584,
-        "question": "Which Zero Trust principle requires validating device compliance with security policies before granting access?",
-        "correctAnswer": "Verify Device Health",
-        "incorrectAnswers": [
-          "Implicit Device Trust",
-          "Open Access",
-          "Credential Reuse",
-          "Static Authorization"
-        ],
-        "explanation": "Zero Trust requires verifying device health before access is granted."
-      }
-    ]
-  },
-  "Data States & Protection Methods": {
-    "domain": "1.0 General Security Concepts",
-    "questions": [
-      {
-        "id": 585,
-        "question": "Which encryption method protects data at rest by encrypting the entire physical drive, including the operating system and user files?",
-        "correctAnswer": "Full Disk Encryption (FDE)",
-        "incorrectAnswers": [
-          "Partition Encryption",
-          "Record Encryption",
-          "Application-Level Encryption",
-          "Database Column Encryption"
-        ],
-        "explanation": "Full Disk Encryption encrypts the entire drive, protecting all data at rest."
-      },
-      {
-        "id": 586,
-        "question": "Data that is actively being created, retrieved, updated, or processed in system memory belongs to which data state?",
-        "correctAnswer": "Data in Use",
-        "incorrectAnswers": [
-          "Data at Rest",
-          "Data in Transit",
-          "Data in Motion",
-          "Archived Data"
-        ],
-        "explanation": "Data in Use refers to data actively being processed in memory."
-      },
-      {
-        "id": 587,
-        "question": "Which hardware-based security mechanism provides an isolated processing environment in CPU memory to protect data in use from unauthorized access?",
-        "correctAnswer": "Secure Enclaves (e.g., Intel SGX)",
-        "incorrectAnswers": [
-          "Communication Tunneling",
-          "Database Table Encryption",
-          "Self-Encrypting Drives",
-          "Full Disk Encryption"
-        ],
-        "explanation": "Secure enclaves isolate sensitive operations in protected CPU memory."
-      },
-      {
-        "id": 588,
-        "question": "Which data state refers to information stored on a device, such as files on a hard drive or database records?",
-        "correctAnswer": "Data at Rest",
-        "incorrectAnswers": [
-          "Data in Use",
-          "Data in Transit",
-          "Data in Motion",
-          "Data in Processing"
-        ],
-        "explanation": "Data at Rest refers to stored data not actively being processed."
-      },
-      {
-        "id": 589,
-        "question": "Which data state refers to information moving across a network, such as emails or API calls?",
-        "correctAnswer": "Data in Transit",
-        "incorrectAnswers": [
-          "Data at Rest",
-          "Data in Use",
-          "Data in Motion",
-          "Data in Storage"
-        ],
-        "explanation": "Data in Transit refers to data moving between systems or across networks."
-      },
-      {
-        "id": 590,
-        "question": "Which protection method ensures that data remains confidential even if intercepted during transmission?",
-        "correctAnswer": "Transport Encryption",
-        "incorrectAnswers": [
-          "Full Disk Encryption",
-          "Secure Enclaves",
-          "Data Masking",
-          "Tokenization"
-        ],
-        "explanation": "Transport encryption protects data in transit using protocols like TLS."
-      },
-      {
-        "id": 591,
-        "question": "Which technique replaces sensitive data with non-sensitive placeholders while preserving format?",
-        "correctAnswer": "Tokenization",
-        "incorrectAnswers": [
-          "Hashing",
-          "Encryption",
-          "Obfuscation",
-          "Masking"
-        ],
-        "explanation": "Tokenization replaces sensitive data with tokens that have no exploitable meaning."
-      },
-      {
-        "id": 592,
-        "question": "Which technique hides portions of sensitive data, such as showing only the last four digits of a credit card number?",
-        "correctAnswer": "Data Masking",
-        "incorrectAnswers": [
-          "Tokenization",
-          "Hashing",
-          "Encryption",
-          "Obfuscation"
-        ],
-        "explanation": "Data masking obscures sensitive information while preserving usability."
-      },
-      {
-        "id": 593,
-        "question": "Which method ensures that encrypted data cannot be decrypted without the correct key?",
-        "correctAnswer": "Cryptographic Key Management",
-        "incorrectAnswers": [
-          "Data Masking",
-          "Tokenization",
-          "Obfuscation",
-          "Compression"
-        ],
-        "explanation": "Key management ensures encryption keys are properly stored and protected."
-      },
-      {
-        "id": 594,
-        "question": "Which technology encrypts data automatically when written to a drive and decrypts it when read?",
-        "correctAnswer": "Self-Encrypting Drive (SED)",
-        "incorrectAnswers": [
-          "Secure Enclave",
-          "Full Disk Encryption",
-          "Transport Encryption",
-          "Tokenization"
-        ],
-        "explanation": "SEDs perform encryption and decryption at the hardware level."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 595,
-        "question": "Which data protection method converts plaintext into ciphertext using a reversible mathematical process?",
-        "correctAnswer": "Encryption",
-        "incorrectAnswers": [
-          "Hashing",
-          "Tokenization",
-          "Masking",
-          "Obfuscation"
-        ],
-        "explanation": "Encryption protects confidentiality by converting plaintext into ciphertext."
-      },
-      {
-        "id": 596,
-        "question": "Which data protection method converts data into a fixed-length value that cannot be reversed?",
-        "correctAnswer": "Hashing",
-        "incorrectAnswers": [
-          "Encryption",
-          "Tokenization",
-          "Masking",
-          "Obfuscation"
-        ],
-        "explanation": "Hashing ensures integrity by producing irreversible fixed-length outputs."
-      },
-      {
-        "id": 597,
-        "question": "Which data state is most vulnerable to memory scraping attacks?",
-        "correctAnswer": "Data in Use",
-        "incorrectAnswers": [
-          "Data at Rest",
-          "Data in Transit",
-          "Data in Storage",
-          "Archived Data"
-        ],
-        "explanation": "Data in Use resides in memory, making it vulnerable to scraping attacks."
-      },
-      {
-        "id": 598,
-        "question": "Which protection method is commonly used to secure data in transit between a web browser and server?",
-        "correctAnswer": "TLS Encryption",
-        "incorrectAnswers": [
-          "Full Disk Encryption",
-          "Secure Enclaves",
-          "Tokenization",
-          "Data Masking"
-        ],
-        "explanation": "TLS encrypts data transmitted over HTTPS connections."
-      },
-      {
-        "id": 599,
-        "question": "Which data protection method is ideal for anonymizing data while maintaining statistical usefulness?",
-        "correctAnswer": "Data Obfuscation",
-        "incorrectAnswers": [
-          "Tokenization",
-          "Masking",
-          "Hashing",
-          "Encryption"
-        ],
-        "explanation": "Obfuscation anonymizes data while preserving patterns for analysis."
-      }
-    ]
-  },
-  "Cryptography, PKI, & Hardware Security": {
-    "domain": "1.0 General Security Concepts",
-    "questions": [
-      {
-        "id": 600,
-        "question": "Which hardware component is integrated directly onto a computer motherboard to securely generate, store, and manage cryptographic keys for drive encryption?",
-        "correctAnswer": "Trusted Platform Module (TPM)",
-        "incorrectAnswers": [
-          "Hardware Security Module (HSM)",
-          "Secure Enclave Subsystem",
-          "Self-Encrypting Drive (SED)",
-          "Key Distribution Center (KDC)"
-        ],
-        "explanation": "A TPM is a dedicated microcontroller that securely stores cryptographic keys and supports hardware-based encryption."
-      },
-      {
-        "id": 601,
-        "question": "In a Public Key Infrastructure (PKI), which entity collects user information and requests identifying data before forwarding the request to the CA?",
-        "correctAnswer": "Registration Authority (RA)",
-        "incorrectAnswers": [
-          "Certificate Revocation List (CRL)",
-          "Policy Enforcement Point",
-          "Data Custodian",
-          "Key Distribution Center"
-        ],
-        "explanation": "The RA validates user identity information and forwards certificate requests to the CA."
-      },
-      {
-        "id": 602,
-        "question": "Which post-quantum cryptography algorithm was selected by NIST specifically for general encryption needs?",
-        "correctAnswer": "CRYSTALS-Kyber",
-        "incorrectAnswers": [
-          "CRYSTALS-Dilithium",
-          "FALCON",
-          "SPHINCS+",
-          "RSA-4096"
-        ],
-        "explanation": "CRYSTALS-Kyber was chosen by NIST for general-purpose encryption in a post-quantum world."
-      },
-      {
-        "id": 603,
-        "question": "Which cryptographic concept ensures that a sender cannot deny having sent a message?",
-        "correctAnswer": "Non-repudiation",
+        "question": "Which part of the CIA triad prevents disclosure of information to unauthorized individuals or systems?",
+        "correctAnswer": "Confidentiality",
         "incorrectAnswers": [
           "Integrity",
-          "Confidentiality",
           "Availability",
-          "Obfuscation"
+          "Non-repudiation"
         ],
-        "explanation": "Non-repudiation ensures actions can be verified and attributed to the correct party."
+        "explanation": "Confidentiality prevents unauthorized information disclosure."
       },
       {
-        "id": 604,
-        "question": "Which cryptographic method uses two mathematically related keys for encryption and decryption?",
-        "correctAnswer": "Asymmetric encryption",
-        "incorrectAnswers": [
-          "Symmetric encryption",
-          "Hashing",
-          "Tokenization",
-          "Obfuscation"
-        ],
-        "explanation": "Asymmetric encryption uses public and private key pairs."
-      },
-      {
-        "id": 605,
-        "question": "Which PKI component is responsible for issuing, revoking, and managing digital certificates?",
-        "correctAnswer": "Certificate Authority (CA)",
-        "incorrectAnswers": [
-          "Registration Authority",
-          "Key Distribution Center",
-          "Certificate Repository",
-          "Policy Engine"
-        ],
-        "explanation": "The CA manages certificate lifecycle operations."
-      },
-      {
-        "id": 607,
-        "question": "Which hardware device provides high-performance cryptographic key storage and operations for enterprise environments?",
-        "correctAnswer": "Hardware Security Module (HSM)",
-        "incorrectAnswers": [
-          "Trusted Platform Module",
-          "Secure Enclave",
-          "Self-Encrypting Drive",
-          "Key Distribution Center"
-        ],
-        "explanation": "HSMs provide secure, tamper-resistant cryptographic processing."
-      },
-      {
-        "id": 608,
-        "question": "Which cryptographic protocol is used to securely exchange keys over an insecure channel?",
-        "correctAnswer": "Diffie-Hellman",
-        "incorrectAnswers": [
-          "RSA",
-          "AES",
-          "SHA-256",
-          "ECC"
-        ],
-        "explanation": "Diffie-Hellman enables secure key exchange without prior shared secrets."
-      },
-      {
-        "id": 609,
-        "question": "Which certificate format is commonly used for storing private keys and is protected with a password?",
-        "correctAnswer": "PFX / PKCS#12",
-        "incorrectAnswers": [
-          "PEM",
-          "DER",
-          "CER",
-          "CRT"
-        ],
-        "explanation": "PKCS#12 stores private keys and certificates in a password-protected container."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 610,
-        "question": "Which cryptographic algorithm is widely used for symmetric encryption and considered secure for modern applications?",
-        "correctAnswer": "AES",
-        "incorrectAnswers": [
-          "DES",
-          "MD5",
-          "RC4",
-          "SHA-1"
-        ],
-        "explanation": "AES is the industry standard for secure symmetric encryption."
-      },
-      {
-        "id": 611,
-        "question": "Which PKI component lists certificates that are no longer trusted?",
-        "correctAnswer": "Certificate Revocation List (CRL)",
-        "incorrectAnswers": [
-          "OCSP",
-          "Registration Authority",
-          "Certificate Repository",
-          "Key Escrow"
-        ],
-        "explanation": "CRLs contain revoked certificates that should no longer be trusted."
-      },
-      {
-        "id": 612,
-        "question": "Which cryptographic concept ensures that data has not been altered during storage or transmission?",
+        "question": "Which part of the CIA triad ensures messages can't be modified without detection?",
         "correctAnswer": "Integrity",
         "incorrectAnswers": [
           "Confidentiality",
           "Availability",
-          "Non-repudiation",
-          "Obfuscation"
-        ],
-        "explanation": "Integrity ensures data remains unchanged and trustworthy."
-      },
-      {
-        "id": 613,
-        "question": "Which key type in asymmetric encryption is shared publicly?",
-        "correctAnswer": "Public key",
-        "incorrectAnswers": [
-          "Private key",
-          "Session key",
-          "Symmetric key",
-          "Root key"
-        ],
-        "explanation": "Public keys are openly shared for encryption and verification."
-      },
-      {
-        "id": 614,
-        "question": "Which cryptographic attack attempts to find two different inputs that produce the same hash value?",
-        "correctAnswer": "Collision attack",
-        "incorrectAnswers": [
-          "Replay attack",
-          "Brute force attack",
-          "Side-channel attack",
-          "Birthday attack"
-        ],
-        "explanation": "Collision attacks target hashing algorithms by finding identical outputs."
-      }
-    ]
-  },
-  "Physical Security Controls & Surveillance": {
-    "domain": "1.0 General Security Concepts",
-    "questions": [
-      {
-        "id": 615,
-        "question": "Which physical security control uses electromagnetic fields to detect unauthorized movement of tagged items leaving a protected area?",
-        "correctAnswer": "Electronic Article Surveillance (EAS)",
-        "incorrectAnswers": [
-          "Motion-Activated Lighting",
-          "Infrared Tripwires",
-          "Security Guards",
-          "CCTV Monitoring"
-        ],
-        "explanation": "EAS systems detect tagged items passing through sensors, commonly used in retail environments."
-      },
-      {
-        "id": 616,
-        "question": "Which physical barrier is specifically designed to stop vehicles from entering restricted zones?",
-        "correctAnswer": "Bollards",
-        "incorrectAnswers": [
-          "Turnstiles",
-          "Mantraps",
-          "Security Gates",
-          "Crash Bars"
-        ],
-        "explanation": "Bollards prevent vehicle access and protect buildings from ramming attacks."
-      },
-      {
-        "id": 617,
-        "question": "Which physical security control forces individuals to authenticate before entering and exiting a small enclosed area?",
-        "correctAnswer": "Mantrap",
-        "incorrectAnswers": [
-          "Turnstile",
-          "Security Gate",
-          "Airlock",
-          "Access Badge Reader"
-        ],
-        "explanation": "Mantraps restrict entry by requiring authentication at both doors."
-      },
-      {
-        "id": 618,
-        "question": "Which surveillance system uses infrared illumination to capture images in low-light or no-light environments?",
-        "correctAnswer": "Night Vision CCTV",
-        "incorrectAnswers": [
-          "Motion Sensors",
-          "Thermal Cameras",
-          "Standard CCTV",
-          "Laser Tripwires"
-        ],
-        "explanation": "Night vision CCTV uses infrared light to capture images in darkness."
-      },
-      {
-        "id": 619,
-        "question": "Which physical control prevents tailgating by allowing only one person to pass through at a time?",
-        "correctAnswer": "Turnstile",
-        "incorrectAnswers": [
-          "Mantrap",
-          "Security Gate",
-          "Bollard",
-          "Crash Bar Door"
-        ],
-        "explanation": "Turnstiles restrict entry to one person per rotation, preventing tailgating."
-      },
-      {
-        "id": 620,
-        "question": "Which physical security control uses heat signatures to detect unauthorized presence?",
-        "correctAnswer": "Thermal Imaging Cameras",
-        "incorrectAnswers": [
-          "Night Vision Cameras",
-          "Motion Sensors",
-          "Pressure Sensors",
-          "Laser Tripwires"
-        ],
-        "explanation": "Thermal cameras detect heat signatures, useful for low-visibility environments."
-      },
-      {
-        "id": 621,
-        "question": "Which physical control is used to secure server racks and prevent unauthorized access to hardware?",
-        "correctAnswer": "Rack Locks",
-        "incorrectAnswers": [
-          "Cable Trays",
-          "Airflow Panels",
-          "Crash Bars",
-          "Turnstiles"
-        ],
-        "explanation": "Rack locks secure server racks and prevent unauthorized physical access."
-      },
-      {
-        "id": 622,
-        "question": "Which physical security measure uses sensors to detect vibrations caused by forced entry attempts?",
-        "correctAnswer": "Seismic Sensors",
-        "incorrectAnswers": [
-          "Infrared Sensors",
-          "Motion Detectors",
-          "Pressure Mats",
-          "Magnetic Contacts"
-        ],
-        "explanation": "Seismic sensors detect vibrations from drilling, cutting, or forced entry."
-      },
-      {
-        "id": 623,
-        "question": "Which physical control prevents unauthorized individuals from viewing sensitive information on a screen?",
-        "correctAnswer": "Privacy Filters",
-        "incorrectAnswers": [
-          "Screen Locks",
-          "Cable Locks",
-          "Security Guards",
-          "Motion Sensors"
-        ],
-        "explanation": "Privacy filters limit screen visibility to the user directly in front of the display."
-      },
-      {
-        "id": 624,
-        "question": "Which physical control is used to detect unauthorized opening of doors or windows?",
-        "correctAnswer": "Magnetic Contact Sensors",
-        "incorrectAnswers": [
-          "Thermal Sensors",
-          "Pressure Mats",
-          "Infrared Beams",
-          "Seismic Sensors"
-        ],
-        "explanation": "Magnetic contact sensors trigger alerts when doors or windows are opened."
-      },
-      {
-        "id": 675,
-        "question": "Which physical security control is designed to prevent unauthorized individuals from entering secure areas by requiring authentication at two separate doors?",
-        "correctAnswer": "Mantrap",
-        "incorrectAnswers": [
-          "Turnstile",
-          "Security Gate",
-          "Crash Bar Door",
-          "Bollard"
-        ],
-        "explanation": "Mantraps enforce strict access control by requiring authentication at both entry points."
-      },
-      {
-        "id": 678,
-        "question": "Which surveillance technology detects movement by measuring changes in infrared energy?",
-        "correctAnswer": "Passive Infrared (PIR) Sensors",
-        "incorrectAnswers": [
-          "Thermal Cameras",
-          "Pressure Mats",
-          "Magnetic Contacts",
-          "Laser Tripwires"
-        ],
-        "explanation": "PIR sensors detect motion by sensing changes in infrared radiation."
-      },
-      {
-        "id": 682,
-        "question": "Which physical security measure uses sensors embedded under flooring to detect unauthorized movement?",
-        "correctAnswer": "Pressure Mats",
-        "incorrectAnswers": [
-          "Motion Sensors",
-          "Thermal Cameras",
-          "Magnetic Contacts",
-          "Laser Tripwires"
-        ],
-        "explanation": "Pressure mats detect weight changes when someone steps on them."
-      },
-      {
-        "id": 683,
-        "question": "Which physical control helps prevent unauthorized removal of laptops or desktops?",
-        "correctAnswer": "Cable Locks",
-        "incorrectAnswers": [
-          "Privacy Filters",
-          "Motion Sensors",
-          "Seismic Sensors",
-          "Turnstiles"
-        ],
-        "explanation": "Cable locks physically secure devices to desks or fixed structures."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 625,
-        "question": "Which physical security control uses two interlocking doors to prevent unauthorized entry and tailgating?",
-        "correctAnswer": "Mantrap",
-        "incorrectAnswers": [
-          "Turnstile",
-          "Security Gate",
-          "Crash Bar Door",
-          "Bollard"
-        ],
-        "explanation": "Mantraps require authentication at both doors, preventing piggybacking."
-      },
-      {
-        "id": 626,
-        "question": "Which physical control is designed to protect critical infrastructure from vehicle-based attacks?",
-        "correctAnswer": "Anti-Ram Barriers",
-        "incorrectAnswers": [
-          "Turnstiles",
-          "Mantraps",
-          "Security Gates",
-          "Pressure Mats"
-        ],
-        "explanation": "Anti-ram barriers prevent vehicles from breaching secure areas."
-      },
-      {
-        "id": 689,
-        "question": "Which physical control uses laser beams to detect unauthorized crossing of a protected boundary?",
-        "correctAnswer": "Laser Tripwires",
-        "incorrectAnswers": [
-          "Pressure Mats",
-          "Thermal Cameras",
-          "Magnetic Contacts",
-          "Seismic Sensors"
-        ],
-        "explanation": "Laser tripwires detect movement when beams are interrupted."
-      }
-    ]
-  },
-  "Threats & Vulnerabilities Overview": {
-    "domain": "2.0 Threats, Vulnerabilities, and Mitigations",
-    "questions": [
-      {
-        "id": 630,
-        "question": "Which term describes a weakness in a system, application, or process that can be exploited by a threat actor?",
-        "correctAnswer": "Vulnerability",
-        "incorrectAnswers": [
-          "Threat",
-          "Risk",
-          "Exploit",
-          "Payload"
-        ],
-        "explanation": "A vulnerability is a weakness that can be exploited to compromise security."
-      },
-      {
-        "id": 631,
-        "question": "Which term refers to the potential cause of an unwanted incident that may result in harm to a system or organization?",
-        "correctAnswer": "Threat",
-        "incorrectAnswers": [
-          "Risk",
-          "Vulnerability",
-          "Exploit",
-          "Payload"
-        ],
-        "explanation": "A threat is any circumstance or event with the potential to cause harm."
-      },
-      {
-        "id": 632,
-        "question": "Which term describes the likelihood that a threat will exploit a vulnerability and cause harm?",
-        "correctAnswer": "Risk",
-        "incorrectAnswers": [
-          "Threat",
-          "Payload",
-          "Exposure",
-          "Attack Vector"
-        ],
-        "explanation": "Risk is the probability of a threat exploiting a vulnerability."
-      },
-      {
-        "id": 633,
-        "question": "Which term describes the path or method a threat actor uses to exploit a vulnerability?",
-        "correctAnswer": "Attack Vector",
-        "incorrectAnswers": [
-          "Payload",
-          "Exposure",
-          "Threat Surface",
-          "Risk Factor"
-        ],
-        "explanation": "An attack vector is the route used to exploit a vulnerability."
-      },
-      {
-        "id": 634,
-        "question": "Which term refers to the total sum of all possible attack vectors within an environment?",
-        "correctAnswer": "Attack Surface",
-        "incorrectAnswers": [
-          "Threat Landscape",
-          "Exposure Zone",
-          "Risk Profile",
-          "Vulnerability Index"
-        ],
-        "explanation": "The attack surface includes all potential points where an attacker can attempt entry."
-      },
-      {
-        "id": 635,
-        "question": "Which vulnerability occurs when software does not properly validate input, allowing attackers to manipulate program behavior?",
-        "correctAnswer": "Improper Input Validation",
-        "incorrectAnswers": [
-          "Race Condition",
-          "Buffer Overflow",
-          "Privilege Escalation",
-          "Broken Authentication"
-        ],
-        "explanation": "Improper input validation allows malicious input to alter program logic."
-      },
-      {
-        "id": 636,
-        "question": "Which vulnerability occurs when a program writes more data to a buffer than it can hold?",
-        "correctAnswer": "Buffer Overflow",
-        "incorrectAnswers": [
-          "Race Condition",
-          "Improper Input Validation",
-          "Broken Access Control",
-          "Directory Traversal"
-        ],
-        "explanation": "Buffer overflows overwrite memory and can lead to crashes or code execution."
-      },
-      {
-        "id": 637,
-        "question": "Which vulnerability occurs when an attacker manipulates file paths to access restricted directories?",
-        "correctAnswer": "Directory Traversal",
-        "incorrectAnswers": [
-          "SQL Injection",
-          "Cross-Site Scripting",
-          "Broken Authentication",
-          "Race Condition"
-        ],
-        "explanation": "Directory traversal exploits improper path sanitization to access unauthorized files."
-      },
-      {
-        "id": 638,
-        "question": "Which vulnerability occurs when multiple processes attempt to access shared resources simultaneously, causing unpredictable behavior?",
-        "correctAnswer": "Race Condition",
-        "incorrectAnswers": [
-          "Buffer Overflow",
-          "Improper Input Validation",
-          "Broken Access Control",
-          "Privilege Escalation"
-        ],
-        "explanation": "Race conditions occur when timing issues cause unexpected results."
-      },
-      {
-        "id": 639,
-        "question": "Which vulnerability allows attackers to gain higher-level permissions than intended?",
-        "correctAnswer": "Privilege Escalation",
-        "incorrectAnswers": [
-          "Race Condition",
-          "Directory Traversal",
-          "Broken Authentication",
-          "Session Hijacking"
-        ],
-        "explanation": "Privilege escalation exploits weaknesses to gain unauthorized elevated access."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 640,
-        "question": "Which vulnerability occurs when authentication mechanisms fail to properly verify user identity?",
-        "correctAnswer": "Broken Authentication",
-        "incorrectAnswers": [
-          "Buffer Overflow",
-          "Race Condition",
-          "Directory Traversal",
-          "Improper Input Validation"
-        ],
-        "explanation": "Broken authentication allows attackers to impersonate legitimate users."
-      },
-      {
-        "id": 641,
-        "question": "Which vulnerability occurs when access controls fail to restrict users to authorized resources?",
-        "correctAnswer": "Broken Access Control",
-        "incorrectAnswers": [
-          "Privilege Escalation",
-          "Race Condition",
-          "Directory Traversal",
-          "Improper Input Validation"
-        ],
-        "explanation": "Broken access control allows unauthorized access to protected resources."
-      },
-      {
-        "id": 642,
-        "question": "Which term describes the exposure of sensitive information due to insecure system design or configuration?",
-        "correctAnswer": "Information Disclosure",
-        "incorrectAnswers": [
-          "Privilege Escalation",
-          "Race Condition",
-          "Directory Traversal",
-          "Improper Input Validation"
-        ],
-        "explanation": "Information disclosure leaks sensitive data unintentionally."
-      },
-      {
-        "id": 643,
-        "question": "Which vulnerability occurs when cryptographic systems are improperly implemented or configured?",
-        "correctAnswer": "Weak Cryptography",
-        "incorrectAnswers": [
-          "Privilege Escalation",
-          "Race Condition",
-          "Directory Traversal",
-          "Improper Input Validation"
-        ],
-        "explanation": "Weak cryptography results from outdated algorithms or poor key management."
-      },
-      {
-        "id": 644,
-        "question": "Which vulnerability occurs when user sessions are not properly protected, allowing attackers to hijack them?",
-        "correctAnswer": "Session Hijacking",
-        "incorrectAnswers": [
-          "Privilege Escalation",
-          "Race Condition",
-          "Directory Traversal",
-          "Improper Input Validation"
-        ],
-        "explanation": "Session hijacking exploits weaknesses in session management."
-      }
-    ]
-  },
-  "Threat Actor Types & Motivations": {
-    "domain": "2.0 Threats, Vulnerabilities, and Mitigations",
-    "questions": [
-      {
-        "id": 645,
-        "question": "Which type of threat actor is typically motivated by financial gain and uses cybercrime as a primary revenue source?",
-        "correctAnswer": "Organized Crime Groups",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Script Kiddies",
-          "Insider Threats",
-          "Nation-State Actors"
-        ],
-        "explanation": "Organized crime groups conduct cybercrime operations for profit."
-      },
-      {
-        "id": 646,
-        "question": "Which threat actor is typically motivated by political or ideological goals and uses cyberattacks to promote a cause?",
-        "correctAnswer": "Hacktivists",
-        "incorrectAnswers": [
-          "Script Kiddies",
-          "Organized Crime Groups",
-          "Insider Threats",
-          "Nation-State Actors"
-        ],
-        "explanation": "Hacktivists attack systems to promote political or social causes."
-      },
-      {
-        "id": 647,
-        "question": "Which threat actor is characterized by limited technical skills and relies heavily on pre-built tools and scripts?",
-        "correctAnswer": "Script Kiddies",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Insider Threats",
-          "Nation-State Actors"
-        ],
-        "explanation": "Script kiddies use existing tools without deep technical knowledge."
-      },
-      {
-        "id": 648,
-        "question": "Which threat actor has legitimate access to organizational systems and may intentionally or unintentionally cause harm?",
-        "correctAnswer": "Insider Threats",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Script Kiddies",
-          "Nation-State Actors"
-        ],
-        "explanation": "Insiders have authorized access that can be misused."
-      },
-      {
-        "id": 649,
-        "question": "Which threat actor is typically backed by a government and conducts highly sophisticated cyber operations?",
-        "correctAnswer": "Nation-State Actors",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Script Kiddies",
-          "Insider Threats"
-        ],
-        "explanation": "Nation-state actors conduct advanced, well-funded cyber operations."
-      },
-      {
-        "id": 650,
-        "question": "Which threat actor type is most likely to target critical infrastructure for espionage or disruption?",
-        "correctAnswer": "Nation-State Actors",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Script Kiddies",
-          "Insider Threats"
-        ],
-        "explanation": "Nation-state actors often target critical infrastructure for strategic advantage."
-      },
-      {
-        "id": 651,
-        "question": "Which threat actor is primarily motivated by revenge or personal grievances against an organization?",
-        "correctAnswer": "Malicious Insider",
-        "incorrectAnswers": [
-          "Hacktivist",
-          "Organized Crime Group",
-          "Script Kiddie",
-          "Nation-State Actor"
-        ],
-        "explanation": "Malicious insiders may act out of revenge or personal conflict."
-      },
-      {
-        "id": 652,
-        "question": "Which threat actor type is most likely to perform cyberattacks to demonstrate skill or gain notoriety?",
-        "correctAnswer": "Script Kiddies",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Insider Threats",
-          "Nation-State Actors"
-        ],
-        "explanation": "Script kiddies often seek attention or recognition."
-      },
-      {
-        "id": 653,
-        "question": "Which threat actor is most likely to use ransomware as a primary attack method for financial gain?",
-        "correctAnswer": "Organized Crime Groups",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Nation-State Actors",
-          "Script Kiddies",
-          "Insider Threats"
-        ],
-        "explanation": "Organized crime groups frequently deploy ransomware for profit."
-      },
-      {
-        "id": 654,
-        "question": "Which threat actor type is most likely to target intellectual property for competitive advantage?",
-        "correctAnswer": "Nation-State Actors",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Script Kiddies",
-          "Insider Threats"
-        ],
-        "explanation": "Nation-state actors often steal intellectual property for national benefit."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 655,
-        "question": "Which threat actor type is most likely to unintentionally cause harm due to negligence or lack of awareness?",
-        "correctAnswer": "Unintentional Insider",
-        "incorrectAnswers": [
-          "Hacktivist",
-          "Organized Crime Group",
-          "Script Kiddie",
-          "Nation-State Actor"
-        ],
-        "explanation": "Unintentional insiders cause harm through mistakes or lack of training."
-      },
-      {
-        "id": 656,
-        "question": "Which threat actor type is most likely to be motivated by curiosity rather than malicious intent?",
-        "correctAnswer": "Amateur Hacker",
-        "incorrectAnswers": [
-          "Hacktivist",
-          "Organized Crime Group",
-          "Nation-State Actor",
-          "Insider Threat"
-        ],
-        "explanation": "Amateur hackers may explore systems out of curiosity."
-      },
-      {
-        "id": 657,
-        "question": "Which threat actor type is most likely to target organizations for ideological disruption rather than financial gain?",
-        "correctAnswer": "Hacktivists",
-        "incorrectAnswers": [
-          "Organized Crime Groups",
-          "Script Kiddies",
-          "Insider Threats",
-          "Nation-State Actors"
-        ],
-        "explanation": "Hacktivists attack systems to promote ideological causes."
-      },
-      {
-        "id": 658,
-        "question": "Which threat actor type is most likely to use advanced persistent threats (APTs)?",
-        "correctAnswer": "Nation-State Actors",
-        "incorrectAnswers": [
-          "Hacktivists",
-          "Organized Crime Groups",
-          "Script Kiddies",
-          "Insider Threats"
-        ],
-        "explanation": "APTs are typically associated with nation-state operations."
-      },
-      {
-        "id": 659,
-        "question": "Which threat actor type is most likely to exploit insider access to steal sensitive data for external sale?",
-        "correctAnswer": "Malicious Insider",
-        "incorrectAnswers": [
-          "Hacktivist",
-          "Organized Crime Group",
-          "Script Kiddie",
-          "Nation-State Actor"
-        ],
-        "explanation": "Malicious insiders may sell sensitive data for personal gain."
-      }
-    ]
-  },
-  "Social Engineering & Malware Operations": {
-    "domain": "2.0 Threats, Vulnerabilities, and Mitigations",
-    "questions": [
-      {
-        "id": 660,
-        "question": "Which social engineering attack involves impersonating a trusted individual over the phone to extract sensitive information?",
-        "correctAnswer": "Vishing",
-        "incorrectAnswers": [
-          "Phishing",
-          "Smishing",
-          "Whaling",
-          "Pretexting"
-        ],
-        "explanation": "Vishing uses voice calls to trick victims into revealing sensitive information."
-      },
-      {
-        "id": 661,
-        "question": "Which social engineering technique involves creating a fabricated scenario to manipulate a target into providing information?",
-        "correctAnswer": "Pretexting",
-        "incorrectAnswers": [
-          "Phishing",
-          "Tailgating",
-          "Baiting",
-          "Dumpster Diving"
-        ],
-        "explanation": "Pretexting relies on a false narrative to gain trust and extract information."
-      },
-      {
-        "id": 662,
-        "question": "Which social engineering attack involves sending fraudulent emails designed to trick users into clicking malicious links?",
-        "correctAnswer": "Phishing",
-        "incorrectAnswers": [
-          "Smishing",
-          "Vishing",
-          "Whaling",
-          "Pretexting"
-        ],
-        "explanation": "Phishing uses deceptive emails to steal credentials or deliver malware."
-      },
-      {
-        "id": 663,
-        "question": "Which social engineering attack specifically targets high-profile individuals such as executives?",
-        "correctAnswer": "Whaling",
-        "incorrectAnswers": [
-          "Phishing",
-          "Smishing",
-          "Vishing",
-          "Baiting"
-        ],
-        "explanation": "Whaling targets executives with tailored phishing attacks."
-      },
-      {
-        "id": 664,
-        "question": "Which social engineering technique involves following an authorized person into a restricted area without proper authentication?",
-        "correctAnswer": "Tailgating",
-        "incorrectAnswers": [
-          "Pretexting",
-          "Baiting",
-          "Phishing",
-          "Dumpster Diving"
-        ],
-        "explanation": "Tailgating exploits physical proximity to bypass access controls."
-      },
-      {
-        "id": 665,
-        "question": "Which social engineering attack uses enticing items, such as free USB drives, to lure victims into executing malicious code?",
-        "correctAnswer": "Baiting",
-        "incorrectAnswers": [
-          "Phishing",
-          "Smishing",
-          "Pretexting",
-          "Shoulder Surfing"
-        ],
-        "explanation": "Baiting uses physical or digital lures to deliver malware."
-      },
-      {
-        "id": 666,
-        "question": "Which social engineering technique involves observing someone’s screen or keyboard to steal sensitive information?",
-        "correctAnswer": "Shoulder Surfing",
-        "incorrectAnswers": [
-          "Tailgating",
-          "Phishing",
-          "Dumpster Diving",
-          "Pretexting"
-        ],
-        "explanation": "Shoulder surfing captures sensitive information by direct observation."
-      },
-      {
-        "id": 667,
-        "question": "Which malware type encrypts a victim’s files and demands payment for decryption?",
-        "correctAnswer": "Ransomware",
-        "incorrectAnswers": [
-          "Trojan",
-          "Worm",
-          "Rootkit",
-          "Spyware"
-        ],
-        "explanation": "Ransomware encrypts data and demands payment for recovery."
-      },
-      {
-        "id": 668,
-        "question": "Which malware type disguises itself as legitimate software but performs malicious actions once executed?",
-        "correctAnswer": "Trojan",
-        "incorrectAnswers": [
-          "Worm",
-          "Rootkit",
-          "Ransomware",
-          "Adware"
-        ],
-        "explanation": "Trojans hide malicious intent behind seemingly legitimate applications."
-      },
-      {
-        "id": 669,
-        "question": "Which malware type self-replicates and spreads across systems without user interaction?",
-        "correctAnswer": "Worm",
-        "incorrectAnswers": [
-          "Trojan",
-          "Rootkit",
-          "Spyware",
-          "Adware"
-        ],
-        "explanation": "Worms replicate autonomously and spread across networks."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 670,
-        "question": "Which malware type hides its presence by modifying system processes and kernel-level components?",
-        "correctAnswer": "Rootkit",
-        "incorrectAnswers": [
-          "Trojan",
-          "Worm",
-          "Ransomware",
-          "Spyware"
-        ],
-        "explanation": "Rootkits conceal malicious activity by altering system-level components."
-      },
-      {
-        "id": 671,
-        "question": "Which social engineering attack uses fraudulent text messages to trick victims into clicking malicious links?",
-        "correctAnswer": "Smishing",
-        "incorrectAnswers": [
-          "Phishing",
-          "Vishing",
-          "Whaling",
-          "Pretexting"
-        ],
-        "explanation": "Smishing uses SMS messages to deliver malicious content."
-      },
-      {
-        "id": 672,
-        "question": "Which malware type secretly monitors user activity and steals sensitive information such as credentials?",
-        "correctAnswer": "Spyware",
-        "incorrectAnswers": [
-          "Adware",
-          "Trojan",
-          "Worm",
-          "Rootkit"
-        ],
-        "explanation": "Spyware monitors user activity and exfiltrates sensitive data."
-      },
-      {
-        "id": 673,
-        "question": "Which social engineering technique involves searching through discarded materials to find sensitive information?",
-        "correctAnswer": "Dumpster Diving",
-        "incorrectAnswers": [
-          "Tailgating",
-          "Phishing",
-          "Pretexting",
-          "Baiting"
-        ],
-        "explanation": "Dumpster diving retrieves sensitive information from discarded documents or media."
-      },
-      {
-        "id": 674,
-        "question": "Which malware type displays unwanted advertisements and may track user behavior?",
-        "correctAnswer": "Adware",
-        "incorrectAnswers": [
-          "Spyware",
-          "Trojan",
-          "Worm",
-          "Rootkit"
-        ],
-        "explanation": "Adware shows ads and may collect user data for marketing."
-      }
-    ]
-  },
-  "Identity & Access Management (IAM)": {
-    "domain": "3.0 Security Architecture",
-    "questions": [
-      {
-        "id": 691,
-        "question": "Which access control model uses predefined labels such as 'Top Secret' or 'Confidential' to determine access permissions?",
-        "correctAnswer": "Mandatory Access Control (MAC)",
-        "incorrectAnswers": [
-          "Discretionary Access Control (DAC)",
-          "Role-Based Access Control (RBAC)",
-          "Attribute-Based Access Control (ABAC)",
-          "Rule-Based Access Control"
-        ],
-        "explanation": "MAC uses classification labels to enforce strict access control."
-      },
-      {
-        "id": 692,
-        "question": "Which access control model assigns permissions based on job roles within an organization?",
-        "correctAnswer": "Role-Based Access Control (RBAC)",
-        "incorrectAnswers": [
-          "Mandatory Access Control",
-          "Discretionary Access Control",
-          "Attribute-Based Access Control",
-          "Rule-Based Access Control"
-        ],
-        "explanation": "RBAC assigns permissions based on organizational roles."
-      },
-      {
-        "id": 693,
-        "question": "Which access control model evaluates attributes such as user identity, device type, and environmental conditions before granting access?",
-        "correctAnswer": "Attribute-Based Access Control (ABAC)",
-        "incorrectAnswers": [
-          "Role-Based Access Control",
-          "Mandatory Access Control",
-          "Discretionary Access Control",
-          "Rule-Based Access Control"
-        ],
-        "explanation": "ABAC uses attributes and policies to determine access."
-      },
-      {
-        "id": 694,
-        "question": "Which IAM concept requires users to verify their identity using two or more authentication factors?",
-        "correctAnswer": "Multi-Factor Authentication (MFA)",
-        "incorrectAnswers": [
-          "Single Sign-On",
-          "Federated Identity",
-          "Certificate-Based Authentication",
-          "Biometric Authentication"
-        ],
-        "explanation": "MFA requires multiple factors such as something you know, have, or are."
-      },
-      {
-        "id": 695,
-        "question": "Which authentication method uses digital certificates to verify user identity?",
-        "correctAnswer": "Certificate-Based Authentication",
-        "incorrectAnswers": [
-          "Password Authentication",
-          "Token-Based Authentication",
-          "Biometric Authentication",
-          "Single Sign-On"
-        ],
-        "explanation": "Certificate-based authentication uses PKI certificates to verify identity."
-      },
-      {
-        "id": 696,
-        "question": "Which IAM concept allows users to authenticate once and gain access to multiple systems without re-authenticating?",
-        "correctAnswer": "Single Sign-On (SSO)",
-        "incorrectAnswers": [
-          "Multi-Factor Authentication",
-          "Federated Identity",
-          "Role-Based Access Control",
-          "Credential Rotation"
-        ],
-        "explanation": "SSO allows users to authenticate once and access multiple resources."
-      },
-      {
-        "id": 697,
-        "question": "Which IAM concept allows identity information to be shared across multiple organizations or domains?",
-        "correctAnswer": "Federated Identity",
-        "incorrectAnswers": [
-          "Single Sign-On",
-          "Role-Based Access Control",
-          "Mandatory Access Control",
-          "Attribute-Based Access Control"
-        ],
-        "explanation": "Federated identity enables cross-domain authentication and trust."
-      },
-      {
-        "id": 698,
-        "question": "Which IAM process involves verifying that a user is who they claim to be?",
-        "correctAnswer": "Authentication",
-        "incorrectAnswers": [
-          "Authorization",
-          "Accounting",
-          "Provisioning",
-          "Auditing"
-        ],
-        "explanation": "Authentication verifies identity before granting access."
-      },
-      {
-        "id": 699,
-        "question": "Which IAM process determines what resources an authenticated user is allowed to access?",
-        "correctAnswer": "Authorization",
-        "incorrectAnswers": [
-          "Authentication",
-          "Accounting",
-          "Provisioning",
-          "Auditing"
-        ],
-        "explanation": "Authorization determines access rights after authentication."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 701,
-        "question": "Which IAM process involves creating, modifying, disabling, or deleting user accounts?",
-        "correctAnswer": "Provisioning",
-        "incorrectAnswers": [
-          "Authentication",
-          "Authorization",
-          "Auditing",
           "Accounting"
         ],
-        "explanation": "Provisioning manages user account lifecycle operations."
+        "explanation": "Integrity means data is stored and transferred as intended; any modification would be identified."
       },
       {
-        "id": 702,
-        "question": "Which IAM concept requires users to re-authenticate periodically to maintain secure access?",
-        "correctAnswer": "Continuous Authentication",
+        "question": "Redundancy, fault tolerance, and patching primarily support which part of the CIA triad?",
+        "correctAnswer": "Availability",
         "incorrectAnswers": [
-          "Single Sign-On",
-          "Federated Identity",
-          "Role-Based Access Control",
-          "Credential Rotation"
+          "Confidentiality",
+          "Integrity",
+          "Authentication"
         ],
-        "explanation": "Continuous authentication verifies identity throughout a session."
+        "explanation": "Availability means systems and networks must be up and running for authorized users."
       },
       {
-        "id": 703,
-        "question": "Which IAM mechanism uses physical characteristics such as fingerprints or facial recognition for authentication?",
-        "correctAnswer": "Biometric Authentication",
+        "question": "Which of these is listed as a way to provide confidentiality?",
+        "correctAnswer": "Encryption",
         "incorrectAnswers": [
-          "Token-Based Authentication",
-          "Password Authentication",
-          "Certificate-Based Authentication",
-          "Single Sign-On"
+          "Hashing",
+          "Redundancy",
+          "Fault tolerance"
         ],
-        "explanation": "Biometric authentication uses unique physical traits to verify identity."
-      }
-    ]
-  },
-  "Network Security": {
-    "domain": "3.0 Security Architecture",
-    "questions": [
-      {
-        "id": 705,
-        "question": "Which network security device monitors inbound and outbound traffic and enforces rules to allow or block specific traffic types?",
-        "correctAnswer": "Firewall",
-        "incorrectAnswers": [
-          "Switch",
-          "Router",
-          "Load Balancer",
-          "Repeater"
-        ],
-        "explanation": "Firewalls enforce security policies by filtering network traffic."
+        "explanation": "Confidentiality is provided by encryption, access controls, and two-factor authentication."
       },
       {
-        "id": 706,
-        "question": "Which network security technology inspects packets at multiple layers, including application-level data, to detect malicious activity?",
-        "correctAnswer": "Next-Generation Firewall (NGFW)",
+        "question": "Which of these is listed as a way to provide integrity?",
+        "correctAnswer": "Hashing",
         "incorrectAnswers": [
-          "Packet Filter Firewall",
-          "Router ACL",
-          "Proxy Server",
-          "Load Balancer"
+          "Redundancy",
+          "Access controls",
+          "Patching"
         ],
-        "explanation": "NGFWs provide deep packet inspection and advanced threat detection."
+        "explanation": "Integrity is provided by hashing, digital signatures, certificates, and non-repudiation."
       },
       {
-        "id": 707,
-        "question": "Which network security tool monitors network traffic for suspicious activity and alerts administrators without taking direct action?",
-        "correctAnswer": "Intrusion Detection System (IDS)",
+        "question": "What is another name the CIA Triad is sometimes referenced as?",
+        "correctAnswer": "The AIC Triad",
         "incorrectAnswers": [
-          "Intrusion Prevention System (IPS)",
-          "Firewall",
-          "Proxy Server",
-          "Load Balancer"
+          "The AAA Triad",
+          "The PKI Triad",
+          "The CIANA Triad"
         ],
-        "explanation": "IDS detects and alerts on suspicious activity but does not block it."
-      },
-      {
-        "id": 708,
-        "question": "Which network security tool actively blocks malicious traffic based on detected threats?",
-        "correctAnswer": "Intrusion Prevention System (IPS)",
-        "incorrectAnswers": [
-          "Intrusion Detection System",
-          "Firewall",
-          "Proxy Server",
-          "Load Balancer"
-        ],
-        "explanation": "IPS detects and blocks malicious activity in real time."
-      },
-      {
-        "id": 709,
-        "question": "Which network device segments a LAN into multiple broadcast domains?",
-        "correctAnswer": "Router",
-        "incorrectAnswers": [
-          "Switch",
-          "Hub",
-          "Repeater",
-          "Bridge"
-        ],
-        "explanation": "Routers separate networks into distinct broadcast domains."
-      },
-      {
-        "id": 710,
-        "question": "Which network device forwards traffic based on MAC addresses and reduces collisions by creating separate collision domains?",
-        "correctAnswer": "Switch",
-        "incorrectAnswers": [
-          "Router",
-          "Hub",
-          "Repeater",
-          "Bridge"
-        ],
-        "explanation": "Switches forward frames based on MAC addresses and reduce collisions."
-      },
-      {
-        "id": 711,
-        "question": "Which network security concept isolates network segments to limit lateral movement by attackers?",
-        "correctAnswer": "Network Segmentation",
-        "incorrectAnswers": [
-          "Load Balancing",
-          "Traffic Shaping",
-          "Network Address Translation",
-          "Port Forwarding"
-        ],
-        "explanation": "Segmentation limits attacker movement by isolating network zones."
-      },
-      {
-        "id": 712,
-        "question": "Which protocol encrypts web traffic to ensure confidentiality and integrity between clients and servers?",
-        "correctAnswer": "TLS",
-        "incorrectAnswers": [
-          "FTP",
-          "SMTP",
-          "HTTP",
-          "SNMP"
-        ],
-        "explanation": "TLS encrypts web traffic and secures HTTPS connections."
-      },
-      {
-        "id": 713,
-        "question": "Which network security technique hides internal IP addresses by translating them to a single external IP?",
-        "correctAnswer": "Network Address Translation (NAT)",
-        "incorrectAnswers": [
-          "Port Forwarding",
-          "Load Balancing",
-          "Traffic Shaping",
-          "Proxying"
-        ],
-        "explanation": "NAT hides internal IPs and conserves public address space."
-      },
-      {
-        "id": 714,
-        "question": "Which network security tool caches web content and filters requests to improve performance and security?",
-        "correctAnswer": "Proxy Server",
-        "incorrectAnswers": [
-          "Firewall",
-          "Router",
-          "Switch",
-          "Repeater"
-        ],
-        "explanation": "Proxy servers filter and cache web traffic for security and performance."
+        "explanation": "The CIA Triad is sometimes referenced as the AIC Triad."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 715,
-        "question": "Which network security concept ensures that only authorized devices can connect to a network?",
-        "correctAnswer": "Network Access Control (NAC)",
-        "incorrectAnswers": [
-          "Network Address Translation",
-          "Traffic Shaping",
-          "Load Balancing",
-          "Port Forwarding"
-        ],
-        "explanation": "NAC enforces device authentication and compliance before granting access."
-      },
-      {
-        "id": 716,
-        "question": "Which wireless security protocol provides the strongest protection for modern Wi-Fi networks?",
-        "correctAnswer": "WPA3",
-        "incorrectAnswers": [
-          "WEP",
-          "WPA",
-          "WPA2",
-          "802.1X"
-        ],
-        "explanation": "WPA3 improves encryption and authentication for wireless networks."
-      },
-      {
-        "id": 717,
-        "question": "Which network attack floods a target with excessive traffic to disrupt availability?",
-        "correctAnswer": "Denial-of-Service (DoS)",
-        "incorrectAnswers": [
-          "Man-in-the-Middle",
-          "Replay Attack",
-          "Phishing",
-          "DNS Spoofing"
-        ],
-        "explanation": "DoS attacks overwhelm systems to disrupt availability."
-      },
-      {
-        "id": 718,
-        "question": "Which network attack intercepts communication between two parties without their knowledge?",
-        "correctAnswer": "Man-in-the-Middle (MITM)",
-        "incorrectAnswers": [
-          "DoS Attack",
-          "Replay Attack",
-          "Phishing",
-          "DNS Spoofing"
-        ],
-        "explanation": "MITM attacks intercept and potentially alter communications."
-      },
-      {
-        "id": 719,
-        "question": "Which network security device distributes incoming traffic across multiple servers to improve performance and availability?",
-        "correctAnswer": "Load Balancer",
-        "incorrectAnswers": [
-          "Router",
-          "Switch",
-          "Firewall",
-          "Proxy Server"
-        ],
-        "explanation": "Load balancers distribute traffic to optimize performance and uptime."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Cloud Security": {
-    "domain": "4.0 Cloud & Virtualization",
+  "1.2 - Non-repudiation": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "3",
     "questions": [
       {
-        "id": 720,
-        "question": "Which cloud service model provides virtualized hardware resources such as compute, storage, and networking?",
-        "correctAnswer": "Infrastructure as a Service (IaaS)",
+        "question": "What does non-repudiation mean?",
+        "correctAnswer": "You can't deny what you've said",
         "incorrectAnswers": [
-          "Platform as a Service (PaaS)",
-          "Software as a Service (SaaS)",
-          "Function as a Service (FaaS)",
-          "Container as a Service (CaaS)"
+          "Data can't be read by unauthorized users",
+          "Systems are always available",
+          "Passwords are stored as hashes"
         ],
-        "explanation": "IaaS provides virtualized infrastructure resources managed by the cloud provider."
+        "explanation": "Non-repudiation means there's no taking it back - like signing a contract."
       },
       {
-        "id": 721,
-        "question": "Which cloud service model provides a managed environment for developers to build, deploy, and test applications?",
-        "correctAnswer": "Platform as a Service (PaaS)",
+        "question": "What does a hash by itself tell you?",
+        "correctAnswer": "Only whether the data has changed",
         "incorrectAnswers": [
-          "Infrastructure as a Service",
-          "Software as a Service",
-          "Function as a Service",
-          "Container as a Service"
+          "Who created the data",
+          "Who sent the message",
+          "Which key encrypted the data"
         ],
-        "explanation": "PaaS provides a managed platform for application development."
+        "explanation": "A hash provides proof of integrity but doesn't necessarily associate data with an individual."
       },
       {
-        "id": 722,
-        "question": "Which cloud service model delivers fully managed applications over the internet?",
-        "correctAnswer": "Software as a Service (SaaS)",
+        "question": "Which key is used to create a digital signature?",
+        "correctAnswer": "The sender's private key",
         "incorrectAnswers": [
-          "Infrastructure as a Service",
-          "Platform as a Service",
-          "Function as a Service",
-          "Container as a Service"
+          "The sender's public key",
+          "The recipient's public key",
+          "A shared symmetric key"
         ],
-        "explanation": "SaaS delivers complete applications managed by the provider."
+        "explanation": "Sign with the private key; nobody else can sign it."
       },
       {
-        "id": 723,
-        "question": "Which cloud deployment model is operated solely for a single organization and offers the highest level of control?",
-        "correctAnswer": "Private Cloud",
+        "question": "Which key is used to verify a digital signature?",
+        "correctAnswer": "The sender's public key",
         "incorrectAnswers": [
-          "Public Cloud",
-          "Hybrid Cloud",
-          "Community Cloud",
-          "Distributed Cloud"
+          "The sender's private key",
+          "The recipient's private key",
+          "The CA's private key"
         ],
-        "explanation": "Private clouds are dedicated to one organization and offer maximum control."
+        "explanation": "Verify with the public key - any change to the message invalidates the signature."
       },
       {
-        "id": 724,
-        "question": "Which cloud deployment model combines on-premises infrastructure with public cloud services?",
-        "correctAnswer": "Hybrid Cloud",
+        "question": "When Alice creates a digital signature, what does she encrypt with her private key?",
+        "correctAnswer": "A hash of the plaintext",
         "incorrectAnswers": [
-          "Private Cloud",
-          "Public Cloud",
-          "Community Cloud",
-          "Distributed Cloud"
+          "The entire plaintext message",
+          "Bob's public key",
+          "A random session key"
         ],
-        "explanation": "Hybrid clouds integrate on-premises and cloud environments."
+        "explanation": "Alice hashes the plaintext, encrypts the hash with her private key, and includes that signature with the plaintext."
       },
       {
-        "id": 725,
-        "question": "Which cloud security concept ensures that customers and providers share responsibility for securing cloud resources?",
-        "correctAnswer": "Shared Responsibility Model",
+        "question": "Proof of origin with a digital signature provides integrity, non-repudiation, and what else?",
+        "correctAnswer": "Authentication",
         "incorrectAnswers": [
-          "Zero Trust Model",
-          "Defense in Depth",
-          "Mandatory Access Control",
-          "Federated Identity"
+          "Availability",
+          "Confidentiality",
+          "Accounting"
         ],
-        "explanation": "The shared responsibility model defines which security tasks belong to the provider and customer."
+        "explanation": "It proves the message wasn't changed (integrity), the source (authentication), and that the signature isn't fake (non-repudiation)."
       },
       {
-        "id": 726,
-        "question": "Which cloud security risk involves unauthorized access due to misconfigured storage buckets or access policies?",
-        "correctAnswer": "Misconfiguration",
+        "question": "Does a message need to be encrypted to be digitally signed?",
+        "correctAnswer": "No, the message doesn't need to be encrypted",
         "incorrectAnswers": [
-          "Hypervisor Escape",
-          "Data Residency Issues",
-          "Vendor Lock-In",
-          "Resource Exhaustion"
+          "Yes, with the sender's public key",
+          "Yes, with a symmetric key",
+          "Yes, with the recipient's public key"
         ],
-        "explanation": "Misconfiguration is one of the most common cloud security risks."
-      },
-      {
-        "id": 727,
-        "question": "Which cloud security threat involves attackers escaping a virtual machine to access the underlying hypervisor?",
-        "correctAnswer": "Hypervisor Escape",
-        "incorrectAnswers": [
-          "VM Sprawl",
-          "Container Drift",
-          "Privilege Escalation",
-          "Data Leakage"
-        ],
-        "explanation": "Hypervisor escape allows attackers to break out of a VM and access the host."
-      },
-      {
-        "id": 728,
-        "question": "Which cloud security control restricts access to cloud resources based on identity and contextual factors?",
-        "correctAnswer": "Identity and Access Management (IAM)",
-        "incorrectAnswers": [
-          "Network Address Translation",
-          "Load Balancing",
-          "Traffic Shaping",
-          "DNS Filtering"
-        ],
-        "explanation": "IAM enforces identity-based access control in cloud environments."
-      },
-      {
-        "id": 729,
-        "question": "Which cloud security concept ensures that data stored in the cloud remains encrypted even if the provider is compromised?",
-        "correctAnswer": "Customer-Managed Keys (CMK)",
-        "incorrectAnswers": [
-          "Provider-Managed Keys",
-          "Tokenization",
-          "Data Masking",
-          "Obfuscation"
-        ],
-        "explanation": "CMKs give customers full control over encryption keys."
+        "explanation": "The notes state the message doesn't need to be encrypted to be signed."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 730,
-        "question": "Which cloud security control monitors cloud environments for misconfigurations, vulnerabilities, and compliance violations?",
-        "correctAnswer": "Cloud Security Posture Management (CSPM)",
-        "incorrectAnswers": [
-          "Cloud Workload Protection Platform",
-          "Identity Federation",
-          "Network Access Control",
-          "Container Runtime Security"
-        ],
-        "explanation": "CSPM tools continuously monitor cloud environments for security issues."
-      },
-      {
-        "id": 731,
-        "question": "Which cloud security tool protects workloads such as VMs, containers, and serverless functions?",
-        "correctAnswer": "Cloud Workload Protection Platform (CWPP)",
-        "incorrectAnswers": [
-          "Cloud Security Posture Management",
-          "Identity and Access Management",
-          "Network Segmentation",
-          "TLS Encryption"
-        ],
-        "explanation": "CWPP tools secure workloads across cloud environments."
-      },
-      {
-        "id": 732,
-        "question": "Which cloud deployment model is shared by multiple organizations with similar requirements?",
-        "correctAnswer": "Community Cloud",
-        "incorrectAnswers": [
-          "Public Cloud",
-          "Private Cloud",
-          "Hybrid Cloud",
-          "Distributed Cloud"
-        ],
-        "explanation": "Community clouds serve organizations with shared interests or compliance needs."
-      },
-      {
-        "id": 733,
-        "question": "Which cloud security concern involves difficulty migrating applications or data away from a specific provider?",
-        "correctAnswer": "Vendor Lock-In",
-        "incorrectAnswers": [
-          "Data Residency",
-          "Hypervisor Escape",
-          "Misconfiguration",
-          "Resource Exhaustion"
-        ],
-        "explanation": "Vendor lock-in occurs when switching providers becomes difficult or costly."
-      },
-      {
-        "id": 734,
-        "question": "Which cloud security concept ensures that data stored in specific geographic regions complies with legal requirements?",
-        "correctAnswer": "Data Residency",
-        "incorrectAnswers": [
-          "Vendor Lock-In",
-          "Hypervisor Escape",
-          "Misconfiguration",
-          "Container Drift"
-        ],
-        "explanation": "Data residency ensures data is stored in legally compliant regions."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Virtualization Security": {
-    "domain": "4.0 Cloud & Virtualization",
+  "1.2 - Authentication, Authorization, and Accounting": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "4",
     "questions": [
       {
-        "id": 736,
-        "question": "Which virtualization component manages multiple virtual machines and allocates physical resources to them?",
-        "correctAnswer": "Hypervisor",
-        "incorrectAnswers": [
-          "Container Runtime",
-          "Virtual Switch",
-          "Orchestration Engine",
-          "Bare-Metal Host"
-        ],
-        "explanation": "Hypervisors manage VMs and allocate CPU, memory, and storage resources."
-      },
-      {
-        "id": 737,
-        "question": "Which type of hypervisor runs directly on physical hardware without a host operating system?",
-        "correctAnswer": "Type 1 Hypervisor",
-        "incorrectAnswers": [
-          "Type 2 Hypervisor",
-          "Container Runtime",
-          "VM Orchestrator",
-          "Bare-Metal Kernel"
-        ],
-        "explanation": "Type 1 hypervisors run directly on hardware and offer stronger isolation."
-      },
-      {
-        "id": 738,
-        "question": "Which virtualization security risk occurs when too many virtual machines are deployed without proper management?",
-        "correctAnswer": "VM Sprawl",
-        "incorrectAnswers": [
-          "Hypervisor Escape",
-          "Container Drift",
-          "Snapshot Poisoning",
-          "Resource Exhaustion"
-        ],
-        "explanation": "VM sprawl leads to unmanaged VMs that increase the attack surface."
-      },
-      {
-        "id": 739,
-        "question": "Which virtualization technology provides isolated environments that share the same operating system kernel?",
-        "correctAnswer": "Containers",
-        "incorrectAnswers": [
-          "Virtual Machines",
-          "Hypervisors",
-          "Bare-Metal Hosts",
-          "Serverless Functions"
-        ],
-        "explanation": "Containers share the host OS kernel while providing isolated environments."
-      },
-      {
-        "id": 740,
-        "question": "Which virtualization security threat involves outdated or inconsistent container images across environments?",
-        "correctAnswer": "Container Drift",
-        "incorrectAnswers": [
-          "VM Sprawl",
-          "Hypervisor Escape",
-          "Privilege Escalation",
-          "Snapshot Poisoning"
-        ],
-        "explanation": "Container drift occurs when container images become inconsistent or outdated."
-      },
-      {
-        "id": 741,
-        "question": "Which virtualization security control ensures that virtual machines are isolated from each other to prevent lateral movement?",
-        "correctAnswer": "VM Isolation",
-        "incorrectAnswers": [
-          "Container Runtime Security",
-          "Network Address Translation",
-          "Load Balancing",
-          "Snapshot Encryption"
-        ],
-        "explanation": "VM isolation prevents one VM from accessing another VM’s resources."
-      },
-      {
-        "id": 742,
-        "question": "Which virtualization security feature allows administrators to revert a VM to a previous state?",
-        "correctAnswer": "Snapshots",
-        "incorrectAnswers": [
-          "Cloning",
-          "Mirroring",
-          "Replication",
-          "Container Images"
-        ],
-        "explanation": "Snapshots capture VM states and allow rollback to earlier configurations."
-      },
-      {
-        "id": 743,
-        "question": "Which virtualization security risk occurs when attackers tamper with VM snapshots to inject malicious code?",
-        "correctAnswer": "Snapshot Poisoning",
-        "incorrectAnswers": [
-          "Container Drift",
-          "VM Sprawl",
-          "Hypervisor Escape",
-          "Privilege Escalation"
-        ],
-        "explanation": "Snapshot poisoning involves modifying snapshots to compromise VM integrity."
-      },
-      {
-        "id": 744,
-        "question": "Which virtualization security tool monitors container runtime behavior to detect anomalies and threats?",
-        "correctAnswer": "Container Runtime Security",
-        "incorrectAnswers": [
-          "Cloud Security Posture Management",
-          "Hypervisor Monitoring",
-          "Network Segmentation",
-          "TLS Encryption"
-        ],
-        "explanation": "Container runtime security tools monitor container behavior for threats."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 745,
-        "question": "Which virtualization security concept ensures that containers are isolated from each other and the host system?",
-        "correctAnswer": "Namespace Isolation",
-        "incorrectAnswers": [
-          "Snapshot Encryption",
-          "VM Clustering",
-          "Hypervisor Partitioning",
-          "Resource Pooling"
-        ],
-        "explanation": "Namespaces isolate container processes and resources."
-      },
-      {
-        "id": 746,
-        "question": "Which virtualization security control limits the CPU, memory, and I/O resources available to a container?",
-        "correctAnswer": "Cgroups (Control Groups)",
-        "incorrectAnswers": [
-          "Namespaces",
-          "Hypervisor Pools",
-          "Snapshot Limits",
-          "VM Templates"
-        ],
-        "explanation": "Cgroups enforce resource limits for containers."
-      },
-      {
-        "id": 747,
-        "question": "Which virtualization security risk involves attackers compromising the container orchestrator to control workloads?",
-        "correctAnswer": "Orchestrator Compromise",
-        "incorrectAnswers": [
-          "Container Drift",
-          "VM Sprawl",
-          "Snapshot Poisoning",
-          "Hypervisor Escape"
-        ],
-        "explanation": "Compromising the orchestrator gives attackers control over container deployments."
-      },
-      {
-        "id": 748,
-        "question": "Which virtualization security control ensures that container images are scanned for vulnerabilities before deployment?",
-        "correctAnswer": "Image Scanning",
-        "incorrectAnswers": [
-          "Snapshot Encryption",
-          "VM Isolation",
-          "Network Segmentation",
-          "TLS Inspection"
-        ],
-        "explanation": "Image scanning detects vulnerabilities in container images."
-      },
-      {
-        "id": 749,
-        "question": "Which virtualization security concept ensures that virtual machines and containers are deployed from trusted, verified images?",
-        "correctAnswer": "Image Signing",
-        "incorrectAnswers": [
-          "Snapshot Signing",
-          "Hypervisor Verification",
-          "Namespace Encryption",
-          "Resource Pool Validation"
-        ],
-        "explanation": "Image signing ensures images are trusted and have not been tampered with."
-      }
-    ]
-  },
-  "Data Ownership & Governance Roles": {
-    "domain": "5.0 Security Program Management and Oversight",
-    "questions": [
-      {
-        "id": 750,
-        "question": "Which role is ultimately responsible for determining how data should be protected and defining classification requirements?",
-        "correctAnswer": "Data Owner",
-        "incorrectAnswers": [
-          "Data Custodian",
-          "Data Steward",
-          "Security Administrator",
-          "Compliance Officer"
-        ],
-        "explanation": "The Data Owner defines classification levels and protection requirements."
-      },
-      {
-        "id": 751,
-        "question": "Which role is responsible for implementing and maintaining the technical controls required to protect data?",
-        "correctAnswer": "Data Custodian",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Data Steward",
-          "Security Architect",
-          "Compliance Officer"
-        ],
-        "explanation": "Data custodians implement and maintain security controls defined by the Data Owner."
-      },
-      {
-        "id": 752,
-        "question": "Which role ensures that data governance policies are followed and that data quality is maintained?",
-        "correctAnswer": "Data Steward",
-        "incorrectAnswers": [
-          "Data Custodian",
-          "Data Owner",
-          "Security Administrator",
-          "Privacy Officer"
-        ],
-        "explanation": "Data stewards enforce governance policies and maintain data quality."
-      },
-      {
-        "id": 753,
-        "question": "Which role is responsible for ensuring that an organization complies with legal, regulatory, and contractual obligations related to data?",
-        "correctAnswer": "Compliance Officer",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Data Custodian",
-          "Security Administrator",
-          "Data Steward"
-        ],
-        "explanation": "Compliance officers ensure adherence to regulatory and contractual requirements."
-      },
-      {
-        "id": 754,
-        "question": "Which role is responsible for designing and overseeing the implementation of security controls across the organization?",
-        "correctAnswer": "Security Architect",
-        "incorrectAnswers": [
-          "Data Custodian",
-          "Data Owner",
-          "Data Steward",
-          "Compliance Officer"
-        ],
-        "explanation": "Security architects design and oversee enterprise security controls."
-      },
-      {
-        "id": 755,
-        "question": "Which role is responsible for day-to-day security operations such as account management and access provisioning?",
-        "correctAnswer": "Security Administrator",
-        "incorrectAnswers": [
-          "Security Architect",
-          "Data Owner",
-          "Compliance Officer",
-          "Data Steward"
-        ],
-        "explanation": "Security administrators handle operational security tasks."
-      },
-      {
-        "id": 756,
-        "question": "Which role is responsible for ensuring that personal data is handled according to privacy laws such as GDPR or HIPAA?",
-        "correctAnswer": "Privacy Officer",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Security Architect",
-          "Compliance Officer",
-          "Data Custodian"
-        ],
-        "explanation": "Privacy officers ensure compliance with privacy regulations."
-      },
-      {
-        "id": 757,
-        "question": "Which role is responsible for approving access to sensitive data based on business requirements?",
-        "correctAnswer": "Data Owner",
-        "incorrectAnswers": [
-          "Data Custodian",
-          "Security Administrator",
-          "Compliance Officer",
-          "Data Steward"
-        ],
-        "explanation": "Data owners approve access to data based on classification and business needs."
-      },
-      {
-        "id": 758,
-        "question": "Which role is responsible for maintaining backups, storage systems, and ensuring data availability?",
-        "correctAnswer": "Data Custodian",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Data Steward",
-          "Security Architect",
-          "Compliance Officer"
-        ],
-        "explanation": "Data custodians maintain storage systems and ensure data availability."
-      },
-      {
-        "id": 759,
-        "question": "Which role ensures that data classification labels such as 'Confidential' or 'Public' are applied correctly?",
-        "correctAnswer": "Data Steward",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Data Custodian",
-          "Security Administrator",
-          "Compliance Officer"
-        ],
-        "explanation": "Data stewards ensure correct application of classification labels."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 760,
-        "question": "Which role is responsible for defining retention policies for organizational data?",
-        "correctAnswer": "Data Owner",
-        "incorrectAnswers": [
-          "Data Custodian",
-          "Data Steward",
-          "Security Administrator",
-          "Compliance Officer"
-        ],
-        "explanation": "Data owners define how long data must be retained."
-      },
-      {
-        "id": 761,
-        "question": "Which role ensures that encryption, access control, and backup mechanisms are functioning correctly?",
-        "correctAnswer": "Data Custodian",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Data Steward",
-          "Security Architect",
-          "Compliance Officer"
-        ],
-        "explanation": "Data custodians maintain technical controls protecting data."
-      },
-      {
-        "id": 762,
-        "question": "Which role is responsible for monitoring compliance with internal data governance policies?",
-        "correctAnswer": "Data Steward",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Security Administrator",
-          "Privacy Officer",
-          "Compliance Officer"
-        ],
-        "explanation": "Data stewards monitor adherence to governance policies."
-      },
-      {
-        "id": 763,
-        "question": "Which role ensures that security controls align with business objectives and risk tolerance?",
-        "correctAnswer": "Security Architect",
-        "incorrectAnswers": [
-          "Data Owner",
-          "Data Custodian",
-          "Security Administrator",
-          "Compliance Officer"
-        ],
-        "explanation": "Security architects align controls with business needs and risk posture."
-      }
-    ]
-  },
-  "Risk Management & Analysis Metrics": {
-    "domain": "5.0 Security Program Management and Oversight",
-    "questions": [
-      {
-        "id": 765,
-        "question": "Which risk management term refers to the potential negative impact of a threat exploiting a vulnerability?",
-        "correctAnswer": "Risk",
-        "incorrectAnswers": [
-          "Threat",
-          "Exposure",
-          "Impact",
-          "Likelihood"
-        ],
-        "explanation": "Risk is the combination of likelihood and impact of a threat exploiting a vulnerability."
-      },
-      {
-        "id": 766,
-        "question": "Which risk analysis method uses numerical values to calculate risk based on likelihood and impact?",
-        "correctAnswer": "Quantitative Analysis",
-        "incorrectAnswers": [
-          "Qualitative Analysis",
-          "Hybrid Analysis",
-          "Subjective Analysis",
-          "Heuristic Analysis"
-        ],
-        "explanation": "Quantitative analysis uses numerical scoring to evaluate risk."
-      },
-      {
-        "id": 767,
-        "question": "Which risk analysis method uses descriptive categories such as 'High,' 'Medium,' and 'Low'?",
-        "correctAnswer": "Qualitative Analysis",
-        "incorrectAnswers": [
-          "Quantitative Analysis",
-          "Hybrid Analysis",
-          "Heuristic Analysis",
-          "Statistical Analysis"
-        ],
-        "explanation": "Qualitative analysis uses descriptive scales instead of numerical values."
-      },
-      {
-        "id": 768,
-        "question": "Which risk metric represents the expected monetary loss from a single security incident?",
-        "correctAnswer": "Single Loss Expectancy (SLE)",
-        "incorrectAnswers": [
-          "Annualized Loss Expectancy (ALE)",
-          "Exposure Factor (EF)",
-          "Risk Appetite",
-          "Residual Risk"
-        ],
-        "explanation": "SLE calculates the financial impact of a single incident."
-      },
-      {
-        "id": 769,
-        "question": "Which risk metric represents the percentage of asset value lost due to a security incident?",
-        "correctAnswer": "Exposure Factor (EF)",
-        "incorrectAnswers": [
-          "Single Loss Expectancy",
-          "Annualized Loss Expectancy",
-          "Risk Tolerance",
-          "Residual Risk"
-        ],
-        "explanation": "EF is the percentage of asset value lost during an incident."
-      },
-      {
-        "id": 770,
-        "question": "Which risk metric calculates the expected yearly loss from security incidents?",
-        "correctAnswer": "Annualized Loss Expectancy (ALE)",
-        "incorrectAnswers": [
-          "Single Loss Expectancy",
-          "Exposure Factor",
-          "Residual Risk",
-          "Risk Appetite"
-        ],
-        "explanation": "ALE = SLE × Annualized Rate of Occurrence (ARO)."
-      },
-      {
-        "id": 771,
-        "question": "Which risk management term refers to the remaining risk after security controls have been applied?",
-        "correctAnswer": "Residual Risk",
-        "incorrectAnswers": [
-          "Inherent Risk",
-          "Transferred Risk",
-          "Accepted Risk",
-          "Mitigated Risk"
-        ],
-        "explanation": "Residual risk is what remains after mitigation efforts."
-      },
-      {
-        "id": 772,
-        "question": "Which risk management strategy involves reducing the likelihood or impact of a risk through security controls?",
-        "correctAnswer": "Risk Mitigation",
-        "incorrectAnswers": [
-          "Risk Acceptance",
-          "Risk Avoidance",
-          "Risk Transfer",
-          "Risk Deferral"
-        ],
-        "explanation": "Mitigation reduces risk through controls and safeguards."
-      },
-      {
-        "id": 773,
-        "question": "Which risk management strategy involves shifting risk to a third party, such as through insurance?",
-        "correctAnswer": "Risk Transfer",
-        "incorrectAnswers": [
-          "Risk Mitigation",
-          "Risk Acceptance",
-          "Risk Avoidance",
-          "Risk Reduction"
-        ],
-        "explanation": "Risk transfer shifts responsibility to another entity."
-      },
-      {
-        "id": 774,
-        "question": "Which risk management strategy involves choosing not to engage in an activity that introduces risk?",
-        "correctAnswer": "Risk Avoidance",
-        "incorrectAnswers": [
-          "Risk Mitigation",
-          "Risk Transfer",
-          "Risk Acceptance",
-          "Risk Reduction"
-        ],
-        "explanation": "Avoidance eliminates risk by discontinuing risky activities."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 775,
-        "question": "Which risk management strategy involves acknowledging a risk and choosing not to take action against it?",
-        "correctAnswer": "Risk Acceptance",
-        "incorrectAnswers": [
-          "Risk Mitigation",
-          "Risk Transfer",
-          "Risk Avoidance",
-          "Risk Reduction"
-        ],
-        "explanation": "Risk acceptance is used when the cost of mitigation outweighs the risk."
-      },
-      {
-        "id": 776,
-        "question": "Which term describes the maximum level of risk an organization is willing to tolerate?",
-        "correctAnswer": "Risk Appetite",
-        "incorrectAnswers": [
-          "Risk Tolerance",
-          "Residual Risk",
-          "Inherent Risk",
-          "Exposure Factor"
-        ],
-        "explanation": "Risk appetite defines how much risk an organization is willing to accept."
-      },
-      {
-        "id": 777,
-        "question": "Which term describes the acceptable variation in performance relative to risk appetite?",
-        "correctAnswer": "Risk Tolerance",
-        "incorrectAnswers": [
-          "Risk Appetite",
-          "Residual Risk",
-          "Inherent Risk",
-          "Exposure Factor"
-        ],
-        "explanation": "Risk tolerance defines acceptable deviation from risk appetite."
-      },
-      {
-        "id": 778,
-        "question": "Which risk metric represents the natural level of risk before any controls are applied?",
-        "correctAnswer": "Inherent Risk",
-        "incorrectAnswers": [
-          "Residual Risk",
-          "Risk Appetite",
-          "Exposure Factor",
-          "Annualized Loss Expectancy"
-        ],
-        "explanation": "Inherent risk is the baseline risk before mitigation."
-      },
-      {
-        "id": 779,
-        "question": "Which risk analysis method combines numerical scoring with descriptive categories?",
-        "correctAnswer": "Hybrid Analysis",
-        "incorrectAnswers": [
-          "Quantitative Analysis",
-          "Qualitative Analysis",
-          "Heuristic Analysis",
-          "Statistical Analysis"
-        ],
-        "explanation": "Hybrid analysis blends numerical and descriptive risk evaluation."
-      }
-    ]
-  },
-  "Incident Response & Digital Forensics": {
-    "domain": "5.0 Security Program Management and Oversight",
-    "questions": [
-      {
-        "id": 780,
-        "question": "Which incident response phase focuses on preparing policies, communication plans, and tools before an incident occurs?",
-        "correctAnswer": "Preparation",
-        "incorrectAnswers": [
-          "Identification",
-          "Containment",
-          "Eradication",
-          "Recovery"
-        ],
-        "explanation": "Preparation ensures teams have the tools, training, and procedures ready before incidents occur."
-      },
-      {
-        "id": 781,
-        "question": "Which incident response phase involves detecting and determining whether an event qualifies as a security incident?",
+        "question": "In the AAA framework, providing your username is which step?",
         "correctAnswer": "Identification",
         "incorrectAnswers": [
-          "Preparation",
-          "Containment",
-          "Eradication",
-          "Recovery"
+          "Authentication",
+          "Authorization",
+          "Accounting"
         ],
-        "explanation": "Identification determines whether an event is a true security incident."
+        "explanation": "Identification is who you claim to be - usually your username."
       },
       {
-        "id": 782,
-        "question": "Which incident response phase focuses on preventing further damage by isolating affected systems?",
-        "correctAnswer": "Containment",
+        "question": "Proving you are who you say you are with a password is which step?",
+        "correctAnswer": "Authentication",
         "incorrectAnswers": [
           "Identification",
-          "Eradication",
-          "Recovery",
-          "Lessons Learned"
+          "Authorization",
+          "Accounting"
         ],
-        "explanation": "Containment limits the spread and impact of an incident."
+        "explanation": "Authentication proves your identity with a password and other factors."
       },
       {
-        "id": 783,
-        "question": "Which incident response phase involves removing malware, closing vulnerabilities, and eliminating the root cause?",
-        "correctAnswer": "Eradication",
+        "question": "Determining what access you have based on your identification and authentication is called what?",
+        "correctAnswer": "Authorization",
         "incorrectAnswers": [
-          "Containment",
-          "Recovery",
-          "Preparation",
-          "Identification"
+          "Accounting",
+          "Identification",
+          "Attestation"
         ],
-        "explanation": "Eradication removes the threat and fixes vulnerabilities."
+        "explanation": "Authorization determines what access you have."
       },
       {
-        "id": 784,
-        "question": "Which incident response phase focuses on restoring systems to normal operation and verifying they are functioning correctly?",
-        "correctAnswer": "Recovery",
+        "question": "Tracking login time, data sent and received, and logout time is which part of AAA?",
+        "correctAnswer": "Accounting",
         "incorrectAnswers": [
-          "Eradication",
-          "Containment",
-          "Preparation",
-          "Lessons Learned"
+          "Authorization",
+          "Authentication",
+          "Auditing"
         ],
-        "explanation": "Recovery restores systems and ensures they are safe to return to production."
+        "explanation": "Accounting tracks resources used."
       },
       {
-        "id": 785,
-        "question": "Which incident response phase involves documenting findings, analyzing performance, and improving future response processes?",
-        "correctAnswer": "Lessons Learned",
+        "question": "How can you truly authenticate a device that can't type a password?",
+        "correctAnswer": "Put a digitally signed certificate on the device",
         "incorrectAnswers": [
-          "Recovery",
-          "Eradication",
-          "Containment",
-          "Identification"
+          "Store a password in plaintext on the device",
+          "Use the device's MAC address only",
+          "Assign the device an administrator account"
         ],
-        "explanation": "Lessons learned improve future incident response effectiveness."
+        "explanation": "A digitally signed certificate on the device can be used as an authentication factor."
       },
       {
-        "id": 786,
-        "question": "Which digital forensics principle ensures that evidence is collected without altering its original state?",
-        "correctAnswer": "Forensic Integrity",
+        "question": "Why use an authorization model instead of mapping individual users to resources?",
+        "correctAnswer": "Direct user-to-resource mapping does not scale",
         "incorrectAnswers": [
-          "Chain of Custody",
-          "Data Preservation",
-          "Evidence Tagging",
-          "Imaging Procedures"
+          "Authorization models remove the need for authentication",
+          "Users can't access resources without a CA",
+          "Direct mapping is required for accounting"
         ],
-        "explanation": "Forensic integrity ensures evidence remains unchanged."
-      },
-      {
-        "id": 787,
-        "question": "Which forensic process documents every person who handled evidence and every action taken with it?",
-        "correctAnswer": "Chain of Custody",
-        "incorrectAnswers": [
-          "Forensic Integrity",
-          "Evidence Preservation",
-          "Imaging Procedures",
-          "Data Recovery"
-        ],
-        "explanation": "Chain of custody ensures evidence is legally admissible."
-      },
-      {
-        "id": 788,
-        "question": "Which forensic technique creates an exact bit-for-bit copy of a storage device for analysis?",
-        "correctAnswer": "Forensic Imaging",
-        "incorrectAnswers": [
-          "Data Carving",
-          "Memory Dumping",
-          "Log Correlation",
-          "Disk Cloning"
-        ],
-        "explanation": "Forensic imaging preserves original evidence by analyzing a copy."
-      },
-      {
-        "id": 789,
-        "question": "Which forensic artifact contains records of system events such as logins, errors, and security alerts?",
-        "correctAnswer": "System Logs",
-        "incorrectAnswers": [
-          "Disk Images",
-          "Memory Dumps",
-          "Packet Captures",
-          "Registry Keys"
-        ],
-        "explanation": "System logs provide critical information for incident investigation."
+        "explanation": "An authorization model adds abstraction, reduces complexity, and supports any number of users or resources."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 790,
-        "question": "Which forensic artifact captures the contents of RAM and is essential for analyzing active malware?",
-        "correctAnswer": "Memory Dump",
-        "incorrectAnswers": [
-          "Disk Image",
-          "Packet Capture",
-          "System Log",
-          "Registry Snapshot"
-        ],
-        "explanation": "Memory dumps capture volatile data such as running processes and malware."
-      },
-      {
-        "id": 791,
-        "question": "Which forensic technique extracts deleted files or fragments from unallocated disk space?",
-        "correctAnswer": "Data Carving",
-        "incorrectAnswers": [
-          "Disk Imaging",
-          "Memory Dumping",
-          "Log Analysis",
-          "Packet Inspection"
-        ],
-        "explanation": "Data carving recovers deleted or fragmented data."
-      },
-      {
-        "id": 792,
-        "question": "Which incident response metric measures how long it takes to detect an incident after it occurs?",
-        "correctAnswer": "Mean Time to Detect (MTTD)",
-        "incorrectAnswers": [
-          "Mean Time to Respond (MTTR)",
-          "Mean Time to Remediate",
-          "Mean Time to Recover",
-          "Incident Severity Index"
-        ],
-        "explanation": "MTTD measures detection speed."
-      },
-      {
-        "id": 793,
-        "question": "Which incident response metric measures how long it takes to contain and remediate an incident after detection?",
-        "correctAnswer": "Mean Time to Respond (MTTR)",
-        "incorrectAnswers": [
-          "Mean Time to Detect",
-          "Mean Time to Recover",
-          "Incident Severity Index",
-          "Response Efficiency Score"
-        ],
-        "explanation": "MTTR measures response and remediation speed."
-      },
-      {
-        "id": 794,
-        "question": "Which forensic artifact contains configuration data and historical information about installed software and user activity on Windows systems?",
-        "correctAnswer": "Registry Keys",
-        "incorrectAnswers": [
-          "System Logs",
-          "Packet Captures",
-          "Memory Dumps",
-          "Disk Images"
-        ],
-        "explanation": "Registry keys store configuration and activity data useful for investigations."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Security Policies, Standards & Procedures": {
-    "domain": "5.0 Security Program Management and Oversight",
+  "1.2 - Gap Analysis": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "5",
     "questions": [
       {
-        "id": 795,
-        "question": "Which governance document defines high-level organizational requirements and expectations for security?",
-        "correctAnswer": "Security Policy",
+        "question": "What is a gap analysis?",
+        "correctAnswer": "A comparison of where you are with where you want to be",
         "incorrectAnswers": [
-          "Standard",
-          "Procedure",
-          "Guideline",
-          "Playbook"
+          "A scan for open ports on the network",
+          "A test of backup restoration times",
+          "A review of firewall rule ordering"
         ],
-        "explanation": "Policies define overarching security requirements and organizational expectations."
+        "explanation": "The 'gap' is the difference between the current state and the goal."
       },
       {
-        "id": 796,
-        "question": "Which governance document provides mandatory, measurable rules that support policy implementation?",
-        "correctAnswer": "Standard",
+        "question": "Which standard covers information security management systems and can be used as a gap analysis baseline?",
+        "correctAnswer": "ISO/IEC 27001",
         "incorrectAnswers": [
-          "Policy",
-          "Procedure",
-          "Guideline",
-          "Checklist"
+          "NIST SP 800-61",
+          "RFC 3227",
+          "X.509"
         ],
-        "explanation": "Standards provide specific, enforceable requirements derived from policies."
+        "explanation": "ISO/IEC 27001 covers information security management systems."
       },
       {
-        "id": 797,
-        "question": "Which governance document provides step-by-step instructions for completing a specific task?",
-        "correctAnswer": "Procedure",
+        "question": "Which NIST publication is listed for protecting Controlled Unclassified Information in nonfederal systems?",
+        "correctAnswer": "NIST SP 800-171 Revision 2",
         "incorrectAnswers": [
-          "Policy",
-          "Standard",
-          "Guideline",
-          "Playbook"
+          "NIST SP 800-61 Revision 2",
+          "NIST SP 800-115",
+          "NIST SP 800-53"
         ],
-        "explanation": "Procedures describe detailed steps for performing tasks consistently."
+        "explanation": "The notes name NIST SP 800-171 Rev 2 as an end-goal framework."
       },
       {
-        "id": 798,
-        "question": "Which governance document provides recommended best practices but is not mandatory?",
-        "correctAnswer": "Guideline",
+        "question": "What does the final gap analysis report include?",
+        "correctAnswer": "A formal description of the current state and recommendations for meeting the baseline",
         "incorrectAnswers": [
-          "Policy",
-          "Standard",
-          "Procedure",
-          "Checklist"
+          "A list of all user passwords",
+          "A penetration test exploit log",
+          "A certificate revocation list"
         ],
-        "explanation": "Guidelines offer optional best practices to improve security posture."
+        "explanation": "The report describes the current state and recommends how to reach the baseline."
       },
       {
-        "id": 799,
-        "question": "Which governance document provides predefined actions and workflows for responding to specific incidents?",
-        "correctAnswer": "Playbook",
+        "question": "How long can a gap analysis take?",
+        "correctAnswer": "Weeks or months",
         "incorrectAnswers": [
-          "Policy",
-          "Standard",
-          "Procedure",
-          "Guideline"
+          "A few minutes",
+          "Exactly one business day",
+          "It runs automatically in real time"
         ],
-        "explanation": "Playbooks outline repeatable steps for incident response scenarios."
-      },
-      {
-        "id": 800,
-        "question": "Which type of policy defines how employees should use organizational technology resources such as email and internet access?",
-        "correctAnswer": "Acceptable Use Policy (AUP)",
-        "incorrectAnswers": [
-          "Privacy Policy",
-          "Access Control Policy",
-          "Retention Policy",
-          "Data Classification Policy"
-        ],
-        "explanation": "AUPs define acceptable behavior when using organizational technology."
-      },
-      {
-        "id": 801,
-        "question": "Which policy defines how data should be categorized based on sensitivity and required protections?",
-        "correctAnswer": "Data Classification Policy",
-        "incorrectAnswers": [
-          "Retention Policy",
-          "Access Control Policy",
-          "Acceptable Use Policy",
-          "Privacy Policy"
-        ],
-        "explanation": "Data classification policies define sensitivity levels and protection requirements."
-      },
-      {
-        "id": 802,
-        "question": "Which policy defines how long data must be stored and when it should be securely disposed of?",
-        "correctAnswer": "Retention Policy",
-        "incorrectAnswers": [
-          "Data Classification Policy",
-          "Access Control Policy",
-          "Acceptable Use Policy",
-          "Privacy Policy"
-        ],
-        "explanation": "Retention policies define storage duration and disposal requirements."
-      },
-      {
-        "id": 803,
-        "question": "Which policy defines how access to systems and data is granted, modified, and revoked?",
-        "correctAnswer": "Access Control Policy",
-        "incorrectAnswers": [
-          "Retention Policy",
-          "Acceptable Use Policy",
-          "Privacy Policy",
-          "Data Classification Policy"
-        ],
-        "explanation": "Access control policies govern how access is managed throughout the user lifecycle."
-      },
-      {
-        "id": 804,
-        "question": "Which governance document ensures that security requirements are consistently applied across all systems and environments?",
-        "correctAnswer": "Standard",
-        "incorrectAnswers": [
-          "Policy",
-          "Procedure",
-          "Guideline",
-          "Playbook"
-        ],
-        "explanation": "Standards enforce consistency across systems and environments."
+        "explanation": "It can be an extensive study with numerous participants."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 805,
-        "question": "Which governance document outlines how an organization protects personal data and complies with privacy regulations?",
-        "correctAnswer": "Privacy Policy",
-        "incorrectAnswers": [
-          "Acceptable Use Policy",
-          "Access Control Policy",
-          "Retention Policy",
-          "Data Classification Policy"
-        ],
-        "explanation": "Privacy policies define how personal data is collected, used, and protected."
-      },
-      {
-        "id": 807,
-        "question": "Which governance document is most useful during incident response for ensuring consistent actions?",
-        "correctAnswer": "Playbook",
-        "incorrectAnswers": [
-          "Policy",
-          "Standard",
-          "Procedure",
-          "Guideline"
-        ],
-        "explanation": "Playbooks provide predefined workflows for incident response."
-      },
-      {
-        "id": 809,
-        "question": "Which governance document defines the overarching security expectations that standards and procedures must follow?",
-        "correctAnswer": "Security Policy",
-        "incorrectAnswers": [
-          "Guideline",
-          "Procedure",
-          "Playbook",
-          "Checklist"
-        ],
-        "explanation": "Policies set the high-level direction for all other governance documents."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Security Awareness & Training": {
-    "domain": "5.0 Security Program Management and Oversight",
+  "1.2 - Zero Trust": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "5-6",
     "questions": [
       {
-        "id": 810,
-        "question": "Which security awareness concept teaches employees to verify unexpected requests for sensitive information?",
-        "correctAnswer": "Social Engineering Awareness",
+        "question": "What is the core principle of zero trust?",
+        "correctAnswer": "Nothing is inherently trusted; everything must be verified",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Physical Security Training",
-          "Data Classification Training",
-          "Incident Response Training"
+          "Everything inside the firewall is trusted",
+          "Only external traffic is inspected",
+          "Users are trusted after their first login"
         ],
-        "explanation": "Social engineering awareness helps employees identify fraudulent requests."
+        "explanation": "Zero trust is a holistic approach covering every device, process, and person."
       },
       {
-        "id": 811,
-        "question": "Which training topic teaches employees how to create strong, unique passwords and avoid reuse?",
-        "correctAnswer": "Password Hygiene",
+        "question": "Which plane processes frames and packets - forwarding, trunking, encrypting, and NAT?",
+        "correctAnswer": "Data plane",
         "incorrectAnswers": [
-          "Social Engineering Awareness",
-          "Physical Security Training",
-          "Data Handling Training",
-          "Incident Response Training"
+          "Control plane",
+          "Management plane",
+          "Policy plane"
         ],
-        "explanation": "Password hygiene focuses on creating and managing secure passwords."
+        "explanation": "The data plane processes the frames, packets, and network data."
       },
       {
-        "id": 812,
-        "question": "Which security awareness topic teaches employees how to properly store, transmit, and dispose of sensitive data?",
-        "correctAnswer": "Data Handling Training",
+        "question": "Which plane manages the actions of the data plane using routing tables, session tables, and NAT tables?",
+        "correctAnswer": "Control plane",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Social Engineering Awareness",
-          "Physical Security Training",
-          "Incident Response Training"
+          "Data plane",
+          "Infrastructure plane",
+          "Application plane"
         ],
-        "explanation": "Data handling training ensures employees protect sensitive information."
+        "explanation": "The control plane defines policies and determines how packets are forwarded."
       },
       {
-        "id": 813,
-        "question": "Which training topic teaches employees how to recognize phishing emails and avoid malicious links?",
-        "correctAnswer": "Phishing Awareness",
+        "question": "What is described as 'the gatekeeper' that allows, monitors, and terminates connections?",
+        "correctAnswer": "Policy Enforcement Point (PEP)",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Data Handling Training",
-          "Physical Security Training",
-          "Incident Response Training"
+          "Policy Engine",
+          "Policy Administrator",
+          "Certificate Authority"
         ],
-        "explanation": "Phishing awareness helps employees identify fraudulent emails."
+        "explanation": "The PEP is the gatekeeper and can consist of multiple components."
       },
       {
-        "id": 814,
-        "question": "Which security awareness concept teaches employees to lock their screens when leaving their workstation?",
-        "correctAnswer": "Physical Security Training",
+        "question": "Which component evaluates each access decision and can grant, deny, or revoke?",
+        "correctAnswer": "Policy Engine",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Incident Response Training"
+          "Policy Administrator",
+          "Policy Enforcement Point",
+          "Security zone"
         ],
-        "explanation": "Physical security training includes securing workstations and devices."
+        "explanation": "The Policy Engine evaluates access decisions based on policy and other information sources."
       },
       {
-        "id": 815,
-        "question": "Which training topic teaches employees how to report suspicious activity or potential security incidents?",
-        "correctAnswer": "Incident Reporting Training",
+        "question": "Which component communicates with the PEP and generates access tokens or credentials?",
+        "correctAnswer": "Policy Administrator",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Physical Security Training"
+          "Policy Engine",
+          "Subject",
+          "Enterprise resource"
         ],
-        "explanation": "Incident reporting training ensures employees know how to escalate issues."
+        "explanation": "The Policy Administrator tells the PEP to allow or disallow access."
       },
       {
-        "id": 816,
-        "question": "Which security awareness concept teaches employees to avoid plugging unknown USB devices into company systems?",
-        "correctAnswer": "Removable Media Safety",
+        "question": "The Policy Engine and Policy Administrator together make up what?",
+        "correctAnswer": "Policy Decision Point (PDP)",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Physical Security Training"
+          "Policy Enforcement Point (PEP)",
+          "Data plane",
+          "Security zone"
         ],
-        "explanation": "Removable media safety prevents malware infections from unknown devices."
+        "explanation": "The PDP contains the Policy Engine and Policy Administrator."
       },
       {
-        "id": 817,
-        "question": "Which training topic teaches employees how to identify and protect personally identifiable information (PII)?",
-        "correctAnswer": "Privacy Awareness",
+        "question": "Considering location, connection type, IP, and relationship to the organization when authenticating is called what?",
+        "correctAnswer": "Adaptive identity",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Physical Security Training",
-          "Incident Response Training"
+          "Threat scope reduction",
+          "Implicit trust",
+          "Policy-driven access control"
         ],
-        "explanation": "Privacy awareness focuses on protecting personal data."
+        "explanation": "Adaptive identity uses multiple risk indicators and can make authentication stronger if needed."
       },
       {
-        "id": 818,
-        "question": "Which security awareness concept teaches employees to avoid discussing sensitive information in public areas?",
-        "correctAnswer": "Confidentiality Awareness",
+        "question": "Decreasing the number of possible entry points is called what?",
+        "correctAnswer": "Threat scope reduction",
         "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Physical Security Training",
-          "Incident Response Training"
+          "Adaptive identity",
+          "Policy enforcement",
+          "Security zoning"
         ],
-        "explanation": "Confidentiality awareness prevents accidental disclosure of sensitive information."
-      },
-      {
-        "id": 819,
-        "question": "Which training topic teaches employees how to identify unsafe websites and avoid downloading untrusted software?",
-        "correctAnswer": "Safe Browsing Practices",
-        "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Incident Response Training"
-        ],
-        "explanation": "Safe browsing practices help employees avoid malicious websites and downloads."
+        "explanation": "Threat scope reduction decreases possible entry points."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 820,
-        "question": "Which security awareness concept teaches employees to verify the identity of individuals requesting physical access to secure areas?",
-        "correctAnswer": "Visitor Verification Training",
-        "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Incident Response Training"
-        ],
-        "explanation": "Visitor verification training prevents unauthorized physical access."
-      },
-      {
-        "id": 821,
-        "question": "Which training topic teaches employees how to identify signs of insider threats such as unusual behavior or unauthorized access attempts?",
-        "correctAnswer": "Insider Threat Awareness",
-        "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Physical Security Training"
-        ],
-        "explanation": "Insider threat awareness helps employees recognize risky behavior."
-      },
-      {
-        "id": 822,
-        "question": "Which security awareness concept teaches employees to avoid sharing sensitive information over unsecured communication channels?",
-        "correctAnswer": "Secure Communication Training",
-        "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Incident Response Training"
-        ],
-        "explanation": "Secure communication training ensures sensitive data is transmitted safely."
-      },
-      {
-        "id": 823,
-        "question": "Which training topic teaches employees how to identify malware symptoms such as slow performance or unexpected pop-ups?",
-        "correctAnswer": "Malware Awareness",
-        "incorrectAnswers": [
-          "Password Hygiene",
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Physical Security Training"
-        ],
-        "explanation": "Malware awareness helps employees recognize signs of infection."
-      },
-      {
-        "id": 824,
-        "question": "Which security awareness concept teaches employees to avoid reusing passwords across multiple accounts?",
-        "correctAnswer": "Credential Reuse Prevention",
-        "incorrectAnswers": [
-          "Phishing Awareness",
-          "Data Handling Training",
-          "Incident Response Training",
-          "Physical Security Training"
-        ],
-        "explanation": "Credential reuse prevention reduces risk from compromised passwords."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Business Continuity & Disaster Recovery (BC/DR)": {
-    "domain": "5.0 Security Program Management and Oversight",
+  "1.2 - Physical Security": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "7",
     "questions": [
       {
-        "id": 825,
-        "question": "Which BC/DR metric defines the maximum acceptable amount of data loss measured in time?",
-        "correctAnswer": "Recovery Point Objective (RPO)",
+        "question": "What is the purpose of bollards?",
+        "correctAnswer": "Allow people through while preventing cars and trucks",
         "incorrectAnswers": [
-          "Recovery Time Objective (RTO)",
-          "Mean Time to Recover (MTTR)",
-          "Maximum Tolerable Downtime (MTD)",
-          "Failover Threshold"
+          "Detect motion in large areas",
+          "Lock all doors when one opens",
+          "Record video of visitors"
         ],
-        "explanation": "RPO defines how much data loss is acceptable, measured in time."
+        "explanation": "Barricades/bollards channel people through a specific access point and prevent vehicles."
       },
       {
-        "id": 826,
-        "question": "Which BC/DR metric defines the maximum acceptable time to restore operations after a disruption?",
-        "correctAnswer": "Recovery Time Objective (RTO)",
+        "question": "In an access control vestibule, what typically happens when one door is open?",
+        "correctAnswer": "The other door cannot be unlocked",
         "incorrectAnswers": [
-          "Recovery Point Objective",
-          "Mean Time to Recover",
-          "Maximum Tolerable Downtime",
-          "Failover Threshold"
+          "All doors unlock automatically",
+          "An alarm sounds immediately",
+          "The badge reader is disabled"
         ],
-        "explanation": "RTO defines how quickly systems must be restored."
+        "explanation": "Vestibules manage control through an area, often one at a time."
       },
       {
-        "id": 827,
-        "question": "Which BC/DR metric defines the longest time an organization can tolerate a system outage before severe impact occurs?",
-        "correctAnswer": "Maximum Tolerable Downtime (MTD)",
+        "question": "What does two-person integrity/control ensure?",
+        "correctAnswer": "No single person has access to a physical asset",
         "incorrectAnswers": [
-          "RPO",
-          "RTO",
-          "MTTR",
-          "Failover Time"
+          "Two cameras cover every door",
+          "Badges are checked twice per day",
+          "Two passwords are required to log in"
         ],
-        "explanation": "MTD defines the maximum outage duration before unacceptable consequences."
+        "explanation": "Two-person control minimizes exposure to an attack."
       },
       {
-        "id": 828,
-        "question": "Which BC/DR strategy involves switching operations to a secondary system when the primary system fails?",
-        "correctAnswer": "Failover",
+        "question": "Which sensor detects movement across large areas?",
+        "correctAnswer": "Microwave",
         "incorrectAnswers": [
-          "Failback",
-          "Backup Rotation",
-          "Warm Site Activation",
-          "Redundancy"
+          "Pressure",
+          "Infrared",
+          "Ultrasonic"
         ],
-        "explanation": "Failover automatically or manually switches operations to a backup system."
+        "explanation": "Microwave sensors detect movement across large areas."
       },
       {
-        "id": 829,
-        "question": "Which BC/DR strategy involves returning operations from a backup system back to the primary system?",
-        "correctAnswer": "Failback",
+        "question": "Which sensor detects a change in force, such as floor and window sensors?",
+        "correctAnswer": "Pressure",
         "incorrectAnswers": [
-          "Failover",
-          "Backup Rotation",
-          "Warm Site Activation",
-          "Redundancy"
+          "Microwave",
+          "Infrared",
+          "Ultrasonic"
         ],
-        "explanation": "Failback restores operations to the primary system after recovery."
+        "explanation": "Pressure sensors detect a change in force."
       },
       {
-        "id": 830,
-        "question": "Which type of backup site is fully equipped and can take over operations immediately?",
-        "correctAnswer": "Hot Site",
+        "question": "Which sensor sends signals and receives reflected sound waves?",
+        "correctAnswer": "Ultrasonic",
         "incorrectAnswers": [
-          "Warm Site",
-          "Cold Site",
-          "Mobile Site",
-          "Cloud Site"
+          "Infrared",
+          "Microwave",
+          "Pressure"
         ],
-        "explanation": "Hot sites are fully operational and ready for immediate failover."
+        "explanation": "Ultrasonic sensors detect motion and collisions with reflected sound waves."
       },
       {
-        "id": 831,
-        "question": "Which type of backup site has partial infrastructure and requires some setup before becoming operational?",
-        "correctAnswer": "Warm Site",
+        "question": "Which camera feature can identify a license plate or face?",
+        "correctAnswer": "Object detection",
         "incorrectAnswers": [
-          "Hot Site",
-          "Cold Site",
-          "Mobile Site",
-          "Cloud Site"
+          "Motion recognition",
+          "Infrared lighting",
+          "Pressure sensing"
         ],
-        "explanation": "Warm sites have partial infrastructure and require configuration."
-      },
-      {
-        "id": 832,
-        "question": "Which type of backup site has no pre-installed equipment and requires full setup before use?",
-        "correctAnswer": "Cold Site",
-        "incorrectAnswers": [
-          "Hot Site",
-          "Warm Site",
-          "Mobile Site",
-          "Cloud Site"
-        ],
-        "explanation": "Cold sites require full setup and are the slowest to activate."
-      },
-      {
-        "id": 833,
-        "question": "Which BC/DR document outlines step-by-step instructions for restoring systems after a disaster?",
-        "correctAnswer": "Disaster Recovery Plan (DRP)",
-        "incorrectAnswers": [
-          "Business Continuity Plan",
-          "Incident Response Plan",
-          "Crisis Communication Plan",
-          "Continuity Playbook"
-        ],
-        "explanation": "DRPs provide detailed recovery procedures for systems and infrastructure."
-      },
-      {
-        "id": 834,
-        "question": "Which BC/DR document focuses on maintaining essential business operations during and after a disruption?",
-        "correctAnswer": "Business Continuity Plan (BCP)",
-        "incorrectAnswers": [
-          "Disaster Recovery Plan",
-          "Incident Response Plan",
-          "Continuity Playbook",
-          "Crisis Communication Plan"
-        ],
-        "explanation": "BCPs ensure critical business functions continue during disruptions."
+        "explanation": "Object detection can identify a license plate or face; motion recognition can alarm and alert."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 835,
-        "question": "Which BC/DR testing method involves walking through procedures without executing them?",
-        "correctAnswer": "Tabletop Exercise",
-        "incorrectAnswers": [
-          "Full Interruption Test",
-          "Parallel Test",
-          "Simulation Test",
-          "Failover Test"
-        ],
-        "explanation": "Tabletop exercises review procedures without actual system disruption."
-      },
-      {
-        "id": 836,
-        "question": "Which BC/DR testing method involves running backup systems alongside production without interrupting operations?",
-        "correctAnswer": "Parallel Test",
-        "incorrectAnswers": [
-          "Full Interruption Test",
-          "Tabletop Exercise",
-          "Simulation Test",
-          "Failover Test"
-        ],
-        "explanation": "Parallel tests validate backup systems while production continues."
-      },
-      {
-        "id": 837,
-        "question": "Which BC/DR testing method involves shutting down production systems to validate full recovery capabilities?",
-        "correctAnswer": "Full Interruption Test",
-        "incorrectAnswers": [
-          "Parallel Test",
-          "Tabletop Exercise",
-          "Simulation Test",
-          "Failover Test"
-        ],
-        "explanation": "Full interruption tests validate complete recovery but are high risk."
-      },
-      {
-        "id": 838,
-        "question": "Which BC/DR concept ensures that critical systems have redundant components to prevent single points of failure?",
-        "correctAnswer": "Redundancy",
-        "incorrectAnswers": [
-          "Failover",
-          "Backup Rotation",
-          "Warm Site Activation",
-          "Load Balancing"
-        ],
-        "explanation": "Redundancy prevents outages by duplicating critical components."
-      },
-      {
-        "id": 839,
-        "question": "Which BC/DR concept involves storing backup data in multiple geographic locations to reduce risk?",
-        "correctAnswer": "Geographic Redundancy",
-        "incorrectAnswers": [
-          "Cold Storage",
-          "Backup Rotation",
-          "Failover",
-          "Load Distribution"
-        ],
-        "explanation": "Geographic redundancy protects against regional disasters."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Security Controls & Frameworks": {
-    "domain": "5.0 Security Program Management and Oversight",
+  "1.2 - Deception and Disruption": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "7",
     "questions": [
       {
-        "id": 840,
-        "question": "Which security framework provides a prioritized set of controls designed to help organizations reduce cyber risk?",
-        "correctAnswer": "CIS Controls",
+        "question": "What is a honeynet?",
+        "correctAnswer": "A larger deception network built with one or more honeypots",
         "incorrectAnswers": [
-          "NIST CSF",
-          "ISO 27001",
-          "SOC 2",
-          "COBIT"
+          "A single fake file on a share",
+          "Fake API credentials",
+          "A firewall rule that blocks attackers"
         ],
-        "explanation": "CIS Controls offer a prioritized list of actions to reduce cyber risk."
+        "explanation": "Honeynets include servers, workstations, routers, switches, and firewalls."
       },
       {
-        "id": 841,
-        "question": "Which security framework provides a lifecycle-based approach with five core functions: Identify, Protect, Detect, Respond, Recover?",
-        "correctAnswer": "NIST Cybersecurity Framework (CSF)",
+        "question": "A file named passwords.txt placed on a share to alert when accessed is an example of what?",
+        "correctAnswer": "Honeyfile",
         "incorrectAnswers": [
-          "ISO 27001",
-          "CIS Controls",
-          "SOC 2",
-          "COBIT"
+          "Honeytoken",
+          "Honeynet",
+          "Honeypot"
         ],
-        "explanation": "NIST CSF organizes cybersecurity activities into five core functions."
+        "explanation": "Honeyfiles are bait; an alert is sent if the file is accessed."
       },
       {
-        "id": 842,
-        "question": "Which security standard focuses on establishing, implementing, maintaining, and improving an information security management system (ISMS)?",
-        "correctAnswer": "ISO 27001",
+        "question": "Fake API credentials that send a notification when used are an example of what?",
+        "correctAnswer": "Honeytoken",
         "incorrectAnswers": [
-          "NIST CSF",
-          "CIS Controls",
-          "SOC 2",
-          "PCI DSS"
+          "Honeyfile",
+          "Honeypot",
+          "Honeynet"
         ],
-        "explanation": "ISO 27001 defines requirements for an ISMS."
+        "explanation": "Honeytokens are traceable data - if stolen, you know where it came from."
       },
       {
-        "id": 843,
-        "question": "Which security framework is commonly used by service organizations to demonstrate security controls to customers?",
-        "correctAnswer": "SOC 2",
+        "question": "Who is the 'attacker' on a honeypot most likely to be?",
+        "correctAnswer": "A machine",
         "incorrectAnswers": [
-          "ISO 27001",
-          "NIST CSF",
-          "CIS Controls",
-          "COBIT"
+          "An insider threat",
+          "A penetration tester",
+          "A nation state employee"
         ],
-        "explanation": "SOC 2 evaluates security controls for service organizations."
+        "explanation": "The notes state the 'attacker' is probably a machine."
       },
       {
-        "id": 844,
-        "question": "Which security standard focuses on protecting cardholder data for organizations that process credit card transactions?",
-        "correctAnswer": "PCI DSS",
+        "question": "Which is listed as an example of a honeytoken?",
+        "correctAnswer": "A fake email address added to a contact list",
         "incorrectAnswers": [
-          "ISO 27001",
-          "SOC 2",
-          "NIST CSF",
-          "CIS Controls"
+          "A motion detector",
+          "An access control vestibule",
+          "A CRL"
         ],
-        "explanation": "PCI DSS defines requirements for securing cardholder data."
-      },
-      {
-        "id": 848,
-        "question": "Which type of control is designed to prevent security incidents from occurring?",
-        "correctAnswer": "Preventive Controls",
-        "incorrectAnswers": [
-          "Detective Controls",
-          "Corrective Controls",
-          "Compensating Controls",
-          "Administrative Controls"
-        ],
-        "explanation": "Preventive controls reduce the likelihood of incidents."
-      },
-      {
-        "id": 849,
-        "question": "Which type of control identifies and alerts on security incidents after they occur?",
-        "correctAnswer": "Detective Controls",
-        "incorrectAnswers": [
-          "Preventive Controls",
-          "Corrective Controls",
-          "Compensating Controls",
-          "Administrative Controls"
-        ],
-        "explanation": "Detective controls identify incidents through monitoring and alerts."
+        "explanation": "Other honeytoken examples include database records, browser cookies, and web page pixels."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 850,
-        "question": "Which type of control restores systems after a security incident?",
-        "correctAnswer": "Corrective Controls",
-        "incorrectAnswers": [
-          "Preventive Controls",
-          "Detective Controls",
-          "Compensating Controls",
-          "Administrative Controls"
-        ],
-        "explanation": "Corrective controls restore systems to normal operation."
-      },
-      {
-        "id": 851,
-        "question": "Which type of control provides an alternative when primary controls cannot be implemented?",
-        "correctAnswer": "Compensating Controls",
-        "incorrectAnswers": [
-          "Preventive Controls",
-          "Detective Controls",
-          "Corrective Controls",
-          "Administrative Controls"
-        ],
-        "explanation": "Compensating controls provide alternative protections."
-      },
-      {
-        "id": 852,
-        "question": "Which security framework focuses on aligning IT goals with business objectives?",
-        "correctAnswer": "COBIT",
-        "incorrectAnswers": [
-          "NIST CSF",
-          "ISO 27001",
-          "CIS Controls",
-          "SOC 2"
-        ],
-        "explanation": "COBIT focuses on governance and management of enterprise IT."
-      },
-      {
-        "id": 853,
-        "question": "Which security standard includes 114 controls organized into 14 categories?",
-        "correctAnswer": "ISO 27002",
-        "incorrectAnswers": [
-          "ISO 27001",
-          "NIST CSF",
-          "SOC 2",
-          "PCI DSS"
-        ],
-        "explanation": "ISO 27002 provides detailed security control guidance."
-      },
-      {
-        "id": 854,
-        "question": "Which NIST publication provides detailed security and privacy controls for federal information systems?",
-        "correctAnswer": "NIST SP 800-53",
-        "incorrectAnswers": [
-          "NIST SP 800-37",
-          "NIST SP 800-171",
-          "NIST CSF",
-          "NIST SP 800-30"
-        ],
-        "explanation": "NIST SP 800-53 defines comprehensive security and privacy controls."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Supply Chain & Third-Party Risk Management": {
-    "domain": "5.0 Security Program Management and Oversight",
+  "1.3 - Change Management": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "8",
     "questions": [
       {
-        "id": 855,
-        "question": "Which type of risk occurs when a vendor or supplier introduces vulnerabilities into an organization’s environment?",
-        "correctAnswer": "Supply Chain Risk",
+        "question": "Who gives approval for a change in the typical change approval process?",
+        "correctAnswer": "The change control board",
         "incorrectAnswers": [
-          "Operational Risk",
-          "Financial Risk",
-          "Compliance Risk",
-          "Insider Risk"
+          "The end user",
+          "The help desk",
+          "The data processor"
         ],
-        "explanation": "Supply chain risk arises when third parties introduce vulnerabilities."
+        "explanation": "The approval process includes getting approval from the change control board."
       },
       {
-        "id": 856,
-        "question": "Which document defines security requirements that vendors must meet before doing business with an organization?",
-        "correctAnswer": "Service-Level Agreement (SLA)",
+        "question": "What happens after the change is complete in the typical approval process?",
+        "correctAnswer": "Get end-user acceptance",
         "incorrectAnswers": [
-          "Memorandum of Understanding (MOU)",
-          "Statement of Work (SOW)",
-          "Master Service Agreement (MSA)",
-          "Non-Disclosure Agreement (NDA)"
+          "Delete the backout plan",
+          "Revoke all certificates",
+          "Disband the IT team"
         ],
-        "explanation": "SLAs define performance and security requirements for vendors."
+        "explanation": "The last step listed is end-user acceptance after the change is complete."
       },
       {
-        "id": 857,
-        "question": "Which document outlines confidentiality requirements to protect sensitive information shared with third parties?",
-        "correctAnswer": "Non-Disclosure Agreement (NDA)",
+        "question": "In the label printer example, who owns the change process?",
+        "correctAnswer": "The Shipping and Receiving department",
         "incorrectAnswers": [
-          "SLA",
-          "SOW",
-          "MOU",
-          "MSA"
+          "IT",
+          "The CEO",
+          "The printer vendor"
         ],
-        "explanation": "NDAs ensure sensitive information is not disclosed by third parties."
+        "explanation": "The owner manages the process; IT handles the actual change."
       },
       {
-        "id": 858,
-        "question": "Which document outlines the specific tasks, deliverables, and timelines for a vendor engagement?",
-        "correctAnswer": "Statement of Work (SOW)",
+        "question": "Who are stakeholders in change management?",
+        "correctAnswer": "Anyone impacted by the change",
         "incorrectAnswers": [
-          "SLA",
-          "NDA",
-          "MOU",
-          "MSA"
+          "Only the change control board",
+          "Only the IT team",
+          "Only external auditors"
         ],
-        "explanation": "SOWs define project-specific deliverables and timelines."
+        "explanation": "Stakeholders want input; a single change can affect one individual or the entire company."
       },
       {
-        "id": 859,
-        "question": "Which type of assessment evaluates a vendor’s security posture before onboarding?",
-        "correctAnswer": "Third-Party Risk Assessment",
+        "question": "What does an impact analysis determine?",
+        "correctAnswer": "A risk value such as high, medium, or low",
         "incorrectAnswers": [
-          "Penetration Test",
-          "Compliance Audit",
-          "Business Impact Analysis",
-          "Gap Assessment"
+          "The cost of the hardware",
+          "The encryption algorithm to use",
+          "The number of users in a group"
         ],
-        "explanation": "Third-party risk assessments evaluate vendor security before engagement."
+        "explanation": "Impact analysis also considers the risk of NOT making the change."
       },
       {
-        "id": 860,
-        "question": "Which security concept ensures that software components are tracked and verified to prevent tampering?",
-        "correctAnswer": "Software Bill of Materials (SBOM)",
+        "question": "Where should a change be tested before going to production?",
+        "correctAnswer": "A sandbox testing environment",
         "incorrectAnswers": [
-          "Code Signing",
-          "Version Control",
-          "Dependency Mapping",
-          "Secure Boot"
+          "The production network during business hours",
+          "A honeynet",
+          "A hot site"
         ],
-        "explanation": "SBOMs list all software components to ensure transparency and security."
+        "explanation": "A sandbox has no connection to the real world or production system."
       },
       {
-        "id": 861,
-        "question": "Which security control verifies the authenticity and integrity of software updates?",
-        "correctAnswer": "Code Signing",
+        "question": "What is a backout plan?",
+        "correctAnswer": "A way to revert your changes",
         "incorrectAnswers": [
-          "SBOM",
-          "Secure Boot",
-          "Dependency Scanning",
-          "Patch Management"
+          "A schedule for the maintenance window",
+          "A list of stakeholders",
+          "A request form for the change"
         ],
-        "explanation": "Code signing ensures updates come from trusted sources."
+        "explanation": "Always have a way to revert, and always have good backups."
       },
       {
-        "id": 862,
-        "question": "Which type of risk occurs when a vendor fails to meet regulatory or contractual security requirements?",
-        "correctAnswer": "Compliance Risk",
+        "question": "When are changes often best scheduled?",
+        "correctAnswer": "Overnight, during a maintenance window",
         "incorrectAnswers": [
-          "Operational Risk",
-          "Financial Risk",
-          "Supply Chain Risk",
-          "Strategic Risk"
+          "During peak business hours",
+          "During the retail holiday season",
+          "Whenever the technician is available"
         ],
-        "explanation": "Compliance risk arises when vendors fail to meet required standards."
-      },
-      {
-        "id": 863,
-        "question": "Which process involves continuously monitoring vendors to ensure they maintain required security controls?",
-        "correctAnswer": "Vendor Monitoring",
-        "incorrectAnswers": [
-          "Vendor Onboarding",
-          "Vendor Offboarding",
-          "Vendor Procurement",
-          "Vendor Negotiation"
-        ],
-        "explanation": "Vendor monitoring ensures ongoing compliance with security requirements."
-      },
-      {
-        "id": 864,
-        "question": "Which type of attack compromises a trusted vendor to infiltrate a target organization?",
-        "correctAnswer": "Supply Chain Attack",
-        "incorrectAnswers": [
-          "Phishing Attack",
-          "Man-in-the-Middle Attack",
-          "Watering Hole Attack",
-          "Credential Stuffing"
-        ],
-        "explanation": "Supply chain attacks exploit trusted third-party relationships."
+        "explanation": "Workday downtime would affect a large part of production; overnights are often better."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 865,
-        "question": "Which document outlines high-level cooperation terms between organizations without legally binding commitments?",
-        "correctAnswer": "Memorandum of Understanding (MOU)",
-        "incorrectAnswers": [
-          "SLA",
-          "SOW",
-          "NDA",
-          "MSA"
-        ],
-        "explanation": "MOUs define cooperative agreements without binding obligations."
-      },
-      {
-        "id": 866,
-        "question": "Which agreement defines long-term terms and conditions for ongoing vendor relationships?",
-        "correctAnswer": "Master Service Agreement (MSA)",
-        "incorrectAnswers": [
-          "SLA",
-          "SOW",
-          "NDA",
-          "MOU"
-        ],
-        "explanation": "MSAs govern long-term vendor relationships and expectations."
-      },
-      {
-        "id": 867,
-        "question": "Which security practice ensures that third-party access is limited to only what is necessary?",
-        "correctAnswer": "Least Privilege",
-        "incorrectAnswers": [
-          "Zero Trust",
-          "Network Segmentation",
-          "Access Recertification",
-          "Role-Based Access Control"
-        ],
-        "explanation": "Least privilege restricts vendor access to only what is required."
-      },
-      {
-        "id": 868,
-        "question": "Which process ensures that vendor accounts and access are removed when no longer needed?",
-        "correctAnswer": "Vendor Offboarding",
-        "incorrectAnswers": [
-          "Vendor Monitoring",
-          "Vendor Procurement",
-          "Vendor Assessment",
-          "Vendor Negotiation"
-        ],
-        "explanation": "Vendor offboarding removes access and terminates relationships securely."
-      },
-      {
-        "id": 869,
-        "question": "Which security concept requires verifying all vendor actions and access requests regardless of trust level?",
-        "correctAnswer": "Zero Trust",
-        "incorrectAnswers": [
-          "Least Privilege",
-          "Network Segmentation",
-          "Access Recertification",
-          "Vendor Monitoring"
-        ],
-        "explanation": "Zero Trust requires continuous verification of all access requests."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Secure Software Development (SDLC & DevSecOps)": {
-    "domain": "4.0 Cloud & Virtualization / 5.0 Security Program Management",
+  "1.3 - Technical Change Management": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "9",
     "questions": [
       {
-        "id": 870,
-        "question": "Which SDLC phase focuses on gathering business requirements and defining security needs?",
-        "correctAnswer": "Requirements Phase",
+        "question": "Change management is concerned with 'what' needs to change. What is the technical team concerned with?",
+        "correctAnswer": "'How' to change it",
         "incorrectAnswers": [
-          "Design Phase",
-          "Development Phase",
-          "Testing Phase",
-          "Deployment Phase"
+          "'Why' to change it",
+          "'Who' approves it",
+          "'When' to schedule it"
         ],
-        "explanation": "The requirements phase defines functional and security needs before development begins."
+        "explanation": "The technical team executes the plan."
       },
       {
-        "id": 871,
-        "question": "Which SDLC phase focuses on creating architecture diagrams, data flows, and security models?",
-        "correctAnswer": "Design Phase",
+        "question": "Which approach means nothing runs unless it's approved?",
+        "correctAnswer": "Allow list",
         "incorrectAnswers": [
-          "Requirements Phase",
-          "Development Phase",
-          "Testing Phase",
-          "Deployment Phase"
+          "Deny list",
+          "Sandbox",
+          "Version control"
         ],
-        "explanation": "The design phase creates the architecture and security blueprint for the application."
+        "explanation": "An allow list is very restrictive."
       },
       {
-        "id": 872,
-        "question": "Which SDLC phase involves writing code and implementing security controls such as input validation?",
-        "correctAnswer": "Development Phase",
+        "question": "Anti-virus and anti-malware typically work using which approach?",
+        "correctAnswer": "Deny list",
         "incorrectAnswers": [
-          "Design Phase",
-          "Testing Phase",
-          "Deployment Phase",
-          "Maintenance Phase"
+          "Allow list",
+          "Version control",
+          "Dependency list"
         ],
-        "explanation": "The development phase includes coding and implementing secure coding practices."
+        "explanation": "With a deny list, nothing on the 'bad list' can be executed."
       },
       {
-        "id": 873,
-        "question": "Which SDLC phase focuses on identifying vulnerabilities through methods such as static analysis and penetration testing?",
-        "correctAnswer": "Testing Phase",
+        "question": "Is a change approval permission to make any change?",
+        "correctAnswer": "No, the change control approval is very specific",
         "incorrectAnswers": [
-          "Requirements Phase",
-          "Design Phase",
-          "Development Phase",
-          "Deployment Phase"
+          "Yes, once approved anything can change",
+          "Yes, during the maintenance window",
+          "Only if the owner agrees"
         ],
-        "explanation": "The testing phase validates functionality and security through various testing methods."
+        "explanation": "Scope defines exactly which components are covered (restricted activities)."
       },
       {
-        "id": 874,
-        "question": "Which SDLC phase involves releasing the application into production and enabling monitoring?",
-        "correctAnswer": "Deployment Phase",
+        "question": "A service won't start without another active service. This is an example of what?",
+        "correctAnswer": "A dependency",
         "incorrectAnswers": [
-          "Testing Phase",
-          "Development Phase",
-          "Design Phase",
-          "Maintenance Phase"
+          "A legacy application",
+          "A restricted activity",
+          "Version control"
         ],
-        "explanation": "The deployment phase releases the application and activates monitoring controls."
+        "explanation": "Dependencies: to complete A, you must complete B."
       },
       {
-        "id": 875,
-        "question": "Which SDLC phase focuses on patching vulnerabilities, updating features, and maintaining security controls?",
-        "correctAnswer": "Maintenance Phase",
+        "question": "What allows you to track changes to a file or configuration over time and easily revert?",
+        "correctAnswer": "Version control",
         "incorrectAnswers": [
-          "Development Phase",
-          "Testing Phase",
-          "Deployment Phase",
-          "Requirements Phase"
+          "Allow list",
+          "Maintenance window",
+          "Impact analysis"
         ],
-        "explanation": "The maintenance phase ensures the application remains secure and functional over time."
+        "explanation": "Version control can apply to router configs, Windows patches, and registry entries."
       },
       {
-        "id": 876,
-        "question": "Which secure coding practice prevents attackers from injecting malicious input into applications?",
-        "correctAnswer": "Input Validation",
+        "question": "What is a characteristic of legacy applications?",
+        "correctAnswer": "Often no longer supported by the developer",
         "incorrectAnswers": [
-          "Code Signing",
-          "Secure Boot",
-          "Dependency Mapping",
-          "Session Tokenization"
+          "Always automatically patched",
+          "Never require documentation",
+          "Only run in the cloud"
         ],
-        "explanation": "Input validation ensures user input is safe before processing."
-      },
-      {
-        "id": 877,
-        "question": "Which secure coding practice ensures that sensitive data is not exposed in logs or error messages?",
-        "correctAnswer": "Error and Exception Handling",
-        "incorrectAnswers": [
-          "Input Validation",
-          "Code Signing",
-          "Secure Boot",
-          "Dependency Scanning"
-        ],
-        "explanation": "Proper error handling prevents leakage of sensitive information."
-      },
-      {
-        "id": 878,
-        "question": "Which DevSecOps practice integrates security testing into the CI/CD pipeline?",
-        "correctAnswer": "Shift Left Security",
-        "incorrectAnswers": [
-          "Shift Right Security",
-          "Blue-Green Deployment",
-          "Immutable Infrastructure",
-          "Runtime Hardening"
-        ],
-        "explanation": "Shift-left security moves testing earlier in the development process."
-      },
-      {
-        "id": 879,
-        "question": "Which automated security test analyzes source code without executing it?",
-        "correctAnswer": "Static Application Security Testing (SAST)",
-        "incorrectAnswers": [
-          "Dynamic Application Security Testing (DAST)",
-          "Interactive Application Security Testing (IAST)",
-          "Penetration Testing",
-          "Fuzzing"
-        ],
-        "explanation": "SAST analyzes code statically to find vulnerabilities early."
+        "explanation": "You become the support team - document the system and become the expert."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 880,
-        "question": "Which automated security test analyzes running applications to identify vulnerabilities?",
-        "correctAnswer": "Dynamic Application Security Testing (DAST)",
-        "incorrectAnswers": [
-          "Static Application Security Testing",
-          "Interactive Application Security Testing",
-          "Fuzzing",
-          "Code Review"
-        ],
-        "explanation": "DAST tests applications while running to identify runtime vulnerabilities."
-      },
-      {
-        "id": 881,
-        "question": "Which security testing method sends random or malformed input to applications to find unexpected behavior?",
-        "correctAnswer": "Fuzzing",
-        "incorrectAnswers": [
-          "SAST",
-          "DAST",
-          "Penetration Testing",
-          "Code Review"
-        ],
-        "explanation": "Fuzzing identifies crashes and vulnerabilities by sending malformed input."
-      },
-      {
-        "id": 882,
-        "question": "Which secure development practice ensures that third-party libraries are safe and up to date?",
-        "correctAnswer": "Dependency Scanning",
-        "incorrectAnswers": [
-          "Code Signing",
-          "Input Validation",
-          "Secure Boot",
-          "Runtime Monitoring"
-        ],
-        "explanation": "Dependency scanning identifies vulnerable or outdated libraries."
-      },
-      {
-        "id": 883,
-        "question": "Which DevSecOps concept ensures that infrastructure is deployed from code rather than manual configuration?",
-        "correctAnswer": "Infrastructure as Code (IaC)",
-        "incorrectAnswers": [
-          "Shift Left Security",
-          "Immutable Infrastructure",
-          "Blue-Green Deployment",
-          "Runtime Hardening"
-        ],
-        "explanation": "IaC automates infrastructure deployment using code."
-      },
-      {
-        "id": 884,
-        "question": "Which secure development practice ensures that applications are deployed in environments that cannot be modified after creation?",
-        "correctAnswer": "Immutable Infrastructure",
-        "incorrectAnswers": [
-          "Infrastructure as Code",
-          "Shift Left Security",
-          "Blue-Green Deployment",
-          "Runtime Hardening"
-        ],
-        "explanation": "Immutable infrastructure prevents configuration drift and unauthorized changes."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Vulnerability Management & Penetration Testing": {
-    "domain": "2.0 Threats, Vulnerabilities, and Mitigations / 5.0 Security Program Management",
+  "1.4 - Public Key Infrastructure": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "10",
     "questions": [
       {
-        "id": 885,
-        "question": "Which vulnerability management process involves identifying weaknesses in systems using automated tools?",
-        "correctAnswer": "Vulnerability Scanning",
+        "question": "How many keys does symmetric encryption use?",
+        "correctAnswer": "A single, shared key",
         "incorrectAnswers": [
-          "Penetration Testing",
-          "Threat Modeling",
-          "Risk Assessment",
-          "Code Review"
+          "A public and private key pair",
+          "Three or more keys",
+          "No keys"
         ],
-        "explanation": "Vulnerability scanning uses automated tools to detect weaknesses."
+        "explanation": "Symmetric encryption encrypts and decrypts with the same key (a shared secret)."
       },
       {
-        "id": 886,
-        "question": "Which vulnerability management process involves manually exploiting weaknesses to validate their impact?",
-        "correctAnswer": "Penetration Testing",
+        "question": "Which is a disadvantage of symmetric encryption?",
+        "correctAnswer": "It doesn't scale very well",
         "incorrectAnswers": [
-          "Vulnerability Scanning",
-          "Threat Modeling",
-          "Risk Assessment",
-          "Code Review"
+          "It is very slow",
+          "It requires two keys",
+          "The key can be derived from the public key"
         ],
-        "explanation": "Penetration testing validates vulnerabilities by attempting exploitation."
+        "explanation": "Symmetric keys can be challenging to distribute."
       },
       {
-        "id": 887,
-        "question": "Which vulnerability management metric measures how easily a vulnerability can be exploited?",
-        "correctAnswer": "Exploitability",
+        "question": "Compared to asymmetric encryption, symmetric encryption is:",
+        "correctAnswer": "Faster with less overhead",
         "incorrectAnswers": [
-          "Impact",
-          "Likelihood",
-          "Exposure Factor",
-          "Severity"
+          "Slower with more overhead",
+          "Identical in speed",
+          "Only used for digital signatures"
         ],
-        "explanation": "Exploitability indicates how easy it is for attackers to exploit a vulnerability."
+        "explanation": "Symmetric encryption is very fast and often combined with asymmetric encryption."
       },
       {
-        "id": 888,
-        "question": "Which scoring system is commonly used to rate the severity of vulnerabilities?",
-        "correctAnswer": "CVSS",
+        "question": "Which key is the only key that can decrypt data encrypted with a public key?",
+        "correctAnswer": "The matching private key",
         "incorrectAnswers": [
-          "NIST CSF",
-          "ISO 27001",
-          "CIS Controls",
-          "PCI DSS"
+          "The same public key",
+          "Any symmetric key",
+          "The CA's public key"
         ],
-        "explanation": "CVSS provides a standardized method for rating vulnerability severity."
+        "explanation": "In asymmetric encryption, the private key decrypts data encrypted with the public key."
       },
       {
-        "id": 889,
-        "question": "Which vulnerability management process involves prioritizing vulnerabilities based on severity and business impact?",
-        "correctAnswer": "Risk Prioritization",
+        "question": "Can you derive the private key from the public key?",
+        "correctAnswer": "No",
         "incorrectAnswers": [
-          "Threat Modeling",
-          "Patch Deployment",
-          "Asset Inventory",
-          "Configuration Review"
+          "Yes, with a hash",
+          "Yes, using the CA",
+          "Only with key stretching"
         ],
-        "explanation": "Risk prioritization determines which vulnerabilities to address first."
+        "explanation": "You can't derive the private key from the public key."
       },
       {
-        "id": 890,
-        "question": "Which type of penetration test provides testers with full knowledge of the target environment?",
-        "correctAnswer": "White Box Testing",
+        "question": "What is key escrow?",
+        "correctAnswer": "A third party holds your decryption keys",
         "incorrectAnswers": [
-          "Black Box Testing",
-          "Gray Box Testing",
-          "Blind Testing",
-          "Double-Blind Testing"
+          "Destroying old keys",
+          "Using two keys for one message",
+          "Sharing a public key on a website"
         ],
-        "explanation": "White box testing gives testers full internal knowledge of systems."
+        "explanation": "Key escrow can be a legitimate business arrangement under carefully controlled conditions."
       },
       {
-        "id": 891,
-        "question": "Which type of penetration test provides testers with no prior knowledge of the target environment?",
-        "correctAnswer": "Black Box Testing",
+        "question": "What does PKI refer to besides policies, procedures, hardware, software, and people?",
+        "correctAnswer": "The binding of public keys to people or devices",
         "incorrectAnswers": [
-          "White Box Testing",
-          "Gray Box Testing",
-          "Blind Testing",
-          "Double-Blind Testing"
+          "The encryption of hard drives",
+          "The hashing of passwords",
+          "The segmentation of networks"
         ],
-        "explanation": "Black box testing simulates an external attacker with no internal knowledge."
-      },
-      {
-        "id": 892,
-        "question": "Which type of penetration test provides testers with partial knowledge of the target environment?",
-        "correctAnswer": "Gray Box Testing",
-        "incorrectAnswers": [
-          "White Box Testing",
-          "Black Box Testing",
-          "Blind Testing",
-          "Double-Blind Testing"
-        ],
-        "explanation": "Gray box testing simulates an attacker with limited internal knowledge."
-      },
-      {
-        "id": 893,
-        "question": "Which penetration testing phase involves gathering publicly available information about the target?",
-        "correctAnswer": "Reconnaissance",
-        "incorrectAnswers": [
-          "Scanning",
-          "Exploitation",
-          "Reporting",
-          "Post-Exploitation"
-        ],
-        "explanation": "Reconnaissance collects information such as DNS records and open-source intel."
-      },
-      {
-        "id": 894,
-        "question": "Which penetration testing phase involves actively probing systems to identify open ports and services?",
-        "correctAnswer": "Scanning",
-        "incorrectAnswers": [
-          "Reconnaissance",
-          "Exploitation",
-          "Post-Exploitation",
-          "Reporting"
-        ],
-        "explanation": "Scanning identifies active services and potential attack vectors."
+        "explanation": "PKI is about digital certificates and trust - the certificate authority."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 895,
-        "question": "Which penetration testing phase involves attempting to exploit identified vulnerabilities?",
-        "correctAnswer": "Exploitation",
-        "incorrectAnswers": [
-          "Scanning",
-          "Reconnaissance",
-          "Reporting",
-          "Post-Exploitation"
-        ],
-        "explanation": "Exploitation tests whether vulnerabilities can be used to gain access."
-      },
-      {
-        "id": 896,
-        "question": "Which penetration testing phase involves maintaining access and pivoting to other systems?",
-        "correctAnswer": "Post-Exploitation",
-        "incorrectAnswers": [
-          "Exploitation",
-          "Scanning",
-          "Reconnaissance",
-          "Reporting"
-        ],
-        "explanation": "Post-exploitation assesses the impact of a successful compromise."
-      },
-      {
-        "id": 897,
-        "question": "Which penetration testing phase involves documenting findings, impacts, and remediation recommendations?",
-        "correctAnswer": "Reporting",
-        "incorrectAnswers": [
-          "Exploitation",
-          "Scanning",
-          "Reconnaissance",
-          "Post-Exploitation"
-        ],
-        "explanation": "Reporting provides detailed results and remediation guidance."
-      },
-      {
-        "id": 898,
-        "question": "Which vulnerability management process ensures that systems remain up to date with the latest fixes?",
-        "correctAnswer": "Patch Management",
-        "incorrectAnswers": [
-          "Asset Inventory",
-          "Threat Modeling",
-          "Code Review",
-          "Configuration Baseline"
-        ],
-        "explanation": "Patch management applies updates to fix vulnerabilities."
-      },
-      {
-        "id": 899,
-        "question": "Which vulnerability management process involves identifying critical systems and their associated risks?",
-        "correctAnswer": "Asset Inventory",
-        "incorrectAnswers": [
-          "Patch Management",
-          "Threat Modeling",
-          "Code Review",
-          "Configuration Baseline"
-        ],
-        "explanation": "Asset inventory identifies systems that require protection and monitoring."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Monitoring, Logging & Detection (SIEM, SOAR)": {
-    "domain": "3.0 Security Architecture / 5.0 Security Program Management",
+  "1.4 - Encrypting Data": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "11",
     "questions": [
       {
-        "id": 900,
-        "question": "Which security tool aggregates logs from multiple systems and correlates events to identify threats?",
-        "correctAnswer": "Security Information and Event Management (SIEM)",
+        "question": "BitLocker and FileVault are examples of what?",
+        "correctAnswer": "Full-disk encryption",
         "incorrectAnswers": [
-          "SOAR",
-          "EDR",
-          "NAC",
-          "Firewall"
+          "File-level encryption",
+          "Transport encryption",
+          "Hashing algorithms"
         ],
-        "explanation": "SIEM systems collect and correlate logs to detect security incidents."
+        "explanation": "Full-disk and partition/volume encryption include BitLocker and FileVault."
       },
       {
-        "id": 901,
-        "question": "Which security platform automates incident response workflows and integrates with SIEM systems?",
-        "correctAnswer": "Security Orchestration, Automation, and Response (SOAR)",
+        "question": "What is EFS?",
+        "correctAnswer": "Encrypting File System",
         "incorrectAnswers": [
-          "SIEM",
-          "EDR",
-          "IDS",
-          "UEBA"
+          "Encrypted Firewall Service",
+          "Extended File Signature",
+          "Enterprise File Storage"
         ],
-        "explanation": "SOAR automates response actions and integrates with SIEM alerts."
+        "explanation": "EFS is a file encryption option."
       },
       {
-        "id": 902,
-        "question": "Which type of monitoring detects unusual user behavior such as impossible travel or abnormal login patterns?",
-        "correctAnswer": "User and Entity Behavior Analytics (UEBA)",
+        "question": "Which database encryption method encrypts all database information with a symmetric key?",
+        "correctAnswer": "Transparent encryption",
         "incorrectAnswers": [
-          "SIEM",
-          "SOAR",
-          "EDR",
-          "IDS"
+          "Record-level encryption",
+          "Tokenization",
+          "Key stretching"
         ],
-        "explanation": "UEBA identifies anomalies in user and system behavior."
+        "explanation": "Record-level encryption instead encrypts individual columns with separate keys."
       },
       {
-        "id": 903,
-        "question": "Which type of detection system monitors network traffic for malicious activity but does not block it?",
-        "correctAnswer": "Intrusion Detection System (IDS)",
+        "question": "Which VPN type is listed for site-to-site connections?",
+        "correctAnswer": "IPsec",
         "incorrectAnswers": [
-          "IPS",
-          "Firewall",
-          "EDR",
-          "SIEM"
+          "SSL/TLS",
+          "HTTPS",
+          "EFS"
         ],
-        "explanation": "IDS detects malicious activity but does not block traffic."
+        "explanation": "Client-based VPN uses SSL/TLS; site-to-site uses IPsec."
       },
       {
-        "id": 904,
-        "question": "Which type of detection system monitors network traffic and can block malicious activity?",
-        "correctAnswer": "Intrusion Prevention System (IPS)",
+        "question": "In cryptography, what is usually the only thing an attacker doesn't know?",
+        "correctAnswer": "The key",
         "incorrectAnswers": [
-          "IDS",
-          "Firewall",
-          "EDR",
-          "SIEM"
+          "The algorithm",
+          "The ciphertext",
+          "The protocol"
         ],
-        "explanation": "IPS detects and blocks malicious traffic."
+        "explanation": "The algorithm is usually a known entity; keep your key private."
       },
       {
-        "id": 905,
-        "question": "Which type of log records authentication attempts, password changes, and account lockouts?",
-        "correctAnswer": "Authentication Logs",
+        "question": "What asymmetric key length does the notes describe as common?",
+        "correctAnswer": "3,072 bits or larger",
         "incorrectAnswers": [
-          "System Logs",
-          "Application Logs",
-          "Network Logs",
-          "Audit Logs"
+          "56 bits",
+          "128 bits",
+          "512 bits"
         ],
-        "explanation": "Authentication logs track login activity and credential events."
+        "explanation": "Asymmetric keys are larger than symmetric keys, which commonly are 128-bit or larger."
       },
       {
-        "id": 907,
-        "question": "Which type of log records events generated by software such as errors, warnings, and usage patterns?",
-        "correctAnswer": "Application Logs",
+        "question": "Hashing a password, then hashing the hash, and continuing is called what?",
+        "correctAnswer": "Key stretching",
         "incorrectAnswers": [
-          "System Logs",
-          "Authentication Logs",
-          "Network Logs",
-          "Audit Logs"
-        ],
-        "explanation": "Application logs track events within software applications."
-      },
-      {
-        "id": 908,
-        "question": "Which type of log records network activity such as connections, bandwidth usage, and packet flow?",
-        "correctAnswer": "Network Logs",
-        "incorrectAnswers": [
-          "System Logs",
-          "Authentication Logs",
-          "Application Logs",
-          "Audit Logs"
-        ],
-        "explanation": "Network logs track traffic patterns and connection activity."
-      },
-      {
-        "id": 909,
-        "question": "Which monitoring technique compares current activity to a baseline to detect anomalies?",
-        "correctAnswer": "Behavioral Monitoring",
-        "incorrectAnswers": [
-          "Signature-Based Detection",
-          "Heuristic Analysis",
-          "Packet Inspection",
-          "Log Rotation"
-        ],
-        "explanation": "Behavioral monitoring detects deviations from normal activity."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 910,
-        "question": "Which detection method identifies threats by matching known malicious patterns?",
-        "correctAnswer": "Signature-Based Detection",
-        "incorrectAnswers": [
-          "Behavioral Detection",
-          "Heuristic Detection",
-          "Anomaly Detection",
-          "Packet Filtering"
-        ],
-        "explanation": "Signature-based detection uses known threat signatures."
-      },
-      {
-        "id": 911,
-        "question": "Which detection method identifies threats by analyzing behavior rather than known signatures?",
-        "correctAnswer": "Anomaly Detection",
-        "incorrectAnswers": [
-          "Signature-Based Detection",
-          "Heuristic Detection",
-          "Packet Filtering",
-          "Log Parsing"
-        ],
-        "explanation": "Anomaly detection identifies deviations from normal patterns."
-      },
-      {
-        "id": 912,
-        "question": "Which security tool monitors endpoints for malicious activity and provides response capabilities?",
-        "correctAnswer": "Endpoint Detection and Response (EDR)",
-        "incorrectAnswers": [
-          "SIEM",
-          "SOAR",
-          "IDS",
-          "Firewall"
-        ],
-        "explanation": "EDR monitors endpoints and provides response actions."
-      },
-      {
-        "id": 913,
-        "question": "Which SIEM feature reduces alert fatigue by grouping related events into a single incident?",
-        "correctAnswer": "Event Correlation",
-        "incorrectAnswers": [
-          "Log Aggregation",
-          "Threat Intelligence",
-          "Alert Forwarding",
-          "Packet Capture"
-        ],
-        "explanation": "Event correlation groups related alerts to identify meaningful incidents."
-      },
-      {
-        "id": 914,
-        "question": "Which SOAR capability allows automated actions such as blocking IPs or disabling accounts?",
-        "correctAnswer": "Automated Response",
-        "incorrectAnswers": [
-          "Event Correlation",
-          "Log Aggregation",
-          "Threat Intelligence",
-          "Packet Capture"
-        ],
-        "explanation": "SOAR automates response actions to reduce manual workload."
-      }
-    ]
-  },
-  "Cryptographic Operations (Advanced)": {
-    "domain": "1.0 General Security Concepts / 3.0 Security Architecture",
-    "questions": [
-      {
-        "id": 916,
-        "question": "Which cryptographic algorithm type uses the same key for both encryption and decryption?",
-        "correctAnswer": "Symmetric Encryption",
-        "incorrectAnswers": [
-          "Asymmetric Encryption",
-          "Hashing",
-          "Digital Signing",
-          "Key Stretching"
-        ],
-        "explanation": "Symmetric encryption uses a shared secret key."
-      },
-      {
-        "id": 919,
-        "question": "Which hashing algorithm is considered secure and widely used for digital signatures?",
-        "correctAnswer": "SHA-256",
-        "incorrectAnswers": [
-          "MD5",
-          "SHA-1",
-          "DES",
-          "AES"
-        ],
-        "explanation": "SHA-256 is a secure hashing algorithm used in modern cryptography."
-      },
-      {
-        "id": 921,
-        "question": "Which cryptographic mechanism verifies the authenticity and integrity of a message using a private key?",
-        "correctAnswer": "Digital Signature",
-        "incorrectAnswers": [
-          "Hashing",
-          "Symmetric Encryption",
-          "Key Stretching",
-          "Obfuscation"
-        ],
-        "explanation": "Digital signatures verify authenticity using private keys."
-      },
-      {
-        "id": 923,
-        "question": "Which encryption algorithm is widely used for securing data at rest and supports 128-, 192-, and 256-bit keys?",
-        "correctAnswer": "AES",
-        "incorrectAnswers": [
-          "DES",
-          "RSA",
-          "ECC",
-          "Blowfish"
-        ],
-        "explanation": "AES is the modern standard for symmetric encryption."
-      }
-    ],
-    "bonusQuestions": [
-      {
-        "id": 925,
-        "question": "Which cryptographic concept strengthens weak passwords by increasing computational difficulty?",
-        "correctAnswer": "Key Stretching",
-        "incorrectAnswers": [
-          "Hashing",
           "Salting",
-          "Obfuscation",
-          "Key Exchange"
+          "Tokenization",
+          "Key escrow"
         ],
-        "explanation": "Key stretching increases the time required to brute-force passwords."
+        "explanation": "Key stretching makes a weak key stronger so brute force takes much longer."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "1.4 - Key Exchange": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "11-12",
+    "questions": [
+      {
+        "question": "Sharing a symmetric key by telephone, courier, or in person is what type of key exchange?",
+        "correctAnswer": "Out-of-band",
+        "incorrectAnswers": [
+          "In-band",
+          "Ephemeral",
+          "Escrowed"
+        ],
+        "explanation": "Out-of-band means not sending the symmetric key over the network."
       },
       {
-        "id": 926,
-        "question": "Which cryptographic technique adds random data to passwords before hashing to prevent rainbow table attacks?",
-        "correctAnswer": "Salting",
+        "question": "In-band key exchange commonly uses what to deliver a symmetric key?",
+        "correctAnswer": "Asymmetric encryption",
         "incorrectAnswers": [
-          "Key Stretching",
           "Hashing",
-          "Obfuscation",
-          "Key Derivation"
+          "Steganography",
+          "Tokenization"
         ],
-        "explanation": "Salting prevents attackers from using precomputed hash tables."
+        "explanation": "Protect the key with additional encryption - use asymmetric encryption to deliver a symmetric key."
       },
       {
-        "id": 927,
-        "question": "Which asymmetric algorithm is known for strong security with smaller key sizes?",
-        "correctAnswer": "Elliptic Curve Cryptography (ECC)",
+        "question": "A client encrypts a random symmetric key with the server's public key. What is this key called once shared?",
+        "correctAnswer": "A session key",
         "incorrectAnswers": [
-          "RSA",
+          "A root key",
+          "A private key",
+          "An escrow key"
+        ],
+        "explanation": "The server decrypts the shared key and uses it to encrypt data."
+      },
+      {
+        "question": "Session keys that need to be changed often are called what?",
+        "correctAnswer": "Ephemeral keys",
+        "incorrectAnswers": [
+          "Persistent keys",
+          "Wildcard keys",
+          "Escrowed keys"
+        ],
+        "explanation": "Session keys must be changed often and be unpredictable."
+      },
+      {
+        "question": "To create the same symmetric key without sending it, Bob combines his private key with what?",
+        "correctAnswer": "Alice's public key",
+        "incorrectAnswers": [
+          "Alice's private key",
+          "His own public key",
+          "The CA's private key"
+        ],
+        "explanation": "Alice combines her private key with Bob's public key to create the same symmetric key."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "1.4 - Encryption Technologies": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "12",
+    "questions": [
+      {
+        "question": "What is a Trusted Platform Module (TPM)?",
+        "correctAnswer": "Cryptography hardware on a device",
+        "incorrectAnswers": [
+          "A cloud key management service",
+          "A network firewall",
+          "A certificate revocation list"
+        ],
+        "explanation": "A TPM is a specification for cryptographic functions built into the device."
+      },
+      {
+        "question": "Which is commonly stored securely in a TPM?",
+        "correctAnswer": "BitLocker keys",
+        "incorrectAnswers": [
+          "Firewall logs",
+          "User email",
+          "CRL files"
+        ],
+        "explanation": "TPM versatile memory stores storage keys, hardware config info, and BitLocker keys."
+      },
+      {
+        "question": "Which device is used in large environments with clusters and redundant power to store thousands of keys?",
+        "correctAnswer": "Hardware Security Module (HSM)",
+        "incorrectAnswers": [
+          "Trusted Platform Module (TPM)",
+          "USB security key",
+          "Secure cookie"
+        ],
+        "explanation": "HSMs are high-end cryptographic hardware, as a plug-in card or separate device."
+      },
+      {
+        "question": "What does an HSM's cryptographic accelerator do?",
+        "correctAnswer": "Offloads CPU overhead from other devices",
+        "incorrectAnswers": [
+          "Speeds up network routing",
+          "Compresses backups",
+          "Scans for malware"
+        ],
+        "explanation": "Cryptographic accelerators offload crypto processing."
+      },
+      {
+        "question": "Why use a key management system?",
+        "correctAnswer": "Manage all keys from a centralized manager, separate from the data",
+        "incorrectAnswers": [
+          "Store passwords in plaintext",
+          "Replace the need for encryption",
+          "Distribute malware signatures"
+        ],
+        "explanation": "It creates keys, associates them with users, rotates them, and logs use."
+      },
+      {
+        "question": "What is a secure enclave?",
+        "correctAnswer": "A protected hardware processor isolated from the main processor",
+        "incorrectAnswers": [
+          "A locked server room",
+          "A segmented VLAN",
+          "An encrypted USB drive"
+        ],
+        "explanation": "It has its own boot ROM, true RNG, real-time memory encryption, and root cryptographic keys."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "1.4 - Obfuscation": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "13",
+    "questions": [
+      {
+        "question": "Hiding information inside an image is called what?",
+        "correctAnswer": "Steganography",
+        "incorrectAnswers": [
+          "Tokenization",
+          "Data masking",
+          "Key stretching"
+        ],
+        "explanation": "Steganography is Greek for 'concealed writing'."
+      },
+      {
+        "question": "In steganography, what is the covertext?",
+        "correctAnswer": "The container document or file",
+        "incorrectAnswers": [
+          "The hidden message",
+          "The encryption key",
+          "The hash value"
+        ],
+        "explanation": "The covertext holds the hidden message."
+      },
+      {
+        "question": "Yellow dots on printers are an example of what?",
+        "correctAnswer": "Invisible watermarks (steganography)",
+        "incorrectAnswers": [
+          "Tokenization",
+          "Data masking",
+          "Hashing"
+        ],
+        "explanation": "Invisible watermarks are a common steganography technique."
+      },
+      {
+        "question": "Replacing a credit card number with a temporary non-sensitive placeholder is called what?",
+        "correctAnswer": "Tokenization",
+        "incorrectAnswers": [
+          "Encryption",
+          "Hashing",
+          "Steganography"
+        ],
+        "explanation": "An attacker capturing the token can't use it later."
+      },
+      {
+        "question": "How is a token related to the original data?",
+        "correctAnswer": "It isn't mathematically related",
+        "incorrectAnswers": [
+          "It is a hash of the original",
+          "It is encrypted with a symmetric key",
+          "It is encrypted with a public key"
+        ],
+        "explanation": "Tokenization isn't encryption or hashing, so there's no encryption overhead."
+      },
+      {
+        "question": "Hiding some of the original data, such as showing only part of a number, is called what?",
+        "correctAnswer": "Data masking",
+        "incorrectAnswers": [
+          "Tokenization",
+          "Steganography",
+          "Key escrow"
+        ],
+        "explanation": "Masking protects PII; the data may still be intact in storage."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "1.4 - Hashing and Digital Signatures": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "14",
+    "questions": [
+      {
+        "question": "Can you recover the original message from a hash?",
+        "correctAnswer": "No, it is a one-way trip",
+        "incorrectAnswers": [
+          "Yes, with the public key",
+          "Yes, with the private key",
+          "Yes, with the salt"
+        ],
+        "explanation": "Hashes are one-way."
+      },
+      {
+        "question": "What size string does a hash function create?",
+        "correctAnswer": "A fixed size",
+        "incorrectAnswers": [
+          "The same size as the input",
+          "Double the input size",
+          "A random size each time"
+        ],
+        "explanation": "Hash functions take input of any size and create a fixed-size string."
+      },
+      {
+        "question": "What is a hash collision?",
+        "correctAnswer": "Different inputs creating the same hash",
+        "incorrectAnswers": [
+          "Two users with the same password",
+          "A hash that can be reversed",
+          "Two keys that decrypt the same data"
+        ],
+        "explanation": "The hash should be unique; if different inputs match, it's a collision."
+      },
+      {
+        "question": "Which hash algorithm has a collision problem found in 1996?",
+        "correctAnswer": "MD5",
+        "incorrectAnswers": [
+          "SHA-256",
           "AES",
-          "DES",
-          "Blowfish"
+          "GCMP"
         ],
-        "explanation": "ECC provides strong encryption with smaller keys."
+        "explanation": "Don't use MD5 for anything important."
       },
       {
-        "id": 928,
-        "question": "Which cryptographic attack analyzes physical characteristics such as power consumption to extract keys?",
-        "correctAnswer": "Side-Channel Attack",
+        "question": "What is a salt?",
+        "correctAnswer": "Random data added to a password when hashing",
         "incorrectAnswers": [
-          "Replay Attack",
-          "Collision Attack",
-          "Brute Force Attack",
-          "Man-in-the-Middle Attack"
+          "A shared symmetric key",
+          "A list of revoked certificates",
+          "A hash of a hash"
         ],
-        "explanation": "Side-channel attacks exploit physical leakage from cryptographic devices."
+        "explanation": "Every user gets their own random salt, commonly stored with the password."
       },
       {
-        "id": 929,
-        "question": "Which cryptographic protocol secures web traffic using certificates and encryption?",
-        "correctAnswer": "TLS",
+        "question": "Which attack won't work against salted hashes?",
+        "correctAnswer": "Rainbow tables",
+        "incorrectAnswers": [
+          "Phishing",
+          "Keylogging",
+          "Shoulder surfing"
+        ],
+        "explanation": "Salting slows brute force but doesn't completely stop it."
+      },
+      {
+        "question": "What is the recommended way to store passwords?",
+        "correctAnswer": "A salted hash",
+        "incorrectAnswers": [
+          "Plaintext",
+          "Encrypted with the public key",
+          "Tokenized"
+        ],
+        "explanation": "Compare hashes during authentication; nobody knows your actual password."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "1.4 - Blockchain Technology": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "15",
+    "questions": [
+      {
+        "question": "What is a blockchain?",
+        "correctAnswer": "A distributed ledger",
+        "incorrectAnswers": [
+          "A centralized database",
+          "A certificate authority",
+          "A firewall rulebase"
+        ],
+        "explanation": "Everyone on the blockchain network maintains the ledger."
+      },
+      {
+        "question": "What is added to each new block of verified transactions?",
+        "correctAnswer": "A hash calculated from previous blocks",
+        "incorrectAnswers": [
+          "A private key",
+          "A digital certificate",
+          "A salt"
+        ],
+        "explanation": "The hash links the new block to the chain."
+      },
+      {
+        "question": "What happens if a block in the chain is altered?",
+        "correctAnswer": "The chain no longer matches the network and is rejected",
+        "incorrectAnswers": [
+          "The network accepts the change",
+          "Only that block is deleted",
+          "The CA revokes the block"
+        ],
+        "explanation": "Its hash and all following hashes change."
+      },
+      {
+        "question": "Which is listed as a practical application of blockchain?",
+        "correctAnswer": "Supply chain monitoring",
+        "incorrectAnswers": [
+          "Wireless jamming",
+          "Full-disk encryption",
+          "RFID cloning"
+        ],
+        "explanation": "Others: payment processing, digital identification, digital voting."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "1.4 - Certificates": {
+    "domain": "1.0 - General Security Concepts",
+    "page": "16-17",
+    "questions": [
+      {
+        "question": "What is the standard format for digital certificates?",
+        "correctAnswer": "X.509",
+        "incorrectAnswers": [
+          "X.500",
+          "802.1X",
+          "RFC 3227"
+        ],
+        "explanation": "X.509 includes serial number, version, signature algorithm, issuer, public key, and extensions."
+      },
+      {
+        "question": "What does a certificate signing request (CSR) send to the CA?",
+        "correctAnswer": "The public key",
+        "incorrectAnswers": [
+          "The private key",
+          "Both keys",
+          "A symmetric session key"
+        ],
+        "explanation": "Create a key pair, then send the public key to the CA to be signed."
+      },
+      {
+        "question": "What is a root of trust?",
+        "correctAnswer": "An inherently trusted component",
+        "incorrectAnswers": [
+          "A revoked certificate",
+          "A self-signed user password",
+          "An open proxy"
+        ],
+        "explanation": "Examples include an HSM, secure enclave, or Certificate Authority."
+      },
+      {
+        "question": "Which extension allows a certificate to support many different domains?",
+        "correctAnswer": "Subject Alternative Name (SAN)",
+        "incorrectAnswers": [
+          "OCSP stapling",
+          "Certificate Revocation List",
+          "Key escrow"
+        ],
+        "explanation": "SAN lists additional identification information."
+      },
+      {
+        "question": "*.professormesser.com is an example of what?",
+        "correctAnswer": "A wildcard certificate",
+        "incorrectAnswers": [
+          "A self-signed certificate",
+          "A CSR",
+          "A CRL entry"
+        ],
+        "explanation": "A wildcard domain applies to all server names in a domain."
+      },
+      {
+        "question": "Who maintains the Certificate Revocation List (CRL)?",
+        "correctAnswer": "The Certificate Authority",
+        "incorrectAnswers": [
+          "The browser",
+          "The end user",
+          "The web server"
+        ],
+        "explanation": "The CRL can contain many revocations in a large file."
+      },
+      {
+        "question": "Which vulnerability in 2014 caused every affected web server certificate to be replaced?",
+        "correctAnswer": "Heartbleed",
+        "incorrectAnswers": [
+          "POODLE",
+          "WannaCry",
+          "Mirai"
+        ],
+        "explanation": "Heartbleed (CVE-2014-0160) put OpenSSL private keys at risk."
+      },
+      {
+        "question": "What is OCSP stapling?",
+        "correctAnswer": "The certificate holder's server includes CA-signed status in the SSL/TLS handshake",
+        "incorrectAnswers": [
+          "The browser downloads the full CRL",
+          "The CA answers every client request directly",
+          "The certificate is signed by itself"
+        ],
+        "explanation": "OCSP stapling provides scalability for OCSP checks."
+      },
+      {
+        "question": "Compared to downloading a CRL, OCSP is:",
+        "correctAnswer": "More efficient",
+        "incorrectAnswers": [
+          "Less efficient",
+          "Unsupported over HTTP",
+          "Only used by the CA"
+        ],
+        "explanation": "OCSP messages are usually sent to an OCSP responder via HTTP."
+      },
+      {
+        "question": "How do internal devices trust certificates issued by your own private CA?",
+        "correctAnswer": "Install the CA certificate/trusted chain on all devices",
+        "incorrectAnswers": [
+          "Purchase a certificate from a third-party CA",
+          "Disable certificate checks",
+          "Use a wildcard on every device"
+        ],
+        "explanation": "Devices then trust any certificate signed by the internal CA."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.1 - Threat Actors": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "18-19",
+    "questions": [
+      {
+        "question": "Which threat actor commonly operates as an Advanced Persistent Threat (APT) with massive resources?",
+        "correctAnswer": "Nation state",
+        "incorrectAnswers": [
+          "Unskilled attacker",
+          "Hacktivist",
+          "Shadow IT"
+        ],
+        "explanation": "Nation states have the highest sophistication."
+      },
+      {
+        "question": "Which threat actor runs pre-made scripts without knowing what's really happening?",
+        "correctAnswer": "Unskilled attacker",
+        "incorrectAnswers": [
+          "Organized crime",
+          "Nation state",
+          "Insider threat"
+        ],
+        "explanation": "Unskilled attackers have limited resources and look for low-hanging fruit."
+      },
+      {
+        "question": "Which threat actor is described as 'a hacker with a purpose'?",
+        "correctAnswer": "Hacktivist",
+        "incorrectAnswers": [
+          "Shadow IT",
+          "Organized crime",
+          "Unskilled attacker"
+        ],
+        "explanation": "Hacktivists are motivated by philosophy, revenge, disruption - DoS, defacing, document release."
+      },
+      {
+        "question": "Which threat actor is internal, has extensive resources, and institutional knowledge?",
+        "correctAnswer": "Insider threat",
+        "incorrectAnswers": [
+          "Hacktivist",
+          "Nation state",
+          "Unskilled attacker"
+        ],
+        "explanation": "Insider threats are motivated by revenge and financial gain."
+      },
+      {
+        "question": "What is the primary motivation of organized crime?",
+        "correctAnswer": "Money",
+        "incorrectAnswers": [
+          "Philosophical beliefs",
+          "War",
+          "Revenge"
+        ],
+        "explanation": "Organized crime is almost always external and very sophisticated."
+      },
+      {
+        "question": "Employees building their own infrastructure around the IT organization is known as what?",
+        "correctAnswer": "Shadow IT",
+        "incorrectAnswers": [
+          "Insider threat",
+          "Hacktivism",
+          "Organized crime"
+        ],
+        "explanation": "Shadow IT is internal, with limited resources and medium sophistication."
+      },
+      {
+        "question": "Which worm destroyed about 1,000 nuclear centrifuges?",
+        "correctAnswer": "Stuxnet",
+        "incorrectAnswers": [
+          "Mirai",
+          "WannaCry",
+          "agent.btz"
+        ],
+        "explanation": "The notes cite Stuxnet as a nation-state example."
+      },
+      {
+        "question": "Which is NOT one of the listed threat actor attributes?",
+        "correctAnswer": "Operating system used",
+        "incorrectAnswers": [
+          "Internal/external",
+          "Resources/funding",
+          "Level of sophistication/capability"
+        ],
+        "explanation": "The attributes are internal/external, resources/funding, and sophistication."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.2 - Common Threat Vectors": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "19-20",
+    "questions": [
+      {
+        "question": "Why can SVG image files be a threat vector?",
+        "correctAnswer": "The image is described in XML and can contain HTML injection or JavaScript",
+        "incorrectAnswers": [
+          "They are always executable files",
+          "They disable the firewall",
+          "They contain macros"
+        ],
+        "explanation": "Browsers must provide input validation to avoid running malicious code."
+      },
+      {
+        "question": "Which is an example of a file-based threat vector?",
+        "correctAnswer": "Microsoft Office documents with macros",
+        "incorrectAnswers": [
+          "War dialing",
+          "Vishing",
+          "Rogue access points"
+        ],
+        "explanation": "File-based vectors include PDFs, ZIP/RAR files, and Office documents."
+      },
+      {
+        "question": "Which is listed as a voice call vector?",
+        "correctAnswer": "War dialing",
+        "incorrectAnswers": [
+          "SVG images",
+          "Sideloading",
+          "Typosquatting"
+        ],
+        "explanation": "Voice vectors include vishing, spam over IP, war dialing, and call tampering."
+      },
+      {
+        "question": "Why are USB devices a significant threat vector?",
+        "correctAnswer": "They can get around the firewall and infect air-gapped networks",
+        "incorrectAnswers": [
+          "They always require administrator access",
+          "They can only be used for keyboards",
+          "They encrypt network traffic"
+        ],
+        "explanation": "USB devices can act as keyboards and allow data exfiltration with zero bandwidth."
+      },
+      {
+        "question": "What is a characteristic of agentless software?",
+        "correctAnswer": "No installed executable; compromised server software affects all users",
+        "incorrectAnswers": [
+          "It must be updated on every client",
+          "It runs only on air-gapped networks",
+          "It is always unsupported"
+        ],
+        "explanation": "The client runs a new instance each time."
+      },
+      {
+        "question": "Which wired weakness is listed as an unsecure network vector?",
+        "correctAnswer": "No 802.1X",
+        "incorrectAnswers": [
+          "Using WPA3",
+          "Using SSH",
+          "Using HTTPS"
+        ],
+        "explanation": "Unsecure wired interfaces lack 802.1X."
+      },
+      {
+        "question": "How did attackers get into Target's network in 2013?",
+        "correctAnswer": "Through a third-party HVAC vendor",
+        "incorrectAnswers": [
+          "Through a zero-day in the POS",
+          "Through an open S3 bucket",
+          "Through a watering hole site"
+        ],
+        "explanation": "This is a supply chain vector - gaining access using a vendor."
+      },
+      {
+        "question": "Why are unsupported systems a threat vector?",
+        "correctAnswer": "They aren't patched",
+        "incorrectAnswers": [
+          "They require 802.1X",
+          "They use too much bandwidth",
+          "They can't connect to the Internet"
+        ],
+        "explanation": "Even the manufacturer won't help with outdated operating systems."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.2 - Phishing": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "20",
+    "questions": [
+      {
+        "question": "Phishing is described as social engineering with a touch of what?",
+        "correctAnswer": "Spoofing",
+        "incorrectAnswers": [
+          "Encryption",
+          "Jamming",
+          "Hashing"
+        ],
+        "explanation": "Phishing is often delivered by email, text, etc."
+      },
+      {
+        "question": "Using professormessor.com instead of professormesser.com is an example of what?",
+        "correctAnswer": "Typosquatting",
+        "incorrectAnswers": [
+          "Pretexting",
+          "Vishing",
+          "Domain hijacking"
+        ],
+        "explanation": "Typosquatting is a type of URL hijacking."
+      },
+      {
+        "question": "What is pretexting?",
+        "correctAnswer": "Lying to get information, as a character in a situation the attacker creates",
+        "incorrectAnswers": [
+          "Phishing by text message",
+          "Registering misspelled domains",
+          "Sending fake invoices by fax"
+        ],
+        "explanation": "Example: 'Hi, we're calling from Visa regarding an automated payment...'"
+      },
+      {
+        "question": "What is smishing?",
+        "correctAnswer": "Phishing done by text message",
+        "incorrectAnswers": [
+          "Phishing done over the phone",
+          "Phishing through social media ads",
+          "Phishing using QR codes on posters"
+        ],
+        "explanation": "Smishing is SMS phishing."
+      },
+      {
+        "question": "Sending emails with updated bank information to modify wire transfers is an example of what?",
+        "correctAnswer": "Business email compromise",
+        "incorrectAnswers": [
+          "Watering hole attack",
+          "Brand impersonation",
+          "Spraying attack"
+        ],
+        "explanation": "Business email compromise takes advantage of trust in email sources."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.2 - Impersonation": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "21",
+    "questions": [
+      {
+        "question": "What is eliciting information?",
+        "correctAnswer": "Extracting information from a victim without them realizing it",
+        "incorrectAnswers": [
+          "Asking directly for a password",
+          "Copying an RFID badge",
+          "Scanning open ports"
+        ],
+        "explanation": "It's often seen with vishing and uses well-documented psychological techniques."
+      },
+      {
+        "question": "An attacker opening a loan in your name is which type of identity fraud?",
+        "correctAnswer": "Loan fraud",
+        "incorrectAnswers": [
+          "Bank fraud",
+          "Credit card fraud",
+          "Government benefits fraud"
+        ],
+        "explanation": "Loan fraud uses your information for a loan or lease."
+      },
+      {
+        "question": "What is the best way to protect against impersonation?",
+        "correctAnswer": "Always verify before revealing info",
+        "incorrectAnswers": [
+          "Disable JavaScript",
+          "Use a wildcard certificate",
+          "Enable 802.11w"
+        ],
+        "explanation": "Call back and verify through third parties; never volunteer information."
+      },
+      {
+        "question": "Which is an impersonation tactic from the notes?",
+        "correctAnswer": "Attacking the victim as someone higher in rank",
+        "incorrectAnswers": [
+          "Flooding the network with traffic",
+          "Injecting a DLL",
+          "Overwriting a buffer"
+        ],
+        "explanation": "Attackers also throw technical details around or act like a buddy."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.2 - Watering Hole Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "21",
+    "questions": [
+      {
+        "question": "What is a watering hole attack?",
+        "correctAnswer": "Infecting a third-party site the victim group commonly uses",
+        "incorrectAnswers": [
+          "Flooding a site with traffic",
+          "Sending a malicious USB drive",
+          "Registering a misspelled domain"
+        ],
+        "explanation": "The attackers have the mountain come to them."
+      },
+      {
+        "question": "When is an attacker most likely to use a watering hole attack?",
+        "correctAnswer": "When the target's network is well secured and users avoid phishing",
+        "incorrectAnswers": [
+          "When the target has no firewall",
+          "When default passwords are in use",
+          "When the attacker has physical access"
+        ],
+        "explanation": "It requires research into which sites the victims use."
+      },
+      {
+        "question": "In the 2017 watering hole attack on financial regulators, who received the malicious JavaScript?",
+        "correctAnswer": "Only IP addresses matching banks and financial institutions",
+        "incorrectAnswers": [
+          "Every visitor worldwide",
+          "Only mobile devices",
+          "Only government agencies"
+        ],
+        "explanation": "The attack targeted specific victims."
+      },
+      {
+        "question": "What is the recommended defense against watering hole attacks?",
+        "correctAnswer": "Defense-in-depth",
+        "incorrectAnswers": [
+          "Disabling all websites",
+          "Using only symmetric encryption",
+          "Removing all user accounts"
+        ],
+        "explanation": "Layered defense: firewalls, IPS, and anti-malware signature updates."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.2 - Other Social Engineering Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "22",
+    "questions": [
+      {
+        "question": "What are influence campaigns used for?",
+        "correctAnswer": "Swaying public opinion on political and social issues",
+        "incorrectAnswers": [
+          "Stealing session cookies",
+          "Encrypting user data",
+          "Bypassing 802.1X"
+        ],
+        "explanation": "They disseminate factually incorrect information to create confusion and division."
+      },
+      {
+        "question": "What is brand impersonation?",
+        "correctAnswer": "Pretending to be a well-known brand",
+        "incorrectAnswers": [
+          "Copying an RFID badge",
+          "Hijacking a domain registration",
+          "Running a fake access point"
+        ],
+        "explanation": "Attackers create thousands of impersonated sites; malware infection is almost guaranteed."
+      },
+      {
+        "question": "In the misinformation process, what happens after real users share the message?",
+        "correctAnswer": "Mass media picks up the story",
+        "incorrectAnswers": [
+          "Fake users are created",
+          "The content is deleted",
+          "The domain is hijacked"
+        ],
+        "explanation": "Create fake users, create content, post, amplify, real users share, mass media picks it up."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Memory Injections": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "22",
+    "questions": [
+      {
+        "question": "What is memory injection?",
+        "correctAnswer": "Adding code into the memory of an existing process",
+        "incorrectAnswers": [
+          "Overwriting a buffer with too much data",
+          "Adding SQL commands to a query",
+          "Sending random input to an application"
+        ],
+        "explanation": "It hides malware inside a process and gets that process's rights and permissions."
+      },
+      {
+        "question": "In DLL injection, what do attackers inject into the target process?",
+        "correctAnswer": "A path to a malicious DLL",
+        "incorrectAnswers": [
+          "A SQL query",
+          "A session cookie",
+          "A digital certificate"
+        ],
+        "explanation": "The malicious DLL then runs as part of the target process."
+      },
+      {
+        "question": "Why is DLL injection one of the most popular memory injection methods?",
+        "correctAnswer": "It is relatively easy to implement",
+        "incorrectAnswers": [
+          "It requires physical access",
+          "It only works on Linux",
+          "It can't be detected by forensics"
+        ],
+        "explanation": "The notes describe DLL injection as relatively easy to implement."
+      },
+      {
+        "question": "What can find malicious code running in memory?",
+        "correctAnswer": "Memory forensics",
+        "incorrectAnswers": [
+          "A CRL",
+          "A wildcard certificate",
+          "Key stretching"
+        ],
+        "explanation": "Malware runs in memory, so memory forensics can find it."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Buffer Overflows": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "23",
+    "questions": [
+      {
+        "question": "What is a buffer overflow?",
+        "correctAnswer": "Overwriting a buffer of memory so it spills into other memory areas",
+        "incorrectAnswers": [
+          "Sending too many emails to a server",
+          "Filling a disk with log files",
+          "Running two transactions at once"
+        ],
+        "explanation": "In the example, overflowing variable A changes variable B."
+      },
+      {
+        "question": "What should developers perform to prevent buffer overflows?",
+        "correctAnswer": "Bounds checking",
+        "incorrectAnswers": [
+          "Key stretching",
+          "Tokenization",
+          "Code signing"
+        ],
+        "explanation": "Attackers spend a lot of time looking for openings."
+      },
+      {
+        "question": "What makes a buffer overflow really useful to an attacker?",
+        "correctAnswer": "It is repeatable",
+        "incorrectAnswers": [
+          "It crashes the system",
+          "It requires no technical skill",
+          "It is encrypted"
+        ],
+        "explanation": "A repeatable overflow means the system can be compromised."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Race Conditions": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "23",
+    "questions": [
+      {
+        "question": "What does TOCTOU stand for?",
+        "correctAnswer": "Time-of-check to time-of-use",
+        "incorrectAnswers": [
+          "Type-of-code to type-of-user",
+          "Time-of-change to time-of-update",
+          "Test-of-control to test-of-use"
+        ],
+        "explanation": "Something might happen between the check and the use."
+      },
+      {
+        "question": "In the bank race condition example, what is the outcome when both users transfer $50 at the same time?",
+        "correctAnswer": "Account A has $50 and Account B has $200",
+        "incorrectAnswers": [
+          "Account A has $0 and Account B has $200",
+          "Account A has $100 and Account B has $100",
+          "Account A has $50 and Account B has $150"
+        ],
+        "explanation": "Without proper validation, both users see $100 in Account A."
+      },
+      {
+        "question": "What happened to the Mars rover Spirit in January 2004?",
+        "correctAnswer": "A race condition caused a reboot loop",
+        "incorrectAnswers": [
+          "A buffer overflow erased its memory",
+          "It was hit by a DDoS attack",
+          "Its certificate was revoked"
+        ],
+        "explanation": "It rebooted because of a file system problem, which caused another reboot."
+      },
+      {
+        "question": "What did the Pwn2Own 2023 TOCTOU attack against a Tesla Model 3 achieve?",
+        "correctAnswer": "Elevated privileges to root",
+        "incorrectAnswers": [
+          "Disabled the brakes",
+          "Cloned the key fob",
+          "Encrypted the infotainment data"
+        ],
+        "explanation": "The attack used Bluetooth against the infotainment system."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Malicious Updates": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "24",
+    "questions": [
+      {
+        "question": "What best practice should you follow before installing updates?",
+        "correctAnswer": "Always have a known-good backup",
+        "incorrectAnswers": [
+          "Disable anti-virus",
+          "Click the first update pop-up",
+          "Install from any download site"
+        ],
+        "explanation": "Also install from trusted sources."
+      },
+      {
+        "question": "Where should you get an update rather than a random update button?",
+        "correctAnswer": "The developer's site directly",
+        "incorrectAnswers": [
+          "An open proxy",
+          "A file share",
+          "A pop-up during web browsing"
+        ],
+        "explanation": "Don't trust a random update button or downloaded file."
+      },
+      {
+        "question": "In the SolarWinds Orion attack, how did attackers distribute malicious code?",
+        "correctAnswer": "They added it to the vendor's software updates",
+        "incorrectAnswers": [
+          "Through a phishing email to every customer",
+          "Through a watering hole site",
+          "By cloning RFID badges"
+        ],
+        "explanation": "Attackers gained access to the SolarWinds development system."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Operating System Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "24",
+    "questions": [
+      {
+        "question": "When is Microsoft's Patch Tuesday?",
+        "correctAnswer": "The 2nd Tuesday of each month",
+        "incorrectAnswers": [
+          "The 1st Monday of each month",
+          "Every Tuesday",
+          "The last Friday of each quarter"
+        ],
+        "explanation": "Other companies have similar schedules."
+      },
+      {
+        "question": "Why may patches require testing before deployment?",
+        "correctAnswer": "A patch might break something else",
+        "incorrectAnswers": [
+          "Patches are always malicious",
+          "Testing removes the need for a reboot",
+          "Patches can't be rolled back"
+        ],
+        "explanation": "Also have a fallback plan and save data before a reboot."
+      },
+      {
+        "question": "Why is the operating system a very big target?",
+        "correctAnswer": "Everyone has one and it has millions of lines of code",
+        "incorrectAnswers": [
+          "It is never updated",
+          "It has no authentication",
+          "It always runs as root"
+        ],
+        "explanation": "More code means more opportunities for a security issue."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - SQL Injection": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "25",
+    "questions": [
+      {
+        "question": "What enables code injection?",
+        "correctAnswer": "Bad programming that doesn't properly handle input and output",
+        "incorrectAnswers": [
+          "Weak Wi-Fi encryption",
+          "Expired certificates",
+          "Missing UPS"
+        ],
+        "explanation": "Many data types can be injected: HTML, SQL, XML, LDAP."
+      },
+      {
+        "question": "Adding OR '1' = '1' to a query is an example of what?",
+        "correctAnswer": "SQL injection",
+        "incorrectAnswers": [
+          "Cross-site scripting",
+          "Buffer overflow",
+          "Directory traversal"
+        ],
+        "explanation": "It makes the query return all rows."
+      },
+      {
+        "question": "Where can SQL injection often be executed?",
+        "correctAnswer": "In a web browser form or field",
+        "incorrectAnswers": [
+          "Only from the database console",
+          "Only with physical access",
+          "Only over Bluetooth"
+        ],
+        "explanation": "SQLi puts your own SQL requests into an existing application."
+      },
+      {
+        "question": "Which of these could a successful SQL injection result in?",
+        "correctAnswer": "Viewing or deleting database information",
+        "incorrectAnswers": [
+          "Cloning an RFID badge",
+          "Jamming a wireless network",
+          "Revoking a certificate"
+        ],
+        "explanation": "It could also add users or cause denial of service."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Cross-site Scripting": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "25-26",
+    "questions": [
+      {
+        "question": "XSS takes advantage of what trust?",
+        "correctAnswer": "The trust a user has for a site",
+        "incorrectAnswers": [
+          "The trust a site has for the user's browser",
+          "The trust between two CAs",
+          "The trust between VLANs"
+        ],
+        "explanation": "XSS is one of the most common web app vulnerabilities."
+      },
+      {
+        "question": "Which scripting language does XSS commonly use?",
+        "correctAnswer": "JavaScript",
+        "incorrectAnswers": [
+          "SQL",
+          "PowerShell",
+          "Python"
+        ],
+        "explanation": "XSS commonly uses JavaScript."
+      },
+      {
+        "question": "A malicious script embedded in an emailed link that executes in the victim's browser is which XSS type?",
+        "correctAnswer": "Non-persistent (reflected)",
+        "incorrectAnswers": [
+          "Persistent (stored)",
+          "DOM-based only",
+          "Server-side"
+        ],
+        "explanation": "The search box is a common source."
+      },
+      {
+        "question": "An attacker posts a malicious payload to a social network that everyone viewing receives. Which XSS type?",
+        "correctAnswer": "Persistent (stored)",
+        "incorrectAnswers": [
+          "Non-persistent (reflected)",
+          "CSRF",
+          "SQL injection"
+        ],
+        "explanation": "It has no specific target and can spread quickly."
+      },
+      {
+        "question": "What flaw did researcher Aaron Guzman find in Subaru's system in 2017?",
+        "correctAnswer": "Tokens that never expire plus an XSS vulnerability",
+        "incorrectAnswers": [
+          "Open S3 bucket",
+          "Default router passwords",
+          "Weak WPA2 PSK"
+        ],
+        "explanation": "A valid token allowed any service request, including adding an email to someone else's account."
+      },
+      {
+        "question": "Which is listed as a developer protection against XSS?",
+        "correctAnswer": "Validate input",
+        "incorrectAnswers": [
+          "Enable OCSP stapling",
+          "Use key escrow",
+          "Use a wildcard certificate"
+        ],
+        "explanation": "Don't allow users to add their own scripts to an input field."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Hardware Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "26",
+    "questions": [
+      {
+        "question": "What is firmware?",
+        "correctAnswer": "The software inside of the hardware",
+        "incorrectAnswers": [
+          "A host-based firewall",
+          "A type of malware",
+          "A cloud service"
+        ],
+        "explanation": "Only vendors can fix their hardware's firmware."
+      },
+      {
+        "question": "What is the difference between EOL and EOSL?",
+        "correctAnswer": "EOSL means support is no longer available",
+        "incorrectAnswers": [
+          "EOL means no more security patches ever",
+          "EOSL means the product is still sold",
+          "They mean the same thing"
+        ],
+        "explanation": "EOL: stops selling but may still support. EOSL: no ongoing patches or updates."
+      },
+      {
+        "question": "How can legacy platforms running end-of-life software be protected?",
+        "correctAnswer": "Additional firewall rules and IPS signatures",
+        "incorrectAnswers": [
+          "Disable all logging",
+          "Remove the passwords",
+          "Move them to the screened subnet with no rules"
+        ],
+        "explanation": "The risk needs to be compared to the return."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Virtualization Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "27",
+    "questions": [
+      {
+        "question": "What is VM escape?",
+        "correctAnswer": "Breaking out of a VM to interact with the host or hardware",
+        "incorrectAnswers": [
+          "Copying a VM snapshot",
+          "Shutting down a hypervisor",
+          "Moving a VM to the cloud"
+        ],
+        "explanation": "Once you escape, you can control the host and other guest VMs."
+      },
+      {
+        "question": "In the 2017 Pwn2Own VM escape, which bug allowed escape to the host?",
+        "correctAnswer": "Hardware simulation bug in VMware",
+        "incorrectAnswers": [
+          "JavaScript engine bug in Edge",
+          "Windows 10 kernel bug",
+          "OpenSSL Heartbleed"
+        ],
+        "explanation": "The Edge and Windows kernel bugs compromised the guest first."
+      },
+      {
+        "question": "What is the resource reuse risk in virtualization?",
+        "correctAnswer": "Data can inadvertently be shared between VMs",
+        "incorrectAnswers": [
+          "VMs can't share RAM",
+          "The hypervisor can't allocate storage",
+          "VMs must use the same OS"
+        ],
+        "explanation": "The hypervisor reuses resources like RAM between VMs."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Cloud-specific Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "27",
+    "questions": [
+      {
+        "question": "What percentage of organizations aren't using MFA for management console users, per the notes?",
+        "correctAnswer": "76%",
+        "incorrectAnswers": [
+          "63%",
+          "25%",
+          "90%"
+        ],
+        "explanation": "63% of code in production is unpatched."
+      },
+      {
+        "question": "Writing to unauthorized memory areas, causing data corruption, crashing, or code execution, is what?",
+        "correctAnswer": "Out of bounds write",
+        "incorrectAnswers": [
+          "Directory traversal",
+          "Authentication bypass",
+          "Denial of service"
+        ],
+        "explanation": "It's listed as a cloud service attack."
+      },
+      {
+        "question": "Which vulnerabilities are listed as web application attacks that increased?",
+        "correctAnswer": "Log4j and Spring Cloud Function",
+        "incorrectAnswers": [
+          "Heartbleed and POODLE",
+          "Mirai and Stuxnet",
+          "WannaCry and agent.btz"
+        ],
+        "explanation": "They are easy to exploit with extensive rewards."
+      },
+      {
+        "question": "Vulnerabilities rated high or critical have what CVSS score?",
+        "correctAnswer": "7.0 or higher",
+        "incorrectAnswers": [
+          "3.0 or higher",
+          "5.0 or lower",
+          "Exactly 10"
+        ],
+        "explanation": "The notes reference CVSS >= 7.0."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Supply Chain Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "28",
+    "questions": [
+      {
+        "question": "How did the 2013 Target breach begin?",
+        "correctAnswer": "An HVAC firm was infected and its VPN credentials stolen",
+        "incorrectAnswers": [
+          "A POS vendor shipped malware",
+          "A nation state hacked the CEO",
+          "An open S3 bucket was found"
+        ],
+        "explanation": "Attackers then infected every cash register at 1,800 stores."
+      },
+      {
+        "question": "What is a recommended practice for hardware providers?",
+        "correctAnswer": "Use a small supplier base",
+        "incorrectAnswers": [
+          "Buy from the cheapest reseller",
+          "Avoid checking digital signatures",
+          "Change vendors every month"
+        ],
+        "explanation": "A small supplier base gives tighter control of vendors."
+      },
+      {
+        "question": "What was found in the July 2022 DHS arrest?",
+        "correctAnswer": "Over $1 billion of counterfeit Cisco products",
+        "incorrectAnswers": [
+          "Malware in SolarWinds updates",
+          "A Target HVAC breach",
+          "Mirai botnet source code"
+        ],
+        "explanation": "Knock-offs made in China were sold as authentic Cisco products."
+      },
+      {
+        "question": "Is open source software immune from supply chain attacks?",
+        "correctAnswer": "No, the source code itself can be compromised",
+        "incorrectAnswers": [
+          "Yes, because anyone can read it",
+          "Yes, if it is signed",
+          "Only if hosted in the cloud"
+        ],
+        "explanation": "Open source is not immune."
+      },
+      {
+        "question": "How many customers used SolarWinds Orion?",
+        "correctAnswer": "18,000",
+        "incorrectAnswers": [
+          "1,800",
+          "300",
+          "3.6 million"
+        ],
+        "explanation": "Including Fortune 500 and the US Federal Government."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.3 - Misconfiguration Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "28-29",
+    "questions": [
+      {
+        "question": "What exposed 14 million Verizon records in June 2017?",
+        "correctAnswer": "A third party left an Amazon S3 repository open",
+        "incorrectAnswers": [
+          "A buffer overflow",
+          "Default router passwords",
+          "A rogue access point"
+        ],
+        "explanation": "This is an open permissions misconfiguration."
+      },
+      {
+        "question": "What is recommended instead of direct login to the root account?",
+        "correctAnswer": "Use su or sudo",
+        "incorrectAnswers": [
+          "Use Telnet",
+          "Share the root password",
+          "Use a guest account"
+        ],
+        "explanation": "Disable direct login to root."
+      },
+      {
+        "question": "Which protocol sends all traffic in the clear?",
+        "correctAnswer": "Telnet",
         "incorrectAnswers": [
           "SSH",
-          "IPsec",
-          "S/MIME",
-          "PGP"
+          "SFTP",
+          "IMAPS"
         ],
-        "explanation": "TLS secures web communication through encryption and certificates."
+        "explanation": "Telnet, FTP, SMTP, and IMAP aren't encrypted."
+      },
+      {
+        "question": "What did the Mirai botnet take advantage of?",
+        "correctAnswer": "Default configurations on IoT devices",
+        "incorrectAnswers": [
+          "Zero-day browser bugs",
+          "Weak hash algorithms",
+          "Expired certificates"
+        ],
+        "explanation": "Mirai used 60+ default configurations and was released as open-source software."
       }
-    ]
+    ],
+    "bonusQuestions": []
   },
-  "Wireless, Mobile & IoT Security": {
-    "domain": "3.0 Security Architecture / 4.0 Cloud & Virtualization",
+  "2.3 - Mobile Device Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "29",
     "questions": [
       {
-        "id": 931,
-        "question": "Which wireless security protocol is considered insecure due to weak encryption and easily crackable keys?",
-        "correctAnswer": "WEP",
+        "question": "Gaining full access to an Android device's operating system is called what?",
+        "correctAnswer": "Rooting",
         "incorrectAnswers": [
-          "WPA2",
-          "WPA3",
-          "802.1X",
-          "EAP-TLS"
+          "Jailbreaking",
+          "Sideloading",
+          "Tethering"
         ],
-        "explanation": "WEP is outdated and vulnerable to simple cracking attacks."
+        "explanation": "Apple iOS uses the term jailbreaking."
       },
       {
-        "id": 932,
-        "question": "Which wireless authentication method uses certificates for strong mutual authentication?",
-        "correctAnswer": "EAP-TLS",
-        "incorrectAnswers": [
-          "EAP-MD5",
-          "PEAP",
-          "WEP",
-          "PSK"
-        ],
-        "explanation": "EAP-TLS uses certificates for secure authentication."
-      },
-      {
-        "id": 933,
-        "question": "Which wireless attack involves tricking users into connecting to a malicious access point?",
-        "correctAnswer": "Evil Twin Attack",
-        "incorrectAnswers": [
-          "Deauthentication Attack",
-          "Jamming Attack",
-          "Replay Attack",
-          "Bluejacking"
-        ],
-        "explanation": "Evil twin attacks use rogue access points to steal credentials."
-      },
-      {
-        "id": 934,
-        "question": "Which wireless attack forces clients to disconnect from a legitimate access point?",
-        "correctAnswer": "Deauthentication Attack",
-        "incorrectAnswers": [
-          "Evil Twin Attack",
-          "Jamming Attack",
-          "Replay Attack",
-          "Bluejacking"
-        ],
-        "explanation": "Deauthentication attacks disrupt Wi-Fi connections."
-      },
-      {
-        "id": 935,
-        "question": "Which mobile security feature isolates apps to prevent them from accessing each other's data?",
-        "correctAnswer": "Sandboxing",
+        "question": "Gaining full access to an Apple iOS device's operating system is called what?",
+        "correctAnswer": "Jailbreaking",
         "incorrectAnswers": [
           "Rooting",
           "Sideloading",
+          "Geofencing"
+        ],
+        "explanation": "Jailbreaking installs custom firmware that replaces the existing OS."
+      },
+      {
+        "question": "Installing apps manually without using an app store is called what?",
+        "correctAnswer": "Sideloading",
+        "incorrectAnswers": [
           "Jailbreaking",
-          "Tethering"
+          "Rooting",
+          "Provisioning"
         ],
-        "explanation": "Sandboxing isolates apps to protect sensitive data."
+        "explanation": "Sideloading circumvents app store security."
       },
       {
-        "id": 936,
-        "question": "Which mobile device attack involves installing unauthorized firmware to bypass security controls?",
-        "correctAnswer": "Jailbreaking",
+        "question": "What happens to an MDM when a device is jailbroken?",
+        "correctAnswer": "It becomes relatively useless",
         "incorrectAnswers": [
-          "Sandboxing",
-          "Sideloading",
-          "Bluejacking",
-          "SIM Cloning"
+          "It gains more control",
+          "It automatically wipes the device",
+          "It upgrades the firmware"
         ],
-        "explanation": "Jailbreaking bypasses security restrictions on mobile devices."
-      },
-      {
-        "id": 937,
-        "question": "Which mobile security control enforces policies such as password requirements and remote wipe?",
-        "correctAnswer": "Mobile Device Management (MDM)",
-        "incorrectAnswers": [
-          "VPN",
-          "Sandboxing",
-          "Sideloading",
-          "Carrier Locking"
-        ],
-        "explanation": "MDM enforces security policies on mobile devices."
-      },
-      {
-        "id": 938,
-        "question": "Which IoT security risk arises from devices using default or weak passwords?",
-        "correctAnswer": "Poor Authentication",
-        "incorrectAnswers": [
-          "Firmware Tampering",
-          "Network Segmentation",
-          "Secure Boot",
-          "Certificate Pinning"
-        ],
-        "explanation": "Weak authentication is a common IoT vulnerability."
-      },
-      {
-        "id": 939,
-        "question": "Which IoT security control ensures that devices only run trusted firmware?",
-        "correctAnswer": "Secure Boot",
-        "incorrectAnswers": [
-          "Sandboxing",
-          "MDM",
-          "802.1X",
-          "WPA3"
-        ],
-        "explanation": "Secure boot verifies firmware integrity before loading."
+        "explanation": "Jailbreaking gives uncontrolled access and circumvents security features."
       }
     ],
-    "bonusQuestions": [
-      {
-        "id": 940,
-        "question": "Which wireless frequency band offers higher speeds but shorter range?",
-        "correctAnswer": "5 GHz",
-        "incorrectAnswers": [
-          "2.4 GHz",
-          "900 MHz",
-          "60 GHz",
-          "1.2 GHz"
-        ],
-        "explanation": "5 GHz provides faster speeds but shorter range than 2.4 GHz."
-      },
-      {
-        "id": 941,
-        "question": "Which wireless frequency band offers longer range but lower speeds?",
-        "correctAnswer": "2.4 GHz",
-        "incorrectAnswers": [
-          "5 GHz",
-          "900 MHz",
-          "60 GHz",
-          "1.2 GHz"
-        ],
-        "explanation": "2.4 GHz provides longer range but lower speeds."
-      },
-      {
-        "id": 942,
-        "question": "Which mobile security feature encrypts data stored on the device?",
-        "correctAnswer": "Full Device Encryption",
-        "incorrectAnswers": [
-          "Sandboxing",
-          "MDM",
-          "Sideloading",
-          "Carrier Locking"
-        ],
-        "explanation": "Full device encryption protects data at rest."
-      },
-      {
-        "id": 943,
-        "question": "Which IoT security practice isolates IoT devices from critical systems?",
-        "correctAnswer": "Network Segmentation",
-        "incorrectAnswers": [
-          "Secure Boot",
-          "MDM",
-          "Sandboxing",
-          "802.1X"
-        ],
-        "explanation": "Network segmentation limits IoT device access to critical systems."
-      },
-      {
-        "id": 944,
-        "question": "Which Bluetooth attack sends unsolicited messages to nearby devices?",
-        "correctAnswer": "Bluejacking",
-        "incorrectAnswers": [
-          "Bluesnarfing",
-          "Bluebugging",
-          "Replay Attack",
-          "Jamming"
-        ],
-        "explanation": "Bluejacking sends unsolicited messages over Bluetooth."
-      }
-    ]
+    "bonusQuestions": []
   },
-  "Secure Deployment & Hardening": {
-    "domain": "3.0 Security Architecture / 4.0 Cloud & Virtualization",
+  "2.3 - Zero-day Vulnerabilities": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "29",
     "questions": [
       {
-        "id": 945,
-        "question": "Which security concept ensures systems are configured to the minimum necessary functionality to reduce attack surface?",
-        "correctAnswer": "System Hardening",
+        "question": "What is a zero-day attack?",
+        "correctAnswer": "An attack without a patch or method of mitigation",
         "incorrectAnswers": [
-          "Load Balancing",
-          "Failover",
-          "Virtualization",
-          "Redundancy"
+          "An attack that lasts one day",
+          "An attack on day zero of a new hire",
+          "An attack using default credentials"
         ],
-        "explanation": "System hardening reduces attack surface by disabling unnecessary features."
+        "explanation": "The vendor has no idea the vulnerability exists."
       },
       {
-        "id": 946,
-        "question": "Which security practice involves disabling unused services, ports, and protocols?",
-        "correctAnswer": "Service Hardening",
+        "question": "What does CVE stand for?",
+        "correctAnswer": "Common Vulnerabilities and Exposures",
         "incorrectAnswers": [
-          "Patch Management",
-          "Network Segmentation",
-          "Secure Boot",
-          "Code Signing"
+          "Critical Vulnerability Evaluation",
+          "Common Virus Encyclopedia",
+          "Certified Vulnerability Expert"
         ],
-        "explanation": "Service hardening reduces exposure by disabling unnecessary services."
+        "explanation": "CVE is at cve.mitre.org."
       },
       {
-        "id": 947,
-        "question": "Which deployment model releases updates to a small subset of users before full rollout?",
-        "correctAnswer": "Canary Deployment",
+        "question": "What did the May 2023 Microsoft zero-day allow?",
+        "correctAnswer": "An attacker to run UEFI-level self-signed code",
         "incorrectAnswers": [
-          "Blue-Green Deployment",
-          "Rolling Deployment",
-          "Immutable Deployment",
-          "Shadow Deployment"
+          "Remote jamming of Wi-Fi",
+          "Downgrading TLS to SSL 3.0",
+          "Cloning RFID badges"
         ],
-        "explanation": "Canary deployments test updates with a small group before full release."
-      },
-      {
-        "id": 948,
-        "question": "Which deployment model uses two identical environments and switches traffic between them during updates?",
-        "correctAnswer": "Blue-Green Deployment",
-        "incorrectAnswers": [
-          "Canary Deployment",
-          "Rolling Deployment",
-          "Immutable Deployment",
-          "Shadow Deployment"
-        ],
-        "explanation": "Blue-green deployments use two environments to minimize downtime."
-      },
-      {
-        "id": 949,
-        "question": "Which security practice ensures that systems are deployed from a known, secure configuration baseline?",
-        "correctAnswer": "Configuration Management",
-        "incorrectAnswers": [
-          "Patch Management",
-          "Network Segmentation",
-          "Secure Boot",
-          "Code Signing"
-        ],
-        "explanation": "Configuration management ensures consistent, secure system setups."
-      },
-      {
-        "id": 950,
-        "question": "Which security practice ensures that systems are regularly updated to fix vulnerabilities?",
-        "correctAnswer": "Patch Management",
-        "incorrectAnswers": [
-          "Configuration Management",
-          "Network Segmentation",
-          "Secure Boot",
-          "Code Signing"
-        ],
-        "explanation": "Patch management applies updates to fix vulnerabilities."
-      },
-      {
-        "id": 951,
-        "question": "Which security control isolates workloads to prevent one compromised system from affecting others?",
-        "correctAnswer": "Network Segmentation",
-        "incorrectAnswers": [
-          "Patch Management",
-          "Configuration Baseline",
-          "Secure Boot",
-          "Code Signing"
-        ],
-        "explanation": "Network segmentation limits lateral movement."
-      },
-      {
-        "id": 952,
-        "question": "Which security concept ensures that systems cannot be modified after deployment?",
-        "correctAnswer": "Immutable Infrastructure",
-        "incorrectAnswers": [
-          "Infrastructure as Code",
-          "Rolling Deployment",
-          "Canary Deployment",
-          "Secure Boot"
-        ],
-        "explanation": "Immutable infrastructure prevents unauthorized changes."
-      },
-      {
-        "id": 953,
-        "question": "Which hardening practice involves removing default accounts or changing their passwords?",
-        "correctAnswer": "Account Hardening",
-        "incorrectAnswers": [
-          "Service Hardening",
-          "Patch Management",
-          "Network Segmentation",
-          "Secure Boot"
-        ],
-        "explanation": "Account hardening prevents unauthorized access through default credentials."
-      },
-      {
-        "id": 954,
-        "question": "Which security practice ensures that only approved software can run on a system?",
-        "correctAnswer": "Application Whitelisting",
-        "incorrectAnswers": [
-          "Blacklisting",
-          "Sandboxing",
-          "Virtualization",
-          "Load Balancing"
-        ],
-        "explanation": "Whitelisting restricts execution to approved applications."
+        "explanation": "It was a Secure Boot zero-day vulnerability."
       }
     ],
-    "bonusQuestions": [
+    "bonusQuestions": []
+  },
+  "2.4 - An Overview of Malware": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "30",
+    "questions": [
       {
-        "id": 955,
-        "question": "Which deployment model updates systems gradually, one server or node at a time?",
-        "correctAnswer": "Rolling Deployment",
+        "question": "What does ransomware do?",
+        "correctAnswer": "Encrypts your data files and demands payment for the key",
         "incorrectAnswers": [
-          "Blue-Green Deployment",
-          "Canary Deployment",
-          "Immutable Deployment",
-          "Shadow Deployment"
+          "Captures every keystroke",
+          "Displays advertising",
+          "Spreads without any payload"
         ],
-        "explanation": "Rolling deployments update systems incrementally."
+        "explanation": "The OS remains available - they want you running, but not working."
       },
       {
-        "id": 956,
-        "question": "Which hardening practice ensures that logs are protected from tampering and unauthorized access?",
-        "correctAnswer": "Log Hardening",
+        "question": "What is the most important protection against ransomware?",
+        "correctAnswer": "An offline backup",
         "incorrectAnswers": [
-          "Patch Management",
-          "Network Segmentation",
-          "Secure Boot",
-          "Code Signing"
+          "A wildcard certificate",
+          "Disabling the UPS",
+          "Open permissions"
         ],
-        "explanation": "Log hardening protects logs to maintain integrity and forensic value."
+        "explanation": "Also keep the OS, apps, and anti-malware signatures up to date."
       },
       {
-        "id": 958,
-        "question": "Which security practice uses automation to deploy infrastructure consistently across environments?",
-        "correctAnswer": "Infrastructure as Code (IaC)",
+        "question": "Malware installed simply by visiting a web page is called what?",
+        "correctAnswer": "A drive-by download",
         "incorrectAnswers": [
-          "Immutable Infrastructure",
-          "Rolling Deployment",
-          "Canary Deployment",
-          "Secure Boot"
+          "A logic bomb",
+          "Sideloading",
+          "A rootkit"
         ],
-        "explanation": "IaC automates infrastructure deployment using code."
-      },
-      {
-        "id": 959,
-        "question": "Which hardening practice ensures that systems follow a documented, secure configuration template?",
-        "correctAnswer": "Configuration Baseline",
-        "incorrectAnswers": [
-          "Patch Management",
-          "Network Segmentation",
-          "Secure Boot",
-          "Code Signing"
-        ],
-        "explanation": "Configuration baselines define secure system templates."
+        "explanation": "Your computer must run a program - email link, pop-up, drive-by download, or worm."
       }
-    ]
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Viruses and Worms": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "30-31",
+    "questions": [
+      {
+        "question": "What is the key difference between a virus and a worm?",
+        "correctAnswer": "A virus needs you to execute a program; a worm self-replicates over the network",
+        "incorrectAnswers": [
+          "A worm needs user action; a virus doesn't",
+          "Viruses only affect Linux",
+          "Worms only spread via USB"
+        ],
+        "explanation": "Worms use the network as a transmission medium."
+      },
+      {
+        "question": "Which virus type is common in Microsoft Office?",
+        "correctAnswer": "Macro virus",
+        "incorrectAnswers": [
+          "Boot sector virus",
+          "Program virus",
+          "Fileless virus"
+        ],
+        "explanation": "Other types: program, boot sector, and script viruses."
+      },
+      {
+        "question": "What is a fileless virus?",
+        "correctAnswer": "Malware that operates in memory and is never installed in a file",
+        "incorrectAnswers": [
+          "A virus that deletes all files",
+          "A virus stored in the boot sector",
+          "A virus inside a ZIP file"
+        ],
+        "explanation": "It does a good job of avoiding anti-virus detection."
+      },
+      {
+        "question": "In the fileless virus process, what is launched to download the payload into RAM?",
+        "correctAnswer": "PowerShell",
+        "incorrectAnswers": [
+          "Telnet",
+          "Task Manager",
+          "Event Viewer"
+        ],
+        "explanation": "It then runs scripts in memory and adds an auto-start to the Registry."
+      },
+      {
+        "question": "What can mitigate many worm infestations?",
+        "correctAnswer": "Firewalls and IDS/IPS",
+        "incorrectAnswers": [
+          "Key escrow",
+          "Data masking",
+          "Wildcard certificates"
+        ],
+        "explanation": "They don't help much once the worm gets inside."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Spyware and Bloatware": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "31",
+    "questions": [
+      {
+        "question": "What is spyware?",
+        "correctAnswer": "Malware that spies on you for advertising, identity theft, or affiliate fraud",
+        "incorrectAnswers": [
+          "Unwanted apps installed by the manufacturer",
+          "Malware that encrypts data",
+          "A network-based worm"
+        ],
+        "explanation": "It can trick you into installing via peer to peer or fake security software."
+      },
+      {
+        "question": "What is bloatware?",
+        "correctAnswer": "Unexpected apps installed by the manufacturer",
+        "incorrectAnswers": [
+          "Malware that captures keystrokes",
+          "A large ransomware payload",
+          "A boot sector virus"
+        ],
+        "explanation": "It uses storage space, may slow the system, and could open exploits."
+      },
+      {
+        "question": "What is the first option for removing bloatware?",
+        "correctAnswer": "The built-in uninstaller",
+        "incorrectAnswers": [
+          "Third-party cleaners",
+          "Reinstalling the OS",
+          "Jailbreaking"
+        ],
+        "explanation": "Third-party uninstallers are probably not the first option."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Other Malware Types": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "32",
+    "questions": [
+      {
+        "question": "Why does a keylogger circumvent encryption protections?",
+        "correctAnswer": "Keystrokes are captured in the clear",
+        "incorrectAnswers": [
+          "It breaks AES",
+          "It steals the private key from the CA",
+          "It downgrades TLS"
+        ],
+        "explanation": "Keyloggers save all of your input and send it to the attackers."
+      },
+      {
+        "question": "Malicious code that waits for a predefined event is called what?",
+        "correctAnswer": "Logic bomb",
+        "incorrectAnswers": [
+          "Rootkit",
+          "Worm",
+          "Keylogger"
+        ],
+        "explanation": "A time bomb uses time/date; a logic bomb uses a user event."
+      },
+      {
+        "question": "Why are logic bombs difficult to recognize?",
+        "correctAnswer": "Each is unique with no predefined signatures",
+        "incorrectAnswers": [
+          "They are always encrypted",
+          "They only run in the cloud",
+          "They delete the anti-virus"
+        ],
+        "explanation": "Prevent with change control, electronic monitoring, and auditing."
+      },
+      {
+        "question": "What does a rootkit modify?",
+        "correctAnswer": "Core system files, as part of the kernel",
+        "incorrectAnswers": [
+          "Only browser cookies",
+          "Only the hosts file",
+          "Only user documents"
+        ],
+        "explanation": "Rootkits can be invisible to the OS and traditional anti-virus."
+      },
+      {
+        "question": "Which is listed as a way to find and remove rootkits?",
+        "correctAnswer": "Secure boot with UEFI",
+        "incorrectAnswers": [
+          "Disabling the firewall",
+          "Using a wildcard certificate",
+          "Increasing RAM"
+        ],
+        "explanation": "Also use a rootkit-specific remover and anti-malware scans."
+      },
+      {
+        "question": "The December 2016 Ukraine logic bomb was customized for what kind of networks?",
+        "correctAnswer": "SCADA networks",
+        "incorrectAnswers": [
+          "Cellular networks",
+          "Home Wi-Fi networks",
+          "Bluetooth PANs"
+        ],
+        "explanation": "It began disabling power at a predetermined time."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Physical Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "32",
+    "questions": [
+      {
+        "question": "If you have physical access to a server, what do you have?",
+        "correctAnswer": "Full control",
+        "incorrectAnswers": [
+          "Read-only access",
+          "No access without a password",
+          "Access only to logs"
+        ],
+        "explanation": "An operating system can't stop an in-person attack."
+      },
+      {
+        "question": "How long does RFID badge duplication take?",
+        "correctAnswer": "Seconds",
+        "incorrectAnswers": [
+          "Several days",
+          "Hours",
+          "It is impossible"
+        ],
+        "explanation": "Duplicators cost less than $50 - read one card, copy to another."
+      },
+      {
+        "question": "What is the defense against RFID cloning?",
+        "correctAnswer": "Use another authentication factor with the card",
+        "incorrectAnswers": [
+          "Use a longer badge number",
+          "Disable the badge reader",
+          "Use a wildcard certificate"
+        ],
+        "explanation": "This is why we have MFA."
+      },
+      {
+        "question": "Which is an environmental attack target?",
+        "correctAnswer": "HVAC and humidity controls",
+        "incorrectAnswers": [
+          "Session cookies",
+          "DNS records",
+          "SQL databases"
+        ],
+        "explanation": "Environmental attacks also target power and fire suppression."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Denial of Service": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "33",
+    "questions": [
+      {
+        "question": "A layer 2 loop without STP is an example of what?",
+        "correctAnswer": "An unintentional ('friendly') DoS",
+        "incorrectAnswers": [
+          "A DDoS amplification attack",
+          "A replay attack",
+          "DNS poisoning"
+        ],
+        "explanation": "A water line break or bandwidth-heavy downloads are other examples."
+      },
+      {
+        "question": "What do attackers use botnets for in a DDoS?",
+        "correctAnswer": "Launching an army of computers to bring down a service",
+        "incorrectAnswers": [
+          "Signing malware",
+          "Cloning badges",
+          "Storing encryption keys"
+        ],
+        "explanation": "At its peak, the Zeus botnet infected over 3.6 million PCs."
+      },
+      {
+        "question": "Why is DDoS described as an asymmetric threat?",
+        "correctAnswer": "The attacker may have fewer resources than the victim",
+        "incorrectAnswers": [
+          "It uses asymmetric encryption",
+          "It only targets one direction of traffic",
+          "It requires a public key"
+        ],
+        "explanation": "Thousands or millions of computers can be coordinated."
+      },
+      {
+        "question": "Which protocols are listed as commonly abused for DDoS reflection and amplification?",
+        "correctAnswer": "NTP, DNS, ICMP",
+        "incorrectAnswers": [
+          "SSH, SFTP, HTTPS",
+          "LDAP, SAML, OAuth",
+          "IPsec, TLS, WPA3"
+        ],
+        "explanation": "They use protocols with little if any authentication or checks."
+      },
+      {
+        "question": "A DoS can be used as a smokescreen as a precursor to what?",
+        "correctAnswer": "A DNS spoofing attack",
+        "incorrectAnswers": [
+          "A certificate renewal",
+          "A backup",
+          "A penetration test"
+        ],
+        "explanation": "DoS can create a smokescreen for some other exploit."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - DNS Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "33",
+    "questions": [
+      {
+        "question": "Which takes precedence over DNS queries?",
+        "correctAnswer": "The client host file",
+        "incorrectAnswers": [
+          "The CRL",
+          "The ARP cache of the router",
+          "The firewall rulebase"
+        ],
+        "explanation": "Modifying the host file is one form of DNS poisoning."
+      },
+      {
+        "question": "Sending a fake response to a valid DNS request is what type of attack?",
+        "correctAnswer": "An on-path attack",
+        "incorrectAnswers": [
+          "A replay attack",
+          "A watering hole attack",
+          "A brute force attack"
+        ],
+        "explanation": "It requires redirecting the original request or the response."
+      },
+      {
+        "question": "Gaining access to the domain registration to control where traffic flows is called what?",
+        "correctAnswer": "Domain hijacking",
+        "incorrectAnswers": [
+          "Typosquatting",
+          "DNS filtering",
+          "ARP poisoning"
+        ],
+        "explanation": "You don't need to touch the actual servers."
+      },
+      {
+        "question": "In the October 2016 Brazilian bank attack, how long were the domains under hacker control?",
+        "correctAnswer": "6 hours",
+        "incorrectAnswers": [
+          "6 minutes",
+          "6 days",
+          "6 months"
+        ],
+        "explanation": "36 domains were changed and the attackers became the bank."
+      },
+      {
+        "question": "professormesser.org instead of professormesser.com is which type of URL hijacking?",
+        "correctAnswer": "Different top-level domain",
+        "incorrectAnswers": [
+          "Outright misspelling",
+          "A typing error",
+          "A different phrase"
+        ],
+        "explanation": "Typosquatting/brandjacking takes advantage of poor spelling."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Wireless Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "34",
+    "questions": [
+      {
+        "question": "What is wireless deauthentication?",
+        "correctAnswer": "A significant wireless denial of service attack",
+        "incorrectAnswers": [
+          "Cloning an access point's SSID",
+          "Brute forcing a WPA3 key",
+          "Encrypting management frames"
+        ],
+        "explanation": "Original 802.11 management frames were sent in the clear without validation."
+      },
+      {
+        "question": "Which IEEE standard addresses deauthentication attacks by encrypting some management frames?",
+        "correctAnswer": "802.11w",
+        "incorrectAnswers": [
+          "802.1X",
+          "802.11ac",
+          "802.3"
+        ],
+        "explanation": "802.11w was introduced in July 2014."
+      },
+      {
+        "question": "Which frames are NOT encrypted by 802.11w?",
+        "correctAnswer": "Beacons, probes, authentication, association",
+        "incorrectAnswers": [
+          "Disassociate and deauthenticate",
+          "Channel switch announcements",
+          "All data frames"
+        ],
+        "explanation": "Disassociate, deauthenticate, and channel switch frames are encrypted."
+      },
+      {
+        "question": "What is the difference between interference and jamming?",
+        "correctAnswer": "Jamming is intentional",
+        "incorrectAnswers": [
+          "Interference is intentional",
+          "Jamming only affects Bluetooth",
+          "There is no difference"
+        ],
+        "explanation": "Microwave ovens and fluorescent lights cause interference."
+      },
+      {
+        "question": "Jamming only when someone else tries to communicate is called what?",
+        "correctAnswer": "Reactive jamming",
+        "incorrectAnswers": [
+          "Constant jamming",
+          "Random jamming",
+          "Fox hunting"
+        ],
+        "explanation": "Other types send constant random bits or legitimate frames."
+      },
+      {
+        "question": "What equipment is used to 'fox hunt' a jammer?",
+        "correctAnswer": "Directional antenna and attenuator",
+        "incorrectAnswers": [
+          "Spectrum UPS and generator",
+          "Packet capture and SIEM",
+          "RFID duplicator"
+        ],
+        "explanation": "The jammer needs to be somewhere close."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - On-path Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "34",
+    "questions": [
+      {
+        "question": "What was an on-path network attack formerly known as?",
+        "correctAnswer": "Man-in-the-middle",
+        "incorrectAnswers": [
+          "Man-in-the-browser",
+          "Replay attack",
+          "Pass the hash"
+        ],
+        "explanation": "It redirects traffic then passes it to the destination."
+      },
+      {
+        "question": "Which on-path attack works on the local IP subnet because the protocol has no security?",
+        "correctAnswer": "ARP poisoning",
+        "incorrectAnswers": [
+          "DNS filtering",
+          "SSL stripping",
+          "Domain hijacking"
+        ],
+        "explanation": "ARP has no security."
+      },
+      {
+        "question": "An on-path browser attack was formerly known as what?",
+        "correctAnswer": "Man-in-the-browser",
+        "incorrectAnswers": [
+          "Man-in-the-middle",
+          "Cross-site scripting",
+          "Session riding"
+        ],
+        "explanation": "Malware/Trojan on the same computer does the proxy work."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Replay Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "35-36",
+    "questions": [
+      {
+        "question": "Is a replay attack an on-path attack?",
+        "correctAnswer": "No, the replay doesn't require the original workstation",
+        "incorrectAnswers": [
+          "Yes, it must stay in the middle",
+          "Yes, it requires ARP poisoning",
+          "Only on wireless networks"
+        ],
+        "explanation": "The attacker gathers info and replays it to appear as someone else."
+      },
+      {
+        "question": "Capturing a username and password hash and sending it in your own authentication request is called what?",
+        "correctAnswer": "Pass the hash",
+        "incorrectAnswers": [
+          "Password spraying",
+          "Birthday attack",
+          "Key stretching"
+        ],
+        "explanation": "Pass the hash is a type of replay attack."
+      },
+      {
+        "question": "An attacker intercepts a session ID and uses it to access a server as the victim. What is this?",
+        "correctAnswer": "Session hijacking (sidejacking)",
+        "incorrectAnswers": [
+          "Domain hijacking",
+          "Typosquatting",
+          "Jailbreaking"
+        ],
+        "explanation": "Session IDs are often stored in cookies."
+      },
+      {
+        "question": "What is the best way to prevent session hijacking?",
+        "correctAnswer": "Encrypt end-to-end",
+        "incorrectAnswers": [
+          "Disable cookies on the server",
+          "Use shorter passwords",
+          "Use HTTP only"
+        ],
+        "explanation": "They can't capture your session ID if they can't see it."
+      },
+      {
+        "question": "Are browser cookies executable?",
+        "correctAnswer": "No",
+        "incorrectAnswers": [
+          "Yes, always",
+          "Only on mobile devices",
+          "Only when Secure is set"
+        ],
+        "explanation": "They're not generally a security risk unless someone gets access to them."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Malicious Code": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "36",
+    "questions": [
+      {
+        "question": "Which vulnerability did WannaCry ransomware exploit?",
+        "correctAnswer": "Windows SMBv1",
+        "incorrectAnswers": [
+          "OpenSSL Heartbleed",
+          "SSL 3.0 POODLE",
+          "Win32k driver"
+        ],
+        "explanation": "It allowed arbitrary code execution."
+      },
+      {
+        "question": "How was information stolen from 380,000 British Airways victims?",
+        "correctAnswer": "Cross-site scripting on checkout pages",
+        "incorrectAnswers": [
+          "SQL injection",
+          "RFID cloning",
+          "A logic bomb"
+        ],
+        "explanation": "22 lines of malicious JavaScript were placed on checkout pages."
+      },
+      {
+        "question": "What attack breached the Estonian Central Health Database?",
+        "correctAnswer": "SQL injection",
+        "incorrectAnswers": [
+          "Cross-site scripting",
+          "Ransomware",
+          "DDoS"
+        ],
+        "explanation": "It breached healthcare information for an entire country."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Application Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "36-37",
+    "questions": [
+      {
+        "question": "User A accessing User B's resources is an example of what?",
+        "correctAnswer": "Horizontal privilege escalation",
+        "incorrectAnswers": [
+          "Vertical privilege escalation",
+          "Directory traversal",
+          "Cross-site request forgery"
+        ],
+        "explanation": "Privilege escalation commonly aims for the highest-level access."
+      },
+      {
+        "question": "What does Data Execution Prevention do?",
+        "correctAnswer": "Only data in executable areas can run",
+        "incorrectAnswers": [
+          "Randomizes memory addresses",
+          "Encrypts all data",
+          "Blocks USB drives"
+        ],
+        "explanation": "DEP is a privilege escalation mitigation."
+      },
+      {
+        "question": "What does Address Space Layout Randomization prevent?",
+        "correctAnswer": "A buffer overrun at a known memory address",
+        "incorrectAnswers": [
+          "Cross-site scripting",
+          "Session hijacking",
+          "Typosquatting"
+        ],
+        "explanation": "ASLR is a privilege escalation mitigation."
+      },
+      {
+        "question": "CSRF takes advantage of what trust?",
+        "correctAnswer": "The trust a web application has for the user",
+        "incorrectAnswers": [
+          "The trust a user has for a site",
+          "The trust between CAs",
+          "The trust in DNS"
+        ],
+        "explanation": "Requests are made without the user's consent or knowledge."
+      },
+      {
+        "question": "What is usually used to prevent cross-site request forgery?",
+        "correctAnswer": "A cryptographic anti-forgery token",
+        "incorrectAnswers": [
+          "A wildcard certificate",
+          "A longer session cookie",
+          "A salted hash"
+        ],
+        "explanation": "The application should have anti-forgery techniques added."
+      },
+      {
+        "question": "Reading files from a web server outside the website's file directory is called what?",
+        "correctAnswer": "Directory traversal",
+        "incorrectAnswers": [
+          "SQL injection",
+          "Session riding",
+          "Sideloading"
+        ],
+        "explanation": "Also called path traversal."
+      },
+      {
+        "question": "What access level did CVE-2023-29336 (Win32k) give an attacker?",
+        "correctAnswer": "SYSTEM privileges",
+        "incorrectAnswers": [
+          "Guest privileges",
+          "Read-only user access",
+          "Network access only"
+        ],
+        "explanation": "SYSTEM is the highest level access."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Cryptographic Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "38",
+    "questions": [
+      {
+        "question": "In a classroom of 23 students, what's the chance two share a birthday?",
+        "correctAnswer": "About 50%",
+        "incorrectAnswers": [
+          "About 10%",
+          "About 70%",
+          "About 99%"
+        ],
+        "explanation": "For a class of 30, the chance is about 70%."
+      },
+      {
+        "question": "In the digital world, a birthday attack looks for what?",
+        "correctAnswer": "A hash collision",
+        "incorrectAnswers": [
+          "A weak password",
+          "An open port",
+          "A session ID"
+        ],
+        "explanation": "Protect yourself with a large hash output size."
+      },
+      {
+        "question": "What did researchers create in December 2008 using MD5 collisions?",
+        "correctAnswer": "A CA certificate that appeared legitimate",
+        "incorrectAnswers": [
+          "A new hashing algorithm",
+          "A ransomware strain",
+          "A WPA3 exploit"
+        ],
+        "explanation": "They built certificates that appeared issued by RapidSSL."
+      },
+      {
+        "question": "Forcing systems to use weaker encryption is called what?",
+        "correctAnswer": "Downgrade attack",
+        "incorrectAnswers": [
+          "Birthday attack",
+          "Replay attack",
+          "Spraying attack"
+        ],
+        "explanation": "POODLE is an example."
+      },
+      {
+        "question": "POODLE forced clients to fall back to what?",
+        "correctAnswer": "SSL 3.0",
+        "incorrectAnswers": [
+          "TLS 1.3",
+          "WPA2",
+          "MD5"
+        ],
+        "explanation": "Because of POODLE, modern browsers won't fall back to SSL 3.0."
+      },
+      {
+        "question": "In SSL stripping, what does the on-path attacker do?",
+        "correctAnswer": "Rewrites URLs between HTTP and HTTPS",
+        "incorrectAnswers": [
+          "Revokes the server certificate",
+          "Brute forces the TLS key",
+          "Floods the server with traffic"
+        ],
+        "explanation": "The victim talks to the attacker over HTTP while the attacker uses HTTPS to the server."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Password Attacks": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "39",
+    "questions": [
+      {
+        "question": "What should you do if your application saves passwords as plaintext?",
+        "correctAnswer": "Get a better application",
+        "incorrectAnswers": [
+          "Encrypt the screen",
+          "Rename the file",
+          "Shorten the passwords"
+        ],
+        "explanation": "Anyone with access to the file has every credential."
+      },
+      {
+        "question": "Trying the top three common passwords on an account, then moving to the next account, is called what?",
+        "correctAnswer": "Spraying attack",
+        "incorrectAnswers": [
+          "Brute force",
+          "Birthday attack",
+          "Pass the hash"
+        ],
+        "explanation": "No lockouts, no alarms, no alerts."
+      },
+      {
+        "question": "What limits online brute force attacks?",
+        "correctAnswer": "Account lockout after failed attempts",
+        "incorrectAnswers": [
+          "Salting",
+          "Larger hard drives",
+          "Using HTTPS"
+        ],
+        "explanation": "Online brute force is very slow."
+      },
+      {
+        "question": "Offline brute force requires what?",
+        "correctAnswer": "Obtaining the list of users and hashes",
+        "incorrectAnswers": [
+          "Physical access to the user",
+          "A valid session ID",
+          "A wildcard certificate"
+        ],
+        "explanation": "It has a large computational resource requirement."
+      },
+      {
+        "question": "What slows down a brute force attack against a hash?",
+        "correctAnswer": "A strong hashing algorithm",
+        "incorrectAnswers": [
+          "Plaintext storage",
+          "Shorter passwords",
+          "Using MD5"
+        ],
+        "explanation": "Brute force tries every combination until the hash matches."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.4 - Indicators of Compromise": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "39-40",
+    "questions": [
+      {
+        "question": "A login from Omaha followed three minutes later by a login from Melbourne is called what?",
+        "correctAnswer": "Impossible travel",
+        "incorrectAnswers": [
+          "Concurrent session usage",
+          "Out-of-cycle logging",
+          "Account lockout"
+        ],
+        "explanation": "This should be easy to identify with log analysis and automation."
+      },
+      {
+        "question": "Why might an attacker block auto-update connections and links to security patches?",
+        "correctAnswer": "To stay on the system as long as possible",
+        "incorrectAnswers": [
+          "To speed up the network",
+          "To install legitimate updates",
+          "To trigger an account lockout"
+        ],
+        "explanation": "Blocked content is an indicator of compromise."
+      },
+      {
+        "question": "OS patch logs occurring outside the normal patch day are an example of what?",
+        "correctAnswer": "Out-of-cycle logging",
+        "incorrectAnswers": [
+          "Impossible travel",
+          "Resource consumption",
+          "Missing logs"
+        ],
+        "explanation": "An attacker may patch to keep other attackers out."
+      },
+      {
+        "question": "Why are missing logs an indicator of compromise?",
+        "correctAnswer": "Attackers remove logs to cover their tracks",
+        "incorrectAnswers": [
+          "Logs are deleted every day by default",
+          "Missing logs mean no activity",
+          "Logs only exist on firewalls"
+        ],
+        "explanation": "Logs should be secured and monitored."
+      },
+      {
+        "question": "An attacker locks an account then calls support to reset the password. This IOC is called what?",
+        "correctAnswer": "Account lockout",
+        "incorrectAnswers": [
+          "Concurrent session usage",
+          "Blocked content",
+          "Published/documented"
+        ],
+        "explanation": "Account lockout may be part of a larger plan."
+      },
+      {
+        "question": "An unusual file transfer spike at 3 AM is which IOC?",
+        "correctAnswer": "Resource consumption",
+        "incorrectAnswers": [
+          "Impossible travel",
+          "Missing logs",
+          "Account lockout"
+        ],
+        "explanation": "Firewall logs show the outgoing transfer."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.5 - Segmentation and Access Control": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "40",
+    "questions": [
+      {
+        "question": "Which is NOT a reason given for segmenting the network?",
+        "correctAnswer": "Eliminating the need for encryption",
+        "incorrectAnswers": [
+          "Performance",
+          "Security",
+          "Compliance"
+        ],
+        "explanation": "Segmentation supports performance, security, and compliance (e.g., PCI)."
+      },
+      {
+        "question": "Which can an ACL use to allow or disallow traffic?",
+        "correctAnswer": "Source IP, destination IP, port number, time of day",
+        "incorrectAnswers": [
+          "Only the user's password",
+          "Only the MAC address",
+          "Only the certificate serial number"
+        ],
+        "explanation": "ACLs group categories including application."
+      },
+      {
+        "question": "An allow list that only permits applications with a specific unique identifier uses what?",
+        "correctAnswer": "Application hash",
+        "incorrectAnswers": [
+          "Network zone",
+          "Path",
+          "Time of day"
+        ],
+        "explanation": "Other options: certificate, path, network zone."
+      },
+      {
+        "question": "Allowing digitally signed apps from certain publishers uses which allow list method?",
+        "correctAnswer": "Certificate",
+        "incorrectAnswers": [
+          "Application hash",
+          "Path",
+          "Network zone"
+        ],
+        "explanation": "Certificates identify trusted publishers."
+      },
+      {
+        "question": "What is a risk when configuring ACLs on network devices?",
+        "correctAnswer": "You can accidentally lock yourself out",
+        "incorrectAnswers": [
+          "They disable encryption",
+          "They erase the device",
+          "They revoke certificates"
+        ],
+        "explanation": "Be careful when configuring ACLs."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.5 - Mitigation Techniques": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "41",
+    "questions": [
+      {
+        "question": "When are emergency out-of-band updates used?",
+        "correctAnswer": "For zero-day and important security discoveries",
+        "incorrectAnswers": [
+          "Every Patch Tuesday",
+          "Only for device drivers",
+          "Only after a backup"
+        ],
+        "explanation": "Auto-update is not always the best option."
+      },
+      {
+        "question": "What is least privilege?",
+        "correctAnswer": "Rights and permissions set to the bare minimum",
+        "incorrectAnswers": [
+          "Giving all users administrator rights",
+          "Removing all permissions",
+          "Sharing one account"
+        ],
+        "explanation": "Don't allow users to run with administrative privileges."
+      },
+      {
+        "question": "What happens to systems out of compliance during configuration enforcement?",
+        "correctAnswer": "They are quarantined on a private VLAN with limited access",
+        "incorrectAnswers": [
+          "They are deleted",
+          "They get administrator access",
+          "They are ignored"
+        ],
+        "explanation": "They're rechecked after corrections."
+      },
+      {
+        "question": "Which is checked in a posture assessment?",
+        "correctAnswer": "OS patch version and EDR status",
+        "incorrectAnswers": [
+          "User's birthday",
+          "Monitor size",
+          "Keyboard layout"
+        ],
+        "explanation": "Also firewall status and certificate status."
+      },
+      {
+        "question": "SIEM consoles and syslog servers are examples of what in monitoring?",
+        "correctAnswer": "Collectors",
+        "incorrectAnswers": [
+          "Sensors",
+          "Honeypots",
+          "Proxies"
+        ],
+        "explanation": "Sensors include IPS, firewall logs, and authentication logs."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "2.5 - Hardening Techniques": {
+    "domain": "2.0 - Threats, Vulnerabilities, and Mitigations",
+    "page": "41-42",
+    "questions": [
+      {
+        "question": "Besides signatures, what does EDR use to detect threats?",
+        "correctAnswer": "Behavioral analysis, machine learning, process monitoring",
+        "incorrectAnswers": [
+          "Only file hashes",
+          "Only firewall rules",
+          "Only user reports"
+        ],
+        "explanation": "EDR uses a lightweight agent on the endpoint."
+      },
+      {
+        "question": "How does EDR respond to a threat?",
+        "correctAnswer": "Isolate the system, quarantine the threat, roll back",
+        "incorrectAnswers": [
+          "Email the user to fix it",
+          "Shut down the entire network",
+          "Revoke all certificates"
+        ],
+        "explanation": "Responses are API driven with no technician intervention required."
+      },
+      {
+        "question": "What does a host-based firewall control?",
+        "correctAnswer": "Incoming and outgoing application traffic on the endpoint",
+        "incorrectAnswers": [
+          "Only traffic between VLANs",
+          "Only wireless management frames",
+          "Only email"
+        ],
+        "explanation": "It can identify and block unknown processes."
+      },
+      {
+        "question": "What does HIPS stand for?",
+        "correctAnswer": "Host-based Intrusion Prevention System",
+        "incorrectAnswers": [
+          "High Integrity Protection Service",
+          "Hashed Identity Password Store",
+          "Hardware Isolation Process Sandbox"
+        ],
+        "explanation": "It recognizes and blocks known attacks."
+      },
+      {
+        "question": "Which tool is recommended to verify open ports?",
+        "correctAnswer": "Nmap",
+        "incorrectAnswers": [
+          "Tripwire",
+          "BitLocker",
+          "Event Viewer"
+        ],
+        "explanation": "Close everything except required ports."
+      },
+      {
+        "question": "Why remove unnecessary software?",
+        "correctAnswer": "All software contains bugs, and removing it reduces risk",
+        "incorrectAnswers": [
+          "To make the hard drive faster",
+          "To free license keys",
+          "To disable updates"
+        ],
+        "explanation": "Every app has a different patching process."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.1 - Cloud Infrastructures": {
+    "domain": "3.0 - Security Architecture",
+    "page": "42-43",
+    "questions": [
+      {
+        "question": "What does a cloud responsibility matrix document?",
+        "correctAnswer": "Who is responsible for security - the provider or the customer",
+        "incorrectAnswers": [
+          "The list of revoked certificates",
+          "Which users are in each VLAN",
+          "The order of firewall rules"
+        ],
+        "explanation": "Responsibilities vary by provider and contractual agreements."
+      },
+      {
+        "question": "According to the responsibility matrix, in IaaS who manages the operating system?",
+        "correctAnswer": "The customer",
+        "incorrectAnswers": [
+          "The provider",
+          "Shared equally",
+          "A third-party auditor"
+        ],
+        "explanation": "In IaaS the provider manages physical hosts, network, and datacenter."
+      },
+      {
+        "question": "According to the responsibility matrix, which is customer-managed in SaaS, PaaS, IaaS, and on-prem?",
+        "correctAnswer": "Information and data",
+        "incorrectAnswers": [
+          "Physical datacenter",
+          "Physical network",
+          "Operating systems"
+        ],
+        "explanation": "Information/data, devices, and accounts/identities are always customer managed."
+      },
+      {
+        "question": "What is a hybrid cloud?",
+        "correctAnswer": "More than one public or private cloud",
+        "incorrectAnswers": [
+          "A cloud with no internet access",
+          "A single on-premises server",
+          "A cloud used only for backups"
+        ],
+        "explanation": "It adds complexity: network protection mismatches, different monitoring, data leakage."
+      },
+      {
+        "question": "Defining servers, network, and applications as code is called what?",
+        "correctAnswer": "Infrastructure as code",
+        "incorrectAnswers": [
+          "Serverless architecture",
+          "Microservices",
+          "Function as a Service"
+        ],
+        "explanation": "Build it the same way every time based on the code."
+      },
+      {
+        "question": "What is serverless architecture also called?",
+        "correctAnswer": "Function as a Service (FaaS)",
+        "incorrectAnswers": [
+          "Infrastructure as a Service",
+          "Software Defined Networking",
+          "Platform as a Service"
+        ],
+        "explanation": "Apps are separated into autonomous functions; OS security concerns are at the third party."
+      },
+      {
+        "question": "What acts as the 'glue' for microservices?",
+        "correctAnswer": "APIs",
+        "incorrectAnswers": [
+          "VLANs",
+          "Certificates",
+          "Hypervisors"
+        ],
+        "explanation": "Microservices are scalable, resilient, and have containment built in."
+      },
+      {
+        "question": "One big application that does everything is called what?",
+        "correctAnswer": "A monolithic application",
+        "incorrectAnswers": [
+          "A microservice",
+          "A container",
+          "A serverless function"
+        ],
+        "explanation": "Monolithic apps have large codebases and change control challenges."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.1 - Network Infrastructure Concepts": {
+    "domain": "3.0 - Security Architecture",
+    "page": "44",
+    "questions": [
+      {
+        "question": "What is an air gap?",
+        "correctAnswer": "Physical isolation between devices",
+        "incorrectAnswers": [
+          "A VLAN separation",
+          "A firewall rule",
+          "An encrypted tunnel"
+        ],
+        "explanation": "Devices must be connected to communicate."
+      },
+      {
+        "question": "What is needed for VLANs to communicate with each other?",
+        "correctAnswer": "A Layer 3 device / router",
+        "incorrectAnswers": [
+          "A hub",
+          "A wireless access point",
+          "Nothing - they communicate freely"
+        ],
+        "explanation": "VLANs are separated logically instead of physically."
+      },
+      {
+        "question": "In SDN, which layer/plane is used to configure and manage the device via SSH, browser, or API?",
+        "correctAnswer": "Application layer / Management plane",
+        "incorrectAnswers": [
+          "Infrastructure layer / Data plane",
+          "Control layer / Control plane",
+          "Physical layer"
+        ],
+        "explanation": "SDN splits functions into separate logical units."
+      },
+      {
+        "question": "In SDN, dynamic routing protocol updates are handled by which plane?",
+        "correctAnswer": "Control plane",
+        "incorrectAnswers": [
+          "Data plane",
+          "Management plane",
+          "Physical plane"
+        ],
+        "explanation": "The control layer manages routing, session, and NAT tables."
+      },
+      {
+        "question": "Customer A on one switch and customer B on another is an example of what?",
+        "correctAnswer": "Physical isolation",
+        "incorrectAnswers": [
+          "Logical segmentation",
+          "Software Defined Networking",
+          "Load balancing"
+        ],
+        "explanation": "There's no opportunity for mixing data."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.1 - Other Infrastructure Concepts": {
+    "domain": "3.0 - Security Architecture",
+    "page": "44-45",
+    "questions": [
+      {
+        "question": "What is a disadvantage of a centralized security approach?",
+        "correctAnswer": "Single point of failure",
+        "incorrectAnswers": [
+          "No correlated alerts",
+          "No consolidated logs",
+          "No patching"
+        ],
+        "explanation": "It also has potential performance issues."
+      },
+      {
+        "question": "How do containers differ from virtual machines?",
+        "correctAnswer": "Containers use the host kernel instead of each having a guest OS",
+        "incorrectAnswers": [
+          "Containers each need a hypervisor and guest OS",
+          "Containers can't run applications",
+          "Containers are less portable"
+        ],
+        "explanation": "Container images are lightweight and portable."
+      },
+      {
+        "question": "Large-scale, multi-site industrial control systems are called what?",
+        "correctAnswer": "SCADA",
+        "incorrectAnswers": [
+          "RTOS",
+          "IoT",
+          "SD-WAN"
+        ],
+        "explanation": "SCADA requires extensive segmentation with no outside access."
+      },
+      {
+        "question": "An operating system with a deterministic processing schedule is called what?",
+        "correctAnswer": "RTOS",
+        "incorrectAnswers": [
+          "SCADA",
+          "SELinux",
+          "Embedded hypervisor"
+        ],
+        "explanation": "Used in industrial equipment, automobiles, and military environments."
+      },
+      {
+        "question": "Traffic light controllers and digital watches are examples of what?",
+        "correctAnswer": "Embedded systems",
+        "incorrectAnswers": [
+          "Containers",
+          "Microservices",
+          "Jump servers"
+        ],
+        "explanation": "Embedded systems are designed for a specific function."
+      },
+      {
+        "question": "What is a common IoT security concern?",
+        "correctAnswer": "Weak defaults",
+        "incorrectAnswers": [
+          "Too much encryption",
+          "Too many security patches",
+          "Mandatory MFA"
+        ],
+        "explanation": "IoT manufacturers are not security professionals."
+      },
+      {
+        "question": "How does high availability differ from redundancy?",
+        "correctAnswer": "HA is always on; redundant systems may need to be powered on manually",
+        "incorrectAnswers": [
+          "Redundancy is always on; HA is manual",
+          "They are the same",
+          "HA never costs more"
+        ],
+        "explanation": "Higher availability almost always means higher costs."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.1 - Infrastructure Considerations": {
+    "domain": "3.0 - Security Architecture",
+    "page": "45-46",
+    "questions": [
+      {
+        "question": "Resilience is commonly referenced by which metric?",
+        "correctAnswer": "MTTR (Mean Time to Repair)",
+        "incorrectAnswers": [
+          "RPO",
+          "ALE",
+          "CVSS"
+        ],
+        "explanation": "Resilience asks whether you can recover, and how quickly."
+      },
+      {
+        "question": "Cybersecurity insurance is an example of what?",
+        "correctAnswer": "Risk transference",
+        "incorrectAnswers": [
+          "Risk avoidance",
+          "Risk acceptance",
+          "Compensating control"
+        ],
+        "explanation": "It's popular with the rise in ransomware."
+      },
+      {
+        "question": "How quickly and easily capacity can increase or decrease is called what?",
+        "correctAnswer": "Scalability / elasticity",
+        "incorrectAnswers": [
+          "Responsiveness",
+          "Resilience",
+          "Ease of recovery"
+        ],
+        "explanation": "Security monitoring must also scale."
+      },
+      {
+        "question": "What should you do with embedded systems like time clocks that can't be patched?",
+        "correctAnswer": "Add security controls, such as a firewall",
+        "incorrectAnswers": [
+          "Ignore them",
+          "Give them admin accounts",
+          "Move them to the Internet"
+        ],
+        "explanation": "Inability to patch requires additional security controls."
+      },
+      {
+        "question": "Per the notes, reloading from a corporate image after malware takes about how long?",
+        "correctAnswer": "10 minutes",
+        "incorrectAnswers": [
+          "1 hour",
+          "1 day",
+          "1 week"
+        ],
+        "explanation": "Reloading from original media takes about 1 hour."
+      },
+      {
+        "question": "Which backup power source is listed for short-term outages?",
+        "correctAnswer": "UPS",
+        "incorrectAnswers": [
+          "Generator",
+          "Hot site",
+          "SD-WAN"
+        ],
+        "explanation": "Generators provide long-term backup."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.2 - Secure Infrastructures": {
+    "domain": "3.0 - Security Architecture",
+    "page": "47",
+    "questions": [
+      {
+        "question": "Why use zone-based security?",
+        "correctAnswer": "More flexible and secure than IP address ranges",
+        "incorrectAnswers": [
+          "It eliminates the need for firewalls",
+          "It replaces encryption",
+          "It only works in the cloud"
+        ],
+        "explanation": "Zones simplify security policies, e.g., Untrusted to Screened."
+      },
+      {
+        "question": "What is the attack surface?",
+        "correctAnswer": "All the possible ways into a system",
+        "incorrectAnswers": [
+          "The firewall's outside interface only",
+          "The list of users",
+          "The data center floor plan"
+        ],
+        "explanation": "Application code, open ports, authentication, and human error."
+      },
+      {
+        "question": "Which is listed as a way to minimize the attack surface?",
+        "correctAnswer": "Block ports on the firewall",
+        "incorrectAnswers": [
+          "Open more services",
+          "Use default credentials",
+          "Disable monitoring"
+        ],
+        "explanation": "Also audit the code and monitor traffic in real time."
+      },
+      {
+        "question": "Which is an example of network-level encryption?",
+        "correctAnswer": "IPsec tunnels",
+        "incorrectAnswers": [
+          "Secure cabling",
+          "Application passwords",
+          "Data masking"
+        ],
+        "explanation": "Network-level encryption includes IPsec tunnels and VPN connections."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.2 - Intrusion Prevention": {
+    "domain": "3.0 - Security Architecture",
+    "page": "48",
+    "questions": [
+      {
+        "question": "When a system fails and data continues to flow, this is called what?",
+        "correctAnswer": "Fail-open",
+        "incorrectAnswers": [
+          "Fail-closed",
+          "Fail-over",
+          "Fail-safe"
+        ],
+        "explanation": "Fail-closed means data does not flow."
+      },
+      {
+        "question": "Which monitoring type is connected inline and can block traffic in real time?",
+        "correctAnswer": "Active monitoring",
+        "incorrectAnswers": [
+          "Passive monitoring",
+          "Port mirroring",
+          "Network tap"
+        ],
+        "explanation": "Intrusion prevention is commonly active."
+      },
+      {
+        "question": "Passive monitoring examines a copy of traffic using what?",
+        "correctAnswer": "A tap or port monitor",
+        "incorrectAnswers": [
+          "An inline firewall",
+          "A jump server",
+          "A reverse proxy"
+        ],
+        "explanation": "Data cannot be blocked in real time."
+      },
+      {
+        "question": "What is the difference between an IDS and an IPS?",
+        "correctAnswer": "An IDS alarms or alerts; an IPS stops it before it gets into the network",
+        "incorrectAnswers": [
+          "An IPS only alerts",
+          "An IDS is always inline",
+          "They are identical"
+        ],
+        "explanation": "Intrusion detection is commonly passive."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.2 - Network Appliances": {
+    "domain": "3.0 - Security Architecture",
+    "page": "48-50",
+    "questions": [
+      {
+        "question": "What is a jump server?",
+        "correctAnswer": "A hardened device that provides access to a secure network zone",
+        "incorrectAnswers": [
+          "A load balancer for web farms",
+          "An open proxy",
+          "A honeypot"
+        ],
+        "explanation": "Compromise of the jump server is a significant breach."
+      },
+      {
+        "question": "Which proxy is used to protect and control user access to the Internet?",
+        "correctAnswer": "Forward proxy",
+        "incorrectAnswers": [
+          "Reverse proxy",
+          "Open proxy",
+          "Transparent load balancer"
+        ],
+        "explanation": "A forward proxy is an 'internal proxy'."
+      },
+      {
+        "question": "Which proxy handles inbound traffic from the Internet to your internal service?",
+        "correctAnswer": "Reverse proxy",
+        "incorrectAnswers": [
+          "Forward proxy",
+          "Open proxy",
+          "Jump server"
+        ],
+        "explanation": "The reverse proxy sits in front of the web server."
+      },
+      {
+        "question": "Which proxy is a third-party, uncontrolled proxy often used to circumvent security controls?",
+        "correctAnswer": "Open proxy",
+        "incorrectAnswers": [
+          "Forward proxy",
+          "Reverse proxy",
+          "Explicit proxy"
+        ],
+        "explanation": "Open proxies can be a significant security concern."
+      },
+      {
+        "question": "A proxy that applications must be configured to use is called what?",
+        "correctAnswer": "Explicit",
+        "incorrectAnswers": [
+          "Transparent",
+          "Reverse",
+          "Open"
+        ],
+        "explanation": "Transparent proxies are invisible."
+      },
+      {
+        "question": "Which is one of the simplest 'proxies'?",
+        "correctAnswer": "NAT",
+        "incorrectAnswers": [
+          "SAML",
+          "EAP",
+          "OCSP"
+        ],
+        "explanation": "NAT is a network-level proxy."
+      },
+      {
+        "question": "In active/passive load balancing, what happens when an active server fails?",
+        "correctAnswer": "The passive server takes its place",
+        "incorrectAnswers": [
+          "All traffic stops",
+          "The load balancer reboots",
+          "Users must reconnect manually"
+        ],
+        "explanation": "Some servers are active while others are on standby."
+      },
+      {
+        "question": "Which is an active/active load balancing feature for encryption/decryption?",
+        "correctAnswer": "SSL offload",
+        "incorrectAnswers": [
+          "Content switching",
+          "Caching",
+          "Prioritization"
+        ],
+        "explanation": "Other features: TCP offload, caching, QoS, content switching."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.2 - Port Security": {
+    "domain": "3.0 - Security Architecture",
+    "page": "50",
+    "questions": [
+      {
+        "question": "What is IEEE 802.1X?",
+        "correctAnswer": "Port-based Network Access Control",
+        "incorrectAnswers": [
+          "A wireless encryption standard",
+          "A certificate format",
+          "A directory protocol"
+        ],
+        "explanation": "You don't get network access until you authenticate."
+      },
+      {
+        "question": "What is EAP?",
+        "correctAnswer": "An authentication framework",
+        "incorrectAnswers": [
+          "A hashing algorithm",
+          "A firewall type",
+          "A VPN protocol"
+        ],
+        "explanation": "EAP integrates with 802.1X; manufacturers can build their own methods."
+      },
+      {
+        "question": "In 802.1X, what is the supplicant?",
+        "correctAnswer": "The client",
+        "incorrectAnswers": [
+          "The switch",
+          "The RADIUS server",
+          "The CA"
+        ],
+        "explanation": "The authenticator provides access; the authentication server validates credentials."
+      },
+      {
+        "question": "In 802.1X, what is the authenticator?",
+        "correctAnswer": "The device that provides access",
+        "incorrectAnswers": [
+          "The client",
+          "The server that validates credentials",
+          "The user's password"
+        ],
+        "explanation": "Commonly a switch or access point."
+      },
+      {
+        "question": "Which is listed as an authentication database used with 802.1X?",
+        "correctAnswer": "RADIUS",
+        "incorrectAnswers": [
+          "SNMP",
+          "NetFlow",
+          "SCAP"
+        ],
+        "explanation": "Also LDAP, TACACS+, and Kerberos."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.2 - Firewall Types": {
+    "domain": "3.0 - Security Architecture",
+    "page": "50-51",
+    "questions": [
+      {
+        "question": "Traditional firewalls filter by port number at which OSI layer?",
+        "correctAnswer": "Layer 4",
+        "incorrectAnswers": [
+          "Layer 7",
+          "Layer 2",
+          "Layer 1"
+        ],
+        "explanation": "NGFWs filter at OSI layer 7."
+      },
+      {
+        "question": "What does UTM stand for?",
+        "correctAnswer": "Unified Threat Management",
+        "incorrectAnswers": [
+          "Universal Traffic Monitor",
+          "Unified Token Manager",
+          "User Threat Mitigation"
+        ],
+        "explanation": "An all-in-one security appliance."
+      },
+      {
+        "question": "Which is another name for a next-generation firewall?",
+        "correctAnswer": "Application layer gateway",
+        "incorrectAnswers": [
+          "Jump server",
+          "Reverse proxy",
+          "Port mirror"
+        ],
+        "explanation": "Also stateful multilayer inspection or deep packet inspection."
+      },
+      {
+        "question": "What does a web application firewall (WAF) apply rules to?",
+        "correctAnswer": "HTTP/HTTPS conversations",
+        "incorrectAnswers": [
+          "Wireless management frames",
+          "DNS zone transfers",
+          "Email headers only"
+        ],
+        "explanation": "It allows or denies based on expected input."
+      },
+      {
+        "question": "WAFs are a major focus of which standard?",
+        "correctAnswer": "PCI DSS",
+        "incorrectAnswers": [
+          "HIPAA",
+          "GDPR",
+          "SOX"
+        ],
+        "explanation": "Payment Card Industry Data Security Standard."
+      },
+      {
+        "question": "Which is a capability of most network-based firewalls?",
+        "correctAnswer": "Acting as layer 3 devices with NAT",
+        "incorrectAnswers": [
+          "Signing certificates",
+          "Hashing passwords",
+          "Cloning RFID badges"
+        ],
+        "explanation": "They often sit on the ingress/egress and can provide VPNs."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.2 - Secure Communication": {
+    "domain": "3.0 - Security Architecture",
+    "page": "51-52",
+    "questions": [
+      {
+        "question": "What is a VPN concentrator?",
+        "correctAnswer": "An encryption/decryption access device",
+        "incorrectAnswers": [
+          "A load balancer",
+          "A wireless controller",
+          "A certificate authority"
+        ],
+        "explanation": "Often integrated into a firewall."
+      },
+      {
+        "question": "Which port does an SSL/TLS VPN commonly use?",
+        "correctAnswer": "tcp/443",
+        "incorrectAnswers": [
+          "udp/161",
+          "tcp/22",
+          "tcp/3389"
+        ],
+        "explanation": "(Almost) no firewall issues."
+      },
+      {
+        "question": "Which VPN type does NOT require digital certificates or shared passwords like IPsec?",
+        "correctAnswer": "SSL/TLS VPN",
+        "incorrectAnswers": [
+          "Site-to-site IPsec",
+          "SD-WAN",
+          "Always-on IPsec"
+        ],
+        "explanation": "It authenticates users and can run from a browser."
+      },
+      {
+        "question": "Which is commonly used for always-on site-to-site connections?",
+        "correctAnswer": "IPsec VPN",
+        "incorrectAnswers": [
+          "SSL/TLS VPN",
+          "Open proxy",
+          "Jump server"
+        ],
+        "explanation": "Firewalls often act as VPN concentrators."
+      },
+      {
+        "question": "What is a limitation of SD-WAN?",
+        "correctAnswer": "It does not adequately address security concerns",
+        "incorrectAnswers": [
+          "It can't connect to the cloud",
+          "It requires a hot site",
+          "It only works on-premises"
+        ],
+        "explanation": "SASE is a complete network and security solution."
+      },
+      {
+        "question": "What is SASE described as?",
+        "correctAnswer": "A 'next generation' VPN with security in the cloud",
+        "incorrectAnswers": [
+          "A type of firewall rule",
+          "An authentication protocol",
+          "A wireless standard"
+        ],
+        "explanation": "Secure Access Service Edge, with SASE clients on all devices."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.3 - Data Types and Classifications": {
+    "domain": "3.0 - Security Architecture",
+    "page": "53",
+    "questions": [
+      {
+        "question": "Data managed by a third party through government laws and statutes is called what?",
+        "correctAnswer": "Regulated",
+        "incorrectAnswers": [
+          "Trade secret",
+          "Intellectual property",
+          "Public"
+        ],
+        "explanation": "Regulated data is managed by third-party laws."
+      },
+      {
+        "question": "Barcodes and images are examples of what?",
+        "correctAnswer": "Non-human readable data",
+        "incorrectAnswers": [
+          "Human-readable data",
+          "Trade secrets",
+          "PHI"
+        ],
+        "explanation": "CSV, XML, and JSON are hybrid formats."
+      },
+      {
+        "question": "What does PHI stand for?",
+        "correctAnswer": "Protected Health Information",
+        "incorrectAnswers": [
+          "Personal Hardware Inventory",
+          "Public Health Index",
+          "Private Hashed Identity"
+        ],
+        "explanation": "Health status, health care records, payments for health care."
+      },
+      {
+        "question": "Name, date of birth, and biometric information are examples of what?",
+        "correctAnswer": "PII",
+        "incorrectAnswers": [
+          "Proprietary data",
+          "Public data",
+          "Intellectual property"
+        ],
+        "explanation": "PII can be used to identify an individual."
+      },
+      {
+        "question": "Which classification means data should always be available?",
+        "correctAnswer": "Critical",
+        "incorrectAnswers": [
+          "Confidential",
+          "Public",
+          "Private"
+        ],
+        "explanation": "Other classifications: sensitive, confidential, public, private."
+      },
+      {
+        "question": "Which classification may require an NDA for restricted access?",
+        "correctAnswer": "Private / Classified / Restricted",
+        "incorrectAnswers": [
+          "Public / Unclassified",
+          "Critical",
+          "Human-readable"
+        ],
+        "explanation": "Confidential data must be approved to view."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.3 - States of Data": {
+    "domain": "3.0 - Security Architecture",
+    "page": "53-54",
+    "questions": [
+      {
+        "question": "Data on a hard drive or SSD is in which state?",
+        "correctAnswer": "Data at rest",
+        "incorrectAnswers": [
+          "Data in transit",
+          "Data in use",
+          "Data in motion"
+        ],
+        "explanation": "Protect with encryption and permissions."
+      },
+      {
+        "question": "Which protects data in transit?",
+        "correctAnswer": "TLS and IPsec",
+        "incorrectAnswers": [
+          "Whole disk encryption",
+          "File permissions",
+          "Data masking"
+        ],
+        "explanation": "Data in transit is also called data in motion."
+      },
+      {
+        "question": "Data in system RAM and CPU registers is in which state?",
+        "correctAnswer": "Data in use",
+        "incorrectAnswers": [
+          "Data at rest",
+          "Data in transit",
+          "Archived data"
+        ],
+        "explanation": "Data in use is almost always decrypted."
+      },
+      {
+        "question": "In the Target breach, where did attackers pick out the credit card numbers?",
+        "correctAnswer": "Point-of-sale RAM",
+        "incorrectAnswers": [
+          "The encrypted database",
+          "Network traffic",
+          "Backup tapes"
+        ],
+        "explanation": "Data in transit and at rest were encrypted."
+      },
+      {
+        "question": "What is data sovereignty?",
+        "correctAnswer": "Data in a country is subject to that country's laws",
+        "incorrectAnswers": [
+          "Users own all corporate data",
+          "Data must be encrypted in transit",
+          "Data can't be backed up"
+        ],
+        "explanation": "GDPR requires EU citizens' data be stored in the EU."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.3 - Protecting Data": {
+    "domain": "3.0 - Security Architecture",
+    "page": "54-55",
+    "questions": [
+      {
+        "question": "Automatically allowing or restricting access based on location is called what?",
+        "correctAnswer": "Geofencing",
+        "incorrectAnswers": [
+          "Geolocation",
+          "Tokenization",
+          "Segmentation"
+        ],
+        "explanation": "Example: don't allow an app to run unless you're near the office."
+      },
+      {
+        "question": "Which method of determining location is the least accurate?",
+        "correctAnswer": "IP address",
+        "incorrectAnswers": [
+          "GPS",
+          "802.11 wireless",
+          "Mobile provider"
+        ],
+        "explanation": "GPS is very accurate, 802.11 less accurate."
+      },
+      {
+        "question": "When encrypted data is drastically different than the plaintext, this is called what?",
+        "correctAnswer": "Confusion",
+        "incorrectAnswers": [
+          "Collision",
+          "Diffusion",
+          "Obfuscation"
+        ],
+        "explanation": "Encryption is a two-way street with the proper key."
+      },
+      {
+        "question": "Turning readable code into nonsense that performs the same way is called what?",
+        "correctAnswer": "Obfuscation",
+        "incorrectAnswers": [
+          "Hashing",
+          "Tokenization",
+          "Encryption"
+        ],
+        "explanation": "It helps prevent the search for security holes but isn't impossible to understand."
+      },
+      {
+        "question": "Why segment data?",
+        "correctAnswer": "One breach won't put all of the data at risk",
+        "incorrectAnswers": [
+          "It removes the need for permissions",
+          "It speeds up encryption",
+          "It eliminates backups"
+        ],
+        "explanation": "The most sensitive data should be the most secure."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.4 - Resiliency": {
+    "domain": "3.0 - Security Architecture",
+    "page": "55-56",
+    "questions": [
+      {
+        "question": "Which combines two or more servers to appear and operate as a single large server?",
+        "correctAnswer": "Server clustering",
+        "incorrectAnswers": [
+          "Load balancing",
+          "Replication",
+          "Journaling"
+        ],
+        "explanation": "Cluster devices commonly use the same OS."
+      },
+      {
+        "question": "In load balancing, are servers aware of each other?",
+        "correctAnswer": "Often not",
+        "incorrectAnswers": [
+          "Always",
+          "Only in a cluster",
+          "Only on the same OS"
+        ],
+        "explanation": "Load balanced servers can be different operating systems."
+      },
+      {
+        "question": "Which recovery site is an exact replica, stocked with hardware and constantly updated?",
+        "correctAnswer": "Hot site",
+        "incorrectAnswers": [
+          "Warm site",
+          "Cold site",
+          "Jump site"
+        ],
+        "explanation": "You buy two of everything."
+      },
+      {
+        "question": "Which recovery site has no hardware, no data, and no people?",
+        "correctAnswer": "Cold site",
+        "incorrectAnswers": [
+          "Hot site",
+          "Warm site",
+          "Multi-cloud site"
+        ],
+        "explanation": "It's an empty building."
+      },
+      {
+        "question": "Which recovery site provides rack space and hardware, but you bring the software and data?",
+        "correctAnswer": "Warm site",
+        "incorrectAnswers": [
+          "Cold site",
+          "Hot site",
+          "Screened subnet"
+        ],
+        "explanation": "Somewhere between cold and hot."
+      },
+      {
+        "question": "Using different OSes and applications to spread risk is called what?",
+        "correctAnswer": "Platform diversity",
+        "incorrectAnswers": [
+          "Geographic dispersion",
+          "Multi-cloud",
+          "Clustering"
+        ],
+        "explanation": "Vulnerabilities are often specific to a single OS."
+      },
+      {
+        "question": "Manual transactions, paper receipts, and phone approvals are part of what?",
+        "correctAnswer": "Continuity of operations planning (COOP)",
+        "incorrectAnswers": [
+          "Capacity planning",
+          "Change management",
+          "Recovery testing"
+        ],
+        "explanation": "They must be documented and tested before a problem occurs."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.4 - Capacity Planning": {
+    "domain": "3.0 - Security Architecture",
+    "page": "56",
+    "questions": [
+      {
+        "question": "What is capacity planning?",
+        "correctAnswer": "Matching supply to the demand",
+        "incorrectAnswers": [
+          "Encrypting stored data",
+          "Scanning for vulnerabilities",
+          "Testing backups"
+        ],
+        "explanation": "It requires a balanced approach of people, technology, and infrastructure."
+      },
+      {
+        "question": "What is the result of too much supply?",
+        "correctAnswer": "You're paying too much",
+        "incorrectAnswers": [
+          "Application outages",
+          "Slow responses",
+          "Data loss"
+        ],
+        "explanation": "Too much demand causes slowdowns and outages."
+      },
+      {
+        "question": "Which infrastructure option is useful for unexpected capacity changes?",
+        "correctAnswer": "Cloud-based devices",
+        "incorrectAnswers": [
+          "Physical devices",
+          "Cold sites",
+          "Tape backups"
+        ],
+        "explanation": "Cloud devices are easier to deploy."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.4 - Recovery Testing": {
+    "domain": "3.0 - Security Architecture",
+    "page": "57",
+    "questions": [
+      {
+        "question": "Key players talking through a simulated disaster is called what?",
+        "correctAnswer": "Tabletop exercise",
+        "incorrectAnswers": [
+          "Simulation",
+          "Fail over",
+          "Parallel processing"
+        ],
+        "explanation": "A full-scale drill can be costly and time consuming."
+      },
+      {
+        "question": "Sending a fake phishing email to your users to see who bites is what kind of test?",
+        "correctAnswer": "Simulation",
+        "incorrectAnswers": [
+          "Tabletop exercise",
+          "Fail over",
+          "Penetration test"
+        ],
+        "explanation": "It tests both internal security filters and the users."
+      },
+      {
+        "question": "What should recovery testing rules of engagement say about production systems?",
+        "correctAnswer": "Do not touch the production systems",
+        "incorrectAnswers": [
+          "Shut them down first",
+          "Test only on production",
+          "Delete production backups"
+        ],
+        "explanation": "Use well-defined rules with a specific scenario."
+      },
+      {
+        "question": "How does parallel processing improve recovery?",
+        "correctAnswer": "A faulty processor can be removed and the rest keep operating",
+        "incorrectAnswers": [
+          "It doubles the backup speed",
+          "It encrypts data faster",
+          "It removes the need for fail over"
+        ],
+        "explanation": "It also improves performance."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.4 - Backups": {
+    "domain": "3.0 - Security Architecture",
+    "page": "57-58",
+    "questions": [
+      {
+        "question": "What is an advantage of offsite backups?",
+        "correctAnswer": "Data is available after a disaster",
+        "incorrectAnswers": [
+          "No Internet link required",
+          "Generally less expensive",
+          "Data is immediately available"
+        ],
+        "explanation": "Onsite backups are immediately available and usually cheaper."
+      },
+      {
+        "question": "Why encrypt backups?",
+        "correctAnswer": "A history of data is in one place, making it easy for an attacker",
+        "incorrectAnswers": [
+          "To make them faster",
+          "To remove the need for testing",
+          "To compress them"
+        ],
+        "explanation": "Especially useful for cloud backups."
+      },
+      {
+        "question": "In the snapshot example, what does the Tuesday snapshot contain?",
+        "correctAnswer": "Only the changes since the previous snapshot",
+        "incorrectAnswers": [
+          "A complete copy of all data",
+          "Only new data",
+          "Nothing until Friday"
+        ],
+        "explanation": "You can revert to any snapshot with very fast recovery."
+      },
+      {
+        "question": "Is performing a backup enough?",
+        "correctAnswer": "No, you have to be able to restore",
+        "incorrectAnswers": [
+          "Yes, always",
+          "Only for offsite backups",
+          "Only if encrypted"
+        ],
+        "explanation": "Perform disaster recovery testing and periodic audits."
+      },
+      {
+        "question": "An ongoing, almost real-time backup keeping data synchronized in multiple locations is called what?",
+        "correctAnswer": "Replication",
+        "incorrectAnswers": [
+          "Journaling",
+          "Snapshot",
+          "Archiving"
+        ],
+        "explanation": "Data can be stored locally to all users."
+      },
+      {
+        "question": "Writing a journal entry before writing data to storage is called what?",
+        "correctAnswer": "Journaling",
+        "incorrectAnswers": [
+          "Replication",
+          "Snapshots",
+          "Clustering"
+        ],
+        "explanation": "It protects against corruption if power goes out while writing."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "3.4 - Power Resiliency": {
+    "domain": "3.0 - Security Architecture",
+    "page": "58",
+    "questions": [
+      {
+        "question": "Which is NOT one of the listed UPS types?",
+        "correctAnswer": "Generator-interactive UPS",
+        "incorrectAnswers": [
+          "Offline/Standby UPS",
+          "Line-interactive UPS",
+          "On-line/Double-conversion UPS"
+        ],
+        "explanation": "The three UPS types are Offline/Standby, Line-interactive, and On-line/Double-conversion."
+      },
+      {
+        "question": "What provides long-term power backup and requires fuel storage?",
+        "correctAnswer": "Generator",
+        "incorrectAnswers": [
+          "UPS",
+          "Surge protector",
+          "PDU"
+        ],
+        "explanation": "Generators can power an entire building."
+      },
+      {
+        "question": "Why use a UPS together with a generator?",
+        "correctAnswer": "The UPS provides power while the generator starts up",
+        "incorrectAnswers": [
+          "The UPS refuels the generator",
+          "The generator charges the CPU",
+          "They can't be used together"
+        ],
+        "explanation": "It may take a few minutes to get a generator up to speed."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.1 - Secure Baselines": {
+    "domain": "4.0 - Security Operations",
+    "page": "59",
+    "questions": [
+      {
+        "question": "What checks systems against the secure baseline?",
+        "correctAnswer": "Integrity measurements",
+        "incorrectAnswers": [
+          "Tabletop exercises",
+          "Key escrow",
+          "Load balancers"
+        ],
+        "explanation": "A failure requires an immediate correction."
+      },
+      {
+        "question": "Where are security baselines often available from?",
+        "correctAnswer": "The manufacturer",
+        "incorrectAnswers": [
+          "The dark web",
+          "End users",
+          "Open proxies"
+        ],
+        "explanation": "Application developers, OS manufacturers, and appliance manufacturers."
+      },
+      {
+        "question": "How are baselines usually deployed?",
+        "correctAnswer": "Through a centrally administered console, like Group Policy or MDM",
+        "incorrectAnswers": [
+          "Manually on each device by users",
+          "By email attachment",
+          "Through a honeypot"
+        ],
+        "explanation": "Automation is the key for hundreds or thousands of devices."
+      },
+      {
+        "question": "About how many group policy settings are in Windows 10?",
+        "correctAnswer": "Over 3,000",
+        "incorrectAnswers": [
+          "About 30",
+          "About 300",
+          "Exactly 50"
+        ],
+        "explanation": "Only some are associated with security."
+      },
+      {
+        "question": "Why must baselines be tested and measured?",
+        "correctAnswer": "Some baselines may contradict others",
+        "incorrectAnswers": [
+          "Baselines expire daily",
+          "Baselines remove all patches",
+          "Baselines disable logging"
+        ],
+        "explanation": "Enterprise environments are complex."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.1 - Hardening Targets": {
+    "domain": "4.0 - Security Operations",
+    "page": "59-60",
+    "questions": [
+      {
+        "question": "Where are the best hardening details usually found?",
+        "correctAnswer": "From the manufacturer or Internet interest group",
+        "incorrectAnswers": [
+          "From the end user",
+          "From the default configuration",
+          "From a honeypot"
+        ],
+        "explanation": "Hardening guides are specific to the software or platform."
+      },
+      {
+        "question": "How should IoT devices be segmented?",
+        "correctAnswer": "On their own VLAN",
+        "incorrectAnswers": [
+          "On the same network as servers",
+          "On the guest Wi-Fi with admin rights",
+          "Directly on the Internet"
+        ],
+        "explanation": "Also change default passwords and deploy updates quickly."
+      },
+      {
+        "question": "What is described as 'the keys to the kingdom' for cloud infrastructure?",
+        "correctAnswer": "The cloud management workstation",
+        "incorrectAnswers": [
+          "The guest Wi-Fi password",
+          "The printer",
+          "The UPS"
+        ],
+        "explanation": "Secure the cloud management workstation."
+      },
+      {
+        "question": "Which hardening step is listed for an RTOS?",
+        "correctAnswer": "Run with the minimum services",
+        "incorrectAnswers": [
+          "Enable all services",
+          "Connect it to the Internet",
+          "Disable the firewall"
+        ],
+        "explanation": "Also isolate it and use secure communication."
+      },
+      {
+        "question": "What tool controls mobile device hardening?",
+        "correctAnswer": "MDM (Mobile Device Manager)",
+        "incorrectAnswers": [
+          "SIEM",
+          "WAF",
+          "HSM"
+        ],
+        "explanation": "Segmentation can also separate company and user data."
+      },
+      {
+        "question": "What type of backup is listed for cloud infrastructure?",
+        "correctAnswer": "Cloud to Cloud (C2C)",
+        "incorrectAnswers": [
+          "Tape only",
+          "No backups needed",
+          "USB drive"
+        ],
+        "explanation": "Always have backups."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.1 - Securing Wireless and Mobile": {
+    "domain": "4.0 - Security Operations",
+    "page": "60-61",
+    "questions": [
+      {
+        "question": "What identifies wireless signal strengths in a site survey?",
+        "correctAnswer": "A heat map",
+        "incorrectAnswers": [
+          "A CRL",
+          "A risk register",
+          "A packet capture"
+        ],
+        "explanation": "Site surveys determine the existing wireless landscape."
+      },
+      {
+        "question": "In BYOD, who owns the device?",
+        "correctAnswer": "The employee",
+        "incorrectAnswers": [
+          "The company",
+          "The carrier",
+          "The MDM vendor"
+        ],
+        "explanation": "BYOD is difficult to secure - it's both a home and work device."
+      },
+      {
+        "question": "What does COPE stand for?",
+        "correctAnswer": "Corporate owned, personally enabled",
+        "incorrectAnswers": [
+          "Choose own personal equipment",
+          "Company operated public endpoint",
+          "Corporate offsite policy enforcement"
+        ],
+        "explanation": "The company buys the device and keeps full control."
+      },
+      {
+        "question": "What is CYOD?",
+        "correctAnswer": "Like COPE, but the user chooses the device",
+        "incorrectAnswers": [
+          "The user owns and controls the device",
+          "A device with no MDM",
+          "A shared kiosk device"
+        ],
+        "explanation": "Choose Your Own Device."
+      },
+      {
+        "question": "Bluetooth is what kind of network?",
+        "correctAnswer": "PAN (Personal Area Network)",
+        "incorrectAnswers": [
+          "WAN",
+          "SAN",
+          "VLAN"
+        ],
+        "explanation": "High-speed communication over short distances."
+      },
+      {
+        "question": "Which is listed as a cellular network security concern?",
+        "correctAnswer": "Location tracking",
+        "incorrectAnswers": [
+          "Deauthentication frames",
+          "SQL injection",
+          "Rainbow tables"
+        ],
+        "explanation": "Also traffic monitoring and worldwide access."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.1 - Wireless Security Settings": {
+    "domain": "4.0 - Security Operations",
+    "page": "61-62",
+    "questions": [
+      {
+        "question": "What is the WPA2 PSK problem?",
+        "correctAnswer": "Attackers can capture the hash and brute force the pre-shared key",
+        "incorrectAnswers": [
+          "WPA2 has no encryption",
+          "WPA2 requires RADIUS",
+          "WPA2 can't use AES"
+        ],
+        "explanation": "Once you have the PSK you have everyone's key - no forward secrecy."
+      },
+      {
+        "question": "Which block cipher mode does WPA3 use?",
+        "correctAnswer": "GCMP",
+        "incorrectAnswers": [
+          "TKIP",
+          "MD5",
+          "SAE"
+        ],
+        "explanation": "Galois/Counter Mode Protocol - stronger than WPA2."
+      },
+      {
+        "question": "GCMP provides data confidentiality with which algorithm?",
+        "correctAnswer": "AES",
+        "incorrectAnswers": [
+          "MD5",
+          "SHA-256",
+          "RSA"
+        ],
+        "explanation": "Integrity is provided by GMAC."
+      },
+      {
+        "question": "What replaces the four-way handshake for PSK authentication in WPA3?",
+        "correctAnswer": "SAE (Simultaneous Authentication of Equals)",
+        "incorrectAnswers": [
+          "EAP",
+          "OCSP",
+          "RADIUS"
+        ],
+        "explanation": "Also called the dragonfly handshake; no hashes, no brute force attacks."
+      },
+      {
+        "question": "With WPA3 SAE, does everyone use the same session key?",
+        "correctAnswer": "No, everyone uses a different session key, even with the same PSK",
+        "incorrectAnswers": [
+          "Yes, the PSK is the session key",
+          "Yes, but it changes daily",
+          "Only enterprise users get different keys"
+        ],
+        "explanation": "SAE is a Diffie-Hellman derived key exchange."
+      },
+      {
+        "question": "Which wireless security mode authenticates users individually with RADIUS?",
+        "correctAnswer": "WPA3-Enterprise / WPA3-802.1X",
+        "incorrectAnswers": [
+          "WPA3-Personal / WPA3-PSK",
+          "Open System",
+          "WEP"
+        ],
+        "explanation": "Personal mode uses the same key for everyone."
+      },
+      {
+        "question": "What does RADIUS centralize?",
+        "correctAnswer": "Authentication for users",
+        "incorrectAnswers": [
+          "Encryption keys for disks",
+          "Log storage",
+          "Certificate revocation"
+        ],
+        "explanation": "For routers, switches, firewalls, VPN, and 802.1X."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.1 - Application Security": {
+    "domain": "4.0 - Security Operations",
+    "page": "62-63",
+    "questions": [
+      {
+        "question": "What is input validation?",
+        "correctAnswer": "Validating actual input against expected input",
+        "incorrectAnswers": [
+          "Signing code with a private key",
+          "Hashing every request",
+          "Encrypting cookies"
+        ],
+        "explanation": "Check and correct all input (normalization)."
+      },
+      {
+        "question": "What will find what you missed in input validation?",
+        "correctAnswer": "Fuzzers",
+        "incorrectAnswers": [
+          "Honeypots",
+          "Load balancers",
+          "Proxies"
+        ],
+        "explanation": "Don't give them an opening."
+      },
+      {
+        "question": "What does the Secure attribute on a cookie do?",
+        "correctAnswer": "The browser only sends it over HTTPS",
+        "incorrectAnswers": [
+          "Encrypts the cookie on disk",
+          "Makes the cookie executable",
+          "Deletes it after one use"
+        ],
+        "explanation": "Sensitive information should not be saved in a cookie."
+      },
+      {
+        "question": "What does SAST stand for?",
+        "correctAnswer": "Static Application Security Testing",
+        "incorrectAnswers": [
+          "Secure Application Signing Tool",
+          "System Audit Security Test",
+          "Software Access Security Token"
+        ],
+        "explanation": "Static code analyzers help identify flaws but have false positives."
+      },
+      {
+        "question": "Which flaw is NOT easily identified by static code analysis?",
+        "correctAnswer": "Insecure cryptography",
+        "incorrectAnswers": [
+          "Buffer overflows",
+          "Database injections",
+          "Any input field bug"
+        ],
+        "explanation": "Authentication security and insecure cryptography are hard to find through analysis."
+      },
+      {
+        "question": "In code signing, how does the developer sign the code?",
+        "correctAnswer": "With their private key",
+        "incorrectAnswers": [
+          "With their public key",
+          "With the CA's private key",
+          "With a symmetric key"
+        ],
+        "explanation": "A trusted CA signs the developer's public key."
+      },
+      {
+        "question": "Which is listed as an example of sandboxing?",
+        "correctAnswer": "Windows User Account Control (UAC)",
+        "incorrectAnswers": [
+          "SNMP traps",
+          "Key escrow",
+          "DNS filtering"
+        ],
+        "explanation": "Also VMs, mobile devices, and browser iframes."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.2 - Asset Management": {
+    "domain": "4.0 - Security Operations",
+    "page": "63-64",
+    "questions": [
+      {
+        "question": "How is hardware classified financially?",
+        "correctAnswer": "Capital expenditure",
+        "incorrectAnswers": [
+          "Operating expenditure",
+          "Liability",
+          "Revenue"
+        ],
+        "explanation": "Software is classified as an operating expenditure."
+      },
+      {
+        "question": "Listing all parts of an asset (CPU, memory, storage) is called what?",
+        "correctAnswer": "Enumeration",
+        "incorrectAnswers": [
+          "Sanitization",
+          "Procurement",
+          "Attestation"
+        ],
+        "explanation": "Add an asset tag too: barcode, RFID, tracking number."
+      },
+      {
+        "question": "Which destruction method removes the magnetic field and renders the drive unusable?",
+        "correctAnswer": "Degaussing",
+        "incorrectAnswers": [
+          "Shredding",
+          "Incineration",
+          "Drilling"
+        ],
+        "explanation": "Degaussing is electromagnetic destruction."
+      },
+      {
+        "question": "What should a third-party destruction service provide?",
+        "correctAnswer": "A certificate of destruction",
+        "incorrectAnswers": [
+          "A CSR",
+          "An SLA",
+          "An NDA"
+        ],
+        "explanation": "A paper trail of exactly what happened."
+      },
+      {
+        "question": "Why might data retention be required?",
+        "correctAnswer": "Regulatory compliance",
+        "incorrectAnswers": [
+          "To speed up the network",
+          "To avoid encryption",
+          "To reduce storage"
+        ],
+        "explanation": "Also operational needs like accidental deletion and disaster recovery."
+      },
+      {
+        "question": "What is the goal of media sanitization?",
+        "correctAnswer": "No usable information remains, even with forensics tools",
+        "incorrectAnswers": [
+          "Compress the data",
+          "Encrypt the data",
+          "Back up the data"
+        ],
+        "explanation": "It's a one-way trip."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.3 - Vulnerability Scanning": {
+    "domain": "4.0 - Security Operations",
+    "page": "64",
+    "questions": [
+      {
+        "question": "How invasive is a vulnerability scan compared to a penetration test?",
+        "correctAnswer": "Usually minimally invasive",
+        "incorrectAnswers": [
+          "More invasive",
+          "Exactly the same",
+          "It always exploits vulnerabilities"
+        ],
+        "explanation": "A pentest actually tries to exploit vulnerabilities."
+      },
+      {
+        "question": "Sending random input to an application looking for crashes is called what?",
+        "correctAnswer": "Fuzzing (dynamic analysis)",
+        "incorrectAnswers": [
+          "Static analysis",
+          "Package monitoring",
+          "Port scanning"
+        ],
+        "explanation": "Also called fault-injecting, robustness, syntax, or negative testing."
+      },
+      {
+        "question": "Where did fuzzing originate in 1988?",
+        "correctAnswer": "A class project at the University of Wisconsin",
+        "incorrectAnswers": [
+          "At NIST",
+          "At Microsoft",
+          "At Carnegie Mellon CERT"
+        ],
+        "explanation": "Professor Barton Miller's 'Operating System Utility Program Reliability'."
+      },
+      {
+        "question": "What does the CERT BFF stand for?",
+        "correctAnswer": "Basic Fuzzing Framework",
+        "incorrectAnswers": [
+          "Binary File Filter",
+          "Bug Finding Format",
+          "Baseline Firewall Framework"
+        ],
+        "explanation": "From the Carnegie Mellon CERT."
+      },
+      {
+        "question": "What does package monitoring confirm?",
+        "correctAnswer": "The package is legitimate, from a trusted source, with no added malware",
+        "incorrectAnswers": [
+          "The package is compressed",
+          "The package is the newest version",
+          "The package has a wildcard certificate"
+        ],
+        "explanation": "Supply chain integrity - verify contents before deployment."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.3 - Threat Intelligence": {
+    "domain": "4.0 - Security Operations",
+    "page": "65",
+    "questions": [
+      {
+        "question": "What does OSINT stand for?",
+        "correctAnswer": "Open-source intelligence",
+        "incorrectAnswers": [
+          "Operational security intelligence",
+          "Offsite network intrusion test",
+          "Outsourced intelligence"
+        ],
+        "explanation": "Publicly available sources: Internet, government data, commercial data."
+      },
+      {
+        "question": "Threat information someone else compiled that you can buy is called what?",
+        "correctAnswer": "Proprietary/third-party intelligence",
+        "incorrectAnswers": [
+          "OSINT",
+          "Dark web intelligence",
+          "Honeytokens"
+        ],
+        "explanation": "Threat intelligence services provide analytics and correlation."
+      },
+      {
+        "question": "What does the Cyber Threat Alliance (CTA) do with submitted threat intelligence?",
+        "correctAnswer": "Scores each submission and validates across other submissions",
+        "incorrectAnswers": [
+          "Sells it to attackers",
+          "Deletes it after a day",
+          "Publishes it on social media"
+        ],
+        "explanation": "Other members can extract the validated data."
+      },
+      {
+        "question": "What does accessing the dark web require?",
+        "correctAnswer": "Specific software and configurations",
+        "incorrectAnswers": [
+          "Nothing special",
+          "A government license",
+          "A wildcard certificate"
+        ],
+        "explanation": "Monitor forums for company and executive names."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.3 - Penetration Testing": {
+    "domain": "4.0 - Security Operations",
+    "page": "65-66",
+    "questions": [
+      {
+        "question": "How does a penetration test differ from vulnerability scanning?",
+        "correctAnswer": "It actually tries to exploit vulnerabilities",
+        "incorrectAnswers": [
+          "It only scans ports",
+          "It never touches systems",
+          "It only reviews documentation"
+        ],
+        "explanation": "A pentest simulates an attack."
+      },
+      {
+        "question": "What document defines the purpose, scope, IP ranges, and emergency contacts of a pentest?",
+        "correctAnswer": "Rules of engagement",
+        "incorrectAnswers": [
+          "SLA",
+          "MOU",
+          "CRL"
+        ],
+        "explanation": "It also defines in-scope and out-of-scope devices."
+      },
+      {
+        "question": "Moving from system to system inside the network is called what?",
+        "correctAnswer": "Lateral movement",
+        "incorrectAnswers": [
+          "Persistence",
+          "Pivoting",
+          "Initial exploitation"
+        ],
+        "explanation": "The inside of the network is relatively unprotected."
+      },
+      {
+        "question": "Setting up a backdoor to make sure there's a way back in is called what?",
+        "correctAnswer": "Persistence",
+        "incorrectAnswers": [
+          "Lateral movement",
+          "Pivot",
+          "Reconnaissance"
+        ],
+        "explanation": "Also building user accounts or changing default passwords."
+      },
+      {
+        "question": "Using a vulnerable system as a proxy to reach otherwise inaccessible systems is called what?",
+        "correctAnswer": "The pivot",
+        "incorrectAnswers": [
+          "Persistence",
+          "Fuzzing",
+          "Spraying"
+        ],
+        "explanation": "The pivot gains access to normally inaccessible systems."
+      },
+      {
+        "question": "What is a bug bounty program?",
+        "correctAnswer": "A reward for discovering vulnerabilities",
+        "incorrectAnswers": [
+          "A fine for unpatched systems",
+          "A type of malware",
+          "A firewall rule"
+        ],
+        "explanation": "Part of a responsible disclosure program."
+      },
+      {
+        "question": "In responsible disclosure, what happens after the manufacturer creates a fix?",
+        "correctAnswer": "The vulnerability is announced publicly",
+        "incorrectAnswers": [
+          "The researcher sells it",
+          "The vulnerability is kept secret forever",
+          "The researcher is fined"
+        ],
+        "explanation": "It's a controlled information release."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.3 - Analyzing Vulnerabilities": {
+    "domain": "4.0 - Security Operations",
+    "page": "66-67",
+    "questions": [
+      {
+        "question": "A vulnerability is identified that doesn't really exist. What is this?",
+        "correctAnswer": "False positive",
+        "incorrectAnswers": [
+          "False negative",
+          "True positive",
+          "Low-severity vulnerability"
+        ],
+        "explanation": "A low-severity vulnerability is real but may not be a priority."
+      },
+      {
+        "question": "A vulnerability exists but wasn't detected. What is this?",
+        "correctAnswer": "False negative",
+        "incorrectAnswers": [
+          "False positive",
+          "True negative",
+          "Exception"
+        ],
+        "explanation": "Update to the latest signatures."
+      },
+      {
+        "question": "What is the CVSS scoring range?",
+        "correctAnswer": "0 to 10",
+        "incorrectAnswers": [
+          "1 to 5",
+          "0 to 100",
+          "A to F"
+        ],
+        "explanation": "Scoring standards change over time (CVSS 2.0 vs 3.x)."
+      },
+      {
+        "question": "Which database is synchronized with the CVE list?",
+        "correctAnswer": "National Vulnerability Database (NVD)",
+        "incorrectAnswers": [
+          "Cyber Threat Alliance",
+          "CIS Benchmarks",
+          "SCAP"
+        ],
+        "explanation": "nvd.nist.gov offers enhanced search functionality."
+      },
+      {
+        "question": "A buffer overflow that completely disables a service has what exposure factor?",
+        "correctAnswer": "100%",
+        "incorrectAnswers": [
+          "50%",
+          "25%",
+          "0%"
+        ],
+        "explanation": "A small DDoS limiting access might be 50%."
+      },
+      {
+        "question": "Which vulnerability scan type looks for misconfigured firewalls and open ports?",
+        "correctAnswer": "Network scans",
+        "incorrectAnswers": [
+          "Application scans",
+          "Web application scans",
+          "Code signing"
+        ],
+        "explanation": "Application scans cover desktop and mobile apps."
+      },
+      {
+        "question": "What is the downside of patching immediately with no risk tolerance?",
+        "correctAnswer": "It doesn't allow for proper testing",
+        "incorrectAnswers": [
+          "Patches can't be installed immediately",
+          "It increases exposure factor",
+          "It violates CVSS"
+        ],
+        "explanation": "While you're testing, you're also vulnerable - there's a middle ground."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.3 - Vulnerability Remediation": {
+    "domain": "4.0 - Security Operations",
+    "page": "67-68",
+    "questions": [
+      {
+        "question": "What is the most common mitigation technique?",
+        "correctAnswer": "Patching",
+        "incorrectAnswers": [
+          "Insurance",
+          "Segmentation",
+          "Exceptions"
+        ],
+        "explanation": "An easy way to prevent most exploits."
+      },
+      {
+        "question": "Which is NOT covered by cybersecurity insurance?",
+        "correctAnswer": "Intentional acts",
+        "incorrectAnswers": [
+          "Lost revenue",
+          "Data recovery costs",
+          "Privacy lawsuit costs"
+        ],
+        "explanation": "Funds transfers are also not covered."
+      },
+      {
+        "question": "If you can't patch a system, what may be required?",
+        "correctAnswer": "Segmentation or an air gap",
+        "incorrectAnswers": [
+          "Removing all logging",
+          "Disabling the firewall",
+          "Sharing admin passwords"
+        ],
+        "explanation": "Limit the scope of an exploit."
+      },
+      {
+        "question": "Disabling a problematic service until a patch is deployed is an example of what?",
+        "correctAnswer": "Compensating control",
+        "incorrectAnswers": [
+          "Exception",
+          "Insurance",
+          "Rescanning"
+        ],
+        "explanation": "Compensate in other ways until the optimal response is available."
+      },
+      {
+        "question": "Which is a way to validate remediation?",
+        "correctAnswer": "Rescanning",
+        "incorrectAnswers": [
+          "Deleting logs",
+          "Buying insurance",
+          "Writing an MOU"
+        ],
+        "explanation": "Also audit and verification."
+      },
+      {
+        "question": "When a vulnerability can't be removed, what may be approved through a formal process?",
+        "correctAnswer": "An exception",
+        "incorrectAnswers": [
+          "A CSR",
+          "A bug bounty",
+          "A SOW"
+        ],
+        "explanation": "Exceptions and exemptions balance service and protection."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.4 - Security Monitoring": {
+    "domain": "4.0 - Security Operations",
+    "page": "68-69",
+    "questions": [
+      {
+        "question": "What does a SIEM do for log aggregation?",
+        "correctAnswer": "Consolidates many different logs to a central database",
+        "incorrectAnswers": [
+          "Deletes old logs",
+          "Encrypts each log on its device",
+          "Replaces firewalls"
+        ],
+        "explanation": "It allows correlation between diverse systems."
+      },
+      {
+        "question": "According to IBM's 2022 report, how long does it take to identify and contain a breach on average?",
+        "correctAnswer": "About 9 months",
+        "incorrectAnswers": [
+          "About 9 days",
+          "About 9 hours",
+          "About 9 years"
+        ],
+        "explanation": "That's why archiving over an extended period matters."
+      },
+      {
+        "question": "What is quarantine in alert response?",
+        "correctAnswer": "Preventing a potential security issue from spreading",
+        "incorrectAnswers": [
+          "Deleting all logs",
+          "Disabling alerts",
+          "Publishing the incident"
+        ],
+        "explanation": "It's a foundational security response."
+      },
+      {
+        "question": "What is the goal of alert tuning?",
+        "correctAnswer": "Prevent false positives and false negatives",
+        "incorrectAnswers": [
+          "Send more alerts",
+          "Disable all alerts",
+          "Alert only by email"
+        ],
+        "explanation": "Tuning gets better as time goes on."
+      },
+      {
+        "question": "Which is listed as an alert notification method?",
+        "correctAnswer": "SMS/text",
+        "incorrectAnswers": [
+          "Fax",
+          "Postal mail",
+          "Billboard"
+        ],
+        "explanation": "Also email and security console/SOC."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.4 - Security Tools": {
+    "domain": "4.0 - Security Operations",
+    "page": "69-70",
+    "questions": [
+      {
+        "question": "What does SCAP allow?",
+        "correctAnswer": "Tools to identify and act on the same criteria",
+        "incorrectAnswers": [
+          "Encrypting backups",
+          "Signing certificates",
+          "Blocking USB drives"
+        ],
+        "explanation": "Security Content Automation Protocol is managed by NIST."
+      },
+      {
+        "question": "Who publishes popular security benchmarks?",
+        "correctAnswer": "Center for Internet Security (CIS)",
+        "incorrectAnswers": [
+          "Cyber Threat Alliance",
+          "IEEE",
+          "ITU"
+        ],
+        "explanation": "Benchmarks are the bare minimum security settings."
+      },
+      {
+        "question": "Which is a drawback of agentless compliance checks?",
+        "correctAnswer": "Will not inform or alert if not running",
+        "incorrectAnswers": [
+          "Must be maintained and updated",
+          "Requires a formal install",
+          "Uses too much disk space"
+        ],
+        "explanation": "Agents provide more detail and real-time notifications."
+      },
+      {
+        "question": "SNMP polling uses which port?",
+        "correctAnswer": "udp/161",
+        "incorrectAnswers": [
+          "udp/162",
+          "tcp/443",
+          "udp/53"
+        ],
+        "explanation": "SNMP traps use udp/162."
+      },
+      {
+        "question": "SNMP traps communicate over which port?",
+        "correctAnswer": "udp/162",
+        "incorrectAnswers": [
+          "udp/161",
+          "tcp/22",
+          "udp/123"
+        ],
+        "explanation": "Traps let the monitoring station react immediately."
+      },
+      {
+        "question": "In SNMP, what does the MIB contain?",
+        "correctAnswer": "OIDs (Object Identifiers)",
+        "incorrectAnswers": [
+          "Certificates",
+          "Password hashes",
+          "Firewall rules"
+        ],
+        "explanation": "MIB is the Management Information Base."
+      },
+      {
+        "question": "In NetFlow, what sends summary records to the collector?",
+        "correctAnswer": "The probe",
+        "incorrectAnswers": [
+          "The SIEM",
+          "The MIB",
+          "The supplicant"
+        ],
+        "explanation": "The probe watches network communication."
+      },
+      {
+        "question": "What is a key SIEM capability?",
+        "correctAnswer": "Data correlation",
+        "incorrectAnswers": [
+          "Wireless jamming",
+          "Certificate signing",
+          "Packet forwarding"
+        ],
+        "explanation": "Also log collection, long-term storage, and forensic analysis."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Firewalls": {
+    "domain": "4.0 - Security Operations",
+    "page": "70-71",
+    "questions": [
+      {
+        "question": "Which port does an SSH server use?",
+        "correctAnswer": "tcp/22",
+        "incorrectAnswers": [
+          "tcp/3389",
+          "udp/53",
+          "tcp/80"
+        ],
+        "explanation": "Port-based firewalls use protocol and port number."
+      },
+      {
+        "question": "Which port does Microsoft RDP use?",
+        "correctAnswer": "tcp/3389",
+        "incorrectAnswers": [
+          "tcp/22",
+          "tcp/443",
+          "udp/123"
+        ],
+        "explanation": "Remote Desktop Protocol."
+      },
+      {
+        "question": "Which port does a DNS query use?",
+        "correctAnswer": "udp/53",
+        "incorrectAnswers": [
+          "udp/123",
+          "tcp/80",
+          "udp/161"
+        ],
+        "explanation": "NTP uses udp/123."
+      },
+      {
+        "question": "Which port does NTP use?",
+        "correctAnswer": "udp/123",
+        "incorrectAnswers": [
+          "udp/53",
+          "tcp/22",
+          "tcp/3389"
+        ],
+        "explanation": "Web servers use tcp/80 and tcp/443."
+      },
+      {
+        "question": "How are firewall rules usually evaluated?",
+        "correctAnswer": "Top-to-bottom, with specific rules at the top",
+        "incorrectAnswers": [
+          "Bottom-to-top",
+          "Randomly",
+          "Alphabetically"
+        ],
+        "explanation": "Rules can be very general or very specific."
+      },
+      {
+        "question": "What is implicit deny?",
+        "correctAnswer": "A deny at the bottom of the rulebase even if you didn't add one",
+        "incorrectAnswers": [
+          "A rule that allows everything",
+          "A rule added by the user at the top",
+          "A temporary rule"
+        ],
+        "explanation": "Most firewalls include it."
+      },
+      {
+        "question": "An IPS that builds a baseline of what's normal and flags unusual patterns is which type?",
+        "correctAnswer": "Anomaly-based",
+        "incorrectAnswers": [
+          "Signature-based",
+          "Rule-based",
+          "Port-based"
+        ],
+        "explanation": "Signature-based looks for a perfect match."
+      },
+      {
+        "question": "What is a screened subnet?",
+        "correctAnswer": "An additional security layer giving public access to public resources",
+        "incorrectAnswers": [
+          "A VLAN for printers only",
+          "A honeynet",
+          "A VPN concentrator"
+        ],
+        "explanation": "Private data remains inaccessible."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Web Filtering": {
+    "domain": "4.0 - Security Operations",
+    "page": "71-72",
+    "questions": [
+      {
+        "question": "What is URL scanning often integrated into?",
+        "correctAnswer": "An NGFW",
+        "incorrectAnswers": [
+          "A UPS",
+          "An HSM",
+          "A TPM"
+        ],
+        "explanation": "It filters traffic based on category or specific URL."
+      },
+      {
+        "question": "In agent-based web filtering, who makes the filtering decisions?",
+        "correctAnswer": "The local agent on the user's device",
+        "incorrectAnswers": [
+          "The ISP",
+          "The DNS server",
+          "The CA"
+        ],
+        "explanation": "Users can be located anywhere; updates come from the cloud."
+      },
+      {
+        "question": "Filtering URLs based on perceived risk is called what?",
+        "correctAnswer": "Reputation",
+        "incorrectAnswers": [
+          "Geofencing",
+          "Tokenization",
+          "Rule-based access"
+        ],
+        "explanation": "Reputation can be automated or manually assigned."
+      },
+      {
+        "question": "How does DNS filtering block harmful sites?",
+        "correctAnswer": "Harmful sites are not resolved to an IP address",
+        "incorrectAnswers": [
+          "It encrypts the website",
+          "It revokes the site's certificate",
+          "It blocks port 443"
+        ],
+        "explanation": "No IP address, no connection - works for any DNS lookup."
+      },
+      {
+        "question": "In the block rules example, what disposition is given to Gambling?",
+        "correctAnswer": "Block",
+        "incorrectAnswers": [
+          "Allow",
+          "Allow and Alert",
+          "Quarantine"
+        ],
+        "explanation": "Educational: Allow; Home and Garden: Allow and Alert."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Operating System Security": {
+    "domain": "4.0 - Security Operations",
+    "page": "72",
+    "questions": [
+      {
+        "question": "What is Active Directory?",
+        "correctAnswer": "A database of everything on the network, used for authentication and access control",
+        "incorrectAnswers": [
+          "A Linux kernel patch",
+          "A firewall type",
+          "A backup method"
+        ],
+        "explanation": "Commonly used by the help desk to reset passwords."
+      },
+      {
+        "question": "What tool is used to manage computers or users with Group Policies?",
+        "correctAnswer": "Group Policy Management Editor",
+        "incorrectAnswers": [
+          "Event Viewer",
+          "Task Manager",
+          "Tripwire"
+        ],
+        "explanation": "Group Policy handles login scripts, QoS, and security parameters."
+      },
+      {
+        "question": "What does SELinux add to Linux?",
+        "correctAnswer": "Mandatory access control (MAC)",
+        "incorrectAnswers": [
+          "Discretionary access control (DAC)",
+          "Role-based access control",
+          "Full-disk encryption"
+        ],
+        "explanation": "Linux traditionally uses DAC."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Secure Protocols": {
+    "domain": "4.0 - Security Operations",
+    "page": "72-73",
+    "questions": [
+      {
+        "question": "What is the secure protocol for remote console?",
+        "correctAnswer": "SSH",
+        "incorrectAnswers": [
+          "Telnet",
+          "FTP",
+          "IMAP"
+        ],
+        "explanation": "Telnet is the insecure version."
+      },
+      {
+        "question": "What is the secure protocol for email client access?",
+        "correctAnswer": "IMAPS",
+        "incorrectAnswers": [
+          "IMAP",
+          "SMTP",
+          "Telnet"
+        ],
+        "explanation": "IMAP is unencrypted."
+      },
+      {
+        "question": "What is the secure protocol for file transfer?",
+        "correctAnswer": "SFTP",
+        "incorrectAnswers": [
+          "FTP",
+          "HTTP",
+          "Telnet"
+        ],
+        "explanation": "FTP sends all traffic in the clear."
+      },
+      {
+        "question": "Does using a secure port number guarantee security?",
+        "correctAnswer": "No, confirm the security features are enabled",
+        "incorrectAnswers": [
+          "Yes, always",
+          "Only for port 443",
+          "Only on wireless"
+        ],
+        "explanation": "Packet captures may be necessary."
+      },
+      {
+        "question": "How can you verify that a protocol is sending data in the clear?",
+        "correctAnswer": "Packet capture",
+        "incorrectAnswers": [
+          "Port scan",
+          "Hash comparison",
+          "Certificate check"
+        ],
+        "explanation": "View everything sent over the network."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Email Security": {
+    "domain": "4.0 - Security Operations",
+    "page": "73",
+    "questions": [
+      {
+        "question": "Which protocol lists all servers authorized to send emails for a domain?",
+        "correctAnswer": "SPF",
+        "incorrectAnswers": [
+          "DKIM",
+          "DMARC",
+          "IMAPS"
+        ],
+        "explanation": "Sender Policy Framework uses a DNS TXT record."
+      },
+      {
+        "question": "Which protocol has the mail server digitally sign all outgoing mail?",
+        "correctAnswer": "DKIM",
+        "incorrectAnswers": [
+          "SPF",
+          "DMARC",
+          "SMTP"
+        ],
+        "explanation": "The public key is in the DKIM TXT record."
+      },
+      {
+        "question": "Which protocol tells receiving servers what to do with mail that fails SPF and DKIM?",
+        "correctAnswer": "DMARC",
+        "incorrectAnswers": [
+          "SPF",
+          "DKIM",
+          "LDAP"
+        ],
+        "explanation": "Accept all, send to spam, or reject; it also sends compliance reports."
+      },
+      {
+        "question": "Where are SPF, DKIM, and DMARC records stored?",
+        "correctAnswer": "DNS TXT records",
+        "incorrectAnswers": [
+          "The CRL",
+          "The MIB",
+          "Active Directory"
+        ],
+        "explanation": "They're publicly available on the sender's DNS server."
+      },
+      {
+        "question": "What is a mail gateway?",
+        "correctAnswer": "A gatekeeper that blocks unwanted mail before it reaches the user",
+        "incorrectAnswers": [
+          "A mail client",
+          "An encryption key store",
+          "A VPN concentrator"
+        ],
+        "explanation": "Can be on-site or cloud-based."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Monitoring Data": {
+    "domain": "4.0 - Security Operations",
+    "page": "73-74",
+    "questions": [
+      {
+        "question": "What does File Integrity Monitoring do?",
+        "correctAnswer": "Identifies when important OS and application files change",
+        "incorrectAnswers": [
+          "Encrypts all files",
+          "Backs up files nightly",
+          "Compresses files"
+        ],
+        "explanation": "Some files should NEVER change."
+      },
+      {
+        "question": "Which is a Linux FIM tool?",
+        "correctAnswer": "Tripwire",
+        "incorrectAnswers": [
+          "SFC",
+          "BitLocker",
+          "Event Viewer"
+        ],
+        "explanation": "Windows uses SFC (System File Checker)."
+      },
+      {
+        "question": "DLP on a server protects data in which state?",
+        "correctAnswer": "Data at rest",
+        "incorrectAnswers": [
+          "Data in use",
+          "Data in motion",
+          "Data in transit"
+        ],
+        "explanation": "Endpoint DLP: in use; network DLP: in motion."
+      },
+      {
+        "question": "What did the US DoD ban in November 2008 because of the agent.btz worm?",
+        "correctAnswer": "Removable flash media and storage devices",
+        "incorrectAnswers": [
+          "All email",
+          "Wireless networks",
+          "Cloud storage"
+        ],
+        "explanation": "The ban was lifted in February 2010 with strict guidelines."
+      },
+      {
+        "question": "In the 2016 Boeing incident, where was the personal information hidden in the spreadsheet?",
+        "correctAnswer": "Hidden columns",
+        "incorrectAnswers": [
+          "Macros",
+          "Image steganography",
+          "File metadata only"
+        ],
+        "explanation": "36,000 employees' SSNs and birth dates were exposed."
+      },
+      {
+        "question": "What is described as the most critical DLP risk vector?",
+        "correctAnswer": "Email",
+        "incorrectAnswers": [
+          "Printers",
+          "Bluetooth",
+          "USB keyboards"
+        ],
+        "explanation": "Check every email inbound and outbound."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.5 - Endpoint Security": {
+    "domain": "4.0 - Security Operations",
+    "page": "74-75",
+    "questions": [
+      {
+        "question": "Which posture assessment agent runs during the assessment and then terminates?",
+        "correctAnswer": "Dissolvable agent",
+        "incorrectAnswers": [
+          "Persistent agent",
+          "Agentless NAC",
+          "SNMP agent"
+        ],
+        "explanation": "No installation is required."
+      },
+      {
+        "question": "Which posture assessment option integrates with Active Directory and can't be scheduled?",
+        "correctAnswer": "Agentless NAC",
+        "incorrectAnswers": [
+          "Persistent agent",
+          "Dissolvable agent",
+          "EDR"
+        ],
+        "explanation": "Checks are made during login and logoff."
+      },
+      {
+        "question": "What happens when a posture assessment fails?",
+        "correctAnswer": "The device goes to a quarantine network with just enough access to fix the issue",
+        "incorrectAnswers": [
+          "The device is wiped",
+          "Full access is granted with a warning",
+          "The user is fired"
+        ],
+        "explanation": "Once resolved, try again."
+      },
+      {
+        "question": "How does XDR improve on EDR?",
+        "correctAnswer": "It correlates endpoint, network, and cloud data",
+        "incorrectAnswers": [
+          "It removes the endpoint agent",
+          "It only uses signatures",
+          "It replaces firewalls"
+        ],
+        "explanation": "XDR adds network-based detection."
+      },
+      {
+        "question": "What does XDR commonly include to extend anomaly detection?",
+        "correctAnswer": "User behavior analytics",
+        "incorrectAnswers": [
+          "Key escrow",
+          "OCSP stapling",
+          "Steganography"
+        ],
+        "explanation": "It creates a baseline of normal activity over an extended period."
+      },
+      {
+        "question": "Edge control is managed primarily through what?",
+        "correctAnswer": "Firewall rules",
+        "incorrectAnswers": [
+          "User groups",
+          "Posture assessments",
+          "Certificates"
+        ],
+        "explanation": "Access control can be based on user, group, location, and application."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.6 - Identity and Access Management": {
+    "domain": "4.0 - Security Operations",
+    "page": "75-76",
+    "questions": [
+      {
+        "question": "Creating and removing user accounts during hiring and separation is called what?",
+        "correctAnswer": "Provisioning/de-provisioning",
+        "incorrectAnswers": [
+          "Federation",
+          "Identity proofing",
+          "Attestation"
+        ],
+        "explanation": "Nobody gets Administrator access at provisioning."
+      },
+      {
+        "question": "In identity proofing, a passport or in-person meeting is which step?",
+        "correctAnswer": "Verification / Attestation",
+        "incorrectAnswers": [
+          "Resolution",
+          "Validation",
+          "Provisioning"
+        ],
+        "explanation": "Resolution is who the system thinks you are; validation gathers info."
+      },
+      {
+        "question": "What is single sign-on?",
+        "correctAnswer": "Provide credentials once to access all assigned resources",
+        "incorrectAnswers": [
+          "One password per resource",
+          "Signing code once",
+          "Logging in from one location only"
+        ],
+        "explanation": "Usually limited by time; infrastructure must support it."
+      },
+      {
+        "question": "LDAP is used to query and update what kind of directory?",
+        "correctAnswer": "X.500",
+        "incorrectAnswers": [
+          "X.509",
+          "802.1X",
+          "SNMP MIB"
+        ],
+        "explanation": "Used in Windows Active Directory and others."
+      },
+      {
+        "question": "In the X.500 Directory Information Tree, users and computers are what kind of objects?",
+        "correctAnswer": "Leaf objects",
+        "incorrectAnswers": [
+          "Container objects",
+          "Root objects",
+          "Branch objects"
+        ],
+        "explanation": "Container objects are country, organization, organizational units."
+      },
+      {
+        "question": "What has been SAML's largest roadblock?",
+        "correctAnswer": "It wasn't originally designed for mobile apps",
+        "incorrectAnswers": [
+          "It doesn't support authentication",
+          "It only works on Linux",
+          "It isn't an open standard"
+        ],
+        "explanation": "SAML is an open standard for authentication and authorization."
+      },
+      {
+        "question": "Is OAuth an authentication protocol?",
+        "correctAnswer": "No, it's an authorization framework",
+        "incorrectAnswers": [
+          "Yes, it replaces passwords",
+          "Yes, it's used for 802.1X",
+          "Only with LDAP"
+        ],
+        "explanation": "OpenID Connect handles the single sign-on authentication."
+      },
+      {
+        "question": "Logging in with your Facebook credentials is an example of what?",
+        "correctAnswer": "Federation",
+        "incorrectAnswers": [
+          "Key escrow",
+          "Provisioning",
+          "Rule-based access"
+        ],
+        "explanation": "Third parties establish a trust relationship."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.6 - Access Controls": {
+    "domain": "4.0 - Security Operations",
+    "page": "77",
+    "questions": [
+      {
+        "question": "Which access control model uses labels like confidential, secret, and top secret?",
+        "correctAnswer": "Mandatory Access Control (MAC)",
+        "incorrectAnswers": [
+          "Discretionary Access Control",
+          "Role-based access control",
+          "Attribute-based access control"
+        ],
+        "explanation": "Users cannot change these settings."
+      },
+      {
+        "question": "In which model does the owner control who has access?",
+        "correctAnswer": "Discretionary Access Control (DAC)",
+        "incorrectAnswers": [
+          "Mandatory Access Control",
+          "Rule-based access control",
+          "Role-based access control"
+        ],
+        "explanation": "Very flexible, very weak security."
+      },
+      {
+        "question": "Which model provides access based on your job, such as manager or team lead?",
+        "correctAnswer": "Role-based access control (RBAC)",
+        "incorrectAnswers": [
+          "Mandatory Access Control",
+          "Discretionary Access Control",
+          "Time-of-day restrictions"
+        ],
+        "explanation": "In Windows, use Groups for RBAC."
+      },
+      {
+        "question": "'Lab network access is only available between 9 AM and 5 PM' is an example of which model?",
+        "correctAnswer": "Rule-based access control",
+        "incorrectAnswers": [
+          "Role-based access control",
+          "Discretionary Access Control",
+          "Mandatory Access Control"
+        ],
+        "explanation": "Rules are system-enforced and associated with the object."
+      },
+      {
+        "question": "Which model combines resource info, IP address, time of day, and desired action?",
+        "correctAnswer": "Attribute-based access control (ABAC)",
+        "incorrectAnswers": [
+          "Role-based access control",
+          "Mandatory Access Control",
+          "Discretionary Access Control"
+        ],
+        "explanation": "A 'next generation' context-aware model."
+      },
+      {
+        "question": "With RBAC, are rights gained implicitly or explicitly?",
+        "correctAnswer": "Implicitly",
+        "incorrectAnswers": [
+          "Explicitly",
+          "Neither",
+          "Only through MAC labels"
+        ],
+        "explanation": "Rights come from the role, not individual assignment."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.6 - Multifactor Authentication": {
+    "domain": "4.0 - Security Operations",
+    "page": "78",
+    "questions": [
+      {
+        "question": "A PIN is which authentication factor?",
+        "correctAnswer": "Something you know",
+        "incorrectAnswers": [
+          "Something you have",
+          "Something you are",
+          "Somewhere you are"
+        ],
+        "explanation": "Passwords and patterns are also something you know."
+      },
+      {
+        "question": "A smart card is which authentication factor?",
+        "correctAnswer": "Something you have",
+        "incorrectAnswers": [
+          "Something you know",
+          "Something you are",
+          "Somewhere you are"
+        ],
+        "explanation": "So are USB security keys, tokens, and your phone."
+      },
+      {
+        "question": "A fingerprint or iris scan is which authentication factor?",
+        "correctAnswer": "Something you are",
+        "incorrectAnswers": [
+          "Something you have",
+          "Something you know",
+          "Somewhere you are"
+        ],
+        "explanation": "Biometrics are difficult to change."
+      },
+      {
+        "question": "Using IP address or GPS location is which authentication factor?",
+        "correctAnswer": "Somewhere you are",
+        "incorrectAnswers": [
+          "Something you have",
+          "Something you know",
+          "Something you are"
+        ],
+        "explanation": "Still not a perfect identifier of location."
+      },
+      {
+        "question": "What is usually stored for biometric authentication?",
+        "correctAnswer": "A mathematical representation of your biometric",
+        "incorrectAnswers": [
+          "An image of your actual fingerprint",
+          "Your password",
+          "Nothing"
+        ],
+        "explanation": "Your actual fingerprint isn't usually saved."
+      },
+      {
+        "question": "IP-address-based location works best with which IP version?",
+        "correctAnswer": "IPv4",
+        "incorrectAnswers": [
+          "IPv6",
+          "Both equally",
+          "Neither"
+        ],
+        "explanation": "Works with IPv4, not so much with IPv6."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.6 - Password Security": {
+    "domain": "4.0 - Security Operations",
+    "page": "78-79",
+    "questions": [
+      {
+        "question": "How do you increase password entropy?",
+        "correctAnswer": "Mix upper and lower case, letters, and special characters",
+        "incorrectAnswers": [
+          "Use a single dictionary word",
+          "Use your birthday",
+          "Reuse old passwords"
+        ],
+        "explanation": "No single words, no obvious passwords."
+      },
+      {
+        "question": "What is password age?",
+        "correctAnswer": "How long since a password was modified",
+        "incorrectAnswers": [
+          "How old the user is",
+          "How long the password is",
+          "When the account was created"
+        ],
+        "explanation": "Password expiration makes a password stop working after a set time."
+      },
+      {
+        "question": "What is just-in-time permissions?",
+        "correctAnswer": "Granting admin access for a limited time",
+        "incorrectAnswers": [
+          "Permanent admin rights for IT",
+          "Removing all admin accounts",
+          "Granting rights based on location"
+        ],
+        "explanation": "A breached user account never has elevated rights."
+      },
+      {
+        "question": "In password vaulting, what happens to the primary passwords?",
+        "correctAnswer": "They are never released; ephemeral credentials are used",
+        "incorrectAnswers": [
+          "They are emailed to the admin",
+          "They are posted on the intranet",
+          "They expire after 90 days only"
+        ],
+        "explanation": "Credentials are used for one session then deleted."
+      },
+      {
+        "question": "What is an example of passwordless authentication?",
+        "correctAnswer": "Facial recognition or a security key",
+        "incorrectAnswers": [
+          "A long passphrase",
+          "A PIN",
+          "Security questions"
+        ],
+        "explanation": "It may still be used with additional factors."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.7 - Scripting and Automation": {
+    "domain": "4.0 - Security Operations",
+    "page": "79-80",
+    "questions": [
+      {
+        "question": "What are guard rails in automation?",
+        "correctAnswer": "A set of automated validations that limit behaviors and reduce errors",
+        "incorrectAnswers": [
+          "Physical barriers around servers",
+          "Firewall rules for VLANs",
+          "Manual approval forms"
+        ],
+        "explanation": "They constantly check to ensure proper implementation."
+      },
+      {
+        "question": "Which is listed as a benefit of automation?",
+        "correctAnswer": "Workforce multiplier",
+        "incorrectAnswers": [
+          "Single point of failure",
+          "Technical debt",
+          "Increased complexity"
+        ],
+        "explanation": "Scripting works 24/7."
+      },
+      {
+        "question": "Which is a scripting consideration (drawback)?",
+        "correctAnswer": "Single point of failure",
+        "incorrectAnswers": [
+          "Faster reaction time",
+          "Employee retention",
+          "Enforcing baselines"
+        ],
+        "explanation": "Also complexity, cost, technical debt, and ongoing supportability."
+      },
+      {
+        "question": "Patching problems that push the issue down the road creates what?",
+        "correctAnswer": "Technical debt",
+        "incorrectAnswers": [
+          "Guard rails",
+          "Escalation",
+          "Secure scaling"
+        ],
+        "explanation": "It's going to be more expensive to fix later."
+      },
+      {
+        "question": "In automation, what is escalation?",
+        "correctAnswer": "Correct issues first, then contact the on-call tech if unresolved",
+        "incorrectAnswers": [
+          "Granting admin rights automatically",
+          "Creating more user accounts",
+          "Deleting tickets"
+        ],
+        "explanation": "Correct issues before involving a human."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.8 - Incident Response": {
+    "domain": "4.0 - Security Operations",
+    "page": "80-81",
+    "questions": [
+      {
+        "question": "Which NIST publication is the Computer Security Incident Handling Guide?",
+        "correctAnswer": "SP 800-61 Revision 2",
+        "incorrectAnswers": [
+          "SP 800-171",
+          "SP 800-115",
+          "RFC 3227"
+        ],
+        "explanation": "It defines the incident response lifecycle."
+      },
+      {
+        "question": "What is the first phase of the NIST incident response lifecycle?",
+        "correctAnswer": "Preparation",
+        "incorrectAnswers": [
+          "Detection and Analysis",
+          "Containment, Eradication, and Recovery",
+          "Post-incident Activity"
+        ],
+        "explanation": "Communication methods, tools, and policies are prepared ahead of time."
+      },
+      {
+        "question": "Which phase comes after Detection and Analysis?",
+        "correctAnswer": "Containment, Eradication, and Recovery",
+        "incorrectAnswers": [
+          "Preparation",
+          "Post-incident Activity",
+          "Lessons learned only"
+        ],
+        "explanation": "Then Post-incident Activity."
+      },
+      {
+        "question": "A web server log showing a vulnerability scanner in use is an example of what?",
+        "correctAnswer": "A heads-up that an incident might occur",
+        "incorrectAnswers": [
+          "An attack underway",
+          "Eradication",
+          "Recovery"
+        ],
+        "explanation": "Exploit announcements and direct threats are also precursors."
+      },
+      {
+        "question": "Why can isolation sometimes be problematic?",
+        "correctAnswer": "Malware may detect lost connectivity and damage data",
+        "incorrectAnswers": [
+          "Isolation always spreads malware",
+          "Isolation deletes logs",
+          "Isolation is illegal"
+        ],
+        "explanation": "Everything could be deleted/encrypted/damaged."
+      },
+      {
+        "question": "Disabling breached user accounts is part of what?",
+        "correctAnswer": "Eradication",
+        "incorrectAnswers": [
+          "Preparation",
+          "Detection",
+          "Lessons learned"
+        ],
+        "explanation": "Remove malware, disable breached accounts, fix vulnerabilities."
+      },
+      {
+        "question": "When should the lessons learned meeting be held?",
+        "correctAnswer": "Soon - don't wait too long",
+        "incorrectAnswers": [
+          "One year later",
+          "Only before an incident",
+          "Never"
+        ],
+        "explanation": "Memories fade over time."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.8 - Incident Planning": {
+    "domain": "4.0 - Security Operations",
+    "page": "81",
+    "questions": [
+      {
+        "question": "What is root cause analysis?",
+        "correctAnswer": "Determining the ultimate cause of an incident by asking 'why'",
+        "incorrectAnswers": [
+          "Scanning for root accounts",
+          "Removing a rootkit",
+          "Reviewing root certificates"
+        ],
+        "explanation": "There can be more than a single root cause."
+      },
+      {
+        "question": "What is threat hunting?",
+        "correctAnswer": "Finding the attacker before they find you",
+        "incorrectAnswers": [
+          "Purchasing threat intelligence",
+          "Deleting old logs",
+          "Running backups"
+        ],
+        "explanation": "Intelligence data is reactive; speed up reaction time."
+      },
+      {
+        "question": "What should conclusions from root cause analysis be backed up by?",
+        "correctAnswer": "The facts",
+        "incorrectAnswers": [
+          "Opinions",
+          "Social media",
+          "Vendor marketing"
+        ],
+        "explanation": "Create a set of conclusions backed up by facts."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.8 - Digital Forensics": {
+    "domain": "4.0 - Security Operations",
+    "page": "82",
+    "questions": [
+      {
+        "question": "Which RFC provides guidelines for evidence collection and archiving?",
+        "correctAnswer": "RFC 3227",
+        "incorrectAnswers": [
+          "RFC 1918",
+          "RFC 2616",
+          "RFC 800-61"
+        ],
+        "explanation": "A good set of best practices."
+      },
+      {
+        "question": "What is the standard digital forensic process?",
+        "correctAnswer": "Acquisition, analysis, and reporting",
+        "incorrectAnswers": [
+          "Preparation, detection, recovery",
+          "Identification, authentication, authorization",
+          "Plan, do, check"
+        ],
+        "explanation": "Must be detail oriented with extensive notes."
+      },
+      {
+        "question": "Who initiates a legal hold?",
+        "correctAnswer": "Legal counsel",
+        "incorrectAnswers": [
+          "The help desk",
+          "The attacker",
+          "The data processor"
+        ],
+        "explanation": "Custodians are instructed to preserve data."
+      },
+      {
+        "question": "What is used in chain of custody to avoid tampering?",
+        "correctAnswer": "Hashes and digital signatures",
+        "incorrectAnswers": [
+          "Wildcard certificates",
+          "Tokenization",
+          "Data masking"
+        ],
+        "explanation": "Label, catalog, seal, and store everything."
+      },
+      {
+        "question": "When acquiring data from a virtual system, what should you get?",
+        "correctAnswer": "A snapshot",
+        "incorrectAnswers": [
+          "A screenshot",
+          "A CRL",
+          "An SLA"
+        ],
+        "explanation": "A snapshot contains all files and information about a VM."
+      },
+      {
+        "question": "Should forensic analysis be done on original evidence?",
+        "correctAnswer": "No, work from copies",
+        "incorrectAnswers": [
+          "Yes, always",
+          "Only for mobile devices",
+          "Only after a legal hold"
+        ],
+        "explanation": "Analyze data without alterations."
+      },
+      {
+        "question": "How does e-discovery differ from digital forensics?",
+        "correctAnswer": "E-discovery gathers data but doesn't generally involve analysis",
+        "incorrectAnswers": [
+          "E-discovery recovers deleted files",
+          "E-discovery determines intent",
+          "They are the same"
+        ],
+        "explanation": "They work together - forensics may recover deleted data."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "4.9 - Log Data": {
+    "domain": "4.0 - Security Operations",
+    "page": "83-84",
+    "questions": [
+      {
+        "question": "Which logs record application used and URL filtering categories?",
+        "correctAnswer": "NGFW logs",
+        "incorrectAnswers": [
+          "Application logs",
+          "Network logs",
+          "Metadata"
+        ],
+        "explanation": "Traditional firewall logs show source/destination IP, ports, disposition."
+      },
+      {
+        "question": "Where are Linux and macOS logs commonly found?",
+        "correctAnswer": "/var/log",
+        "incorrectAnswers": [
+          "Event Viewer",
+          "C:\\Windows\\Logs",
+          "/etc/passwd"
+        ],
+        "explanation": "Windows uses Event Viewer."
+      },
+      {
+        "question": "Email header details and sending servers are examples of what?",
+        "correctAnswer": "Metadata",
+        "incorrectAnswers": [
+          "Endpoint logs",
+          "IPS logs",
+          "Packet captures"
+        ],
+        "explanation": "Metadata is data that describes other data sources."
+      },
+      {
+        "question": "Which data point is common in IPS/IDS logs?",
+        "correctAnswer": "Type or class of attack",
+        "incorrectAnswers": [
+          "User's password",
+          "Encryption key",
+          "Certificate serial number"
+        ],
+        "explanation": "Also timestamp, source/destination IP and port."
+      },
+      {
+        "question": "What are dashboards NOT designed for?",
+        "correctAnswer": "Long-term analysis",
+        "incorrectAnswers": [
+          "Real-time status",
+          "Summaries on a single screen",
+          "Showing important data"
+        ],
+        "explanation": "Dashboards show real-time status."
+      },
+      {
+        "question": "What do automated SIEM reports still require?",
+        "correctAnswer": "Human intervention to read them",
+        "incorrectAnswers": [
+          "A wildcard certificate",
+          "Physical access",
+          "A legal hold"
+        ],
+        "explanation": "Someone has to read the reports."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.1 - Security Policies": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "84-85",
+    "questions": [
+      {
+        "question": "Security policies answer which questions?",
+        "correctAnswer": "'What' and 'why'",
+        "incorrectAnswers": [
+          "'How' only",
+          "'When' and 'where'",
+          "'Who' only"
+        ],
+        "explanation": "Technical security controls answer the 'how'."
+      },
+      {
+        "question": "What document defines acceptable use of company assets?",
+        "correctAnswer": "Acceptable use policy (AUP)",
+        "incorrectAnswers": [
+          "Disaster recovery plan",
+          "Service level agreement",
+          "Risk register"
+        ],
+        "explanation": "Used to limit legal liability."
+      },
+      {
+        "question": "A disaster recovery plan is part of what?",
+        "correctAnswer": "Business continuity planning",
+        "incorrectAnswers": [
+          "Change management",
+          "Asset management",
+          "Penetration testing"
+        ],
+        "explanation": "It covers recovery location, data recovery, app restoration, and staff."
+      },
+      {
+        "question": "Which is NOT a listed incident response role?",
+        "correctAnswer": "Data processor",
+        "incorrectAnswers": [
+          "Incident response team",
+          "Compliance officers",
+          "User community"
+        ],
+        "explanation": "Also IT security management and technical staff."
+      },
+      {
+        "question": "Is there a single 'best way' SDLC?",
+        "correctAnswer": "No, but it helps to have a framework",
+        "incorrectAnswers": [
+          "Yes, waterfall only",
+          "Yes, defined by NIST",
+          "Yes, defined by ISO"
+        ],
+        "explanation": "There are many options."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.1 - Security Standards": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "85",
+    "questions": [
+      {
+        "question": "What is a security standard?",
+        "correctAnswer": "A formal definition for using security technologies and processes",
+        "incorrectAnswers": [
+          "An informal team guideline",
+          "A type of firewall",
+          "A threat actor"
+        ],
+        "explanation": "Complete documentation reduces security risk."
+      },
+      {
+        "question": "Which organizations are listed as having standards already available?",
+        "correctAnswer": "ISO and NIST",
+        "incorrectAnswers": [
+          "CTA and CIS",
+          "IEEE and ITU",
+          "SOX and HIPAA"
+        ],
+        "explanation": "Standards may also be written in-house."
+      },
+      {
+        "question": "What should an access control standard define?",
+        "correctAnswer": "Which access control types can be used",
+        "incorrectAnswers": [
+          "Which UPS type to buy",
+          "Which hash algorithm is fastest",
+          "Which threat actor to watch"
+        ],
+        "explanation": "Also how users get access and how it's removed."
+      },
+      {
+        "question": "What should an encryption standard define for data in use, in transit, and at rest?",
+        "correctAnswer": "Data encryption minimums / algorithms",
+        "incorrectAnswers": [
+          "Physical door locks",
+          "Visitor escorts",
+          "Password expiration"
+        ],
+        "explanation": "It also covers password storage."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.1 - Security Procedures": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "86",
+    "questions": [
+      {
+        "question": "Bringing a new hire into the organization with accounts and hardware is called what?",
+        "correctAnswer": "Onboarding",
+        "incorrectAnswers": [
+          "Offboarding",
+          "Provisioning a hot site",
+          "Change control"
+        ],
+        "explanation": "IT agreements also need to be signed."
+      },
+      {
+        "question": "During offboarding, what typically happens to account information?",
+        "correctAnswer": "It is usually deactivated, but not always deleted",
+        "incorrectAnswers": [
+          "It is always deleted immediately",
+          "It is transferred to a new user",
+          "It is left active"
+        ],
+        "explanation": "The offboarding process should be pre-planned."
+      },
+      {
+        "question": "What is a playbook?",
+        "correctAnswer": "Conditional steps for a broad process, like recovering from ransomware",
+        "incorrectAnswers": [
+          "A firewall rulebase",
+          "A list of user passwords",
+          "A threat actor profile"
+        ],
+        "explanation": "Playbooks can be manual checklists or automated."
+      },
+      {
+        "question": "Playbooks are often integrated with which platform?",
+        "correctAnswer": "SOAR",
+        "incorrectAnswers": [
+          "SIEM only",
+          "SASE",
+          "SCAP"
+        ],
+        "explanation": "Security Orchestration, Automation, and Response."
+      },
+      {
+        "question": "In governance, which group of subject-matter experts considers input and determines next steps?",
+        "correctAnswer": "Committees",
+        "incorrectAnswers": [
+          "Boards",
+          "Government entities",
+          "Data custodians"
+        ],
+        "explanation": "Boards are panels of specialists that gather information."
+      },
+      {
+        "question": "Governance spread around to other individuals or locations is called what?",
+        "correctAnswer": "Decentralized",
+        "incorrectAnswers": [
+          "Centralized",
+          "Federated",
+          "Hybrid"
+        ],
+        "explanation": "Centralized governance is in one location with a group of decision makers."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.1 - Security Considerations": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "87",
+    "questions": [
+      {
+        "question": "What is the Sarbanes-Oxley Act (SOX) also known as?",
+        "correctAnswer": "The Public Company Accounting Reform and Investor Protection Act of 2002",
+        "incorrectAnswers": [
+          "The Health Insurance Portability and Accountability Act",
+          "The Gramm-Leach-Bliley Act",
+          "The General Data Protection Regulation"
+        ],
+        "explanation": "SOX is a regulatory consideration."
+      },
+      {
+        "question": "Which regulation covers storage, use, and transmission of health care information?",
+        "correctAnswer": "HIPAA",
+        "incorrectAnswers": [
+          "SOX",
+          "GLBA",
+          "PCI DSS"
+        ],
+        "explanation": "Health Insurance Portability and Accountability Act."
+      },
+      {
+        "question": "Why does cloud computing make legal requirements challenging?",
+        "correctAnswer": "Data moves between jurisdictions without human intervention",
+        "incorrectAnswers": [
+          "Cloud data can't be encrypted",
+          "Cloud providers have no logs",
+          "Clouds can't store PII"
+        ],
+        "explanation": "The security team must follow legal guidelines."
+      },
+      {
+        "question": "Large multinational companies and global financial markets fall under which geographical security level?",
+        "correctAnswer": "Global",
+        "incorrectAnswers": [
+          "Local/regional",
+          "National",
+          "Industry"
+        ],
+        "explanation": "Legal concerns will vary widely."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.1 - Data Roles and Responsibilities": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "87",
+    "questions": [
+      {
+        "question": "Who is accountable for specific data, often a senior officer like the VP of Sales?",
+        "correctAnswer": "Data owner",
+        "incorrectAnswers": [
+          "Data processor",
+          "Data custodian",
+          "Data subject"
+        ],
+        "explanation": "The Treasurer owns financial information."
+      },
+      {
+        "question": "Who manages the purposes and means by which personal data is processed?",
+        "correctAnswer": "Data controller",
+        "incorrectAnswers": [
+          "Data processor",
+          "Data custodian",
+          "Data owner"
+        ],
+        "explanation": "Example: the payroll department."
+      },
+      {
+        "question": "Who processes data on behalf of the data controller?",
+        "correctAnswer": "Data processor",
+        "incorrectAnswers": [
+          "Data owner",
+          "Data steward",
+          "Data subject"
+        ],
+        "explanation": "Often a third party, like a payroll company."
+      },
+      {
+        "question": "Who associates sensitivity labels, manages access rights, and implements security controls?",
+        "correctAnswer": "Data custodian/steward",
+        "incorrectAnswers": [
+          "Data controller",
+          "Data processor",
+          "Data owner"
+        ],
+        "explanation": "Responsible for data accuracy, privacy, and security."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.2 - Risk Management": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "88",
+    "questions": [
+      {
+        "question": "A CEO returns from a conference and asks about a new attack type; a committee assesses it then disbands. What type of assessment?",
+        "correctAnswer": "Ad hoc",
+        "incorrectAnswers": [
+          "Recurring",
+          "Continuous",
+          "One-time mandated"
+        ],
+        "explanation": "Ad hoc assessments happen when the situation requires."
+      },
+      {
+        "question": "Change control requiring a risk assessment as part of each change is which type?",
+        "correctAnswer": "Continuous",
+        "incorrectAnswers": [
+          "Ad hoc",
+          "One-time",
+          "Recurring"
+        ],
+        "explanation": "Continuous assessments are part of an existing process."
+      },
+      {
+        "question": "How often does PCI DSS require risk assessments?",
+        "correctAnswer": "Annually",
+        "incorrectAnswers": [
+          "Monthly",
+          "Every 5 years",
+          "Only after a breach"
+        ],
+        "explanation": "This is a mandated recurring assessment."
+      },
+      {
+        "question": "A company acquisition would likely trigger which type of assessment?",
+        "correctAnswer": "One-time",
+        "incorrectAnswers": [
+          "Continuous",
+          "Recurring",
+          "Ad hoc committee only"
+        ],
+        "explanation": "One-time assessments may be part of a one-time project."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.2 - Risk Analysis": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "88-89",
+    "questions": [
+      {
+        "question": "What is the formula for Single Loss Expectancy (SLE)?",
+        "correctAnswer": "Asset value (AV) x Exposure factor (EF)",
+        "incorrectAnswers": [
+          "ARO x ALE",
+          "ALE / ARO x EF",
+          "AV + EF"
+        ],
+        "explanation": "Laptop stolen = $1,000 x 1.0 = $1,000."
+      },
+      {
+        "question": "What is the formula for Annualized Loss Expectancy (ALE)?",
+        "correctAnswer": "ARO x SLE",
+        "incorrectAnswers": [
+          "AV x EF",
+          "SLE / ARO",
+          "MTTR x MTBF"
+        ],
+        "explanation": "Seven laptops stolen a year x $1,000 = $7,000."
+      },
+      {
+        "question": "If 7 laptops worth $1,000 each are stolen per year, what is the ALE?",
+        "correctAnswer": "$7,000",
+        "incorrectAnswers": [
+          "$1,000",
+          "$700",
+          "$14,000"
+        ],
+        "explanation": "ALE = 7 (ARO) x $1,000 (SLE)."
+      },
+      {
+        "question": "Losing a quarter of an asset's value is what exposure factor?",
+        "correctAnswer": "0.25",
+        "incorrectAnswers": [
+          "1.0",
+          "0.75",
+          "4.0"
+        ],
+        "explanation": "Losing the entire asset is 1.0."
+      },
+      {
+        "question": "Displaying risk visually with a traffic light grid is which type of assessment?",
+        "correctAnswer": "Qualitative",
+        "incorrectAnswers": [
+          "Quantitative",
+          "Continuous",
+          "Recurring"
+        ],
+        "explanation": "Qualitative assessments ask opinions about significance."
+      },
+      {
+        "question": "What is the most important impact consideration?",
+        "correctAnswer": "Life",
+        "incorrectAnswers": [
+          "Property",
+          "Finance",
+          "Reputation"
+        ],
+        "explanation": "Other impacts: property, safety, finance, reputation."
+      },
+      {
+        "question": "Risk likelihood is a ___ measurement and risk probability is a ___ measurement.",
+        "correctAnswer": "Qualitative; quantitative",
+        "incorrectAnswers": [
+          "Quantitative; qualitative",
+          "Quantitative; quantitative",
+          "Qualitative; qualitative"
+        ],
+        "explanation": "Probability can be based on historical performance."
+      },
+      {
+        "question": "In the highway analogy, what is the speed limit?",
+        "correctAnswer": "Risk appetite",
+        "incorrectAnswers": [
+          "Risk tolerance",
+          "Risk threshold",
+          "Risk register"
+        ],
+        "explanation": "Tolerance is when ticketing actually occurs, well above the limit."
+      },
+      {
+        "question": "Which is NOT a listed risk appetite posture?",
+        "correctAnswer": "Aggressive",
+        "incorrectAnswers": [
+          "Conservative",
+          "Neutral",
+          "Expansionary"
+        ],
+        "explanation": "The three postures are conservative, neutral, and expansionary."
+      },
+      {
+        "question": "In a risk register, each key risk indicator is assigned to whom?",
+        "correctAnswer": "A risk owner",
+        "incorrectAnswers": [
+          "A data processor",
+          "The CA",
+          "An external auditor"
+        ],
+        "explanation": "Risk owners manage the risk."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.2 - Risk Management Strategies": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "89",
+    "questions": [
+      {
+        "question": "Buying cybersecurity insurance is which risk strategy?",
+        "correctAnswer": "Transfer",
+        "incorrectAnswers": [
+          "Accept",
+          "Avoid",
+          "Mitigate"
+        ],
+        "explanation": "Move the risk to another party."
+      },
+      {
+        "question": "Stopping participation in a high-risk activity is which risk strategy?",
+        "correctAnswer": "Avoid",
+        "incorrectAnswers": [
+          "Transfer",
+          "Mitigate",
+          "Accept"
+        ],
+        "explanation": "This effectively removes the risk."
+      },
+      {
+        "question": "Investing in security systems to decrease the risk level is which strategy?",
+        "correctAnswer": "Mitigate",
+        "incorrectAnswers": [
+          "Avoid",
+          "Transfer",
+          "Accept with exception"
+        ],
+        "explanation": "Mitigation decreases the risk level."
+      },
+      {
+        "question": "Monthly updates crash critical software, so the internal 3-day patch policy is waived. This is:",
+        "correctAnswer": "Accept with exception",
+        "incorrectAnswers": [
+          "Accept with exemption",
+          "Avoid",
+          "Transfer"
+        ],
+        "explanation": "An exception means internal security policies are not applied."
+      },
+      {
+        "question": "A security policy or regulation that can't be followed due to organization size may be handled as:",
+        "correctAnswer": "Accept with exemption",
+        "incorrectAnswers": [
+          "Accept with exception",
+          "Mitigate",
+          "Avoid"
+        ],
+        "explanation": "Exemptions may need approval."
+      },
+      {
+        "question": "Who is a risk report usually created for?",
+        "correctAnswer": "Senior management",
+        "incorrectAnswers": [
+          "End users",
+          "Attackers",
+          "Vendors"
+        ],
+        "explanation": "To make decisions on resources, budgeting, and tasks."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.2 - Business Impact Analysis": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "89",
+    "questions": [
+      {
+        "question": "Which metric measures how long it takes to get back to a particular service level?",
+        "correctAnswer": "RTO (Recovery time objective)",
+        "incorrectAnswers": [
+          "RPO (Recovery point objective)",
+          "MTBF",
+          "ALE"
+        ],
+        "explanation": "You're not up until the database and web server are operational."
+      },
+      {
+        "question": "Which metric defines how much data loss is acceptable?",
+        "correctAnswer": "RPO (Recovery point objective)",
+        "incorrectAnswers": [
+          "RTO (Recovery time objective)",
+          "MTTR",
+          "SLE"
+        ],
+        "explanation": "Example: the database only provides the last twelve months of data."
+      },
+      {
+        "question": "Which metric is the average time required to fix an issue, including diagnosis?",
+        "correctAnswer": "MTTR (Mean time to repair)",
+        "incorrectAnswers": [
+          "MTBF",
+          "RTO",
+          "RPO"
+        ],
+        "explanation": "Important for the cost of unplanned outages."
+      },
+      {
+        "question": "How is MTBF calculated?",
+        "correctAnswer": "Total uptime / number of breakdowns",
+        "incorrectAnswers": [
+          "Total downtime x repairs",
+          "ARO x SLE",
+          "AV x EF"
+        ],
+        "explanation": "Mean time between failures."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.3 - Third-party Risk Assessment": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "90-91",
+    "questions": [
+      {
+        "question": "What contract term lets you perform a security audit of a vendor at any time?",
+        "correctAnswer": "Right-to-audit clause",
+        "incorrectAnswers": [
+          "Non-disclosure clause",
+          "Service level clause",
+          "Conflict of interest clause"
+        ],
+        "explanation": "Verify security before a breach occurs."
+      },
+      {
+        "question": "Checking a company's financial status and legal issues before doing business is called what?",
+        "correctAnswer": "Due diligence",
+        "incorrectAnswers": [
+          "Due care",
+          "Vendor monitoring",
+          "Attestation"
+        ],
+        "explanation": "Also background checks and personnel interviews."
+      },
+      {
+        "question": "A third party employing the CFO's brother is an example of what?",
+        "correctAnswer": "Conflict of interest",
+        "incorrectAnswers": [
+          "Due diligence",
+          "Supply chain analysis",
+          "Right-to-audit"
+        ],
+        "explanation": "A personal interest could compromise judgment."
+      },
+      {
+        "question": "Does vendor monitoring end once the contract is signed?",
+        "correctAnswer": "No, it's ongoing",
+        "incorrectAnswers": [
+          "Yes, always",
+          "Only for cloud vendors",
+          "Only after the first audit"
+        ],
+        "explanation": "Assign a person to manage the vendor relationship."
+      },
+      {
+        "question": "What are vendor questionnaire results used for?",
+        "correctAnswer": "Updating a vendor risk analysis",
+        "incorrectAnswers": [
+          "Writing a CRL",
+          "Setting firewall rules",
+          "Creating a CSR"
+        ],
+        "explanation": "Questionnaires get answers directly from the vendor."
+      },
+      {
+        "question": "In the SolarWinds supply chain example, how was malware deployed?",
+        "correctAnswer": "With a valid SolarWinds digital signature",
+        "incorrectAnswers": [
+          "Through a phishing email",
+          "Via USB drive",
+          "Through an open proxy"
+        ],
+        "explanation": "At least 18,000 of 300,000 customers were potentially impacted."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.3 - Agreement Types": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "91",
+    "questions": [
+      {
+        "question": "Which agreement defines minimum terms for services, like uptime and response time?",
+        "correctAnswer": "SLA",
+        "incorrectAnswers": [
+          "MOU",
+          "NDA",
+          "BPA"
+        ],
+        "explanation": "Service Level Agreement - common between customers and service providers."
+      },
+      {
+        "question": "Which agreement is an informal letter of intent and not a signed contract?",
+        "correctAnswer": "MOU",
+        "incorrectAnswers": [
+          "MSA",
+          "SOW",
+          "SLA"
+        ],
+        "explanation": "Memorandum of Understanding states common goals."
+      },
+      {
+        "question": "Which is the next step above an MOU, where both sides conditionally agree to objectives?",
+        "correctAnswer": "MOA",
+        "incorrectAnswers": [
+          "MSA",
+          "NDA",
+          "BPA"
+        ],
+        "explanation": "Memorandum of Agreement may not contain legally enforceable promises."
+      },
+      {
+        "question": "Which agreement is a broad framework contract that future projects are based on?",
+        "correctAnswer": "MSA",
+        "incorrectAnswers": [
+          "SOW",
+          "MOU",
+          "NDA"
+        ],
+        "explanation": "Master Service Agreement."
+      },
+      {
+        "question": "Which document details scope, location, deliverables, schedule, and acceptance criteria and is used with an MSA?",
+        "correctAnswer": "SOW / Work order",
+        "incorrectAnswers": [
+          "MOU",
+          "BPA",
+          "SLA"
+        ],
+        "explanation": "Was the job done properly? Refer to the SOW."
+      },
+      {
+        "question": "A one-way NDA is called what?",
+        "correctAnswer": "Unilateral",
+        "incorrectAnswers": [
+          "Bilateral",
+          "Multilateral",
+          "Mutual"
+        ],
+        "explanation": "A mutual NDA is bilateral."
+      },
+      {
+        "question": "Which agreement covers going into business together, owner stake, and decision-making?",
+        "correctAnswer": "BPA",
+        "incorrectAnswers": [
+          "MSA",
+          "SLA",
+          "MOU"
+        ],
+        "explanation": "Business Partners Agreement."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.4 - Compliance": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "92",
+    "questions": [
+      {
+        "question": "Which act covers disclosure of privacy information from financial institutions?",
+        "correctAnswer": "Gramm-Leach-Bliley Act (GLBA)",
+        "incorrectAnswers": [
+          "Sarbanes-Oxley Act",
+          "HIPAA",
+          "GDPR"
+        ],
+        "explanation": "GLBA dates to 1999."
+      },
+      {
+        "question": "Due care tends to refer to which activities?",
+        "correctAnswer": "Internal activities",
+        "incorrectAnswers": [
+          "Third-party activities",
+          "Attacker activities",
+          "Government activities"
+        ],
+        "explanation": "Due diligence is often associated with third-party activities."
+      },
+      {
+        "question": "Someone formally 'signing off' on compliance documentation is called what?",
+        "correctAnswer": "Attestation and acknowledgment",
+        "incorrectAnswers": [
+          "Due diligence",
+          "Legal hold",
+          "Offboarding"
+        ],
+        "explanation": "They're ultimately responsible if it's incorrect."
+      },
+      {
+        "question": "In 2018, how much did Uber pay in fines for its 2016 breach?",
+        "correctAnswer": "$148 million",
+        "incorrectAnswers": [
+          "$100,000",
+          "$50,000",
+          "$27 billion"
+        ],
+        "explanation": "Uber allegedly paid the hackers $100,000 and had them sign an NDA."
+      },
+      {
+        "question": "Who typically monitors and reports organizational compliance in large organizations?",
+        "correctAnswer": "Central Compliance Officer (CCO)",
+        "incorrectAnswers": [
+          "Data processor",
+          "Help desk",
+          "Red team"
+        ],
+        "explanation": "Internal compliance reporting."
+      },
+      {
+        "question": "Which is listed as a consequence of non-compliance?",
+        "correctAnswer": "Loss of license",
+        "incorrectAnswers": [
+          "Faster patching",
+          "Lower insurance costs",
+          "Automatic certification"
+        ],
+        "explanation": "Also contractual impacts, fines, and reputational damage."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.4 - Privacy": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "93",
+    "questions": [
+      {
+        "question": "What does GDPR stand for?",
+        "correctAnswer": "General Data Protection Regulation",
+        "incorrectAnswers": [
+          "Global Data Privacy Rule",
+          "General Digital Protection Requirement",
+          "Government Data Processing Regulation"
+        ],
+        "explanation": "A European Union regulation."
+      },
+      {
+        "question": "Which GDPR concept gives data subjects control of their personal data?",
+        "correctAnswer": "A right to be forgotten",
+        "incorrectAnswers": [
+          "Key escrow",
+          "Legal hold",
+          "Right-to-audit"
+        ],
+        "explanation": "Users can request removal of data from search engines."
+      },
+      {
+        "question": "What is a data subject?",
+        "correctAnswer": "An identified or identifiable natural person with personal data",
+        "incorrectAnswers": [
+          "The data owner",
+          "A database table",
+          "The data processor"
+        ],
+        "explanation": "You are the data subject."
+      },
+      {
+        "question": "What is a data inventory?",
+        "correctAnswer": "A listing of all managed data",
+        "incorrectAnswers": [
+          "A list of hardware assets",
+          "A list of vulnerabilities",
+          "A list of firewall rules"
+        ],
+        "explanation": "Includes owner, update frequency, and format."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.5 - Audits and Assessments": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "93-94",
+    "questions": [
+      {
+        "question": "What is attestation in auditing?",
+        "correctAnswer": "An auditor's opinion of the truth or accuracy of a company's security positioning",
+        "incorrectAnswers": [
+          "A penetration test exploit",
+          "A certificate signing request",
+          "A vendor questionnaire"
+        ],
+        "explanation": "An auditor will attest to a company's cybersecurity posture."
+      },
+      {
+        "question": "Which group oversees risk management activities, where all audits start and stop?",
+        "correctAnswer": "Audit committee",
+        "incorrectAnswers": [
+          "Change control board",
+          "Red team",
+          "Help desk"
+        ],
+        "explanation": "Part of internal audits."
+      },
+      {
+        "question": "Having the organization perform its own checks is called what?",
+        "correctAnswer": "Self-assessment",
+        "incorrectAnswers": [
+          "External audit",
+          "Attestation",
+          "Penetration test"
+        ],
+        "explanation": "Consolidate self-assessments into ongoing reports."
+      },
+      {
+        "question": "Who may be required to perform an audit due to regulatory requirements?",
+        "correctAnswer": "An independent third party",
+        "incorrectAnswers": [
+          "The data processor",
+          "Any employee",
+          "The attacker"
+        ],
+        "explanation": "External audit type and frequency are often based on the regulation."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.5 - Penetration Tests": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "94",
+    "questions": [
+      {
+        "question": "Which team attacks systems looking for vulnerabilities to exploit?",
+        "correctAnswer": "Red team",
+        "incorrectAnswers": [
+          "Blue team",
+          "Audit committee",
+          "Change control board"
+        ],
+        "explanation": "The red team is offensive."
+      },
+      {
+        "question": "Which team identifies attacks in real time and prevents unauthorized access?",
+        "correctAnswer": "Blue team",
+        "incorrectAnswers": [
+          "Red team",
+          "Data processor",
+          "Risk owner"
+        ],
+        "explanation": "The blue team is defensive."
+      },
+      {
+        "question": "A 'blind' test where the pentester knows nothing about the systems is called what?",
+        "correctAnswer": "Unknown environment",
+        "incorrectAnswers": [
+          "Known environment",
+          "Partially known environment",
+          "Integrated test"
+        ],
+        "explanation": "A known environment is full disclosure."
+      },
+      {
+        "question": "Social media research and dumpster diving are examples of what?",
+        "correctAnswer": "Passive reconnaissance",
+        "incorrectAnswers": [
+          "Active reconnaissance",
+          "Lateral movement",
+          "Persistence"
+        ],
+        "explanation": "Passive recon is remarkably difficult to identify."
+      },
+      {
+        "question": "Ping scans, port scans, and OS fingerprinting are examples of what?",
+        "correctAnswer": "Active reconnaissance",
+        "incorrectAnswers": [
+          "Passive reconnaissance",
+          "Social engineering",
+          "Pivoting"
+        ],
+        "explanation": "Active recon is visible in network traffic and logs."
+      },
+      {
+        "question": "How can operating system security be circumvented by physical means?",
+        "correctAnswer": "Booting from other media",
+        "incorrectAnswers": [
+          "Phishing emails",
+          "SQL injection",
+          "DNS filtering"
+        ],
+        "explanation": "Also modifying the boot process or replacing OS files."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.6 - Security Awareness": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "95",
+    "questions": [
+      {
+        "question": "Why do companies run their own phishing campaigns?",
+        "correctAnswer": "To find out how many employees would click a phishing link",
+        "incorrectAnswers": [
+          "To steal employee credentials",
+          "To test the UPS",
+          "To audit vendors"
+        ],
+        "explanation": "Users can receive immediate feedback and training."
+      },
+      {
+        "question": "Modifying the hosts file or replacing a core OS file is which type of anomalous behavior?",
+        "correctAnswer": "Risky behavior",
+        "incorrectAnswers": [
+          "Unexpected behavior",
+          "Unintentional behavior",
+          "Normal behavior"
+        ],
+        "explanation": "Uploading sensitive files is also risky."
+      },
+      {
+        "question": "A logon from another country is which type of anomalous behavior?",
+        "correctAnswer": "Unexpected behavior",
+        "incorrectAnswers": [
+          "Risky behavior",
+          "Unintentional behavior",
+          "Expected behavior"
+        ],
+        "explanation": "Increases in data transfers are also unexpected."
+      },
+      {
+        "question": "Misplacing USB drives is which type of anomalous behavior?",
+        "correctAnswer": "Unintentional behavior",
+        "incorrectAnswers": [
+          "Risky behavior",
+          "Unexpected behavior",
+          "Malicious behavior"
+        ],
+        "explanation": "Also typing the wrong domain or misconfiguring settings."
+      },
+      {
+        "question": "Which is listed as a security awareness metric?",
+        "correctAnswer": "Phishing click rates",
+        "incorrectAnswers": [
+          "CPU utilization",
+          "Number of VLANs",
+          "Certificate key length"
+        ],
+        "explanation": "Also password manager adoption, MFA use, and password sharing."
+      },
+      {
+        "question": "What is the first step in developing a security awareness program?",
+        "correctAnswer": "Create a Security Awareness team",
+        "incorrectAnswers": [
+          "Deploy posters",
+          "Fire users who click",
+          "Buy insurance"
+        ],
+        "explanation": "Then establish minimum awareness, integrate compliance, and define metrics."
+      }
+    ],
+    "bonusQuestions": []
+  },
+  "5.6 - User Training": {
+    "domain": "5.0 - Security Program Management and Oversight",
+    "page": "96",
+    "questions": [
+      {
+        "question": "When should users receive security awareness training?",
+        "correctAnswer": "Before providing access",
+        "incorrectAnswers": [
+          "After their first incident",
+          "Only annually",
+          "Only when they leave"
+        ],
+        "explanation": "Train your users before providing access."
+      },
+      {
+        "question": "Does security awareness training apply to third parties?",
+        "correctAnswer": "Yes - contractors, partners, and suppliers",
+        "incorrectAnswers": [
+          "No, employees only",
+          "Only to vendors with VPN access",
+          "Only to executives"
+        ],
+        "explanation": "Keep detailed documentation and records."
+      },
+      {
+        "question": "How do you guard against insider threats?",
+        "correctAnswer": "Multiple approvals for critical processes",
+        "incorrectAnswers": [
+          "Give everyone admin rights",
+          "Disable logging",
+          "Remove all policies"
+        ],
+        "explanation": "Also monitor files and systems as much as possible."
+      },
+      {
+        "question": "Viewing security from the attacker's perspective is called what?",
+        "correctAnswer": "Operational security",
+        "incorrectAnswers": [
+          "Situational awareness",
+          "Social engineering",
+          "Password management"
+        ],
+        "explanation": "Users need to identify and keep sensitive data private."
+      },
+      {
+        "question": "Who are described as your front line defense against social engineering?",
+        "correctAnswer": "The users",
+        "incorrectAnswers": [
+          "The firewall",
+          "The CA",
+          "The SIEM"
+        ],
+        "explanation": "Extensive and ongoing training is needed."
+      }
+    ],
+    "bonusQuestions": []
   }
 };

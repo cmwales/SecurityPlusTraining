@@ -398,14 +398,6 @@ details.review-details summary {
   font-size: 0.85rem;
   margin-top: 4px;
 }
-
-.visit-count {
-  color: var(--muted);
-  font-size: 0.8rem;
-  text-align: center;
-  margin-top: 24px;
-}
-
 /* Flashcard setup: collapsible domains */
 details.domain-details {
   border: 1px solid var(--border);

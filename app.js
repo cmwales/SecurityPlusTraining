@@ -478,9 +478,7 @@
           <span class="mode-meta">${acronymCount} acronyms</span>
         </button>
       </div>
-      <p class="visit-count" id="visit-count"></p>
     `;
-    showVisitCount();
 
     document.getElementById("btn-mode-quiz").addEventListener("click", () => {
       trackMode("quiz", "Multiple-Choice Quiz");
@@ -506,21 +504,6 @@
       window.goatcounter.count({ path: "mode-" + path, title: title, event: true });
     }
   }
-
-  // Show the site's total page views from GoatCounter's public counter.
-  // Stays blank if the request fails (offline, blocked, etc.).
-  function showVisitCount() {
-    fetch("https://cmwales.goatcounter.com/counter/TOTAL.json")
-      .then((res) => (res.ok ? res.json() : null))
-      .then((data) => {
-        const el = document.getElementById("visit-count");
-        if (el && data && data.count) {
-          el.textContent = data.count + (data.count === "1" ? " visit" : " visits");
-        }
-      })
-      .catch(() => {});
-  }
-
   // ---------- flashcards: helpers ----------
 
   function loadFlashSelection(d) {

@@ -481,17 +481,28 @@
     `;
 
     document.getElementById("btn-mode-quiz").addEventListener("click", () => {
+      trackMode("quiz", "Multiple-Choice Quiz");
       state.screen = "setup";
       renderSetup();
     });
     document.getElementById("btn-mode-flash").addEventListener("click", () => {
+      trackMode("flashcards", "Flashcards");
       state.deck = "cards";
       renderFlashSetup();
     });
     document.getElementById("btn-mode-acronyms").addEventListener("click", () => {
+      trackMode("acronyms", "Acronyms");
       state.deck = "acronyms";
       renderFlashSetup();
     });
+  }
+
+  // Record which mode was picked as a GoatCounter event. Does nothing if the
+  // GoatCounter script hasn't loaded yet or was blocked.
+  function trackMode(path, title) {
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: "mode-" + path, title: title, event: true });
+    }
   }
 
   // ---------- flashcards: helpers ----------
